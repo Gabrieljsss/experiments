@@ -66,7 +66,7 @@ def merge_same_id(listings):
 def passes_basic(l, allowed):
     if norm(l.neighborhood) not in allowed:
         return False
-    if l.rent <= 0 or l.rent > config.MAX_RENT:
+    if l.rent < config.MIN_RENT or l.rent > config.MAX_RENT:
         return False
     if l.area < config.MIN_AREA_M2:
         return False
@@ -116,7 +116,7 @@ def render(entries, run_at, is_first_run, stats):
     ]
     for i, e in enumerate(entries, 1):
         l = e["main"]
-        date = e["date"].strftime("%d/%m") + ("" if e["date_known"] else "*")
+        date = "?" if e["date"] is None else e["date"].strftime("%d/%m") + ("" if e["date_known"] else "*")
         metro = f"{e['metro'][0]} {e['metro'][1]} m" if e["metro"] else ""
         title = (l.title or l.address).replace("|", "/")[:60]
         lines.append(
@@ -124,7 +124,8 @@ def render(entries, run_at, is_first_run, stats):
             f"{fmt_money(l.rent)} | {fmt_money(l.total)} | {l.area} | {l.bedrooms or ''} | {metro} | "
             f"{title} | {links(e['group'])} | `{l.key}` |"
         )
-    lines += ["", "\\* no publication date on the site; date is when this script first saw the listing.",
+    lines += ["", "\\* no publication date on the site; date is when this script first saw the listing "
+              "(? = already listed on the script's first run).",
               "Total = rent + condomínio + IPTU as reported by the site (QuintoAndar reports condo+IPTU together).", ""]
     return "\n".join(lines)
 
@@ -161,6 +162,7 @@ def main():
         elif l.source == "quintoandar":
             quintoandar.enrich(http, l, cached)
 
+    bootstrap = datetime.fromisoformat(state["runs"][0]) if state["runs"] else run_at
     entries = []
     disliked = set(config.DISLIKED)
     for group in group_duplicates(listings):
@@ -183,13 +185,18 @@ def main():
             for l in group
         )
         published = min((l.published_at for l in group if l.published_at), default=None)
+        # Without a publication date, "first seen" only means something after
+        # the first run; listings already there on the first run sort last.
+        seen_date = first_seen if first_seen > bootstrap else None
+        main_l.neighborhood = allowed[norm(main_l.neighborhood)][0]
         entries.append({
             "main": main_l, "group": group, "metro": metro,
-            "date": published or first_seen, "date_known": published is not None,
+            "date": published or seen_date, "date_known": published is not None,
             "new": first_seen == run_at,
         })
 
-    entries.sort(key=lambda e: (e["date"], e["main"].key), reverse=True)
+    oldest = datetime.min.replace(tzinfo=timezone.utc)
+    entries.sort(key=lambda e: (e["date"] or oldest, e["main"].key), reverse=True)
     report = render(entries, run_at, is_first_run, stats)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(report)
@@ -199,7 +206,7 @@ def main():
         "neighborhood": e["main"].neighborhood,
         "rent": e["main"].rent, "total": e["main"].total, "area": e["main"].area,
         "bedrooms": e["main"].bedrooms, "title": e["main"].title, "address": e["main"].address,
-        "published": e["date"].isoformat(), "published_known": e["date_known"], "new": e["new"],
+        "published": e["date"] and e["date"].isoformat(), "published_known": e["date_known"], "new": e["new"],
         "metro": e["metro"],
         "urls": {p: u for l in e["group"] for p, u in (l.extra_urls or {l.source: l.url}).items()},
     } for e in entries], ensure_ascii=False, indent=1))

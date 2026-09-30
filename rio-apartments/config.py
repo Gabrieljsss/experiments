@@ -9,6 +9,9 @@ filter on lives here so each run is reproducible from this file alone.
 # Maximum monthly rent (aluguel), in BRL. Condo fee and IPTU are NOT included.
 MAX_RENT = 3700
 
+# Listings below this are almost always typos, daily/room rentals or bait.
+MIN_RENT = 800
+
 # Optional cap on rent + condomínio + IPTU. None disables it.
 MAX_TOTAL = None
 
