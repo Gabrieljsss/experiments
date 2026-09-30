@@ -2,6 +2,48 @@
  * Summaries of "Systems Design 2.0" by Jordan has no life. All credit to him. */
 window.LESSONS = (window.LESSONS || []).concat([
   {
+    n: 32, id: "YgTLqO54UOA", duration: 501,
+    title: "SQL vs. NoSQL (Relational vs. Non-Relational)",
+    fullTitle: "SQL vs NoSQL - Who Wins? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+    bigIdea: "Forget the query language. The real split is **normalized** (relational: tables + foreign keys) vs. **denormalized** (non-relational: self-contained records). It's a trade-off in **data locality**.",
+    visuals: [
+      {
+        type: "cells", title: "Normalized: each fact stored once, linked by IDs",
+        rows: [
+          { label: "trains", cells: ["1 Red", "2 Blue", "3 Brown"] },
+          { label: "stations", cells: ["1 Broadway", "2 Yankee Stadium", "3 Main St"] },
+          { label: "train_stations", cells: [{ t: "(1,1)", s: "hl" }, { t: "(1,3)", s: "hl" }, { t: "(2,3)", s: "hl" }, { t: "(3,3)", s: "hl" }] },
+        ],
+      },
+      {
+        type: "cells", title: "Denormalized: everything for a key in one record",
+        caption: "Reads are local, but “Main St” is now duplicated in three places.",
+        rows: [
+          { label: "Red", cells: ["Broadway", { t: "Main St", s: "bad" }] },
+          { label: "Blue", cells: [{ t: "Main St", s: "bad" }] },
+          { label: "Brown", cells: [{ t: "Main St", s: "bad" }] },
+        ],
+      },
+    ],
+    points: [
+      { h: "Why not “SQL vs NoSQL”?", t: "Databases that speak SQL can work completely differently inside, and so can ones that don't. Talk about the **data model** (relational vs. non-relational) and the internals instead." },
+      { h: "Relational = normalized", t: "One table per entity, and many-to-many relations via a join table of **foreign keys**. Each fact is stored once, so updates are easy." },
+      { h: "The cost: poor locality", t: "A join touches several tables, which may sit in different places on disk or even on **different nodes**. That means slow distributed reads, and writes spanning tables may need **two-phase commit**." },
+      { h: "Non-relational = denormalized", t: "Store what you read together in one record: fast single-place reads. But duplicated data makes updates touch many records (possibly a distributed transaction), and you may fetch more than you need." },
+      { h: "How to choose", t: "Independent records (e.g. individual posts) suit non-relational. Naturally related data (books ↔ authors, trains ↔ stations) suits relational." },
+    ],
+    takeaway: "Choose relational when your data is full of relationships, and non-relational when records stand alone and you want locality.",
+    terms: [
+      ["Normalized data", "Each fact stored once; relationships via foreign keys."],
+      ["Denormalized data", "Related data duplicated into self-contained records for locality."],
+      ["Foreign key", "A column that references a row in another (or the same) table."],
+    ],
+    quiz: [
+      { q: "Main downside of normalized data in a distributed database?", a: ["Duplicate data", "Joins and multi-table writes may span nodes (slow reads, 2PC writes)", "No indexes", "No transactions"], c: 1, why: "Poor data locality." },
+      { q: "Main downside of denormalized data?", a: ["Slow single-record reads", "Updating a duplicated value must touch many records", "No key lookups", "Requires SQL"], c: 1, why: "The same fact lives in many places." },
+    ],
+  },
+  {
     n: 37, id: "ix88Zj0asjs", duration: 729,
     title: "What is Hadoop (HDFS)?",
     fullTitle: "WTF is Hadoop? | Systems Design Interview 0 to 1 with Ex-Google SWE",
