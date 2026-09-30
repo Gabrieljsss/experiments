@@ -14,6 +14,7 @@ A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/pl
 - Each bite takes about 4 minutes: **one big idea → a diagram → 3–5 key points → takeaway and vocabulary → a quick quiz**.
 - **Today** screen with a daily goal (1–3 bites), a streak and a 7-day activity strip.
 - **Review**: finished bites feed a spaced-repetition deck (Leitner boxes). Quiz questions you miss come back first.
+- **Search** (🔍 icon or press `/`): type a topic like `redis` to list every lesson that covers it, ranked, with highlighted snippets.
 - Light/dark themes, keyboard navigation (← →), mobile-first layout, and a "☰" one-page view of any lesson.
 - Progress is saved in your browser (`localStorage`). There's no account and no server.
 

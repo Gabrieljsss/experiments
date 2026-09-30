@@ -391,6 +391,143 @@
     show();
   }
 
+  /* ---------------- search ---------------- */
+  // Every piece of text in a lesson becomes a "passage" with a weight, so a hit in the
+  // title or vocabulary ranks above a passing mention in a diagram.
+  const SKIP_KEYS = new Set(["type", "kind", "id", "s", "style", "from", "to", "x", "y", "w", "h", "bend", "both", "noArrow", "noFlip", "colW", "rowH", "nodeW", "nodeH", "tones", "values", "c"]);
+  const plain = (s) => String(s).replace(/\*\*|`/g, "").replace(/\s+/g, " ").trim();
+  function collect(obj, out) {
+    if (obj == null) return;
+    if (typeof obj === "string") { if (obj.trim()) out.push(plain(obj)); return; }
+    if (Array.isArray(obj)) { obj.forEach((x) => collect(x, out)); return; }
+    if (typeof obj === "object") for (const [k, v] of Object.entries(obj)) if (!SKIP_KEYS.has(k)) collect(v, out);
+  }
+  let searchIndex = null;
+  function buildIndex() {
+    return LESSONS.map((l) => {
+      const P = [];
+      const add = (text, w, where) => text && P.push({ text: plain(text), low: plain(text).toLowerCase(), w, where });
+      add(l.title, 10, "Title");
+      (l.terms || []).forEach(([t, d]) => { add(t, 6, "Vocabulary"); add(`${plain(t)}: ${plain(d)}`, 2, "Vocabulary"); });
+      add(l.bigIdea, 4, "Big idea");
+      (l.points || []).forEach((p) => {
+        add(p.h, 3, "Key idea"); add(p.t, 1.5, "Key idea"); add(p.analogy, 1, "Analogy");
+        if (p.v) { const s = []; collect(p.v, s); s.forEach((t) => add(t, 1, "Diagram")); }
+      });
+      add(l.takeaway, 2, "Takeaway"); add(l.interview, 1.5, "Interview tip"); add(l.why, 1.5, "Big idea");
+      const vs = []; collect(l.visuals || (l.visual ? [l.visual] : []), vs); vs.forEach((t) => add(t, 1, "Diagram"));
+      // only the correct answer: wrong options are deliberately about other topics
+      (l.quiz || []).forEach((q) => { add(q.q, 1, "Quiz"); add(q.a[q.c], 0.5, "Quiz"); add(q.why, 0.5, "Quiz"); });
+      add(l.fullTitle, 2, "Video title");
+      return { l, P, all: P.map((p) => p.low).join(" \n ") };
+    });
+  }
+  const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  function runSearch(q) {
+    searchIndex = searchIndex || buildIndex();
+    const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!tokens.length) return { tokens, results: [] };
+    const phrase = tokens.join(" ");
+    const results = [];
+    for (const entry of searchIndex) {
+      if (!tokens.every((t) => entry.all.includes(t))) continue;
+      let score = 0;
+      const hits = [];
+      for (const p of entry.P) {
+        let pScore = 0;
+        for (const t of tokens) {
+          const n = p.low.split(t).length - 1;
+          pScore += n * p.w;
+        }
+        if (tokens.length > 1 && p.low.includes(phrase)) pScore += 3 * p.w;
+        if (pScore) { score += pScore; hits.push({ p, pScore }); }
+      }
+      // best passages to show, skipping the title (it's already displayed) and duplicates
+      const seen = new Set();
+      const snippets = hits
+        .filter((h) => h.p.where !== "Title" && h.p.where !== "Video title")
+        .sort((a, b) => b.pScore - a.pScore)
+        .filter((h) => !seen.has(h.p.text) && seen.add(h.p.text))
+        .slice(0, 2)
+        .map((h) => ({ where: h.p.where, html: snippet(h.p.text, tokens) }));
+      results.push({ l: entry.l, score, snippets });
+    }
+    results.sort((a, b) => b.score - a.score || a.l.n - b.l.n);
+    return { tokens, results };
+  }
+  function snippet(text, tokens) {
+    const low = text.toLowerCase();
+    let at = Math.min(...tokens.map((t) => { const i = low.indexOf(t); return i < 0 ? Infinity : i; }));
+    if (!isFinite(at)) at = 0;
+    let start = Math.max(0, at - 60), end = Math.min(text.length, at + 110);
+    if (start > 0) { const sp = text.indexOf(" ", start); start = sp > -1 && sp < at ? sp + 1 : start; }
+    if (end < text.length) { const sp = text.lastIndexOf(" ", end); end = sp > at ? sp : end; }
+    const cut = (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
+    return highlight(cut, tokens);
+  }
+  function highlight(text, tokens) {
+    // match against the escaped text, so escape the tokens the same way
+    const re = new RegExp(`(${tokens.map((t) => reEsc(esc(t))).sort((a, b) => b.length - a.length).join("|")})`, "gi");
+    return esc(text).replace(re, "<mark>$1</mark>");
+  }
+
+  const SUGGEST = ["Redis", "Kafka", "B-tree", "quorum", "consistent hashing", "change data capture", "two-phase commit", "LSM", "Raft", "CDN"];
+  function search(initial) {
+    setNav("search");
+    const q0 = initial || "";
+    view.innerHTML = `<h1>Search</h1>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Try “redis”, “quorum”, “b-tree”…" autocomplete="off" spellcheck="false" aria-label="Search lessons" value="${esc(q0)}">
+      </div>
+      <div id="results" aria-live="polite"></div>`;
+    const input = $("#q");
+    const out = $("#results");
+    const render = () => {
+      const q = input.value.trim();
+      history.replaceState(null, "", q ? `#/search/${encodeURIComponent(q)}` : "#/search");
+      if (!q) {
+        out.innerHTML = `<p class="muted" style="margin:14px 0 8px">Search every lesson's text, diagrams, vocabulary and quizzes. Popular topics:</p>
+          <div class="chips">${SUGGEST.map((s) => `<button class="chip" data-q="${esc(s)}">${esc(s)}</button>`).join("")}</div>`;
+        out.querySelectorAll("[data-q]").forEach((b) => b.addEventListener("click", () => { input.value = b.dataset.q; render(); input.focus(); }));
+        return;
+      }
+      const { results } = runSearch(q);
+      if (!results.length) {
+        out.innerHTML = `<div class="card" style="margin-top:14px"><p style="margin:0">No lessons mention <b>${esc(q)}</b>${LESSONS.length < 60 ? ` yet (${60 - LESSONS.length} lessons are still being written)` : ""}.</p></div>`;
+        return;
+      }
+      const next = nextLesson();
+      out.innerHTML = `<p class="muted" style="margin:14px 0 8px">${results.length} lesson${results.length > 1 ? "s" : ""} mention <b>${esc(q)}</b></p>
+        <ul class="results">${results.map(({ l, snippets }) => {
+          const m = moduleOf(l.n);
+          const st = S.done[l.n] ? "done" : next && next.n === l.n ? "next" : "";
+          return `<li><a href="#/lesson/${l.n}" class="result card">
+            <span class="num ${st}">${S.done[l.n] ? "✓" : l.n}</span>
+            <span class="t"><b>${highlight(l.title, q.toLowerCase().split(/\s+/).filter(Boolean))}</b>
+              <small class="muted">${m.icon} ${esc(m.title)} · Bite ${l.n}</small>
+              ${snippets.map((s) => `<span class="snip"><em>${esc(s.where)}</em> ${s.html}</span>`).join("")}
+            </span></a></li>`;
+        }).join("")}</ul>`;
+    };
+    input.addEventListener("input", render);
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { const first = out.querySelector("a.result"); if (first) location.hash = first.getAttribute("href"); }
+    });
+    render();
+    setTimeout(() => input.focus(), 0);
+  }
+
+  // "/" opens search from anywhere (unless you're typing in a field)
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (document.activeElement && document.activeElement.tagName) || "";
+    if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+    e.preventDefault();
+    if (location.hash.startsWith("#/search")) { const i = $("#q"); if (i) i.focus(); }
+    else location.hash = "#/search";
+  });
+
   /* ---------------- router ---------------- */
   let keyHandler = null;
   document.addEventListener("keydown", (e) => keyHandler && keyHandler(e));
@@ -401,8 +538,9 @@
     if (a === "lesson") lesson(+b, c);
     else if (a === "path") path();
     else if (a === "review") review();
+    else if (a === "search") search(b ? decodeURIComponent(h.slice("search/".length)) : "");
     else home();
-    view.focus({ preventScroll: true });
+    if (a !== "search") view.focus({ preventScroll: true });
     window.scrollTo({ top: 0 });
   }
   window.addEventListener("hashchange", route);
