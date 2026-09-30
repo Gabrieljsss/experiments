@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Systems Design Bites</title>
+  <meta name="description" content="Daily bite-sized visual study notes for the Systems Design 2.0 playlist by Jordan has no life.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b8def'/%3E%3Cpath d='M18 22h28M18 32h20M18 42h24' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h11" /></svg>
+      </span>
+      <span>Systems Design <b>Bites</b></span>
+    </a>
+    <nav class="nav">
+      <a href="#/" data-nav="home">Today</a>
+      <a href="#/path" data-nav="path">Path</a>
+      <a href="#/review" data-nav="review">Review</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="credit">
+    <p>
+      All lessons are summaries of
+      <a href="https://www.youtube.com/playlist?list=PLjTveVh7FakLdTmm42TMxbN8PvVn5g4KJ" target="_blank" rel="noopener">Systems Design 2.0</a>
+      by <a href="https://www.youtube.com/@jordanhasnolife5163" target="_blank" rel="noopener"><b>Jordan has no life</b></a>.
+      All credit for the ideas, teaching and examples goes to him. Watch the full videos and subscribe to his channel.
+    </p>
+    <p class="muted">An unofficial, non-commercial study companion. Not affiliated with or endorsed by the creator.</p>
+  </footer>
+
+  <script src="app/data/lessons-01-foundations.js"></script>
+  <script src="app/data/lessons-02-transactions.js"></script>
+  <script src="app/data/lessons-03-replication.js"></script>
+  <script src="app/data/lessons-04-distributed.js"></script>
+  <script src="app/data/lessons-05-databases.js"></script>
+  <script src="app/data/lessons-06-processing.js"></script>
+  <script src="app/data/lessons-07-special-indexes.js"></script>
+  <script src="app/data/lessons-08-infrastructure.js"></script>
+  <script src="app/visuals.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>

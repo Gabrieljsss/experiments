@@ -1,0 +1,368 @@
+{
+  "title": "Systems Design 2.0",
+  "channel": "Jordan has no life",
+  "channel_url": "https://www.youtube.com/channel/UCbvDQKzAJ5GwCjTrv4FWkxg",
+  "url": "https://www.youtube.com/playlist?list=PLjTveVh7FakLdTmm42TMxbN8PvVn5g4KJ",
+  "videos": [
+    {
+      "index": 1,
+      "id": "bwt09KXDH94",
+      "title": "What is Systems Design? | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 521
+    },
+    {
+      "index": 2,
+      "id": "LzNdvuj3a5M",
+      "title": "Database Indexes: What do they do? | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 645
+    },
+    {
+      "index": 3,
+      "id": "I1wQsY-Nh_k",
+      "title": "How do Hash Indexes work? | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 815
+    },
+    {
+      "index": 4,
+      "id": "Z2OaqmxiH20",
+      "title": "How do B-Tree Indexes work? | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 552
+    },
+    {
+      "index": 5,
+      "id": "ciGAVER_erw",
+      "title": "LSM Tree + SSTable Database Indexes | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 935
+    },
+    {
+      "index": 6,
+      "id": "QO7KTO-8RWM",
+      "title": "Indexes Concluded | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 422
+    },
+    {
+      "index": 7,
+      "id": "oGmxzUBCYtY",
+      "title": "Intro to ACID Database Transactions | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 469
+    },
+    {
+      "index": 8,
+      "id": "oS60pr8H1e0",
+      "title": "Read Committed Isolation | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 571
+    },
+    {
+      "index": 9,
+      "id": "Tgpa9TrxsfU",
+      "title": "Snapshot Isolation | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 428
+    },
+    {
+      "index": 10,
+      "id": "eym48yrObhY",
+      "title": "Write Skew and Phantom Writes | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 398
+    },
+    {
+      "index": 11,
+      "id": "kN_rOaNZBng",
+      "title": "Achieving ACID: Serial Execution | Systems Design Interview: 0 to 1 with Google Software Engineer",
+      "duration": 365
+    },
+    {
+      "index": 12,
+      "id": "gB7qazeSD3k",
+      "title": "Database Internals: Two Phase Locking | Systems Design Interview: 0 to 1 with Ex-Google SWE",
+      "duration": 631
+    },
+    {
+      "index": 13,
+      "id": "4TAKYRzm_dA",
+      "title": "Serializable Snapshot Isolation | Systems Design Interview: 0 to 1 with Ex-Google SWE",
+      "duration": 508
+    },
+    {
+      "index": 14,
+      "id": "Zt7rqtJ3uWA",
+      "title": "Column Oriented Storage (with Parquet!) | Systems Design Interview: 0 to 1 with Ex-Google SWE",
+      "duration": 783
+    },
+    {
+      "index": 15,
+      "id": "E7Gk8etqkgU",
+      "title": "Data Serialization Frameworks - You Should Be Using Them | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 694
+    },
+    {
+      "index": 16,
+      "id": "FIPCDRRBGz4",
+      "title": "Intro to Replication - Systems Design \"Need to Knows\" | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 686
+    },
+    {
+      "index": 17,
+      "id": "Y29yuEoBmjM",
+      "title": "Dealing with Stale Reads - Make Your App Better | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 623
+    },
+    {
+      "index": 18,
+      "id": "8h-a7TsXw28",
+      "title": "Single Leader Replication - how it works | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 729
+    },
+    {
+      "index": 19,
+      "id": "tffuvQtiTwY",
+      "title": "Multi Leader Replication - chaos | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 818
+    },
+    {
+      "index": 20,
+      "id": "sa4BJAFT8sU",
+      "title": "Dealing with Write Conflicts - What do you do? | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 684
+    },
+    {
+      "index": 21,
+      "id": "FG5Varj1Ows",
+      "title": "CRDTs - Stop Worrying About Write Conflicts | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 989
+    },
+    {
+      "index": 22,
+      "id": "Jy4Cm2WEZVg",
+      "title": "Leaderless Replication Introduction | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 651
+    },
+    {
+      "index": 23,
+      "id": "DAONthD50g0",
+      "title": "Quorums - Leaderless Replication Continued | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 650
+    },
+    {
+      "index": 24,
+      "id": "uvRcYQ8fdMs",
+      "title": "Replication Summarized in 9 Minutes | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 545
+    },
+    {
+      "index": 25,
+      "id": "Bt8ZMC_Yuys",
+      "title": "Introduction to Partitioning | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 655
+    },
+    {
+      "index": 26,
+      "id": "7DoT2sTGulc",
+      "title": "Two Phase Commit - Distributed Transactions | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 499
+    },
+    {
+      "index": 27,
+      "id": "z-xxLoJAfmY",
+      "title": "Consistent Hashing - Rebalancing Partitions | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 713
+    },
+    {
+      "index": 28,
+      "id": "C_XLEeWUq3M",
+      "title": "Linearizable Databases | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 764
+    },
+    {
+      "index": 29,
+      "id": "Al2JNJBGG30",
+      "title": "Distributed Consensus - Raft Leader Election | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 517
+    },
+    {
+      "index": 30,
+      "id": "FByzF2D_-KU",
+      "title": "Distributed Consensus - Raft Writes | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 654
+    },
+    {
+      "index": 31,
+      "id": "F06tdYgcz_A",
+      "title": "What is ZooKeeper? - Coordination Services | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 452
+    },
+    {
+      "index": 32,
+      "id": "YgTLqO54UOA",
+      "title": "SQL vs NoSQL - Who Wins? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 501
+    },
+    {
+      "index": 33,
+      "id": "x6-RN-_i5Xs",
+      "title": "MySQL vs PostgreSQL - Who Wins? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 544
+    },
+    {
+      "index": 34,
+      "id": "K-UXF8Y72X8",
+      "title": "What's VoltDb and Why Do We Care About It? | | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 494
+    },
+    {
+      "index": 35,
+      "id": "YIaYoxqpE7E",
+      "title": "Is Google Spanner the BEST Database? | | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 769
+    },
+    {
+      "index": 36,
+      "id": "6bxin9cZL_w",
+      "title": "MongoDB vs. Apache Cassandra - Who Wins? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 638
+    },
+    {
+      "index": 37,
+      "id": "ix88Zj0asjs",
+      "title": "WTF is Hadoop? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 729
+    },
+    {
+      "index": 38,
+      "id": "ouxCE6ViVpw",
+      "title": "What's HBase and how does it compare to Cassandra? | Systems Design 0 to 1 with Ex-Google SWE",
+      "duration": 825
+    },
+    {
+      "index": 39,
+      "id": "lHp7M078nHo",
+      "title": "WTF is MapReduce?? [Batch Processing] | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 559
+    },
+    {
+      "index": 40,
+      "id": "gqxbQTVgdkI",
+      "title": "The *Right* Way to do Batch Job Data Joins | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 662
+    },
+    {
+      "index": 41,
+      "id": "ZYTZ4JwRZqE",
+      "title": "You Should Be Using Spark, Not MapReduce | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 664
+    },
+    {
+      "index": 42,
+      "id": "7PjPhgCoT9c",
+      "title": "What's Stream Processing + When Do We Use It?  | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 803
+    },
+    {
+      "index": 43,
+      "id": "_5mu7lZz5X4",
+      "title": "Kafka vs. RabbitMQ - who wins and why? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 696
+    },
+    {
+      "index": 44,
+      "id": "oiPCC8G6ufg",
+      "title": "Stop messing up your stream processing joins! | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 722
+    },
+    {
+      "index": 45,
+      "id": "fYO5-6Owt0w",
+      "title": "Apache Flink - A Must-Have For Your Streams | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 657
+    },
+    {
+      "index": 46,
+      "id": "ty9DQhM32mM",
+      "title": "Search Indexes - Why do we need them? | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 434
+    },
+    {
+      "index": 47,
+      "id": "wmCWCVAl1Us",
+      "title": "What's ElasticSearch Used For? | Search Indexes | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 421
+    },
+    {
+      "index": 48,
+      "id": "fUpYLwzGtW0",
+      "title": "How are Time Series Databases SO FAST? | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 486
+    },
+    {
+      "index": 49,
+      "id": "Sdw_D-Gllac",
+      "title": "How are Graph Databases So Fast?? (Neo4j) | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 572
+    },
+    {
+      "index": 50,
+      "id": "9BewOp5Gaw8",
+      "title": "GeoSpatial Indexes - Why You Need Them | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 743
+    },
+    {
+      "index": 51,
+      "id": "crPoHnhkjFE",
+      "title": "Introduction to Distributed Caching - Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 655
+    },
+    {
+      "index": 52,
+      "id": "ULgXBImWVWQ",
+      "title": "Distributed Cache Writes: What You Have To Know | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 721
+    },
+    {
+      "index": 53,
+      "id": "4wEQ9_tkqvE",
+      "title": "Cache Evictions: Don't Mess Them Up | Systems Design Interview 0 to 1 with Ex-Google SWE",
+      "duration": 471
+    },
+    {
+      "index": 54,
+      "id": "Gyy1SiE8avE",
+      "title": "Redis vs. Memcached - Who Wins? | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 504
+    },
+    {
+      "index": 55,
+      "id": "h5YK640kwXY",
+      "title": "Content Delivery Networks - You Need Them | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 501
+    },
+    {
+      "index": 56,
+      "id": "0lO2zEHFoh4",
+      "title": "What Are Object Stores Used For? [S3] | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 486
+    },
+    {
+      "index": 57,
+      "id": "PERKHUJYotM",
+      "title": "Load Balancing - The Right Way To Do It | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 619
+    },
+    {
+      "index": 58,
+      "id": "hPSsPCNxta4",
+      "title": "TCP vs. UDP in 12 minutes | Systems Design Interview 0 to 1 With Ex-Google SWE",
+      "duration": 702
+    },
+    {
+      "index": 59,
+      "id": "fIwOd4PToAY",
+      "title": "Long Polling, Websockets, Server Sent Events - Who Wins? | Systems Design  with Ex-Google SWE",
+      "duration": 677
+    },
+    {
+      "index": 60,
+      "id": "kDHb99gTByU",
+      "title": "Monolith Vs. Microservices + Docker + Kubernetes | Systems Design Interview with Ex-Google SWE",
+      "duration": 622
+    }
+  ]
+}

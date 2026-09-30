@@ -1,0 +1,3 @@
+# Raw transcripts are the creator's content; regenerate locally with scripts/fetch_transcripts.py
+data/transcripts/
+__pycache__/
