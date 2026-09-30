@@ -206,7 +206,7 @@
       <p class="big-idea">${rich(l.bigIdea)}</p>
       ${l.why ? `<p class="muted">${rich(l.why)}</p>` : ""}
       <div class="video-credit" style="margin-top:auto">
-        <img src="${thumb(l.id)}" alt="" loading="lazy">
+        <img src="${thumb(l.id)}" alt="" loading="lazy" onerror="this.style.display='none'">
         <p>Based on <a href="${watchUrl(l)}" target="_blank" rel="noopener">“${esc(l.fullTitle || l.title)}”</a> by <a href="${CHANNEL}" target="_blank" rel="noopener">${CREATOR}</a> · ${fmtMin(l.duration)} video</p>
       </div>`,
     });
@@ -266,7 +266,7 @@
           <div class="stack">
             <div id="player" class="video-wrap" style="display:none"></div>
             <div class="video-credit">
-              <img src="${thumb(l.id)}" alt="" loading="lazy">
+              <img src="${thumb(l.id)}" alt="" loading="lazy" onerror="this.style.display='none'">
               <div><p style="margin-bottom:6px">Want the full explanation? Watch Jordan's original ${fmtMin(l.duration)} class, and leave him a like.</p>
               <div class="row"><button class="btn" id="play">▶ Watch here</button><a class="btn ghost" href="${watchUrl(l)}" target="_blank" rel="noopener">YouTube ↗</a></div></div>
             </div>
@@ -331,7 +331,7 @@
         <section class="card stack"><div class="takeaway"><b>Takeaway.</b> ${rich(l.takeaway)}</div>
           ${l.interview ? `<div class="analogy" style="margin:0"><b>In an interview:</b> ${rich(l.interview)}</div>` : ""}
           ${(l.terms || []).length ? `<dl class="terms">${l.terms.map(([t, d]) => `<div><dt>${rich(t)}</dt><dd>${rich(d)}</dd></div>`).join("")}</dl>` : ""}</section>
-        <section class="card"><div class="video-credit"><img src="${thumb(l.id)}" alt="" loading="lazy">
+        <section class="card"><div class="video-credit"><img src="${thumb(l.id)}" alt="" loading="lazy" onerror="this.style.display='none'">
           <p>Source: <a href="${watchUrl(l)}" target="_blank" rel="noopener">“${esc(l.fullTitle || l.title)}”</a> by <a href="${CHANNEL}" target="_blank" rel="noopener">${CREATOR}</a>. <a href="#/lesson/${l.n}">Take the quiz →</a></p></div></section>
       </article>`;
   }
