@@ -68,6 +68,8 @@ def passes_basic(l, allowed):
         return False
     if l.rent < config.MIN_RENT or l.rent > config.MAX_RENT:
         return False
+    if any(norm(w) in norm(l.title) for w in config.EXCLUDE_TITLE_WORDS):
+        return False
     if l.area < config.MIN_AREA_M2:
         return False
     if config.MAX_TOTAL is not None and l.total > config.MAX_TOTAL:

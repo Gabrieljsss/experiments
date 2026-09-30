@@ -12,6 +12,9 @@ MAX_RENT = 3700
 # Listings below this are almost always typos, daily/room rentals or bait.
 MIN_RENT = 800
 
+# Titles containing any of these words are dropped (short-term / room rentals).
+EXCLUDE_TITLE_WORDS = ["temporada", "diária", "diaria", "quarto em apartamento", "vaga em"]
+
 # Optional cap on rent + condomínio + IPTU. None disables it.
 MAX_TOTAL = None
 
