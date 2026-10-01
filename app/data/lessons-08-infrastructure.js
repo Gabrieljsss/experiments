@@ -241,6 +241,54 @@ window.LESSONS = (window.LESSONS || []).concat([
     ],
   },
   {
+    n: 59, id: "fIwOd4PToAY", duration: 677,
+    title: "Long Polling vs. WebSockets vs. Server-Sent Events",
+    fullTitle: "Long Polling, Websockets, Server Sent Events - Who Wins? | Systems Design  with Ex-Google SWE",
+    bigIdea: "To **push** real-time updates (chat, stock prices, notifications) without the client constantly asking, choose between **long polling**, **WebSockets** and **server-sent events (SSE)**.",
+    visuals: [
+      {
+        type: "table",
+        head: ["", "Long polling", "WebSockets", "Server-sent events"],
+        rows: [
+          ["Direction", "Server → client", "Both ways", "Server → client"],
+          ["Connection", "One request per message, then reopen", "Persistent", "Persistent"],
+          ["Overhead per message", "High: headers + new connection each time", "Low", "Low"],
+          ["Auto-reconnect", "n/a", "No, write it yourself", "Yes, built in"],
+          ["Good when", "Updates are rare; widest browser support", "Chat, games: frequent two-way traffic", "Feeds, tickers, notifications"],
+        ],
+      },
+      {
+        type: "lanes", title: "Thundering herd: everyone reconnects at once",
+        lanes: ["Client 1", "Client 2", "Client 3", "Server"],
+        rows: [
+          ["connected", "connected", "connected", "up"],
+          ["", "", "", { t: "goes down 💥", s: "bad" }],
+          [{ t: "reconnect", s: "bad" }, { t: "reconnect", s: "bad" }, { t: "reconnect", s: "bad" }, { t: "back up… overloaded", s: "bad" }],
+          [{ t: "retry +3s", s: "good" }, { t: "retry +1s", s: "good" }, { t: "retry +4s", s: "good" }, { t: "random jitter spreads load", s: "good" }],
+        ],
+      },
+    ],
+    points: [
+      { h: "Plain polling is wasteful", t: "Asking “anything new?” every few seconds burns client battery and server capacity, and most answers are empty, like checking your phone every 2 minutes for a reply that isn't coming." },
+      { h: "Long polling", t: "The server **holds** the request open until data exists, responds, and then the client opens a new one. It's one-directional and well supported, but each round trip pays for headers and a new connection. That's fine when updates are rare." },
+      { h: "WebSockets", t: "A **persistent, bidirectional** connection: headers once, then lightweight messages both ways. It ties up resources even when idle, and reconnecting after a drop is up to your client code." },
+      { h: "Server-sent events", t: "A **persistent, server → client** stream that **reconnects automatically**. The client sends data with normal HTTP requests." },
+      { h: "Beware the thundering herd", t: "If a server blips, every client auto-reconnects at the same instant and knocks it over again. Add **random jitter** to reconnect delays, the same trick Raft uses for election timeouts." },
+    ],
+    takeaway: "Persistent connections (WebSockets, SSE) are fast but cost resources when idle. Auto-reconnect is convenient but needs jitter. Long polling suits infrequent updates.",
+    interview: "Pick by direction and frequency: two-way chat → WebSockets; one-way feed → SSE; rare updates → long polling. Mention jittered reconnects.",
+    terms: [
+      ["Long polling", "The server holds a request open until it has data, then the client re-requests."],
+      ["WebSocket", "A persistent, full-duplex connection between client and server."],
+      ["Server-sent events (SSE)", "A persistent server-to-client stream with automatic reconnection."],
+      ["Thundering herd", "Many clients retrying at the same moment and overwhelming a recovering server."],
+    ],
+    quiz: [
+      { q: "A chat app needs frequent messages in both directions. Best fit?", a: ["Polling", "Long polling", "WebSockets", "Server-sent events"], c: 2, why: "Persistent and bidirectional." },
+      { q: "How do you prevent a thundering herd when clients auto-reconnect?", a: ["Reconnect immediately", "Add a random jitter to the reconnect delay", "Use UDP", "Disable reconnects"], c: 1, why: "It spreads the reconnects out over time." },
+    ],
+  },
+  {
     n: 60, id: "kDHb99gTByU", duration: 622,
     title: "Monolith vs. Microservices, Docker & Kubernetes",
     fullTitle: "Monolith Vs. Microservices + Docker + Kubernetes | Systems Design Interview with Ex-Google SWE",
