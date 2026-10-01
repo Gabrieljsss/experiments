@@ -9,7 +9,7 @@ writes a single newest-first list.
 - Neighborhoods: Flamengo, Botafogo, Copacabana, Humaitá, Catete, Glória, Lagoa,
   Jardim Botânico, Ipanema, Leblon, Gávea, Laranjeiras, Cosme Velho — plus
   Tijuca and Centro **only when within 800 m of a metro station**.
-- Rent ≤ R$ 3.700 (rent only; set `MAX_TOTAL` to also cap rent + condo + IPTU).
+- Total cost (rent + condomínio + IPTU) ≤ R$ 3.700 (`MAX_TOTAL`; `MAX_RENT` caps rent alone).
 - Usable area ≥ 40 m².
 - `DISLIKED`: listings to hide, keyed by the `Key` column of the report. Hiding
   one copy also hides the same apartment cross-posted on another portal.

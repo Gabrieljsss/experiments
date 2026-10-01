@@ -16,7 +16,7 @@ MIN_RENT = 800
 EXCLUDE_TITLE_WORDS = ["temporada", "diária", "diaria", "quarto em apartamento", "vaga em"]
 
 # Optional cap on rent + condomínio + IPTU. None disables it.
-MAX_TOTAL = None
+MAX_TOTAL = 3700
 
 # Minimum usable area in m².
 MIN_AREA_M2 = 40

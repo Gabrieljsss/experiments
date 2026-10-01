@@ -102,7 +102,9 @@ def render(entries, run_at, is_first_run, stats):
     lines = [
         f"# Rio apartments — {run_at:%Y-%m-%d %H:%M} UTC",
         "",
-        f"Rent ≤ {fmt_money(config.MAX_RENT)} · ≥ {config.MIN_AREA_M2} m² · "
+        f"Rent ≤ {fmt_money(config.MAX_RENT)} · "
+        + (f"Total ≤ {fmt_money(config.MAX_TOTAL)} · " if config.MAX_TOTAL is not None else "")
+        + f"≥ {config.MIN_AREA_M2} m² · "
         f"Tijuca/Centro only within {config.METRO_MAX_DISTANCE_M} m of a metro station. "
         f"Newest first (by original publication date when the site exposes it, otherwise by when this script first saw it).",
         "",
