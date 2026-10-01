@@ -51,7 +51,8 @@ def _parse(hit):
         title=s.get("shortRentDescription") or "",
         neighborhood=s.get("neighbourhood") or s.get("regionName") or "",
         rent=int(s["rent"]),
-        # QuintoAndar only exposes condo+IPTU combined.
+        # Search only gives condo+IPTU combined; enrich() splits it using the
+        # listing page. Until then this overestimates the condo fee.
         condo=int(s.get("iptuPlusCondominium") or 0),
         area=int(s.get("area") or 0),
         bedrooms=s.get("bedrooms"),
@@ -83,17 +84,26 @@ def fetch(http, neighborhoods, cfg, log):
 
 
 def enrich(http, listing, cached):
-    """Publication date from the listing page (cached per listing)."""
-    if not cached.get("detail_done"):
+    """Publication date and condo/IPTU split from the listing page (cached per listing)."""
+    # Retry the condo split on later runs: the page sometimes renders without it.
+    if not cached.get("detail_done") or cached.get("condo") is None:
         try:
             resp = http.get(listing.url)
         except Exception:
             return
-        if resp.status_code != 200:
+        # Rented/unlisted ads answer 404 but still render their data.
+        if resp.status_code not in (200, 404):
             return
         m = re.search(r'"firstPublicationDate":"([^"]+)"', resp.text)
         if m:
             cached["published_at"] = datetime.strptime(m.group(1), "%Y-%m-%dT%H:%M:%S.%f%z").isoformat()
+        # The page also embeds an empty placeholder house (all zeros); only
+        # trust the block whose rent matches this listing. IPTU is then the
+        # remainder of the combined condo+IPTU value from the search API.
+        m = re.search(r'"rentPrice":%d,"condoPrice":(\d+)' % listing.rent, resp.text)
+        cached["condo"] = [int(m.group(1)), max(listing.condo - int(m.group(1)), 0)] if m else None
         cached["detail_done"] = True
     if cached.get("published_at"):
         listing.published_at = datetime.fromisoformat(cached["published_at"])
+    if cached.get("condo"):
+        listing.condo, listing.iptu = cached["condo"]

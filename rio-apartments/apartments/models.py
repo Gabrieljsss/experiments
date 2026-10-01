@@ -35,7 +35,8 @@ class Listing:
 
     @property
     def total(self):
-        return self.rent + (self.condo or 0) + (self.iptu or 0)
+        """Monthly cost compared against MAX_TOTAL: rent + condomínio (no IPTU)."""
+        return self.rent + (self.condo or 0)
 
     @property
     def fingerprint(self):

@@ -6,7 +6,7 @@ filter on lives here so each run is reproducible from this file alone.
 
 # --- Price & size ---------------------------------------------------------
 
-# Maximum monthly rent (aluguel), in BRL. Condo fee and IPTU are NOT included.
+# Maximum monthly rent (aluguel) alone, in BRL.
 MAX_RENT = 3700
 
 # Listings below this are almost always typos, daily/room rentals or bait.
@@ -15,7 +15,7 @@ MIN_RENT = 800
 # Titles containing any of these words are dropped (short-term / room rentals).
 EXCLUDE_TITLE_WORDS = ["temporada", "diária", "diaria", "quarto em apartamento", "vaga em"]
 
-# Optional cap on rent + condomínio + IPTU. None disables it.
+# Optional cap on rent + condomínio (IPTU not included). None disables it.
 MAX_TOTAL = 3700
 
 # Minimum usable area in m².

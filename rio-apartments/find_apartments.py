@@ -72,9 +72,11 @@ def passes_basic(l, allowed):
         return False
     if l.area < config.MIN_AREA_M2:
         return False
-    if config.MAX_TOTAL is not None and l.total > config.MAX_TOTAL:
-        return False
     return True
+
+
+def passes_total(l):
+    return config.MAX_TOTAL is None or l.total <= config.MAX_TOTAL
 
 
 def group_duplicates(listings):
@@ -103,7 +105,7 @@ def render(entries, run_at, is_first_run, stats):
         f"# Rio apartments — {run_at:%Y-%m-%d %H:%M} UTC",
         "",
         f"Rent ≤ {fmt_money(config.MAX_RENT)} · "
-        + (f"Total ≤ {fmt_money(config.MAX_TOTAL)} · " if config.MAX_TOTAL is not None else "")
+        + (f"Rent + condomínio ≤ {fmt_money(config.MAX_TOTAL)} · " if config.MAX_TOTAL is not None else "")
         + f"≥ {config.MIN_AREA_M2} m² · "
         f"Tijuca/Centro only within {config.METRO_MAX_DISTANCE_M} m of a metro station. "
         f"Newest first (by original publication date when the site exposes it, otherwise by when this script first saw it).",
@@ -115,7 +117,7 @@ def render(entries, run_at, is_first_run, stats):
     if not is_first_run:
         lines += [f"**{len(new)} new since the last run** (marked 🆕).", ""]
     lines += [
-        "| # | Published | Bairro | Rent | Total | m² | Qts | Metro | Title | Links | Key |",
+        "| # | Published | Bairro | Rent | Rent + condo | m² | Qts | Metro | Title | Links | Key |",
         "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for i, e in enumerate(entries, 1):
@@ -130,7 +132,7 @@ def render(entries, run_at, is_first_run, stats):
         )
     lines += ["", "\\* no publication date on the site; date is when this script first saw the listing "
               "(? = already listed on the script's first run).",
-              "Total = rent + condomínio + IPTU as reported by the site (QuintoAndar reports condo+IPTU together).", ""]
+              "Total = rent + condomínio (IPTU not included; for QuintoAndar partner listings the site only gives condomínio + IPTU together).", ""]
     return "\n".join(lines)
 
 
@@ -165,6 +167,9 @@ def main():
             olx.enrich(http, l, cached)
         elif l.source == "quintoandar":
             quintoandar.enrich(http, l, cached)
+    # After enrich: QuintoAndar's condo fee is only known from the listing page.
+    listings = [l for l in listings if passes_total(l)]
+    log(f"{len(listings)} listings pass the total-cost filter")
 
     bootstrap = datetime.fromisoformat(state["runs"][0]) if state["runs"] else run_at
     entries = []
