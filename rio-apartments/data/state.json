@@ -12,6 +12,10 @@
    -22.9106673,
    -43.1711233
   ],
+  "20021180": [
+   -22.9154927,
+   -43.1779461
+  ],
   "20031007": [
    -22.9090323,
    -43.1771338
@@ -813,6 +817,11 @@
    "published_at": "2026-07-06T15:51:47+00:00",
    "zipcode": "20540003"
   },
+  "olx:1516093982": {
+   "detail_done": true,
+   "published_at": "2026-08-12T19:18:12+00:00",
+   "zipcode": "22250120"
+  },
   "olx:1516403851": {
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
@@ -1007,6 +1016,12 @@
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-08-06T21:59:48+00:00",
    "zipcode": "22011002"
+  },
+  "olx:1524424627": {
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-08-06T22:44:51+00:00",
+   "zipcode": "20520054"
   },
   "olx:1524553770": {
    "detail_done": true,
@@ -1586,6 +1601,11 @@
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-08T19:01:23+00:00",
    "zipcode": "20261130"
+  },
+  "olx:1533624163": {
+   "detail_done": true,
+   "published_at": "2026-09-08T20:19:49+00:00",
+   "zipcode": "20231048"
   },
   "olx:1533626518": {
    "detail_done": true,
@@ -2399,6 +2419,48 @@
    "published_at": "2026-09-30T02:50:06+00:00",
    "zipcode": "22221000"
   },
+  "olx:1540113902": {
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-09-30T03:21:26+00:00",
+   "zipcode": "20540006"
+  },
+  "olx:1540160694": {
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-09-30T10:05:10+00:00",
+   "zipcode": "20031040"
+  },
+  "olx:1540162911": {
+   "detail_done": true,
+   "published_at": "2026-09-30T10:24:58+00:00",
+   "zipcode": "22210050"
+  },
+  "olx:1540282286": {
+   "detail_done": true,
+   "published_at": "2026-09-30T16:28:12+00:00",
+   "zipcode": "22250040"
+  },
+  "olx:1540402851": {
+   "detail_done": true,
+   "published_at": "2026-09-30T22:25:50+00:00",
+   "zipcode": "20031007"
+  },
+  "olx:1540414971": {
+   "detail_done": true,
+   "published_at": "2026-09-30T23:32:48+00:00",
+   "zipcode": "22290190"
+  },
+  "olx:1540466619": {
+   "detail_done": true,
+   "published_at": "2026-10-01T05:15:25+00:00",
+   "zipcode": "22231160"
+  },
+  "olx:1540466785": {
+   "detail_done": true,
+   "published_at": "2026-10-01T05:19:39+00:00",
+   "zipcode": "20520050"
+  },
   "olx:996786761": {
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
@@ -2406,50 +2468,65 @@
    "zipcode": "20071000"
   },
   "quintoandar:100001510": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:100001574": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:100171819": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:111431714": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:112961399": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:118024056": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:120718068": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:121628751": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:122243295": {
+   "condo": null,
    "detail_done": true
   },
   "quintoandar:125279426": {
+   "condo": null,
    "detail_done": true
   },
   "quintoandar:127771337": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:128046855": {
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
+  },
+  "quintoandar:128452311": {
+   "condo": null,
+   "detail_done": true
   },
   "quintoandar:128683558": {
    "detail_done": true,
@@ -2460,165 +2537,361 @@
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129140727": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129269535": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129673595": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129674171": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129761412": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:129941236": {
+   "condo": null,
    "detail_done": true
   },
   "quintoandar:129973760": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
+  "quintoandar:131124838": {
+   "condo": null,
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00"
+  },
+  "quintoandar:131146155": {
+   "condo": null,
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00"
+  },
+  "quintoandar:892838147": {
+   "condo": null,
+   "detail_done": true
+  },
   "quintoandar:892839118": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2018-07-31T01:38:37+00:00"
   },
   "quintoandar:892871379": {
+   "condo": [
+    1636,
+    300
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2019-01-21T22:06:28+00:00"
   },
   "quintoandar:892990077": {
+   "condo": [
+    950,
+    184
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2019-12-06T14:05:53+00:00"
   },
+  "quintoandar:893031699": {
+   "condo": [
+    770,
+    135
+   ],
+   "detail_done": true,
+   "published_at": "2020-07-17T23:51:00+00:00"
+  },
   "quintoandar:893066253": {
+   "condo": [
+    780,
+    0
+   ],
    "detail_done": true,
    "published_at": "2020-05-04T18:43:52+00:00"
   },
   "quintoandar:893108399": {
+   "condo": [
+    638,
+    84
+   ],
    "detail_done": true,
-   "first_seen": "2026-09-30T02:57:31+00:00"
+   "first_seen": "2026-09-30T02:57:31+00:00",
+   "published_at": "2025-03-11T17:36:36+00:00"
   },
   "quintoandar:893180073": {
-   "detail_done": true
+   "condo": [
+    795,
+    126
+   ],
+   "detail_done": true,
+   "published_at": "2020-10-30T16:27:18+00:00"
+  },
+  "quintoandar:893259512": {
+   "condo": [
+    900,
+    75
+   ],
+   "detail_done": true,
+   "published_at": "2021-02-27T19:30:08+00:00"
   },
   "quintoandar:893278143": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2021-03-20T22:43:11+00:00"
   },
   "quintoandar:893294450": {
+   "condo": [
+    1450,
+    108
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2021-04-15T15:07:01+00:00"
   },
   "quintoandar:893320053": {
+   "condo": [
+    1370,
+    115
+   ],
    "detail_done": true,
    "published_at": "2025-08-10T02:41:30+00:00"
   },
   "quintoandar:893357596": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2021-07-01T03:04:19+00:00"
   },
   "quintoandar:893488541": {
+   "condo": [
+    1500,
+    84
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2021-12-06T03:26:22+00:00"
   },
+  "quintoandar:893518355": {
+   "condo": [
+    940,
+    142
+   ],
+   "detail_done": true,
+   "published_at": "2022-01-08T19:13:44+00:00"
+  },
   "quintoandar:893532256": {
+   "condo": [
+    706,
+    0
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2022-01-26T00:53:15+00:00"
   },
   "quintoandar:893556574": {
+   "condo": [
+    600,
+    198
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2022-02-18T00:59:02+00:00"
   },
   "quintoandar:893582905": {
+   "condo": [
+    1207,
+    122
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2022-03-17T00:29:08+00:00"
   },
+  "quintoandar:893711823": {
+   "condo": [
+    1220,
+    240
+   ],
+   "detail_done": true,
+   "published_at": "2022-07-10T22:56:54+00:00"
+  },
   "quintoandar:893740203": {
+   "condo": [
+    400,
+    0
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2022-08-12T01:19:42+00:00"
   },
   "quintoandar:893900211": {
+   "condo": [
+    700,
+    85
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-06-24T15:06:13+00:00"
   },
   "quintoandar:893953699": {
+   "condo": [
+    900,
+    92
+   ],
    "detail_done": true,
    "published_at": "2023-02-12T01:35:21+00:00"
   },
+  "quintoandar:893962677": {
+   "condo": [
+    980,
+    106
+   ],
+   "detail_done": true,
+   "published_at": "2023-03-06T22:50:23+00:00"
+  },
   "quintoandar:894082085": {
+   "condo": [
+    900,
+    117
+   ],
    "detail_done": true,
    "published_at": "2023-05-25T02:06:37+00:00"
   },
   "quintoandar:894131381": {
+   "condo": [
+    963,
+    110
+   ],
    "detail_done": true,
    "published_at": "2023-06-30T21:47:01+00:00"
   },
   "quintoandar:894258269": {
+   "condo": [
+    739,
+    88
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2023-09-30T19:59:37+00:00"
   },
   "quintoandar:894269068": {
+   "condo": [
+    810,
+    117
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2023-10-11T22:13:11+00:00"
   },
   "quintoandar:894358913": {
+   "condo": [
+    573,
+    76
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-01-15T16:01:17+00:00"
   },
   "quintoandar:894475084": {
+   "condo": [
+    1807,
+    190
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2024-04-27T02:47:58+00:00"
   },
+  "quintoandar:894482166": {
+   "condo": [
+    813,
+    71
+   ],
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2024-05-06T00:52:22+00:00"
+  },
+  "quintoandar:894561358": {
+   "condo": [
+    1100,
+    73
+   ],
+   "detail_done": true,
+   "published_at": "2024-07-31T00:58:55+00:00"
+  },
   "quintoandar:894566060": {
+   "condo": [
+    550,
+    0
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2024-08-01T13:48:12+00:00"
   },
   "quintoandar:894655818": {
+   "condo": [
+    1905,
+    244
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2024-10-22T22:06:14+00:00"
+   "published_at": "2025-02-17T14:34:21+00:00"
   },
   "quintoandar:894693984": {
+   "condo": [
+    907,
+    60
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2024-11-27T00:52:26+00:00"
   },
   "quintoandar:894724858": {
+   "condo": [
+    500,
+    83
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-01-10T01:13:49+00:00"
   },
   "quintoandar:894725710": {
+   "condo": [
+    1097,
+    126
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2025-03-19T21:18:38+00:00"
+   "published_at": "2024-12-31T02:12:45+00:00"
+  },
+  "quintoandar:894733227": {
+   "condo": [
+    460,
+    194
+   ],
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2025-01-16T21:58:28+00:00"
   },
   "quintoandar:894743126": {
+   "condo": [
+    300,
+    38
+   ],
    "detail_done": true,
    "published_at": "2025-01-19T01:27:04+00:00"
   },
@@ -2637,26 +2910,46 @@
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "quintoandar:895033138": {
+   "condo": [
+    940,
+    125
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-08-05T03:14:37+00:00"
   },
   "quintoandar:895037425": {
+   "condo": [
+    980,
+    150
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-07-30T23:02:27+00:00"
   },
   "quintoandar:895079162": {
+   "condo": [
+    1100,
+    143
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-08-28T21:49:15+00:00"
   },
   "quintoandar:895079174": {
+   "condo": [
+    900,
+    167
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-08-28T21:46:02+00:00"
   },
   "quintoandar:895141473": {
+   "condo": [
+    994,
+    124
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-10-11T02:24:45+00:00"
@@ -2667,16 +2960,28 @@
    "published_at": "2026-08-25T16:17:41+00:00"
   },
   "quintoandar:895158690": {
+   "condo": [
+    1200,
+    245
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-08-25T13:11:36+00:00"
   },
   "quintoandar:895190688": {
+   "condo": [
+    821,
+    81
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2025-11-17T03:13:49+00:00"
   },
   "quintoandar:895196835": {
+   "condo": [
+    669,
+    0
+   ],
    "detail_done": true,
    "published_at": "2025-11-24T16:40:04+00:00"
   },
@@ -2685,31 +2990,53 @@
    "published_at": "2025-11-29T12:22:24+00:00"
   },
   "quintoandar:895254996": {
+   "condo": [
+    560,
+    100
+   ],
    "detail_done": true,
-   "published_at": "2026-01-23T22:41:04+00:00"
+   "published_at": "2026-09-29T12:48:20+00:00"
   },
   "quintoandar:895315104": {
-   "detail_done": true
+   "condo": [
+    230,
+    130
+   ],
+   "detail_done": true,
+   "published_at": "2026-02-28T02:30:08+00:00"
   },
   "quintoandar:895347349": {
+   "condo": [
+    1600,
+    384
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-03-23T12:45:04+00:00"
   },
   "quintoandar:895360216": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-06-18T19:40:37+00:00"
   },
   "quintoandar:895379806": {
+   "condo": [
+    1900,
+    748
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-04-10T20:18:08+00:00"
   },
   "quintoandar:895398722": {
+   "condo": [
+    1700,
+    180
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2026-06-03T19:30:40+00:00"
+   "published_at": "2026-04-30T00:16:38+00:00"
   },
   "quintoandar:895438041": {
    "detail_done": true,
@@ -2717,9 +3044,30 @@
    "published_at": "2026-05-16T04:06:18+00:00"
   },
   "quintoandar:895446063": {
+   "condo": [
+    2500,
+    375
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-05-19T00:23:07+00:00"
+  },
+  "quintoandar:895510718": {
+   "condo": [
+    650,
+    0
+   ],
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-08-03T02:27:53+00:00"
+  },
+  "quintoandar:895538375": {
+   "condo": [
+    650,
+    0
+   ],
+   "detail_done": true,
+   "published_at": "2026-06-24T18:50:55+00:00"
   },
   "quintoandar:895597093": {
    "detail_done": true,
@@ -2727,37 +3075,83 @@
    "published_at": "2026-07-20T17:48:42+00:00"
   },
   "quintoandar:895601023": {
+   "condo": [
+    1100,
+    139
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-07-28T02:26:58+00:00"
   },
+  "quintoandar:895624160": {
+   "condo": [
+    881,
+    131
+   ],
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-10-01T12:43:10+00:00"
+  },
+  "quintoandar:895637598": {
+   "condo": [
+    840,
+    67
+   ],
+   "detail_done": true,
+   "first_seen": "2026-10-01T12:48:03+00:00",
+   "published_at": "2026-09-09T17:22:03+00:00"
+  },
   "quintoandar:895645931": {
+   "condo": [
+    620,
+    100
+   ],
    "detail_done": true,
    "published_at": "2026-08-13T16:32:11+00:00"
   },
   "quintoandar:895648719": {
+   "condo": [
+    0,
+    80
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-08-13T04:01:21+00:00"
   },
   "quintoandar:895654669": {
+   "condo": [
+    979,
+    57
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-10T22:20:12+00:00"
   },
   "quintoandar:895657238": {
+   "condo": [
+    1000,
+    767
+   ],
    "detail_done": true,
    "published_at": "2026-08-21T12:14:36+00:00"
   },
   "quintoandar:895661909": {
+   "condo": [
+    800,
+    100
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-08-21T20:48:06+00:00"
   },
   "quintoandar:895665119": {
+   "condo": [
+    730,
+    171
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2026-08-19T23:30:45+00:00"
+   "published_at": "2026-09-30T14:53:28+00:00"
   },
   "quintoandar:895670675": {
    "detail_done": true,
@@ -2770,21 +3164,37 @@
    "published_at": "2026-08-29T01:22:08+00:00"
   },
   "quintoandar:895684641": {
+   "condo": [
+    916,
+    112
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2026-08-26T20:26:33+00:00"
+   "published_at": "2026-09-22T13:36:55+00:00"
   },
   "quintoandar:895685261": {
+   "condo": [
+    900,
+    157
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-10T21:51:16+00:00"
   },
   "quintoandar:895698341": {
+   "condo": [
+    1106,
+    132
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2026-09-02T22:57:22+00:00"
+   "published_at": "2026-09-02T22:57:23+00:00"
   },
   "quintoandar:895698451": {
+   "condo": [
+    551,
+    73
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-05T00:28:53+00:00"
@@ -2794,13 +3204,21 @@
    "published_at": "2026-09-29T17:26:07+00:00"
   },
   "quintoandar:895724227": {
+   "condo": [
+    1400,
+    111
+   ],
    "detail_done": true,
    "published_at": "2026-09-14T22:36:12+00:00"
   },
   "quintoandar:895726906": {
+   "condo": [
+    750,
+    100
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
-   "published_at": "2026-09-16T05:15:20+00:00"
+   "published_at": "2026-09-16T05:15:19+00:00"
   },
   "quintoandar:895730662": {
    "detail_done": true,
@@ -2813,14 +3231,34 @@
    "published_at": "2026-09-26T19:28:20+00:00"
   },
   "quintoandar:895735468": {
+   "condo": [
+    620,
+    135
+   ],
    "detail_done": true,
    "published_at": "2026-09-24T21:40:17+00:00"
   },
+  "quintoandar:895739667": {
+   "condo": [
+    700,
+    20
+   ],
+   "detail_done": true,
+   "published_at": "2026-09-23T00:29:05+00:00"
+  },
   "quintoandar:895740872": {
+   "condo": [
+    800,
+    82
+   ],
    "detail_done": true,
    "published_at": "2026-09-29T00:25:29+00:00"
   },
   "quintoandar:895741510": {
+   "condo": [
+    0,
+    0
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-22T21:36:40+00:00"
@@ -2836,20 +3274,33 @@
    "published_at": "2026-09-29T20:57:36+00:00"
   },
   "quintoandar:895742732": {
+   "condo": null,
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-23T22:06:57+00:00"
   },
   "quintoandar:895744669": {
+   "condo": [
+    600,
+    8
+   ],
    "detail_done": true,
    "published_at": "2026-09-26T02:54:27+00:00"
   },
   "quintoandar:895744985": {
+   "condo": [
+    1014,
+    0
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-26T18:45:55+00:00"
   },
   "quintoandar:895745483": {
+   "condo": [
+    1350,
+    124
+   ],
    "detail_done": true,
    "first_seen": "2026-09-30T02:57:31+00:00",
    "published_at": "2026-09-26T01:25:12+00:00"
@@ -2860,8 +3311,20 @@
    "published_at": "2026-09-25T21:42:39+00:00"
   },
   "quintoandar:895747502": {
+   "condo": [
+    2000,
+    292
+   ],
    "detail_done": true,
    "published_at": "2026-09-26T01:58:44+00:00"
+  },
+  "quintoandar:895752233": {
+   "condo": [
+    500,
+    0
+   ],
+   "detail_done": true,
+   "published_at": "2026-10-01T01:45:27+00:00"
   },
   "quintoandar:895754049": {
    "detail_done": true,
@@ -3158,6 +3621,7 @@
   "zap:2897292478": {
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
+  "zap:2897411112": {},
   "zap:2897547406": {
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
@@ -3220,6 +3684,9 @@
   },
   "zap:2903589012": {
    "first_seen": "2026-09-30T02:57:31+00:00"
+  },
+  "zap:2903848693": {
+   "first_seen": "2026-10-01T12:48:03+00:00"
   },
   "zap:2903980903": {
    "first_seen": "2026-09-30T02:57:31+00:00"
@@ -3413,6 +3880,7 @@
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
   "zap:2910588617": {},
+  "zap:2910703525": {},
   "zap:2910718840": {
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
@@ -3687,6 +4155,7 @@
   "zap:2914995770": {
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
+  "zap:2915001267": {},
   "zap:2915002242": {
    "first_seen": "2026-09-30T02:57:31+00:00"
   },
@@ -3704,10 +4173,15 @@
   },
   "zap:2915075987": {
    "first_seen": "2026-09-30T03:14:22+00:00"
-  }
+  },
+  "zap:2915123590": {},
+  "zap:2915222373": {},
+  "zap:2915241441": {},
+  "zap:2915273855": {}
  },
  "runs": [
   "2026-09-30T02:57:31+00:00",
-  "2026-09-30T03:14:22+00:00"
+  "2026-09-30T03:14:22+00:00",
+  "2026-10-01T12:48:03+00:00"
  ]
 }
