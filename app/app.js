@@ -34,7 +34,9 @@
   const blank = () => ({ done: {}, quiz: {}, days: [], goal: 1, cards: {} });
   let S;
   try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "{}")); } catch { S = blank(); }
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ } };
+  const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ } };
+  // every change is saved locally first, then (if signed in) pushed to the cloud shortly after
+  const save = () => { persist(); if (window.Sync) window.Sync.queuePush(); };
 
   const iso = (d = new Date()) => {
     const z = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
@@ -78,6 +80,7 @@
     const c = S.cards[key] || { box: 0 };
     c.box = ok ? Math.min(c.box + 1, GAPS.length - 1) : 0;
     c.due = addDays(today(), ok ? GAPS[c.box] : 1);
+    c.at = Date.now(); // newest grade wins when devices sync
     S.cards[key] = c;
     if (!S.days.includes(today())) S.days.push(today());
     save();
@@ -149,7 +152,9 @@
           <p class="muted" style="margin:12px 0 0;font-size:.9rem">Each bite takes about 4 minutes: one big idea, a diagram, a few key points and a quick quiz. Finished bites add cards to your spaced-repetition review.</p>
         </section>
         ${continueModule()}
+        ${window.Sync && window.Sync.enabled ? `<section class="card" id="syncCard"></section>` : ""}
       </div>`;
+    renderSyncCard();
 
     view.querySelectorAll("[data-goal]").forEach((b) => b.addEventListener("click", () => { S.goal = +b.dataset.goal; save(); home(); }));
   }
@@ -294,7 +299,7 @@
         answers[s.i] = k;
         const key = `${l.n}:q${s.i}`;
         S.quiz[key] = k === s.q.c;
-        if (k !== s.q.c) S.cards[key] = { box: 0, due: today() };
+        if (k !== s.q.c) S.cards[key] = { box: 0, due: today(), at: Date.now() };
         save();
         render();
       }));
@@ -389,6 +394,69 @@
       if (e.key === " " || e.key === "Enter") { const c = $("#card"); if (c) { e.preventDefault(); c.click(); } }
     };
     show();
+  }
+
+  /* ---------------- cloud sync ---------------- */
+  let syncStatus = { state: "loading" };
+  let syncNote = "";
+  function ago(d) {
+    if (!d) return "";
+    const s = Math.round((Date.now() - d.getTime()) / 1000);
+    return s < 10 ? "just now" : s < 60 ? `${s}s ago` : s < 3600 ? `${Math.round(s / 60)} min ago` : d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }
+  function renderSyncCard() {
+    const el = document.getElementById("syncCard");
+    if (!el) return;
+    const st = syncStatus;
+    let body;
+    if (st.state === "loading") {
+      body = `<p class="muted" style="margin:0">Checking sync…</p>`;
+    } else if (st.state === "signed-out" || (st.state === "error" && !st.email)) {
+      body = `<p class="muted" style="margin:0 0 10px">Sign in with your email to keep your progress, streak and review cards in sync across your phone and laptop.</p>
+        <form class="sync-form" id="syncForm">
+          <input type="email" id="syncEmail" required placeholder="you@example.com" autocomplete="email" aria-label="Email address">
+          <button class="btn primary" type="submit">Email me a link</button>
+        </form>
+        ${syncNote ? `<p class="sync-note">${syncNote}</p>` : ""}
+        ${st.state === "error" ? `<p class="sync-note bad">${esc(st.error || "Sync error")}</p>` : ""}`;
+    } else {
+      const line = st.state === "syncing" ? "Syncing…" : st.state === "error" ? `<span class="bad">Sync failed: ${esc(st.error || "")}</span>` : `Synced ${ago(st.lastSync)}`;
+      body = `<div class="row" style="flex-wrap:nowrap"><span class="sync-dot ${st.state}"></span>
+          <span style="flex:1;min-width:0;overflow-wrap:anywhere"><b>${esc(st.email || "")}</b><br><small class="muted">${line}</small></span></div>
+        <div class="row" style="margin-top:12px"><button class="btn" id="syncNow">Sync now</button><button class="btn ghost" id="syncOut">Sign out</button></div>`;
+    }
+    el.innerHTML = `<h3 style="margin:0 0 8px">☁️ Sync across devices</h3>${body}`;
+    const form = document.getElementById("syncForm");
+    if (form) form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("syncEmail").value.trim();
+      const btn = form.querySelector("button");
+      btn.disabled = true; btn.textContent = "Sending…";
+      try {
+        await window.Sync.signIn(email);
+        syncNote = `✉️ Check <b>${esc(email)}</b> and open the link <b>on this device, in this browser</b>.`;
+      } catch (err) {
+        syncNote = `<span class="bad">${esc(err.message || "Couldn't send the link")}</span>`;
+      }
+      renderSyncCard();
+    });
+    const now = document.getElementById("syncNow");
+    if (now) now.addEventListener("click", () => window.Sync.syncNow());
+    const out = document.getElementById("syncOut");
+    if (out) out.addEventListener("click", async () => { await window.Sync.signOut(); syncNote = "Signed out. Your progress stays on this device."; toast("Signed out"); });
+  }
+  if (window.Sync && window.Sync.enabled) {
+    window.Sync.init({
+      getState: () => S,
+      applyMerged: (merged) => {
+        const before = JSON.stringify(S);
+        S = Object.assign(blank(), merged);
+        persist();
+        // refresh overview screens if the merge brought in anything new (never interrupt a lesson)
+        if (JSON.stringify(S) !== before && /^#?\/?(path)?$/.test(location.hash)) route();
+      },
+      onStatus: (st) => { syncStatus = st; renderSyncCard(); },
+    });
   }
 
   /* ---------------- search ---------------- */

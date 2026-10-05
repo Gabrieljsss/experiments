@@ -388,3 +388,16 @@ main { width: 100%; max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; f
 .snip { font-size: .92rem; color: var(--muted); line-height: 1.5; }
 .snip em { font-style: normal; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); margin-right: 4px; }
 mark { background: color-mix(in srgb, var(--warn) 32%, transparent); color: var(--text); border-radius: 3px; padding: 0 2px; }
+
+/* ---------- cloud sync ---------- */
+.sync-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.sync-form input {
+  flex: 1 1 200px; font: inherit; color: var(--text); background: var(--surface);
+  border: 1.5px solid var(--border); border-radius: 12px; padding: 10px 12px;
+}
+.sync-form input:focus { outline: none; border-color: var(--accent); }
+.sync-note { margin: 10px 0 0; font-size: .92rem; }
+.bad { color: var(--bad); }
+.sync-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--good); flex: none; }
+.sync-dot.syncing { background: var(--warn); }
+.sync-dot.error { background: var(--bad); }
