@@ -1,0 +1,2886 @@
+[
+ {
+  "key": "quintoandar:131146155",
+  "keys": [
+   "quintoandar:131146155"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1500,
+  "total": 2301,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Santana",
+  "published": "2026-10-01T12:48:03+00:00",
+  "published_known": false,
+  "new": true,
+  "metro": [
+   "Central do Brasil",
+   422
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/131146155"
+  }
+ },
+ {
+  "key": "quintoandar:131124838",
+  "keys": [
+   "quintoandar:131124838"
+  ],
+  "neighborhood": "Centro",
+  "rent": 3300,
+  "total": 3300,
+  "area": 55,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Avenida Treze de Maio",
+  "published": "2026-10-01T12:48:03+00:00",
+  "published_known": false,
+  "new": true,
+  "metro": [
+   "Carioca",
+   122
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/131124838"
+  }
+ },
+ {
+  "key": "quintoandar:895624160",
+  "keys": [
+   "quintoandar:895624160"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2350,
+  "total": 3231,
+  "area": 66,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Engenheiro Ernani Cotrin",
+  "published": "2026-10-01T12:43:10+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Uruguai",
+   729
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895624160"
+  }
+ },
+ {
+  "key": "olx:1540160694",
+  "keys": [
+   "olx:1540160694"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2000,
+  "total": 2800,
+  "area": 50,
+  "bedrooms": 1,
+  "title": "APARTAMENTO MOBILIADO",
+  "address": "",
+  "published": "2026-09-30T10:05:10+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Cinelândia",
+   226
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-mobiliado-1540160694"
+  }
+ },
+ {
+  "key": "zap:2915075987",
+  "keys": [
+   "olx:1540113902",
+   "zap:2915075987"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3438,
+  "area": 53,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Barão de Mesquita",
+  "published": "2026-09-30T02:39:25.904000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   452
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-locacao-tijuca-zona-norte-rio-de-janeiro-rj-1540113902",
+   "zap": "https://www.zapimoveis.com.br/imovel/2915075987/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2915075987/"
+  }
+ },
+ {
+  "key": "zap:2914940745",
+  "keys": [
+   "olx:1539852926",
+   "zap:2914940745"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1500,
+  "total": 2215,
+  "area": 46,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Frei Caneca",
+  "published": "2026-09-29T11:44:51.980000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   672
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-aluguel-1-quarto-centro-rio-de-janeiro-rj-1539852926",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914940745/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914940745/"
+  }
+ },
+ {
+  "key": "zap:2914914008",
+  "keys": [
+   "zap:2914914008"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2700,
+  "total": 3480,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Princesa Isabel 254",
+  "published": "2026-09-29T08:11:37.105000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cardeal Arcoverde",
+   722
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2914914008/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914914008/"
+  }
+ },
+ {
+  "key": "zap:2914864198",
+  "keys": [
+   "olx:1539764342",
+   "zap:2914864198"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 1950,
+  "total": 2550,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "",
+  "address": "",
+  "published": "2026-09-29T00:00:36.503000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   345
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/locacao-apto-1q-tijuca-excelente-localizacao-metro-1539764342",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914864198/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914864198/"
+  }
+ },
+ {
+  "key": "zap:2914831372",
+  "keys": [
+   "olx:1539696585",
+   "zap:2914831372"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2500,
+  "total": 3517,
+  "area": 49,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Presidente Antônio Carlos 54",
+  "published": "2026-09-28T21:03:49.409000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   435
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-49m-reformado-e-semi-mobiliado-no-centro-cinelandia-1539696585",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914831372/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914831372/"
+  }
+ },
+ {
+  "key": "zap:2914820475",
+  "keys": [
+   "olx:1539681152",
+   "zap:2914820475"
+  ],
+  "neighborhood": "Botafogo",
+  "rent": 2900,
+  "total": 3639,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Voluntários da Pátria 329",
+  "published": "2026-09-28T20:05:31.089000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Botafogo",
+   956
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/botafogo-rua-voluntarios-da-patria-apartamento-de-40m-com-sala-cozinha-e-banheiro-1539681152",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914820475/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914820475/"
+  }
+ },
+ {
+  "key": "zap:2914816340",
+  "keys": [
+   "olx:1539658956",
+   "zap:2914816340"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2600,
+  "total": 3320,
+  "area": 110,
+  "bedrooms": 3,
+  "title": "",
+  "address": "Rua Uruguai 397",
+  "published": "2026-09-28T18:42:43.335000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   326
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/oportunidade-apartamento-excelente-1539658956",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914816340/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914816340/"
+  }
+ },
+ {
+  "key": "zap:2914812965",
+  "keys": [
+   "olx:1539654044",
+   "zap:2914812965"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2600,
+  "total": 3470,
+  "area": 80,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 590",
+  "published": "2026-09-28T18:22:15.115000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   84
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-tem-80-metros-quadrados-com-2-quartos-em-tijuca-rio-de-janeiro-rj-1539654044",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914812965/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914812965/"
+  }
+ },
+ {
+  "key": "zap:2914805680",
+  "keys": [
+   "olx:1539648488",
+   "zap:2914805680"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2600,
+  "total": 3260,
+  "area": 47,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Barão de Mesquita 28",
+  "published": "2026-09-28T17:47:58.147000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   713
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/alugo-apartamento-mobiliado-1-quarto-vista-livre-47m--tijuca-maracana-1539648488",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914805680/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914805680/"
+  }
+ },
+ {
+  "key": "zap:2914293866",
+  "keys": [
+   "olx:1538890732",
+   "zap:2914293866"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2100,
+  "total": 2650,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Doutor Satamini 286",
+  "published": "2026-09-25T19:29:26.139000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   422
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-aluguel-tijuca-1538890732",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914293866/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914293866/"
+  }
+ },
+ {
+  "key": "zap:2914264550",
+  "keys": [
+   "olx:1538807991",
+   "zap:2914264550"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2000,
+  "total": 3250,
+  "area": 72,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 291",
+  "published": "2026-09-25T16:28:59.814000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   193
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-de-72-m-para-locacao-na-tijuca-1538807991",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914264550/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914264550/"
+  }
+ },
+ {
+  "key": "zap:2914225339",
+  "keys": [
+   "olx:1538740814",
+   "zap:2914225339"
+  ],
+  "neighborhood": "Catete",
+  "rent": 2800,
+  "total": 3560,
+  "area": 70,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Bento Lisboa 9",
+  "published": "2026-09-25T11:51:46.063000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Catete",
+   294
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-locacao-catete-rio-de-janeiro-rj-1538740814",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914225339/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914225339/"
+  }
+ },
+ {
+  "key": "zap:2914134456",
+  "keys": [
+   "olx:1538650275",
+   "zap:2914134456"
+  ],
+  "neighborhood": "Cosme Velho",
+  "rent": 2900,
+  "total": 3450,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Filinto de Almeida 57",
+  "published": "2026-09-25T00:26:37.817000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Botafogo",
+   1773
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/cosme-velho-junto-ao-bondinho-do-corcovado-rua-filinto-de-almeida-n-57-apto-102-cosme-v-1538650275",
+   "zap": "https://www.zapimoveis.com.br/imovel/2914134456/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2914134456/"
+  }
+ },
+ {
+  "key": "zap:2913924143",
+  "keys": [
+   "olx:1538310872",
+   "zap:2913924143"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2200,
+  "total": 3062,
+  "area": 75,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Barão de Mesquita",
+  "published": "2026-09-24T01:40:32.567000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   400
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-em-tijuca-rio-de-janeiro-1538310872",
+   "zap": "https://www.zapimoveis.com.br/imovel/2913924143/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2913924143/"
+  }
+ },
+ {
+  "key": "zap:2913781543",
+  "keys": [
+   "olx:1538086579",
+   "zap:2913781543"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 3000,
+  "total": 3590,
+  "area": 41,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Conde de Bonfim 10",
+  "published": "2026-09-23T08:32:47.003000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   254
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/excelente-oportunidade-residencial-na-tijuca-ao-lado-do-largo-da-segunda-feira-tijuca-1538086579",
+   "zap": "https://www.zapimoveis.com.br/imovel/2913781543/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2913781543/"
+  }
+ },
+ {
+  "key": "zap:2913755764",
+  "keys": [
+   "zap:2913755764"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2300,
+  "total": 3390,
+  "area": 42,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Nossa Senhora de Copacabana",
+  "published": "2026-09-23T05:42:50.388000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2913755764/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2913755764/"
+  }
+ },
+ {
+  "key": "zap:2913712159",
+  "keys": [
+   "olx:1538032429",
+   "zap:2913712159"
+  ],
+  "neighborhood": "Flamengo",
+  "rent": 2650,
+  "total": 3650,
+  "area": 52,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Paissandu 44",
+  "published": "2026-09-23T01:02:51.290000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Largo do Machado",
+   346
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-alugar-rua-paissandu-flamengo-zona-norte-rio-de-janeiro-r-2-650-1538032429",
+   "zap": "https://www.zapimoveis.com.br/imovel/2913712159/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2913712159/"
+  }
+ },
+ {
+  "key": "zap:2913682420",
+  "keys": [
+   "olx:1537979647",
+   "zap:2913682420"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1500,
+  "total": 2300,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua de Santana 75",
+  "published": "2026-09-22T21:36:58.523000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   425
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-padrao-residencial-centro-1537979647",
+   "zap": "https://www.zapimoveis.com.br/imovel/2913682420/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2913682420/"
+  }
+ },
+ {
+  "key": "quintoandar:895741510",
+  "keys": [
+   "quintoandar:895741510"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2999,
+  "total": 2999,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "Apartamento para aluguel na Tijuca, 2 quartos.",
+  "address": "Rua Barão de Itapagipe",
+  "published": "2026-09-22T21:36:40+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   591
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895741510"
+  }
+ },
+ {
+  "key": "olx:1535623120",
+  "keys": [
+   "olx:1535623120"
+  ],
+  "neighborhood": "Centro",
+  "rent": 3000,
+  "total": 3630,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "bairro da gloria sala quarto reformado,Rio de Janeiro - RJ",
+  "address": "",
+  "published": "2026-09-22T17:16:20+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   561
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/bairro-da-gloria-sala-quarto-reformado-rio-de-janeiro-rj-1535623120"
+  }
+ },
+ {
+  "key": "quintoandar:895684641",
+  "keys": [
+   "quintoandar:895684641"
+  ],
+  "neighborhood": "Glória",
+  "rent": 1900,
+  "total": 2816,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "Alugar apartamento na Glória, 1 quarto, aceita pets.",
+  "address": "Avenida Augusto Severo",
+  "published": "2026-09-22T13:36:55+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Glória",
+   514
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895684641"
+  }
+ },
+ {
+  "key": "zap:2912912549",
+  "keys": [
+   "olx:1536877071",
+   "zap:2912912549"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2200,
+  "total": 3232,
+  "area": 80,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Avenida Beira-Mar",
+  "published": "2026-09-19T04:49:40.259000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   467
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-com-2-dormitorios-para-alugar-80-m-por-r-2-200-mes-centro-rio-de-janeir-1536877071",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912912549/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912912549/"
+  }
+ },
+ {
+  "key": "zap:2912855824",
+  "keys": [
+   "olx:1536803772",
+   "zap:2912855824"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 3100,
+  "total": 3557,
+  "area": 118,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua General Marcelino 99",
+  "published": "2026-09-18T21:50:41.584000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   404
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/tijuca-118-m-2-quartos-muito-espaco-silencio-e-vista-arborizada-1536803772",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912855824/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912855824/"
+  }
+ },
+ {
+  "key": "zap:2912689890",
+  "keys": [
+   "olx:1536570963",
+   "zap:2912689890"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3388,
+  "area": 53,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Barão de Mesquita",
+  "published": "2026-09-18T03:02:45.067000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   452
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/tijuca-rua-barao-de-mesquita-apartamento-quarto-e-sala-proximo-a-praca-saens-pe-a-1536570963",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912689890/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912689890/"
+  }
+ },
+ {
+  "key": "olx:1536420740",
+  "keys": [
+   "olx:1536420740"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1800,
+  "total": 2520,
+  "area": 67,
+  "bedrooms": 2,
+  "title": "Apartamento 2 Quartos para Alugar no Grajaú - Ótima localização",
+  "address": "",
+  "published": "2026-09-17T16:28:00+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   430
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-2-quartos-para-alugar-no-grajau-otima-localizacao-1536420740"
+  }
+ },
+ {
+  "key": "zap:2912448417",
+  "keys": [
+   "olx:1536201507",
+   "zap:2912448417"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1600,
+  "total": 2332,
+  "area": 60,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Frei Caneca 148",
+  "published": "2026-09-16T21:52:43.909000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Praça Onze",
+   689
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-duplex-com-loja-comercial-e-sobreloja-residencial-acesso-interno-1536201507",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912448417/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912448417/"
+  }
+ },
+ {
+  "key": "zap:2912420202",
+  "keys": [
+   "olx:1536177833",
+   "zap:2912420202"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3405,
+  "area": 49,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Carlos de Vasconcelos 33",
+  "published": "2026-09-16T19:53:51.496000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   490
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/que-tal-morar-aqui-apartamento-tipo-casa-muito-aconchegante-e-acolhedor-espaco-da-varan-1536177833",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912420202/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912420202/"
+  }
+ },
+ {
+  "key": "zap:2912280350",
+  "keys": [
+   "olx:1535924257",
+   "zap:2912280350"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3215,
+  "area": 47,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Alzira Brandão 72",
+  "published": "2026-09-16T07:32:09.569000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   371
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-padrao-residencial-tijuca-1535924257",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912280350/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912280350/"
+  }
+ },
+ {
+  "key": "zap:2912112431",
+  "keys": [
+   "olx:1535672285",
+   "zap:2912112431"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1700,
+  "total": 2430,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Evaristo da Veiga",
+  "published": "2026-09-15T16:10:25.283000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   226
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-com-40-metros-quadrados-com-1-quarto-em-centro-rio-de-janeiro-rj-1535672285",
+   "zap": "https://www.zapimoveis.com.br/imovel/2912112431/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2912112431/"
+  }
+ },
+ {
+  "key": "zap:2911988226",
+  "keys": [
+   "zap:2911988226"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2700,
+  "total": 3390,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Nossa Senhora de Copacabana 308",
+  "published": "2026-09-15T01:31:10.029000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cardeal Arcoverde",
+   352
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2911988226/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2911988226/"
+  }
+ },
+ {
+  "key": "zap:2911935457",
+  "keys": [
+   "olx:1535451781",
+   "zap:2911935457"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1300,
+  "total": 1750,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Calógeras 12",
+  "published": "2026-09-14T20:19:56.260000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   243
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-com-1-suite-sala-com-varanda-bem-localizado-1535451781",
+   "zap": "https://www.zapimoveis.com.br/imovel/2911935457/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2911935457/"
+  }
+ },
+ {
+  "key": "zap:2911361017",
+  "keys": [
+   "olx:1534614745",
+   "zap:2911361017"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2300,
+  "total": 2941,
+  "area": 67,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Pinto Guedes 92",
+  "published": "2026-09-11T18:54:36+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   773
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-possui-67-metros-quadrados-com-2-quartos-em-tijuca-rio-de-janeiro-1534614745",
+   "zap": "https://www.zapimoveis.com.br/imovel/2911361017/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2911361017/"
+  }
+ },
+ {
+  "key": "zap:2911189647",
+  "keys": [
+   "zap:2911189647"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2500,
+  "total": 3420,
+  "area": 44,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Figueiredo Magalhães 741",
+  "published": "2026-09-11T00:09:45.627000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Siqueira Campos",
+   209
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2911189647/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2911189647/"
+  }
+ },
+ {
+  "key": "quintoandar:895654669",
+  "keys": [
+   "quintoandar:895654669"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1750,
+  "total": 2729,
+  "area": 51,
+  "bedrooms": 1,
+  "title": "Apartamento para alugar com 1 quarto.",
+  "address": "Rua Santana",
+  "published": "2026-09-10T22:20:12+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   622
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895654669"
+  }
+ },
+ {
+  "key": "zap:2910990718",
+  "keys": [
+   "olx:1534055782",
+   "zap:2910990718"
+  ],
+  "neighborhood": "Centro",
+  "rent": 850,
+  "total": 1520,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Praça da República",
+  "published": "2026-09-10T01:09:35+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   558
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/conjugado-centro-1534055782",
+   "zap": "https://www.zapimoveis.com.br/imovel/2910990718/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2910990718/"
+  }
+ },
+ {
+  "key": "quintoandar:895637598",
+  "keys": [
+   "quintoandar:895637598"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2300,
+  "total": 3140,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Santo Afonso",
+  "published": "2026-09-09T17:22:03+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Saens Peña",
+   129
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895637598"
+  }
+ },
+ {
+  "key": "zap:2910862120",
+  "keys": [
+   "olx:1533802888",
+   "zap:2910862120"
+  ],
+  "neighborhood": "Catete",
+  "rent": 2650,
+  "total": 3292,
+  "area": 50,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Pedro Américo",
+  "published": "2026-09-09T12:49:33.421000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/excelente-apartamento-no-catete-conforto-praticidade-e-excelente-localizacao-1533802888",
+   "zap": "https://www.zapimoveis.com.br/imovel/2910862120/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2910862120/"
+  }
+ },
+ {
+  "key": "olx:1533573550",
+  "keys": [
+   "olx:1533573550"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2100,
+  "total": 3050,
+  "area": 48,
+  "bedrooms": 1,
+  "title": "Alugo apto na rua Valparaiso em ótimo estado!!",
+  "address": "",
+  "published": "2026-09-08T19:01:23+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   384
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/alugo-apto-na-rua-valparaiso-em-otimo-estado-1533573550"
+  }
+ },
+ {
+  "key": "zap:2910004152",
+  "keys": [
+   "zap:2910004152"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2700,
+  "total": 3515,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Barata Ribeiro",
+  "published": "2026-09-04T20:30:55.739000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2910004152/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2910004152/"
+  }
+ },
+ {
+  "key": "zap:2910002318",
+  "keys": [
+   "olx:1532584737",
+   "zap:2910002318"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2300,
+  "total": 3010,
+  "area": 52,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Barão de Pirassinunga 26",
+  "published": "2026-09-04T19:49:06.660000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   458
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-1-quarto-tijuca-rio-de-janeiro-rj-1532584737",
+   "zap": "https://www.zapimoveis.com.br/imovel/2910002318/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2910002318/"
+  }
+ },
+ {
+  "key": "zap:2909707017",
+  "keys": [
+   "zap:2909707017"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2200,
+  "total": 2845,
+  "area": 40,
+  "bedrooms": null,
+  "title": "",
+  "address": "Rua Pompeu Loureiro 56",
+  "published": "2026-09-03T13:42:55.537000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cantagalo",
+   282
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2909707017/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2909707017/"
+  }
+ },
+ {
+  "key": "zap:2909527641",
+  "keys": [
+   "olx:1531890696",
+   "zap:2909527641"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3670,
+  "area": 58,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 177",
+  "published": "2026-09-02T18:39:50.412000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   519
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-com-58-metros-quadrados-com-2-quartos-em-tijuca-rio-de-janeiro-rj-1531890696",
+   "zap": "https://www.zapimoveis.com.br/imovel/2909527641/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2909527641/"
+  }
+ },
+ {
+  "key": "zap:2909532420",
+  "keys": [
+   "olx:1531889321",
+   "zap:2909532420"
+  ],
+  "neighborhood": "Flamengo",
+  "rent": 2300,
+  "total": 2983,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Machado de Assis 31",
+  "published": "2026-09-02T18:33:39.183000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Largo do Machado",
+   241
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/otimo-quarto-e-sala-no-flamengo-1531889321",
+   "zap": "https://www.zapimoveis.com.br/imovel/2909532420/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2909532420/"
+  }
+ },
+ {
+  "key": "olx:1514666521",
+  "keys": [
+   "olx:1514666521"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3300,
+  "area": 58,
+  "bedrooms": 1,
+  "title": "Apartamento Tijuca Leia.",
+  "address": "",
+  "published": "2026-09-02T14:21:20+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   713
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-tijuca-leia-1514666521"
+  }
+ },
+ {
+  "key": "zap:2909046858",
+  "keys": [
+   "olx:1531176132",
+   "zap:2909046858"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1600,
+  "total": 2300,
+  "area": 44,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Frei Caneca 148",
+  "published": "2026-08-31T18:17:58.209000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Praça Onze",
+   689
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-alugar-com-44-metros-quadrados-com-1-quarto-no-centro-rio-de-janeiro-1531176132",
+   "zap": "https://www.zapimoveis.com.br/imovel/2909046858/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2909046858/"
+  }
+ },
+ {
+  "key": "zap:2908984763",
+  "keys": [
+   "olx:1531034503",
+   "zap:2908984763"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1200,
+  "total": 1200,
+  "area": 60,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Marcílio Dias 12",
+  "published": "2026-08-31T12:47:07.710000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   335
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-com-60-metros-quadrados-com-1-quarto-em-centro-rio-de-janeiro-rj-1531034503",
+   "zap": "https://www.zapimoveis.com.br/imovel/2908984763/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2908984763/"
+  }
+ },
+ {
+  "key": "zap:2908545521",
+  "keys": [
+   "olx:1530452537",
+   "zap:2908545521"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2550,
+  "total": 3230,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Gomes Freire 558",
+  "published": "2026-08-29T04:49:26.085000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   738
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/ap-flat-totalmente-mobiliado-na-gomes-freire-c-condominio-com-total-infra-1530452537",
+   "zap": "https://www.zapimoveis.com.br/imovel/2908545521/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2908545521/"
+  }
+ },
+ {
+  "key": "zap:2908194924",
+  "keys": [
+   "olx:1529975773",
+   "zap:2908194924"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2200,
+  "total": 3516,
+  "area": 80,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Haddock Lobo 181",
+  "published": "2026-08-27T16:46:25.294000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   525
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apto-claro-e-arejado-juntinho-a-rua-do-matoso-1529975773",
+   "zap": "https://www.zapimoveis.com.br/imovel/2908194924/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2908194924/"
+  }
+ },
+ {
+  "key": "zap:2907951814",
+  "keys": [
+   "olx:1529604385",
+   "zap:2907951814"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2000,
+  "total": 2820,
+  "area": 53,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Frei Caneca 148",
+  "published": "2026-08-26T13:27:08+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Praça Onze",
+   689
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-com-53-m-com-1-quarto-em-centro-rio-de-janeiro-rj-1529604385",
+   "zap": "https://www.zapimoveis.com.br/imovel/2907951814/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2907951814/"
+  }
+ },
+ {
+  "key": "olx:1529094566",
+  "keys": [
+   "olx:1529094566"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2750,
+  "total": 3650,
+  "area": 50,
+  "bedrooms": 1,
+  "title": "Locação Apto Mobiliado Próxino ao Metrô São Francisco Xavier na Tijuca",
+  "address": "",
+  "published": "2026-08-24T19:23:30+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   412
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/locacao-apto-mobiliado-proxino-ao-metro-sao-francisco-xavier-na-tijuca-1529094566"
+  }
+ },
+ {
+  "key": "olx:1528690305",
+  "keys": [
+   "olx:1528690305",
+   "olx:1532313554",
+   "olx:1534931923"
+  ],
+  "neighborhood": "Centro",
+  "rent": 3000,
+  "total": 3000,
+  "area": 80,
+  "bedrooms": 2,
+  "title": "Alugo um apartamento no centro do Rio",
+  "address": "",
+  "published": "2026-08-22T22:55:12+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   719
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/alugo-um-apartamento-no-centro-do-rio-1534931923"
+  }
+ },
+ {
+  "key": "zap:2907141300",
+  "keys": [
+   "olx:1528522532",
+   "zap:2907141300"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2250,
+  "total": 2900,
+  "area": 46,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Doutor Satamini 95",
+  "published": "2026-08-22T09:02:56.200000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   255
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-c-205-rua-dr-satamini-95-tijuca-1528522532",
+   "zap": "https://www.zapimoveis.com.br/imovel/2907141300/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2907141300/"
+  }
+ },
+ {
+  "key": "quintoandar:895661909",
+  "keys": [
+   "quintoandar:895661909"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2000,
+  "total": 2800,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "Apartamento de 1 quarto na Tijuca para alugar.",
+  "address": "Rua do Bispo",
+  "published": "2026-08-21T20:48:06+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   475
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895661909"
+  }
+ },
+ {
+  "key": "zap:2906936732",
+  "keys": [
+   "zap:2906936732"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2800,
+  "total": 3394,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Nossa Senhora de Copacabana 836",
+  "published": "2026-08-21T11:56:34.419000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cantagalo",
+   597
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2906936732/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2906936732/"
+  }
+ },
+ {
+  "key": "zap:2906768516",
+  "keys": [
+   "olx:1528039771",
+   "zap:2906768516"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 1800,
+  "total": 3300,
+  "area": 75,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Barão de Itapagipe 64",
+  "published": "2026-08-20T16:16:26.264000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Estácio",
+   723
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-de-2-quartos-com-vaga-na-divisa-entre-tijuca-e-rio-comprido-1528039771",
+   "zap": "https://www.zapimoveis.com.br/imovel/2906768516/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2906768516/"
+  }
+ },
+ {
+  "key": "zap:2906427216",
+  "keys": [
+   "olx:1527597038",
+   "zap:2906427216"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2600,
+  "total": 3200,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Gomes Freire 558",
+  "published": "2026-08-19T04:10:12.721000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   738
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-com-1-quarto-para-alugar-piscina-sauna-e-churrasqueira-40-m-por-r-3-287-me-1527597038",
+   "zap": "https://www.zapimoveis.com.br/imovel/2906427216/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2906427216/"
+  }
+ },
+ {
+  "key": "zap:2906319244",
+  "keys": [
+   "olx:1527457888",
+   "zap:2906319244"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3509,
+  "area": 56,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Barão de Mesquita 365",
+  "published": "2026-08-18T18:43:33.834000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   349
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-possui-56-metros-quadrados-com-2-quartos-em-tijuca-rio-de-janeiro-1527457888",
+   "zap": "https://www.zapimoveis.com.br/imovel/2906319244/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2906319244/"
+  }
+ },
+ {
+  "key": "zap:2905608581",
+  "keys": [
+   "olx:1526511352",
+   "zap:2905608581"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2750,
+  "total": 3533,
+  "area": 83,
+  "bedrooms": 3,
+  "title": "",
+  "address": "Rua General Roca",
+  "published": "2026-08-15T06:17:53.654000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   117
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-padrao-residencial-tijuca-1526511352",
+   "zap": "https://www.zapimoveis.com.br/imovel/2905608581/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2905608581/"
+  }
+ },
+ {
+  "key": "zap:2905294722",
+  "keys": [
+   "olx:1526175033",
+   "zap:2905294722"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3675,
+  "area": 64,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 177",
+  "published": "2026-08-13T20:27:00.002000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   519
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/alugo-2-quartos-1-suite-tijuca-condominio-torre-de-marfim-1526175033",
+   "zap": "https://www.zapimoveis.com.br/imovel/2905294722/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2905294722/"
+  }
+ },
+ {
+  "key": "zap:2905202298",
+  "keys": [
+   "olx:1525986383",
+   "zap:2905202298"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2500,
+  "total": 3700,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Gomes Freire 558",
+  "published": "2026-08-13T11:45:45.776000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   738
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/condominio-executivo-5-estrelas-lapa-centro-rj-1525986383",
+   "zap": "https://www.zapimoveis.com.br/imovel/2905202298/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2905202298/"
+  }
+ },
+ {
+  "key": "quintoandar:895648719",
+  "keys": [
+   "quintoandar:895648719"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 3000,
+  "total": 3000,
+  "area": 58,
+  "bedrooms": 2,
+  "title": "Alugar apartamento com 2 quartos.",
+  "address": "Rua Campos Sales",
+  "published": "2026-08-13T04:01:21+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   302
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895648719"
+  }
+ },
+ {
+  "key": "olx:1492671232",
+  "keys": [
+   "olx:1492671232"
+  ],
+  "neighborhood": "Glória",
+  "rent": 2000,
+  "total": 2951,
+  "area": 50,
+  "bedrooms": 1,
+  "title": "quarto e sala fundos av augusto severo",
+  "address": "",
+  "published": "2026-08-12T11:58:35+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/quarto-e-sala-fundos-av-augusto-severo-1492671232"
+  }
+ },
+ {
+  "key": "zap:2904938200",
+  "keys": [
+   "olx:1525665855",
+   "zap:2904938200"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1000,
+  "total": 1662,
+  "area": 55,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Evaristo da Veiga",
+  "published": "2026-08-12T07:26:45.053000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   226
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-padrao-em-rio-de-janeiro-1525665855",
+   "zap": "https://www.zapimoveis.com.br/imovel/2904938200/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2904938200/"
+  }
+ },
+ {
+  "key": "zap:2903848693",
+  "keys": [
+   "olx:1524424627",
+   "zap:2903848693"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2600,
+  "total": 3400,
+  "area": 55,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Conde de Bonfim 149",
+  "published": "2026-08-06T22:38:46.229000+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "São Francisco Xavier",
+   586
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/tijuca-rua-conde-de-bonfim-n-149-quarto-e-sala-com-garagem-1524424627",
+   "zap": "https://www.zapimoveis.com.br/imovel/2903848693/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2903848693/"
+  }
+ },
+ {
+  "key": "quintoandar:895510718",
+  "keys": [
+   "quintoandar:895510718"
+  ],
+  "neighborhood": "Catete",
+  "rent": 2400,
+  "total": 3050,
+  "area": 50,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Pedro Américo",
+  "published": "2026-08-03T02:27:53+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Catete",
+   268
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895510718"
+  }
+ },
+ {
+  "key": "zap:2899505032",
+  "keys": [
+   "olx:1518871237",
+   "zap:2899505032"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2499,
+  "total": 3700,
+  "area": 94,
+  "bedrooms": 4,
+  "title": "",
+  "address": "Rua Doutor Satamini 291",
+  "published": "2026-07-17T16:37:40.071000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   420
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/oportunidade-na-tijuca-apartamento-amplo-com-4-quartos-rio-de-janeiro-rj-1518871237",
+   "zap": "https://www.zapimoveis.com.br/imovel/2899505032/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2899505032/"
+  }
+ },
+ {
+  "key": "zap:2899096086",
+  "keys": [
+   "olx:1518326188",
+   "zap:2899096086"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2300,
+  "total": 2972,
+  "area": 81,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim",
+  "published": "2026-07-15T15:57:28.408000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   541
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-locacao-2-quartos-tijuca-rio-de-janeiro-rj-1518326188",
+   "zap": "https://www.zapimoveis.com.br/imovel/2899096086/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2899096086/"
+  }
+ },
+ {
+  "key": "zap:2898880592",
+  "keys": [
+   "olx:1518087004",
+   "zap:2898880592"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3580,
+  "area": 70,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Almirante Cochrane 255",
+  "published": "2026-07-14T18:22:49.202000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   255
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/lindo-apartamento-2-quartos-amplos-vaga-de-garagem-1518087004",
+   "zap": "https://www.zapimoveis.com.br/imovel/2898880592/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2898880592/"
+  }
+ },
+ {
+  "key": "zap:2898665933",
+  "keys": [
+   "zap:2898665933"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 2800,
+  "total": 3607,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Duvivier 96",
+  "published": "2026-07-13T18:14:46.719000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cardeal Arcoverde",
+   293
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2898665933/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2898665933/"
+  }
+ },
+ {
+  "key": "zap:2898054481",
+  "keys": [
+   "olx:1517040010",
+   "zap:2898054481"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2200,
+  "total": 3300,
+  "area": 85,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Henry Ford",
+  "published": "2026-07-10T06:48:55.735000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   454
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-na-tijuca-rj-localizado-na-rua-henry-ford-1517040010",
+   "zap": "https://www.zapimoveis.com.br/imovel/2898054481/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2898054481/"
+  }
+ },
+ {
+  "key": "zap:2896484884",
+  "keys": [
+   "olx:1514978269",
+   "zap:2896484884"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2600,
+  "total": 3474,
+  "area": 64,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 601",
+  "published": "2026-07-02T14:30:09.826000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   40
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-2-quartos-proximo-a-estacao-de-metro-uruguai-1514978269",
+   "zap": "https://www.zapimoveis.com.br/imovel/2896484884/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2896484884/"
+  }
+ },
+ {
+  "key": "zap:2895638582",
+  "keys": [
+   "zap:2895638582"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1500,
+  "total": 2250,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua de Santana",
+  "published": "2026-06-28T16:07:20.709000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   526
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2895638582/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2895638582/"
+  }
+ },
+ {
+  "key": "zap:2895438897",
+  "keys": [
+   "olx:1513702539",
+   "zap:2895438897"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1300,
+  "total": 3528,
+  "area": 68,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Avenida Rio Branco 185",
+  "published": "2026-06-27T08:25:43.572000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   173
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-locacao-centro-rio-de-janeiro-rj-1513702539",
+   "zap": "https://www.zapimoveis.com.br/imovel/2895438897/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2895438897/"
+  }
+ },
+ {
+  "key": "zap:2894740773",
+  "keys": [
+   "olx:1512875656",
+   "zap:2894740773"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 3700,
+  "total": 3700,
+  "area": 90,
+  "bedrooms": 3,
+  "title": "",
+  "address": "Rua General Roca 819",
+  "published": "2026-06-24T01:13:50.334000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   172
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-locacao-tijuca-rio-de-janeiro-rj-1512875656",
+   "zap": "https://www.zapimoveis.com.br/imovel/2894740773/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2894740773/"
+  }
+ },
+ {
+  "key": "zap:2893796744",
+  "keys": [
+   "olx:1511703583",
+   "zap:2893796744"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 1900,
+  "total": 2570,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Henry Ford 27",
+  "published": "2026-06-19T05:43:43.781000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   472
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/adm-masset-ha-quase-70-anos-no-mercado-aluga-1511703583",
+   "zap": "https://www.zapimoveis.com.br/imovel/2893796744/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2893796744/"
+  }
+ },
+ {
+  "key": "zap:2892449490",
+  "keys": [
+   "olx:1510012473",
+   "zap:2892449490"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3700,
+  "area": 94,
+  "bedrooms": 4,
+  "title": "",
+  "address": "Rua Doutor Satamini 293",
+  "published": "2026-06-12T18:54:28.886000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   421
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-com-94-metros-quadrados-com-4-quartos-em-tijuca-rio-de-janeiro-rj-1510012473",
+   "zap": "https://www.zapimoveis.com.br/imovel/2892449490/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2892449490/"
+  }
+ },
+ {
+  "key": "zap:2890608694",
+  "keys": [
+   "olx:1507699771",
+   "zap:2890608694"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3400,
+  "area": 70,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua José Higino 91",
+  "published": "2026-06-03T19:25:45.763000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   537
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-de-2-quartos-na-tijuca-1507699771",
+   "zap": "https://www.zapimoveis.com.br/imovel/2890608694/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2890608694/"
+  }
+ },
+ {
+  "key": "zap:2889487689",
+  "keys": [
+   "olx:1506228357",
+   "zap:2889487689"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2800,
+  "total": 3390,
+  "area": 77,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua de Santana 124",
+  "published": "2026-05-29T04:02:12.015000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   535
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-de-3-quartos-para-alugar-no-centro-rio-de-janeiro-77m-1506228357",
+   "zap": "https://www.zapimoveis.com.br/imovel/2889487689/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2889487689/"
+  }
+ },
+ {
+  "key": "zap:2887818885",
+  "keys": [
+   "olx:1503681281",
+   "zap:2887818885"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 3380,
+  "area": 68,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Conde de Bonfim 601",
+  "published": "2026-05-20T17:45:59.283000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   40
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/rua-conde-de-bonfim-n-601-apartamento-de-2-quartos-silencioso-com-vista-1503681281",
+   "zap": "https://www.zapimoveis.com.br/imovel/2887818885/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2887818885/"
+  }
+ },
+ {
+  "key": "zap:2886656684",
+  "keys": [
+   "olx:1502078018",
+   "zap:2886656684"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2500,
+  "total": 3670,
+  "area": 78,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua de Santana",
+  "published": "2026-05-14T18:19:55.396000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   526
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-tem-78-metros-quadrados-com-2-quartos-em-centro-rio-de-janeiro-rj-1502078018",
+   "zap": "https://www.zapimoveis.com.br/imovel/2886656684/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2886656684/"
+  }
+ },
+ {
+  "key": "zap:2886443392",
+  "keys": [
+   "olx:1501813119",
+   "zap:2886443392"
+  ],
+  "neighborhood": "Flamengo",
+  "rent": 2700,
+  "total": 3435,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Silveira Martins 147",
+  "published": "2026-05-13T20:39:07.981000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Catete",
+   152
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/excelente-apartamento-para-locacao-rua-silveira-martins-147-1501813119",
+   "zap": "https://www.zapimoveis.com.br/imovel/2886443392/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2886443392/"
+  }
+ },
+ {
+  "key": "zap:2885174590",
+  "keys": [
+   "olx:1500104745",
+   "zap:2885174590"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1100,
+  "total": 1819,
+  "area": 53,
+  "bedrooms": null,
+  "title": "",
+  "address": "Rua Alcântara Machado 36",
+  "published": "2026-05-07T14:26:35.971000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguaiana",
+   392
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-53-m2-centro-rio-de-janeiro-rj-1500104745",
+   "zap": "https://www.zapimoveis.com.br/imovel/2885174590/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2885174590/"
+  }
+ },
+ {
+  "key": "zap:2883572034",
+  "keys": [
+   "olx:1498067147",
+   "zap:2883572034"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2500,
+  "total": 3621,
+  "area": 89,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua de Santana 73",
+  "published": "2026-04-29T22:06:58.422000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   417
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imagine-acordar-no-coracao-do-rio-e-sentir-a-cidade-pulsando-ao-seu-redor-este-imovel-enc-1498067147",
+   "zap": "https://www.zapimoveis.com.br/imovel/2883572034/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2883572034/"
+  }
+ },
+ {
+  "key": "zap:2880995876",
+  "keys": [
+   "olx:1494356679",
+   "zap:2880995876"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2700,
+  "total": 3402,
+  "area": 62,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Valparaíso 40",
+  "published": "2026-04-15T17:48:01.059000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   518
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/excelente-apartamento-para-alugar-com-dois-quarto-sala-cozinha-e-banheiro-e-vaga-de-gara-1494356679",
+   "zap": "https://www.zapimoveis.com.br/imovel/2880995876/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2880995876/"
+  }
+ },
+ {
+  "key": "zap:2873676211",
+  "keys": [
+   "olx:1483131739",
+   "zap:2873676211"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2000,
+  "total": 2915,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Haddock Lobo 191",
+  "published": "2026-03-05T03:33:06.933000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   515
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/imovel-para-aluguel-tem-60-metros-quadrados-com-2-quartos-em-tijuca-rio-de-janeiro-rj-1483131739",
+   "zap": "https://www.zapimoveis.com.br/imovel/2873676211/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2873676211/"
+  }
+ },
+ {
+  "key": "zap:2869993530",
+  "keys": [
+   "zap:2869993530"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 1800,
+  "total": 1800,
+  "area": 80,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Francisco Otaviano",
+  "published": "2026-02-11T21:38:20.203000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2869993530/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2869993530/"
+  }
+ },
+ {
+  "key": "zap:2869542583",
+  "keys": [
+   "olx:1539534928",
+   "zap:2869542583"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2200,
+  "total": 2943,
+  "area": 42,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Praça da República 90",
+  "published": "2026-02-09T15:33:54.270000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Presidente Vargas",
+   402
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-aluguel-na-praca-da-republica-1539534928",
+   "zap": "https://www.zapimoveis.com.br/imovel/2869542583/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2869542583/"
+  }
+ },
+ {
+  "key": "zap:2864941458",
+  "keys": [
+   "zap:2864941458"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 850,
+  "total": 850,
+  "area": 70,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Júlio de Castilhos 85",
+  "published": "2026-01-14T01:04:53.717000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "General Osório",
+   461
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2864941458/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2864941458/"
+  }
+ },
+ {
+  "key": "quintoandar:895190688",
+  "keys": [
+   "quintoandar:895190688"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2170,
+  "total": 2991,
+  "area": 64,
+  "bedrooms": 3,
+  "title": "Aluguel de apartamento na Tijuca com 3 quartos.",
+  "address": "Rua Haddock Lobo",
+  "published": "2025-11-17T03:13:49+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   515
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895190688"
+  }
+ },
+ {
+  "key": "quintoandar:895079162",
+  "keys": [
+   "quintoandar:895079162"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2496,
+  "total": 3596,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "Apartamento para aluguel com 2 quartos, ideal para quem busca conforto e praticidades.",
+  "address": "Avenida Rio Branco",
+  "published": "2025-08-28T21:49:15+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   156
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895079162"
+  }
+ },
+ {
+  "key": "quintoandar:895079174",
+  "keys": [
+   "quintoandar:895079174"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2384,
+  "total": 3284,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "Apartamento de 1 quarto no Centro, perfeito para alugar. Localização prática e funcional.",
+  "address": "Avenida Treze de Maio",
+  "published": "2025-08-28T21:46:02+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   121
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895079174"
+  }
+ },
+ {
+  "key": "zap:2831812940",
+  "keys": [
+   "zap:2831812940"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1500,
+  "total": 2295,
+  "area": 60,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Franklin Roosevelt 71",
+  "published": "2025-08-27T17:55:18.267000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   487
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2831812940/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2831812940/"
+  }
+ },
+ {
+  "key": "quintoandar:895033138",
+  "keys": [
+   "quintoandar:895033138"
+  ],
+  "neighborhood": "Catete",
+  "rent": 2689,
+  "total": 3629,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "Apartamento para alugar com 1 quarto.",
+  "address": "Rua Pedro Américo",
+  "published": "2025-08-05T03:14:37+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Catete",
+   368
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895033138"
+  }
+ },
+ {
+  "key": "quintoandar:895037425",
+  "keys": [
+   "quintoandar:895037425"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2320,
+  "total": 3300,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "Apartamento de 1 quarto no Centro para alugar. Ótima localização e conforto em um dos melhores bairros.",
+  "address": "Avenida Treze de Maio",
+  "published": "2025-07-30T23:02:27+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Carioca",
+   121
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/895037425"
+  }
+ },
+ {
+  "key": "zap:2813723316",
+  "keys": [
+   "olx:1533641866",
+   "zap:2813723316",
+   "zap:2910718840"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2570,
+  "total": 3170,
+  "area": 53,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Alves de Brito 21",
+  "published": "2025-06-12T19:17:21.879000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguai",
+   554
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-padrao-residencial-tijuca-1533641866",
+   "zap": "https://www.zapimoveis.com.br/imovel/2910718840/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2910718840/"
+  }
+ },
+ {
+  "key": "zap:2808360628",
+  "keys": [
+   "zap:2808360628"
+  ],
+  "neighborhood": "Centro",
+  "rent": 800,
+  "total": 2160,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Álvaro Alvim 33",
+  "published": "2025-05-23T05:00:42.281000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Cinelândia",
+   78
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2808360628/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2808360628/"
+  }
+ },
+ {
+  "key": "quintoandar:894733227",
+  "keys": [
+   "quintoandar:894733227"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2450,
+  "total": 2910,
+  "area": 44,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Praça Tiradentes",
+  "published": "2025-01-16T21:58:28+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Carioca",
+   391
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/894733227"
+  }
+ },
+ {
+  "key": "quintoandar:894358913",
+  "keys": [
+   "quintoandar:894358913"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2800,
+  "total": 3373,
+  "area": 53,
+  "bedrooms": 1,
+  "title": "Alugar apartamento com 1 quarto.",
+  "address": "Rua Barão de Mesquita",
+  "published": "2025-01-15T16:01:17+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   366
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/894358913"
+  }
+ },
+ {
+  "key": "quintoandar:894693984",
+  "keys": [
+   "quintoandar:894693984"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2385,
+  "total": 3292,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Afonso Cavalcanti",
+  "published": "2024-11-27T00:52:26+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Praça Onze",
+   238
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/894693984"
+  }
+ },
+ {
+  "key": "zap:2738761938",
+  "keys": [
+   "zap:2738761938"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2500,
+  "total": 2952,
+  "area": 47,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Valparaíso 40",
+  "published": "2024-08-31T00:21:49.157000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   518
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2738761938/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2738761938/"
+  }
+ },
+ {
+  "key": "quintoandar:894566060",
+  "keys": [
+   "quintoandar:894566060"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2500,
+  "total": 3050,
+  "area": 46,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Carlos de Carvalho",
+  "published": "2024-08-01T13:48:12+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   751
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/894566060"
+  }
+ },
+ {
+  "key": "quintoandar:894482166",
+  "keys": [
+   "quintoandar:894482166"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 1930,
+  "total": 2743,
+  "area": 70,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Rua Doutor Satamini",
+  "published": "2024-05-06T00:52:22+00:00",
+  "published_known": true,
+  "new": true,
+  "metro": [
+   "Afonso Pena",
+   453
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/894482166"
+  }
+ },
+ {
+  "key": "zap:2664262713",
+  "keys": [
+   "olx:1497189740",
+   "zap:2664262713"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2950,
+  "total": 3630,
+  "area": 60,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua São Francisco Xavier",
+  "published": "2023-10-24T02:36:42.085000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "São Francisco Xavier",
+   345
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-com-2-dormitorios-60-m-venda-por-r-345-000-00-ou-aluguel-por-r-3-710-00-1497189740",
+   "zap": "https://www.zapimoveis.com.br/imovel/2664262713/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2664262713/"
+  }
+ },
+ {
+  "key": "zap:2627713406",
+  "keys": [
+   "olx:1387496918",
+   "zap:2627713406"
+  ],
+  "neighborhood": "Leblon",
+  "rent": 1200,
+  "total": 2700,
+  "area": 106,
+  "bedrooms": 3,
+  "title": "",
+  "address": "Rua General Urquiza 100",
+  "published": "2023-04-21T20:12:23.165000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Antero de Quental",
+   59
+  ],
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-leblon-106-m2-com-3-quartos-2-quadras-da-praia-1387496918",
+   "zap": "https://www.zapimoveis.com.br/imovel/2627713406/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2627713406/"
+  }
+ },
+ {
+  "key": "olx:1107496558",
+  "keys": [
+   "olx:1107496558"
+  ],
+  "neighborhood": "Flamengo",
+  "rent": 2450,
+  "total": 3495,
+  "area": 46,
+  "bedrooms": 1,
+  "title": "Apartamento para aluguel com 46 metros quadrados com 1 quarto em Flamengo - Rio de Janeiro",
+  "address": "",
+  "published": "2022-12-12T16:32:40+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-aluguel-com-46-metros-quadrados-com-1-quarto-em-flamengo-rio-de-janeiro-1107496558"
+  }
+ },
+ {
+  "key": "olx:1107892626",
+  "keys": [
+   "olx:1107892626"
+  ],
+  "neighborhood": "Flamengo",
+  "rent": 2500,
+  "total": 3100,
+  "area": 46,
+  "bedrooms": 2,
+  "title": "Apartamento para aluguel com 46 metros quadrados com 2 quartos em Flamengo - Rio de Janeir",
+  "address": "",
+  "published": "2022-12-07T14:38:30+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "olx": "https://rj.olx.com.br/rio-de-janeiro-e-regiao/imoveis/apartamento-para-aluguel-com-46-metros-quadrados-com-2-quartos-em-flamengo-rio-de-janeir-1107892626"
+  }
+ },
+ {
+  "key": "quintoandar:893740203",
+  "keys": [
+   "quintoandar:893740203"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2300,
+  "total": 2700,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "Aluguel de apartamento mobiliado no Centro, 1 quarto.",
+  "address": "Rua Vinte de Abril",
+  "published": "2022-08-12T01:19:42+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   629
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/893740203"
+  }
+ },
+ {
+  "key": "zap:2555908248",
+  "keys": [
+   "zap:2555908248"
+  ],
+  "neighborhood": "Copacabana",
+  "rent": 1000,
+  "total": 1000,
+  "area": 70,
+  "bedrooms": 2,
+  "title": "",
+  "address": "",
+  "published": "2022-03-24T09:20:35.020000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": null,
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2555908248/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2555908248/"
+  }
+ },
+ {
+  "key": "quintoandar:893532256",
+  "keys": [
+   "quintoandar:893532256"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 2700,
+  "total": 3406,
+  "area": 45,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Maracanã",
+  "published": "2022-01-26T00:53:15+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Saens Peña",
+   360
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/893532256"
+  }
+ },
+ {
+  "key": "zap:2523524547",
+  "keys": [
+   "zap:2523524547"
+  ],
+  "neighborhood": "Centro",
+  "rent": 1000,
+  "total": 1600,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Avenida Presidente Vargas 590",
+  "published": "2021-06-14T18:12:50.728000+00:00",
+  "published_known": true,
+  "new": false,
+  "metro": [
+   "Uruguaiana",
+   146
+  ],
+  "urls": {
+   "zap": "https://www.zapimoveis.com.br/imovel/2523524547/",
+   "vivareal": "https://www.vivareal.com.br/imovel/2523524547/"
+  }
+ },
+ {
+  "key": "quintoandar:112961399",
+  "keys": [
+   "quintoandar:112961399"
+  ],
+  "neighborhood": "Centro",
+  "rent": 2700,
+  "total": 3530,
+  "area": 62,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Avenida Gomes Freire",
+  "published": null,
+  "published_known": false,
+  "new": false,
+  "metro": [
+   "Presidente Vargas",
+   648
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/112961399"
+  }
+ },
+ {
+  "key": "quintoandar:100001574",
+  "keys": [
+   "quintoandar:100001574"
+  ],
+  "neighborhood": "Tijuca",
+  "rent": 3700,
+  "total": 3700,
+  "area": 65,
+  "bedrooms": 2,
+  "title": "",
+  "address": "Rua Haddock Lobo",
+  "published": null,
+  "published_known": false,
+  "new": false,
+  "metro": [
+   "Afonso Pena",
+   391
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/100001574"
+  }
+ },
+ {
+  "key": "quintoandar:100001510",
+  "keys": [
+   "quintoandar:100001510"
+  ],
+  "neighborhood": "Centro",
+  "rent": 3200,
+  "total": 3200,
+  "area": 40,
+  "bedrooms": 1,
+  "title": "",
+  "address": "Praça da República",
+  "published": null,
+  "published_known": false,
+  "new": false,
+  "metro": [
+   "Central do Brasil",
+   567
+  ],
+  "urls": {
+   "quintoandar": "https://www.quintoandar.com.br/imovel/100001510"
+  }
+ }
+]
