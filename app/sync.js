@@ -54,8 +54,9 @@
     try {
       await loadSdk();
       client = window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseAnonKey, {
-        // PKCE puts the sign-in code in ?code= (not the #hash the app's router uses)
-        auth: { flowType: "pkce", detectSessionInUrl: true, persistSession: true, autoRefreshToken: true },
+        // PKCE puts the sign-in code in ?code= (not the #hash the app's router uses).
+        // We exchange it ourselves (below) so the app can tell you whether sign-in worked.
+        auth: { flowType: "pkce", detectSessionInUrl: false, persistSession: true, autoRefreshToken: true },
       });
       client.auth.onAuthStateChange((_event, session) => {
         const next = (session && session.user) || null;
@@ -65,6 +66,7 @@
         emit();
         if (user && changed) setTimeout(syncNow, 0);
       });
+      await handleRedirect();
       const { data } = await client.auth.getSession();
       user = (data.session && data.session.user) || null;
       status.state = user ? "idle" : "signed-out";
@@ -77,6 +79,30 @@
       status.state = "error"; status.error = e.message; emit();
     }
   }
+
+  /* ---------- returning from the email link ---------- */
+  // Success: ?code=…  Failure: ?error=…&error_description=… (or the same in the #hash)
+  async function handleRedirect() {
+    const q = new URLSearchParams(location.search);
+    const h = location.hash.startsWith("#error") ? new URLSearchParams(location.hash.slice(1)) : null;
+    const code = q.get("code");
+    const err = q.get("error_description") || q.get("error") || (h && (h.get("error_description") || h.get("error")));
+    const errCode = q.get("error_code") || (h && h.get("error_code"));
+    if (!code && !err) return;
+    // drop the auth params from the address bar; keep the app's own #/route
+    history.replaceState(null, "", location.pathname + (h ? "" : location.hash));
+    if (err) return notify({ ok: false, message: friendly(errCode, err) });
+    const { data, error } = await client.auth.exchangeCodeForSession(code);
+    if (error) return notify({ ok: false, message: friendly(error.code, error.message) });
+    notify({ ok: true, email: data.session && data.session.user && data.session.user.email });
+  }
+  function friendly(code, msg) {
+    const m = `${code || ""} ${msg || ""}`.toLowerCase();
+    if (m.includes("verifier")) return "Sign-in link opened in a different browser than the one you requested it from. Request a new link in this browser and open it here.";
+    if (m.includes("expired") || m.includes("invalid")) return "That sign-in link expired or was already used. Request a new one.";
+    return `Sign-in failed: ${msg || code}`;
+  }
+  function notify(result) { if (hooks && hooks.onAuthResult) hooks.onAuthResult(result); }
 
   // read → merge → write, so a push never clobbers progress made on another device
   let running = null;

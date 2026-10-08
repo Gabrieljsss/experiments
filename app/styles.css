@@ -401,3 +401,11 @@ mark { background: color-mix(in srgb, var(--warn) 32%, transparent); color: var(
 .sync-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--good); flex: none; }
 .sync-dot.syncing { background: var(--warn); }
 .sync-dot.error { background: var(--bad); }
+.acct { position: relative; }
+.acct[hidden] { display: none !important; }
+.acct-dot { position: absolute; right: 3px; bottom: 4px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--bg); display: none; }
+.acct[data-state="idle"] .acct-dot { display: block; background: var(--good); }
+.acct[data-state="syncing"] .acct-dot { display: block; background: var(--warn); }
+.acct[data-state="error"] .acct-dot { display: block; background: var(--bad); }
+.acct[data-state="idle"] svg, .acct[data-state="syncing"] svg { stroke: var(--good); }
+.toast { width: max-content; max-width: calc(100vw - 32px); text-align: center; line-height: 1.4; }

@@ -90,11 +90,12 @@
   const thumb = (id) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
   const watchUrl = (l) => `https://www.youtube.com/watch?v=${l.id}&list=${PLAYLIST}&index=${l.n}`;
   const fmtMin = (s) => `${Math.round(s / 60)} min`;
-  function toast(msg) {
+  function toast(msg, ms = 2200) {
+    document.querySelectorAll(".toast").forEach((t) => t.remove());
     const t = document.createElement("div");
-    t.className = "toast"; t.textContent = msg;
+    t.className = "toast"; t.textContent = msg; t.setAttribute("role", "status");
     document.body.appendChild(t);
-    setTimeout(() => t.remove(), 2200);
+    setTimeout(() => t.remove(), ms);
   }
   function setNav(name) {
     document.querySelectorAll("[data-nav]").forEach((a) => a.classList.toggle("active", a.dataset.nav === name));
@@ -422,7 +423,7 @@
     } else {
       const line = st.state === "syncing" ? "Syncing…" : st.state === "error" ? `<span class="bad">Sync failed: ${esc(st.error || "")}</span>` : `Synced ${ago(st.lastSync)}`;
       body = `<div class="row" style="flex-wrap:nowrap"><span class="sync-dot ${st.state}"></span>
-          <span style="flex:1;min-width:0;overflow-wrap:anywhere"><b>${esc(st.email || "")}</b><br><small class="muted">${line}</small></span></div>
+          <span style="flex:1;min-width:0;overflow-wrap:anywhere">Signed in as <b>${esc(st.email || "")}</b><br><small class="muted">${line}</small></span></div>
         <div class="row" style="margin-top:12px"><button class="btn" id="syncNow">Sync now</button><button class="btn ghost" id="syncOut">Sign out</button></div>`;
     }
     el.innerHTML = `<h3 style="margin:0 0 8px">☁️ Sync across devices</h3>${body}`;
@@ -455,8 +456,43 @@
         // refresh overview screens if the merge brought in anything new (never interrupt a lesson)
         if (JSON.stringify(S) !== before && /^#?\/?(path)?$/.test(location.hash)) route();
       },
-      onStatus: (st) => { syncStatus = st; renderSyncCard(); },
+      onStatus: (st) => { syncStatus = st; renderSyncCard(); renderAcct(); },
+      onAuthResult: (r) => {
+        if (r.ok) {
+          syncNote = "";
+          toast(`✅ Signed in as ${r.email || "you"}. Syncing your progress…`, 5000);
+        } else {
+          syncNote = `<span class="bad">⚠️ ${esc(r.message)}</span>`;
+          toast(`⚠️ ${r.message}`, 8000);
+        }
+        renderSyncCard();
+      },
     });
+    // top-bar status: cloud icon, green dot when signed in; tap to open the sync card
+    const acct = document.getElementById("acctBtn");
+    acct.hidden = false;
+    acct.addEventListener("click", (e) => {
+      e.preventDefault();
+      const go = () => {
+        const card = document.getElementById("syncCard");
+        if (!card) return;
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+        const email = document.getElementById("syncEmail");
+        if (email) email.focus({ preventScroll: true });
+      };
+      if (/^#?\/?$/.test(location.hash)) go(); else { location.hash = "#/"; setTimeout(go, 60); }
+    });
+  }
+  function renderAcct() {
+    const acct = document.getElementById("acctBtn");
+    if (!acct) return;
+    const st = syncStatus;
+    const signedIn = !!st.email && st.state !== "signed-out";
+    acct.dataset.state = signedIn ? st.state : "signed-out";
+    const label = signedIn
+      ? `Signed in as ${st.email}${st.state === "error" ? ": sync failed" : st.state === "syncing" ? ": syncing…" : ""}`
+      : "Not signed in: tap to sync across devices";
+    acct.title = label; acct.setAttribute("aria-label", label);
   }
 
   /* ---------------- search ---------------- */
