@@ -139,7 +139,29 @@
     if (!client) throw new Error("Sync isn't available right now");
     const redirect = location.origin + location.pathname;
     const { error } = await client.auth.signInWithOtp({ email, options: { emailRedirectTo: redirect } });
-    if (error) throw error;
+    if (error) {
+      const m = `${error.code || ""} ${error.message || ""}`.toLowerCase();
+      if (m.includes("rate limit") || m.includes("over_email_send")) {
+        const e = new Error("Supabase's free email service only sends a few sign-in emails per hour, and that limit was reached. Try again in about an hour, or type the code from an email you already received.");
+        e.rateLimited = true;
+        throw e;
+      }
+      throw error;
+    }
+  }
+
+  // The same email also carries a one-time code. Typing it works in any browser or
+  // device, unlike the link, which must be opened in the browser that requested it.
+  async function verifyCode(email, token) {
+    if (!client) throw new Error("Sync isn't available right now");
+    const { data, error } = await client.auth.verifyOtp({ email, token, type: "email" });
+    if (error) {
+      const m = `${error.code || ""} ${error.message || ""}`.toLowerCase();
+      throw new Error(m.includes("expired") || m.includes("invalid")
+        ? "That code is wrong or has expired. Codes only work once, and only the newest email's code is valid."
+        : error.message);
+    }
+    notify({ ok: true, email: data.user && data.user.email });
   }
 
   async function signOut() {
@@ -147,5 +169,5 @@
     await client.auth.signOut();
   }
 
-  window.Sync = { enabled, init, syncNow, queuePush, signIn, signOut, mergeProgress };
+  window.Sync = { enabled, init, syncNow, queuePush, signIn, verifyCode, signOut, mergeProgress };
 })();
