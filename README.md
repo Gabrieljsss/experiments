@@ -33,7 +33,7 @@ You can also open `index.html` directly, or publish the repo with GitHub Pages (
 
 Sync uses a free [Supabase](https://supabase.com) project. Without a key in `app/config.js` the app runs fully offline and hides the sync card.
 
-1. **Create the table.** Paste `supabase/migrations/20261005000000_progress.sql` into the Supabase SQL editor, or run
+1. **Create the table.** Open `supabase/migrations/20261005000000_progress.sql`, copy its **contents** (not the file path) into the Supabase SQL Editor and click Run. Or run
    `supabase link --project-ref <ref>` and then `supabase db push`. It creates one `progress` row per user (a JSON blob), protected by row-level security so each user can only read and write their own row.
 2. **Allow the redirect.** Go to Authentication → URL Configuration. Set **Site URL** to `https://gabrieljsss.github.io/experiments/` and add it (plus `http://localhost:8000/` for local testing) to **Redirect URLs**.
 3. **Add the public key.** In Project Settings → API Keys, copy the **anon / publishable** key into `supabaseAnonKey` in `app/config.js`. That key is meant to be public; never put the `service_role` / secret key in the site.
