@@ -34,6 +34,24 @@
     };
     for (const src of [a.cards || {}, b.cards || {}])
       for (const [k, c] of Object.entries(src)) out.cards[k] = out.cards[k] ? { ...newer(out.cards[k], c) } : { ...c };
+    out.detran = mergeDetran(a.detran, b.detran);
+    return out;
+  }
+
+  // DETRAN app progress: per-question records (newest answer wins), finished sessions
+  // (a set keyed by id) and study days (a set). Same CRDT properties as above.
+  function mergeDetran(a, b) {
+    a = a || {}; b = b || {};
+    const out = { q: {}, sessions: [], days: [], examMin: a.examMin || b.examMin || 60 };
+    for (const src of [a.q || {}, b.q || {}])
+      for (const [id, r] of Object.entries(src)) {
+        const cur = out.q[id];
+        if (!cur || (r.at || 0) > (cur.at || 0) || ((r.at || 0) === (cur.at || 0) && (r.r || 0) + (r.w || 0) > (cur.r || 0) + (cur.w || 0))) out.q[id] = { ...r };
+      }
+    const byId = {};
+    for (const s of [...(a.sessions || []), ...(b.sessions || [])]) if (s && s.id && !byId[s.id]) byId[s.id] = s;
+    out.sessions = Object.values(byId).sort((x, y) => y.at - x.at || (x.id < y.id ? -1 : 1)).slice(0, 200);
+    out.days = [...new Set([...(a.days || []), ...(b.days || [])])].sort();
     return out;
   }
 

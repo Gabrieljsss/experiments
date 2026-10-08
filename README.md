@@ -1,4 +1,4 @@
-# Systems Design Bites
+# Systems Design Bites (+ DETRAN-RJ)
 
 A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/playlist?list=PLjTveVh7FakLdTmm42TMxbN8PvVn5g4KJ)** playlist by
 **[Jordan has no life](https://www.youtube.com/@jordanhasnolife5163)** into daily, bite-sized, visual lessons.
@@ -17,6 +17,27 @@ A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/pl
 - **Search** (🔍 icon or press `/`): type a topic like `redis` to list every lesson that covers it, ranked, with highlighted snippets.
 - Light/dark themes, keyboard navigation (← →), mobile-first layout, and a "☰" one-page view of any lesson.
 - Progress is saved in your browser (`localStorage`). Optionally, **sign in with a username and password to sync it across devices** (see below).
+
+## DETRAN-RJ Habilitação (second app)
+
+Tap the logo in the top-left to switch to a second app for the **DETRAN-RJ theory exam** (prova teórica), in Portuguese.
+
+- **263 questions** from all 10 provas of DETRAN-RJ's public [simulado](http://simulado.detran.rj.gov.br/), plus 25 sign images. All content © DETRAN-RJ, credited in the app.
+- **Simulado completo:** 30 questions, answers only at the end, a question grid and a time limit. Use a random set (following the exam's split by subject) or replay any official prova (1–10).
+- **Treino rápido:** bites of 5, 10, 15 or 20 questions, with instant feedback if you want it. Choose a focus: a smart mix (wrong and new questions first), only the ones you missed, signs, or one subject.
+- **Pacing:** the timer budgets each bite at the real exam's pace (default 60 min / 30 questions = 2:00 per question, adjustable to 40 or 50 min). It shows whether you're ahead or behind, and the result screen says whether you'd finish the full exam in time.
+- **Erros** lists questions whose last answer was wrong. **Banco** searches all questions by text, subject or sign images.
+- A pass estimate based on your last answer to each question you've seen (21/30 = 70% to pass).
+- Progress syncs with the same account as the lessons.
+
+Refreshing the questions:
+
+```bash
+python3 scripts/scrape_detran.py   # samples the simulado politely until no new prova shows up; downloads sign images
+python3 scripts/build_detran.py    # merges near-duplicates, adds subjects → app/detran/questions.js
+```
+
+The site serves one of a fixed set of numbered provas at random, with the answer key embedded. The scraper keeps sampling until 60 requests in a row bring nothing new. Subjects (Legislação, Sinalização, Direção defensiva, Primeiros socorros, Meio ambiente e cidadania, Mecânica básica) were assigned by reading each question (`data/detran/topics.json`); anything new falls back to a keyword guess.
 
 ## Run it
 
@@ -56,6 +77,7 @@ The lessons in `app/data/*.js` are hand-written summaries of those transcripts.
 ```bash
 pip install yt-dlp
 python3 scripts/fetch_transcripts.py
+scripts/scrape_detran.py, scripts/build_detran.py
 ```
 
 YouTube rate-limits caption downloads from cloud IPs, so the script backs off and can be re-run;
@@ -72,6 +94,9 @@ app/sync.js                optional sync (username/password via SQL functions) +
 app/config.js              Supabase URL and public anon key (empty key = offline only)
 supabase/migrations/       SQL for accounts, sync functions and their permissions
 app/data/lessons-*.js      lesson content, one file per group of modules
+app/detran/                DETRAN app: detran.js (screens, quiz, timer), questions.js (generated), img/ (sign images)
+data/detran/               scraped provas, deduplicated questions, hand-assigned subjects
 data/playlist.json         playlist metadata (titles, ids, durations)
 scripts/fetch_transcripts.py
+scripts/scrape_detran.py, scripts/build_detran.py
 ```

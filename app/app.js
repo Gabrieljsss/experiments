@@ -31,9 +31,10 @@
 
   /* ---------------- state ---------------- */
   const KEY = "sd-bites:v1";
-  const blank = () => ({ done: {}, quiz: {}, days: [], goal: 1, cards: {} });
+  const blank = () => ({ done: {}, quiz: {}, days: [], goal: 1, cards: {}, detran: { q: {}, sessions: [], days: [], examMin: 60 } });
   let S;
   try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "{}")); } catch { S = blank(); }
+  S.detran = Object.assign(blank().detran, S.detran || {});
   const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ } };
   // every change is saved locally first, then (if signed in) pushed to the cloud shortly after
   const save = () => { persist(); if (window.Sync) window.Sync.queuePush(); };
@@ -464,9 +465,10 @@
       applyMerged: (merged) => {
         const before = JSON.stringify(S);
         S = Object.assign(blank(), merged);
+        S.detran = Object.assign(blank().detran, S.detran || {});
         persist();
-        // refresh overview screens if the merge brought in anything new (never interrupt a lesson)
-        if (JSON.stringify(S) !== before && /^#?\/?(path)?$/.test(location.hash)) route();
+        // refresh overview screens if the merge brought in anything new (never interrupt a lesson or quiz)
+        if (JSON.stringify(S) !== before && /^#?\/?(path|detran\/?(erros|banco)?)?$/.test(location.hash)) route();
       },
       onStatus: (st) => { syncStatus = st; renderSyncCard(); renderAcct(); },
     });
@@ -482,7 +484,9 @@
         const user = document.getElementById("syncUser");
         if (user) user.focus({ preventScroll: true });
       };
-      if (/^#?\/?$/.test(location.hash)) go(); else { location.hash = "#/"; setTimeout(go, 60); }
+      const homeHash = currentApp === "detran" ? "#/detran" : "#/";
+      if (location.hash.replace(/\/$/, "") === homeHash.replace(/\/$/, "") || (!location.hash && currentApp === "sd")) go();
+      else { location.hash = homeHash; setTimeout(go, 80); }
     });
   }
   function renderAcct() {
@@ -634,13 +638,58 @@
     else location.hash = "#/search";
   });
 
+  /* ---------------- apps: switcher + shared shell ---------------- */
+  const APPS = {
+    sd: { name: "Systems Design <b>Bites</b>", title: "Systems Design Bites", logo: '<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h11" /></svg>' },
+    detran: { name: "DETRAN-RJ <b>Habilitação</b>", title: "DETRAN-RJ Habilitação", logo: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 4v6M5.2 15.5l5.2-2.5M18.8 15.5l-5.2-2.5"/></svg>' },
+  };
+  let currentApp = null;
+  function setApp(app) {
+    if (app === currentApp) return;
+    currentApp = app;
+    document.body.dataset.app = app;
+    document.documentElement.lang = app === "detran" ? "pt-BR" : "en";
+    $("#brandName").innerHTML = APPS[app].name;
+    $("#brandLogo").innerHTML = APPS[app].logo;
+    $("#brandLogo").className = `logo ${app}`;
+    document.title = APPS[app].title;
+    document.querySelectorAll("[data-app-link]").forEach((a) => a.classList.toggle("current", a.dataset.appLink === app));
+    try { localStorage.setItem("sd-bites:app", app); } catch { /* ignore */ }
+  }
+  const drawer = $("#drawer"), drawerBg = $("#drawerBg");
+  function openDrawer(open) {
+    drawer.hidden = drawerBg.hidden = !open;
+    document.body.classList.toggle("drawer-open", open);
+    if (open) (drawer.querySelector(".app-item.current") || drawer.querySelector(".app-item")).focus();
+    else $("#appSwitch").focus({ preventScroll: true });
+  }
+  $("#appSwitch").addEventListener("click", () => openDrawer(drawer.hidden));
+  drawerBg.addEventListener("click", () => openDrawer(false));
+  $("#drawerClose").addEventListener("click", () => openDrawer(false));
+  drawer.querySelectorAll(".app-item").forEach((a) => a.addEventListener("click", () => openDrawer(false)));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !drawer.hidden) openDrawer(false); });
+
+  // what the DETRAN app (app/detran/detran.js) gets to use
+  const shell = {
+    view, esc, rich, toast, setNav, today, addDays,
+    getState: () => S.detran,
+    save,
+    syncCard: () => (window.Sync && window.Sync.enabled ? `<section class="card" id="syncCard"></section>` : ""),
+    renderSyncCard: () => renderSyncCard(),
+    setKeyHandler: (fn) => { keyHandler = fn; },
+  };
+
   /* ---------------- router ---------------- */
   let keyHandler = null;
   document.addEventListener("keydown", (e) => keyHandler && keyHandler(e));
   function route() {
     keyHandler = null;
-    const h = location.hash.replace(/^#\/?/, "");
+    let h = location.hash.replace(/^#\/?/, "");
+    // a bare visit reopens whichever app you used last
+    if (!location.hash) { let last = "sd"; try { last = localStorage.getItem("sd-bites:app") || "sd"; } catch { /* ignore */ } if (last === "detran") h = "detran"; }
     const [a, b, c] = h.split("/");
+    setApp(a === "detran" && window.Detran ? "detran" : "sd");
+    if (currentApp === "detran") { window.Detran.route(h.split("/").slice(1), shell); view.focus({ preventScroll: true }); window.scrollTo({ top: 0 }); return; }
     if (a === "lesson") lesson(+b, c);
     else if (a === "path") path();
     else if (a === "review") review();

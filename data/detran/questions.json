@@ -1,0 +1,4474 @@
+[
+ {
+  "id": 1,
+  "q": "Um motociclista, após longa jornada de trabalho noturno, decide continuar pilotando mesmo sentindo fadiga. Qual princípio da direção segura está sendo comprometido?",
+  "a": [
+   "O equilíbrio físico e emocional, essencial para reação e julgamento adequados.",
+   "A função motora, pois o esforço físico compensa o cansaço.",
+   "O princípio da previsão, pois basta atenção redobrada.",
+   "A função sensorial, já que o corpo se adapta ao esforço contínuo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 2,
+  "q": "Cassação da CNH ocorre, por exemplo, quando:",
+  "a": [
+   "o condutor comete uma infração leve durante o período de suspensão.",
+   "o condutor esquece de renovar a CNH dentro do prazo.",
+   "o condutor dirige com o direito de dirigir suspenso ou reincide em determinadas infrações previstas no Código de Trânsito Brasileiro.",
+   "o condutor acumula 20 pontos na CNH em um período de 12 meses."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 3,
+  "q": "Um motorista resolve não verificar o carro antes de sair. O capítulo mostra que falhas assim podem causar:",
+  "a": [
+   "Multas automáticas",
+   "Sinistros evitáveis e prejuízos",
+   "Conforto extra",
+   "Consumo menor de combustível"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 4,
+  "q": "O que essa placa está avisando?",
+  "a": [
+   "Que existe uma lombada.",
+   "Que a pista é de mão dupla.",
+   "Que há uma via entrando pela esquerda.",
+   "Que é proibido virar à esquerda."
+  ],
+  "c": 2,
+  "img": "A-7A",
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 5,
+  "q": "Qual é a principal função da placa acima?",
+  "a": [
+   "Proibir ultrapassagem.",
+   "Alertar sobre lombadas.",
+   "Organizar o tráfego e reduzir conflitos entre veículos leves e pesados.",
+   "Indicar ponto de parada de ônibus."
+  ],
+  "c": 2,
+  "img": "R-27",
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 6,
+  "q": "Ao ver placa com pictograma em forma de Y, o que isso significa?",
+  "a": [
+   "Local de ultrapassagem.",
+   "Retorno obrigatório.",
+   "Área de estacionamento.",
+   "Divisão de pistas — escolha o sentido antes do ponto."
+  ],
+  "c": 3,
+  "img": "A-9",
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 7,
+  "q": "Qual o risco de desrespeitar a placa acima?",
+  "a": [
+   "Nenhum risco, apenas penalidade administrativa.",
+   "Aumentar a fluidez do trânsito.",
+   "Ocorrer colisões com pedestres ou veículos em áreas não projetadas para motos.",
+   "Reduzir o consumo de combustível."
+  ],
+  "c": 2,
+  "img": "R-37",
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 8,
+  "q": "O que o motorista deve fazer ao ver essa placa?",
+  "a": [
+   "Reduzir a velocidade e usar freio motor.",
+   "Frear só quando o carro já estiver em alta velocidade.",
+   "Ligar o pisca-alerta.",
+   "Acelerar para descer mais rápido."
+  ],
+  "c": 0,
+  "img": "A-20A",
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 9,
+  "q": "Pedro percebe que o pneu do carro está murcho, mas continua dirigindo. Qual o risco?",
+  "a": [
+   "Danificar o som do veículo.",
+   "Gastar mais combustível apenas.",
+   "Perder o controle do carro e causar sinistro.",
+   "Ser multado por falta de cinto."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 10,
+  "q": "“Bebi uma taça de vinho, dá para dirigir?” Qual a resposta correta para esta pergunta?",
+  "a": [
+   "Não, pois pode ser denunciado.",
+   "Sim, se não tiver fiscalização.",
+   "Sim, se for perto de casa.",
+   "Não. Qualquer quantidade de álcool aumenta o risco de sinistros e é infração."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 11,
+  "q": "O que significa aprender com o erro?",
+  "a": [
+   "Evitar falar sobre o assunto",
+   "Ignorar a situação",
+   "Culpar o agente de trânsito",
+   "Refletir e não repetir a infração"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 12,
+  "q": "Leo recebe uma multa e decide pagar logo no início porque leu que isso é vantajoso. Qual é o benefício da ação?",
+  "a": [
+   "Perdão total da multa",
+   "Até 40% de desconto",
+   "Aumento de prazo",
+   "Parcelamento automático"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 13,
+  "q": "Por que a faixa de pedestres nunca deve ser ocupada ao parar?",
+  "a": [
+   "Porque desgasta pneus",
+   "Porque é espaço exclusivo do pedestre",
+   "Porque atrapalha a placa",
+   "Porque atrasa o trânsito"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 14,
+  "q": "Por que não se deve parar afastado da guia além do permitido?",
+  "a": [
+   "Porque atrapalha fluxo e coloca passageiros em risco",
+   "Porque ocupa espaço",
+   "Porque é difícil de medir",
+   "Porque suja o pneu"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 15,
+  "q": "Por que parar afastado da guia é proibido?",
+  "a": [
+   "Porque economiza combustível",
+   "Porque facilita ultrapassagens",
+   "Porque atrapalha o fluxo e causa risco",
+   "Porque deixa o carro bonito"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 16,
+  "q": "Por que é importante aprender com a multa recebida?",
+  "a": [
+   "Porque evita dirigir",
+   "Porque aumenta a pontuação na CNH",
+   "Porque elimina futuros problemas automaticamente",
+   "Porque ajuda a não repetir o erro"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 17,
+  "q": "Dirigir com sono, mesmo que por poucos segundos, pode causar:",
+  "a": [
+   "Nenhum problema, se o cochilo for rápido.",
+   "Apenas distração leve, sem risco real.",
+   "Perda de controle do veículo e maior chance de acidente.",
+   "O carro desacelera automaticamente, prevenindo acidente."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 18,
+  "q": "Um motorista vê uma criança soltar a bola e correr para a rua. O que ele deve fazer?",
+  "a": [
+   "Aumentar o som para chamar atenção.",
+   "Buzinar e seguir em frente.",
+   "Continuar em alta velocidade para não atrapalhar.",
+   "Reduzir a velocidade e preparar-se para parar o veículo."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 19,
+  "q": "Você começa uma ultrapassagem a um ciclista e um carro surge em sentido contrário. A atitude correta é:",
+  "a": [
+   "Forçar o ciclista a ir para o acostamento.",
+   "Desistir da ultrapassagem, reduzir a velocidade e retomar, mantendo a distância segura com 1,5 m do ciclista.",
+   "Buzinar e seguir entre o carro e o ciclista.",
+   "Completar a ultrapassagem mesmo sendo perigoso."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 20,
+  "q": "O que um motorista deve fazer imediatamente ao ouvir a sirene e ver as luzes de uma ambulância se aproximando?",
+  "a": [
+   "Parar bruscamente no meio da pista onde está.",
+   "Acelerar e não deixar ela passar.",
+   "Reduzir a velocidade e deslocar-se para a faixa da direita para liberar a passagem.",
+   "Continuar no mesmo ritmo e esperar que a ambulância desvie."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 21,
+  "q": "Por que as crianças precisam de cadeirinhas diferentes conforme a idade?",
+  "a": [
+   "Porque é exigência do mercado.",
+   "Não precisa, pois todas são iguais.",
+   "Porque o corpo cresce e precisa de proteção adequada para cada fase.",
+   "Porque os fabricantes pedem."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 22,
+  "q": "Quando o condutor deve usar a seta?",
+  "a": [
+   "Sempre que for mudar de faixa, de direção ou entrar/sair de uma via.",
+   "Apenas em avenidas.",
+   "Apenas durante o dia.",
+   "Só quando houver pedestres."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 23,
+  "q": "Depois de um sinistro leve, os motoristas trocam informações de seguro e liberam a pista. O que essa atitude mostra?",
+  "a": [
+   "Falta de cuidado.",
+   "Desinteresse pelo veículo.",
+   "Responsabilidade e respeito ao trânsito.",
+   "Medo da polícia."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 24,
+  "q": "Pedro conduz sua motocicleta em uma via quando um pedestre sinaliza que vai atravessar na faixa de pedestres. O que Pedro deve fazer?",
+  "a": [
+   "Desviar pela calçada.",
+   "Parar e dar a preferência, esperando a travessia segura.",
+   "Passar rápido antes do pedestre atravessar a via.",
+   "Buzinar para ele correr."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 25,
+  "q": "Por que o motociclista é mais vulnerável no trânsito?",
+  "a": [
+   "Porque não é protegido por carroceria e é pouco visível.",
+   "Anda sempre mais rápido.",
+   "Usa pistas exclusivas.",
+   "Tem freios mais fracos."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 26,
+  "q": "As placas de formato octogonal (oito lados) e triangular invertido são exceções dentro de qual família de placas?",
+  "a": [
+   "Placas de Advertência",
+   "Placas de Sinalização Temporária",
+   "Placas de Regulamentação",
+   "Placas de Indicação"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 27,
+  "q": "Qual o prazo de validade da CNH ou da ACC:",
+  "a": [
+   "Depende do Estado em que o condutor foi habilitado.",
+   "Depende do preço do veículo.",
+   "Varia de acordo com o interesse do condutor.",
+   "Do prazo do exame de aptidão física e mental que estiver vigente."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 28,
+  "q": "Um condutor percebe chuva forte iniciando. Qual a primeira atitude segura?",
+  "a": [
+   "Frear bruscamente e parar na pista.",
+   "Reduzir a velocidade e acionar o limpador de para-brisa.",
+   "Acender farol alto.",
+   "Aumentar a velocidade para fugir da chuva."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 29,
+  "q": "Qual deve ser a atitude a ser tomada por um condutor quando dirige em condições adversas?",
+  "a": [
+   "Desligar os faróis.",
+   "Manter a mesma velocidade.",
+   "Reduzir velocidade e aumentar a atenção.",
+   "Ultrapassar para “sair logo”."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 30,
+  "q": "Aquaplanagem pode ocorrer quando:",
+  "a": [
+   "Chove forte e a velocidade é alta.",
+   "Pneus novos e velocidade baixa.",
+   "Há vento lateral.",
+   "Pista está seca."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   1
+  ]
+ },
+ {
+  "id": 31,
+  "q": "Qual é o principal objetivo da classificação das infrações em quatro níveis de gravidade?",
+  "a": [
+   "Refletir o tamanho do risco que aquele comportamento oferece para a segurança de todos.",
+   "Apenas diferenciar o agente de trânsito.",
+   "Apenas aumentar a pontuação.",
+   "Apenas facilitar o cálculo da multa."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 32,
+  "q": "Você nota que o nível de água do radiador está um pouco baixo e decide completá-lo. Qual é o procedimento de segurança ao fazer essa checagem?",
+  "a": [
+   "Usar água mineral para garantir a pureza do líquido de arrefecimento.",
+   "Verificar o nível com o motor frio e nunca abrir o radiador com o motor quente, sob risco de queimaduras graves.",
+   "Abrir a tampa com o motor quente para que o vapor force a saída da água.",
+   "Completar o nível de água apenas uma vez por ano."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 33,
+  "q": "José vê uma poça d’água grande e decide jogar o carro sobre ela para “brincar”. Isso é:",
+  "a": [
+   "Um jeito de testar o carro.",
+   "Uma forma de limpar os pneus.",
+   "Uma diversão sem risco.",
+   "É infração média e o principal risco é a aquaplanagem."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 34,
+  "q": "Você vê um ônibus sinalizando saída da parada. O que fazer?",
+  "a": [
+   "Fechar o ônibus para ele não sair.",
+   "Facilitar a manobra, mantendo distância e deixando espaço.",
+   "Acelerar para passar antes.",
+   "Buzinar e colar na traseira."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 35,
+  "q": "O que é manter distância segura?",
+  "a": [
+   "Andar muito próximo ao veículo da frente.",
+   "Deixar espaço suficiente na lateral e frontal entre o seu veículo e os demais, bem como em relação ao bordo da pista.",
+   "Ignorar o espaço lateral.",
+   "Reduzir a distância apenas em congestionamentos."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 36,
+  "q": "Qual atitude deve ser tomada pelo condutor que vai virar à direita?",
+  "a": [
+   "Permanecer próximo à borda direita da pista.",
+   "Ficar em qualquer faixa.",
+   "Ficar no centro da via.",
+   "Ficar na faixa da esquerda."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 37,
+  "q": "O que o motorista nunca deve fazer ao encontrar um trator à frente?",
+  "a": [
+   "Reduzir a velocidade.",
+   "Aguardar local seguro para a ultrapassagem.",
+   "Acionar a seta.",
+   "Ultrapassar em local sem visibilidade."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 38,
+  "q": "Qual checklist rápido antes de iniciar a viagem está correto?",
+  "a": [
+   "Sem cinto, olhar o celular no semáforo.",
+   "Espelhos, cintos, faróis, celular fora de uso e velocidade compatível.",
+   "Som alto, janela aberta e marcha alta.",
+   "Celular à mão, farol alto ligado e banco deitado."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 39,
+  "q": "Quais são as duas categorias básicas que você escolhe ao tirar sua primeira CNH?",
+  "a": [
+   "Categoria AB (motos e carros) ou Categoria C (caminhões).",
+   "Categoria E (veículos articulados) ou Categoria B.",
+   "Categoria C (caminhões) ou D (ônibus).",
+   "Categoria A (motos) ou Categoria B (carros)."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 40,
+  "q": "Está garoando e a pista ficou escorregadia. O que o motorista deve fazer?",
+  "a": [
+   "Seguir colado para não “perder espaço”.",
+   "Acelerar para sair logo da chuva.",
+   "Frear só em cima da curva.",
+   "Reduzir a velocidade e aumentar a distância do carro da frente."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 41,
+  "q": "Por que o manual do proprietário é considerado a ferramenta mais importante para a manutenção preventiva do veículo?",
+  "a": [
+   "Porque contém os contatos de todas as oficinas mecânicas credenciadas pela montadora.",
+   "Porque ensina o proprietário a ser mecânico.",
+   "Porque traz um cronograma de revisões desenvolvido pelos engenheiros que projetaram o carro, detalhando o que e quando verificar.",
+   "Porque sem ele o veículo não anda."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 42,
+  "q": "O que essa placa está avisando?",
+  "a": [
+   "Que a pista tem irregularidades no pavimento.",
+   "Que a pista é nova e lisa.",
+   "Que há um quebra-molas.",
+   "Que há obras à frente."
+  ],
+  "c": 0,
+  "img": "A-17",
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 43,
+  "q": "O que acontece quando um motorista ignora uma placa de regulamentação?",
+  "a": [
+   "Apenas recebe uma advertência verbal.",
+   "Nada, se não houver fiscalização.",
+   "Fica livre para escolher o que fazer.",
+   "Comete uma infração e coloca vidas em risco."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 44,
+  "q": "Por que a placa acima é importante em vias urbanas com semáforo?",
+  "a": [
+   "Porque ajuda a definir fluxos compatíveis com o tempo semafórico.",
+   "Porque dispensa o uso da seta.",
+   "Porque reduz a visibilidade.",
+   "Porque indica estacionamento permitido."
+  ],
+  "c": 0,
+  "img": "R-25C",
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 45,
+  "q": "Para que o airbag funcione de forma eficaz e segura, o uso de qual outro item é crucial?",
+  "a": [
+   "Cinto de segurança.",
+   "Calçados adequados.",
+   "limpador de parabrisas.",
+   "Freios ABS."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 46,
+  "q": "O que as Vias Arteriais (limite de 60km/h) têm que te faz parar com frequência, diferentemente das Vias de Trânsito Rápido?",
+  "a": [
+   "Acostamentos para paradas improvisadas.",
+   "Muita poeira e cascalho.",
+   "Velocidade máxima de 80km/h.",
+   "Vários semáforos e faixas de pedestres."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 47,
+  "q": "Ao transportar carga em motocicleta, o cuidado essencial é:",
+  "a": [
+   "Deixar solta para acomodar.",
+   "Prender nos guidões.",
+   "Concentrar peso alto e atrás.",
+   "Respeitar peso/volume e não cobrir faróis/lanternas."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 48,
+  "q": "Ao realizar manobras na moto, qual é a atitude de segurança prioritária a ser adotada?",
+  "a": [
+   "Sinalizar apenas com o braço",
+   "Mudar de faixa sem sinalizar se o trânsito estiver livre",
+   "Manter a velocidade constante",
+   "Sinalizar com antecedência e evitar movimentos bruscos"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 49,
+  "q": "Em vias de várias faixas, veículos grandes e lentos devem:",
+  "a": [
+   "Circular nas faixas da direita.",
+   "Ficar alternando de faixa.",
+   "Seguir pelo acostamento.",
+   "Circular à esquerda."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 50,
+  "q": "Como as placas de indicação contribuem para a segurança viária?",
+  "a": [
+   "Substituem o trabalho de agentes.",
+   "Reduzem o número de pedestres.",
+   "Eliminam semáforos.",
+   "Evita paradas indevidas e decisões de última hora, guiando o fluxo de forma previsível."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 51,
+  "q": "Quando uma infração se torna crime?",
+  "a": [
+   "Quando causa multa alta",
+   "Quando ocorre à noite",
+   "Quando envolve motocicletas",
+   "Quando a conduta coloca gravemente em risco outras pessoas"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 52,
+  "q": "Quando uma infração de trânsito, como dirigir alcoolizado, se torna também um crime de trânsito?",
+  "a": [
+   "Sempre que o motorista é parado em uma blitz.",
+   "Infrações de trânsito e crimes de trânsito são a mesma coisa.",
+   "Quando o comportamento é tão grave que ultrapassa a esfera administrativa, como atingir um certo limite no bafômetro.",
+   "Apenas se o motorista causar um sinistro com vítimas"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 53,
+  "q": "Qual é a classificação da infração por deixar de usar a seta para indicar uma mudança de faixa?",
+  "a": [
+   "Média",
+   "Grave",
+   "Leve",
+   "Gravíssima"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 54,
+  "q": "Não usar o cinto de segurança, seja no banco da frente ou de trás, é classificado como qual tipo de infração?",
+  "a": [
+   "Gravíssima",
+   "Leve",
+   "Média",
+   "Grave"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 55,
+  "q": "Por que é importante ler a notificação de multa com atenção?",
+  "a": [
+   "Para saber se alguém já pagou",
+   "Para ver se dá para ignorar",
+   "Para conferir se todos os dados estão corretos",
+   "Para decidir se vai pagar na hora"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 56,
+  "q": "Por que o trânsito começa antes mesmo de ligar o carro?",
+  "a": [
+   "Porque ajuda a economizar combustível",
+   "Porque deixa a viagem mais rápida",
+   "Porque o carro pode não pegar",
+   "Porque a checagem prévia evita riscos e imprevistos"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 57,
+  "q": "O que a Penalidade de Multa pode acompanhar, fazendo parte de um processo administrativo?",
+  "a": [
+   "Uma prisão.",
+   "A pontuação na carteira.",
+   "Um crime de trânsito.",
+   "Uma cassação definitiva."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 58,
+  "q": "Qual condição física e mental afeta reflexos, atenção e capacidade de decisão do condutor?",
+  "a": [
+   "Estar cansado ou emocionalmente abalado.",
+   "Estar com o som alto.",
+   "Estar com a janela aberta.",
+   "Estar com o carro limpo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 59,
+  "q": "O que o condutor deve fazer ao se aproximar de uma área zebrada entre faixas?",
+  "a": [
+   "Aproveitar para ultrapassar.",
+   "Usar para conversão rápida.",
+   "Evitar circular ou parar sobre a área zebrada.",
+   "Estacionar brevemente."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 60,
+  "q": "Diego vê placa marrom com símbolo de museu. Que informação recebe?",
+  "a": [
+   "Pista escorregadia",
+   "Ponte móvel adiante",
+   "Velocidade reduzida",
+   "Local turístico ou cultural"
+  ],
+  "c": 3,
+  "img": "THC-05",
+  "provas": [
+   2
+  ]
+ },
+ {
+  "id": 61,
+  "q": "Qual o objetivo principal da placa acima?",
+  "a": [
+   "Reservar estacionamento de motos.",
+   "Facilitar o tráfego de automóveis.",
+   "Evitar o uso de bicicletas.",
+   "Proteger ciclistas e garantir a convivência segura entre modais."
+  ],
+  "c": 3,
+  "img": "R-34",
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 62,
+  "q": "Por que as linhas horizontais ajudam a fluidez do trânsito?",
+  "a": [
+   "Porque reduzem o limite de velocidade.",
+   "Porque substituem os semáforos.",
+   "Porque orientam condutores e reduzem dúvidas sobre posicionamento e manobras.",
+   "Porque permitem estacionar onde quiser."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 63,
+  "q": "Uma placa azul com o símbolo de uma bomba de combustível informa:",
+  "a": [
+   "Que há mecânica de emergência.",
+   "A presença de posto de abastecimento adiante.",
+   "Que a via termina.",
+   "Que é proibido abastecer."
+  ],
+  "c": 1,
+  "img": "SAU-09",
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 64,
+  "q": "Por que responder mensagem pelo celular dirigindo é perigoso?",
+  "a": [
+   "O condutor fica distraído e retitra as mãos do volante, sendo perigoso para todos usuários da via.",
+   "Só é ruim à noite.",
+   "Só gasta bateria.",
+   "Só atrapalha quem está atrás."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 65,
+  "q": "Usar o celular ao volante é:",
+  "a": [
+   "Permitido em ruas pouco movimentadas.",
+   "Uma ferramenta boa, pois aumenta a atenção na direção.",
+   "Um risco porque distrai o condutor e reduz o tempo de reação.",
+   "Uma ferramenta que ajuda a manter a calma no trânsito."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 66,
+  "q": "“Bebi uma taça de vinho, dá para dirigir?” Qual a resposta correta para esta pergunta?",
+  "a": [
+   "Sim, se for perto de casa.",
+   "Não, pois pode ser denunciado.",
+   "Sim, se não tiver fiscalização.",
+   "Não. Qualquer quantidade de álcool aumenta o risco de sinistros e é infração."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 67,
+  "q": "O que significa agir com responsabilidade após receber uma multa?",
+  "a": [
+   "Continuar dirigindo da mesma forma",
+   "Ler, entender e corrigir o comportamento",
+   "Discutir com o agente",
+   "Desconsiderar a infração"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 68,
+  "q": "Um mecânico revisou o carro e garantiu que tudo estava funcionando para uma viagem segura. Qual o conjunto de itens que deve estar funcionando para o veículo estar em condições de segurança?",
+  "a": [
+   "Ar-condicionado, GPS e airbag.",
+   "Câmera de ré e sensor de estacionamento.",
+   "Sistema de som e rastreador.",
+   "Faróis, freios, retrovisores, buzina, pneus em bom estado e setas."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 69,
+  "q": "Por que pequenas atitudes no trânsito são importantes?",
+  "a": [
+   "Porque evitam qualquer multa",
+   "Porque deixam o trajeto mais rápido",
+   "Porque garantem preferência sempre",
+   "Porque tornam o condutor mais responsável"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 70,
+  "q": "Parar o veículo sobre faixa de pedestre para embarque é:",
+  "a": [
+   "Proibido e perigoso, obriga pedestres a desviar para a via.",
+   "Permitido se o motor estiver ligado.",
+   "Permitido só por um minuto.",
+   "Permitido se o passageiro for criança."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 71,
+  "q": "Márcia vê placa branca educativa “Use o Cinto – Salve Vidas”. Qual a função dela?",
+  "a": [
+   "Conscientizar sobre comportamento seguro",
+   "Indicar estacionamento obrigatório",
+   "Alertar sobre curva acentuada",
+   "Proibir veículos grandes"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 72,
+  "q": "Quando a responsabilidade por uma infração de trânsito é do proprietário do veículo?",
+  "a": [
+   "Quando o condutor estaciona em vaga comum.",
+   "Quando o condutor não respeita a sinalização de trânsito.",
+   "Quando o condutor utiliza farol baixo à noite.",
+   "Quando a infração estiver ligada às condições do veículo ou à falta de licenciamento."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 73,
+  "q": "Vagas exclusivas para pessoa idosa ou com deficiência:",
+  "a": [
+   "Devem ser respeitadas, só usando com a credencial válida.",
+   "Valem só em dias úteis.",
+   "Podem ser usadas por qualquer um à noite.",
+   "Podem ser usadas por qualquer um por no máximo 5 minutos."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 74,
+  "q": "O não atendimento ao recall pode gerar:",
+  "a": [
+   "Nenhuma anotação oficial.",
+   "Isenção de IPVA.",
+   "Bônus no seguro.",
+   "Bloqueio do próximo licenciamento e outras consequências legais."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 75,
+  "q": "As placas fixadas ao lado da via como a de 'PARE', pertencem a qual tipo de sinalização?",
+  "a": [
+   "Sinalização Vertical",
+   "Sinalização Semafórica",
+   "Sinalização Horizontal",
+   "Dispositivos Auxiliares"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 76,
+  "q": "Como o condutor deve agir ao entrar em uma rotatória sinalizada por essa placa?",
+  "a": [
+   "Deve parar no meio da pista.",
+   "Deve ceder passagem aos veículos que já circulam dentro dela.",
+   "Deve entrar sem olhar.",
+   "Deve buzinar antes de entrar."
+  ],
+  "c": 1,
+  "img": "A-12",
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 77,
+  "q": "Gustavo esqueceu de calibrar os pneus e, na viagem, notou o carro instável. Qual o erro?",
+  "a": [
+   "Parar para calibrar só no fim da viagem",
+   "Dirigir em estrada sem ar-condicionado",
+   "Usar pneus de marcas diferentes",
+   "Não calibrar semanalmente com pneus frios"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 78,
+  "q": "João estava dirigindo quando viu uma colisão grave, com um motociclista caído no chão. Havia sangue e parecia que a vítima precisava de atendimento médico urgente. Qual número João deve ligar para acionar o socorro médico especializado (SAMU)?",
+  "a": [
+   "193",
+   "190",
+   "191",
+   "192"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 79,
+  "q": "O que significa ser um bom motorista?",
+  "a": [
+   "Seguir as regras de trânsito.",
+   "Dirigir rapidamente para não atrapalhar o trânsito.",
+   "Ter um carro novo todo ano.",
+   "Conhecer atalhos para chegar mais rápido ao destino."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 80,
+  "q": "Por que é importante frear o veículo de forma gradual?",
+  "a": [
+   "Pois faz o carro andar sozinho.",
+   "Pois alerta quem vem atrás e evita sustos.",
+   "Pois aumenta o desgaste de pneus.",
+   "Pois substitui o uso das setas."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 81,
+  "q": "Por que é importante reduzir a velocidade em pista irregular?",
+  "a": [
+   "Porque é proibido dirigir rápido.",
+   "Para não sujar o carro.",
+   "Para evitar perda de controle e danos ao veículo.",
+   "Para economizar combustível."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 82,
+  "q": "Ao se aproximar da linha férrea, o motorista deve:",
+  "a": [
+   "Parar o veículo antes dos trilhos, mesmo que o trem ainda esteja longe.",
+   "Parar sobre os trilhos para enxergar melhor.",
+   "Esperar o trem parar para atravessar junto.",
+   "Passar rapidamente para não atrapalhar."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 83,
+  "q": "Por que ver e ser visto é essencial no trânsito?",
+  "a": [
+   "Porque melhora apenas o conforto do motorista.",
+   "Porque evita gastar com manutenção.",
+   "Porque se você não vê ou não é visto, o risco de sinistro aumenta.",
+   "Porque serve só para rodovias."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 84,
+  "q": "Por quanto tempo a Permissão Para Dirigir (PPD) é válida?",
+  "a": [
+   "1 (um) ano inteiro.",
+   "5 (cinco) anos.",
+   "6 (seis) meses.",
+   "2 (dois) anos."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 85,
+  "q": "Por que é importante não realizar o ziguezague entre as faixas de trânsito?",
+  "a": [
+   "Porque desorienta outros motoristas e aumenta o risco de colisões.",
+   "Porque causa desgaste nos pneus.",
+   "Porque reduz a velocidade do veículo.",
+   "Porque aumenta o consumo de combustível."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 86,
+  "q": "Se você está dirigindo em uma via urbana próxima a escolas, hospitais ou faixas de pedestres, qual deve ser sua atitude de segurança?",
+  "a": [
+   "Reduzir a velocidade e ter atenção redobrada.",
+   "Manter a velocidade máxima da via para evitar retenções.",
+   "Parar em fila dupla para buscar informações.",
+   "Usar o farol alto para sinalizar sua presença."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 87,
+  "q": "Quando há neblina, o motorista deve:",
+  "a": [
+   "Usar o farol alto.",
+   "Reduzir a velocidade e ligar o farol baixo.",
+   "Acelerar para sair logo da neblina.",
+   "Ligar o pisca-alerta e seguir rápido."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 88,
+  "q": "A CNH precisa ser renovada conforme a idade do condutor. Para pessoa com menos de 50 anos, qual o prazo?",
+  "a": [
+   "Não renova nunca mais.",
+   "A cada 10 anos.",
+   "A cada 3 anos.",
+   "A cada 5 anos."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 89,
+  "q": "Por que a atenção precisa ser redobrada e a velocidade, reduzida, perto de escolas, hospitais e faixas de pedestres?",
+  "a": [
+   "Porque você será multado se não reduzir a velocidade.",
+   "Porque a vida de outras pessoas depende da sua cautela.",
+   "Porque o trânsito flui melhor se você dirigir devagar.",
+   "Porque é o único lugar na cidade onde a regra dos 30km/h se aplica."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 90,
+  "q": "Você comprou um carro usado e se mudou para outro município. Qual é o procedimento correto a seguir?",
+  "a": [
+   "Trocar os pneus e avisar todos os parentes.",
+   "Não precisa fazer nada se já pagou o IPVA do veículo.",
+   "Esperar completar um ano para avisar aos órgãos de trânsito.",
+   "Transferir a propriedade em até 30 dias e comunicar imediatamente a mudança de município para expedição do novo Certificado de Registro do Veículo."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   3
+  ]
+ },
+ {
+  "id": 91,
+  "q": "A bicicleta é classificada como:",
+  "a": [
+   "Veículo de tração humana, porque anda com a força da pessoa que pedala.",
+   "Veículo automotor, porque tem motor grande.",
+   "Veículo de tração animal, porque usa cavalo.",
+   "Veículo especial, porque só anda na ciclovia."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 92,
+  "q": "Carlos estaciona seu veículo de passeio em uma vaga com a placa contendo o texto “Exceto Carga e Descarga – 30 min”. Ele pode permanecer ali com o veículo?",
+  "a": [
+   "Sim, se não houver caminhões.",
+   "Não, pois a vaga é exclusiva para veículos de carga por até 30 minutos.",
+   "Sim, por menos de 10 minutos.",
+   "Sim, desde que com pisca-alerta ligado."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 93,
+  "q": "O que é recomendado ao ultrapassar um ciclista?",
+  "a": [
+   "Use a faixa de pedestre para ultrapassar.",
+   "Manter 1,5 m de distância lateral para evitar desequilíbrio.",
+   "Buzine constantemente para acelerar o ciclista.",
+   "Aproxime-se por trás e ultrapasse sem espaço."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 94,
+  "q": "O que indica a placa acima?",
+  "a": [
+   "Que é ponto de parada de ônibus.",
+   "Que o estacionamento é permitido a ônibus.",
+   "Que é proibido o trânsito de ônibus.",
+   "Que a via ou faixa é de circulação exclusiva de ônibus."
+  ],
+  "c": 3,
+  "img": "R-32",
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 95,
+  "q": "Em área escolar, a conduta segura inclui:",
+  "a": [
+   "Buzinar para apressar travessias.",
+   "Usar farol alto para alertar.",
+   "Reduzir velocidade e atenção total à sinalização e às crianças.",
+   "Manter velocidade da via."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 96,
+  "q": "Por que há limite de comprimento em algumas vias?",
+  "a": [
+   "Porque veículos longos causam poluição.",
+   "Porque isso reduz o consumo de combustível.",
+   "Porque curvas fechadas, pontes e túneis podem não comportar veículos longos.",
+   "Porque impede o trânsito de motocicletas."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 97,
+  "q": "Condução eficiente significa:",
+  "a": [
+   "Dirigir rápido sempre.",
+   "Usar menos combustível e poluir menos com pequenas mudanças de hábito.",
+   "Frear e acelerar forte.",
+   "Descartar óleo no ralo."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 98,
+  "q": "Em um cruzamento onde há ciclofaixa, qual é a penalidade aplicada ao motociclista (ou qualquer condutor) que não parar para ceder a passagem ao ciclista?",
+  "a": [
+   "Comete infração gravíssima e põe vidas em risco.",
+   "Pode seguir se estiver apressado.",
+   "Age certo se buzinar.",
+   "Está certo se o sinal estiver verde."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 99,
+  "q": "Em vez de esperar um problema surgir, você agenda a troca de pastilhas e a checagem do fluido de freio a cada 10 mil km. Qual a vantagem financeira que essa atitude proativa garante?",
+  "a": [
+   "A manutenção preventiva sempre sai mais barato do que o conserto de um problema de última hora.",
+   "O seguro do carro cobre apenas problemas causados por falta de manutenção.",
+   "O conserto de última hora não é tão caro quanto a revisão agendada.",
+   "A manutenção preventiva aumenta o custo mensal do veículo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 100,
+  "q": "Por que não se deve ultrapassar em trechos com essa placa?",
+  "a": [
+   "Porque veículos podem entrar repentinamente pela esquerda.",
+   "Porque é um local de pedágio.",
+   "Porque o piso sempre é irregular.",
+   "Porque o carro pode perder a direção."
+  ],
+  "c": 0,
+  "img": "A-7A",
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 101,
+  "q": "Quais veículos são abrangidos pela proibição da placa acima?",
+  "a": [
+   "Motocicletas, motonetas e ciclomotores.",
+   "Tratores e máquinas agrícolas.",
+   "Automóveis e caminhões.",
+   "Bicicletas e patinetes elétricos."
+  ],
+  "c": 0,
+  "img": "R-37",
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 102,
+  "q": "Motociclista em semáforo deve parar:",
+  "a": [
+   "No meio dos carros.",
+   "No bolsão de motos, se existir, ou atrás da faixa de pedestres.",
+   "Depois da faixa de pedestres, já na esquina.",
+   "Em cima da faixa de pedestres"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 103,
+  "q": "Cinto na gravidez:",
+  "a": [
+   "Deve ser usado, reduz riscos à gestante e ao bebê.",
+   "Apenas no banco dianteiro.",
+   "É proibido.",
+   "Só a faixa abdominal."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 104,
+  "q": "Quando a responsabilidade por uma infração de trânsito é do proprietário do veículo?",
+  "a": [
+   "Quando a infração estiver ligada às condições do veículo ou à falta de licenciamento.",
+   "Quando o condutor não respeita a sinalização de trânsito.",
+   "Quando o condutor estaciona em vaga comum.",
+   "Quando o condutor utiliza farol baixo à noite."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 105,
+  "q": "Se João, dirigindo a 80km/h, tiver um micro-sono de apenas 4 segundos, qual o risco real dessa situação?",
+  "a": [
+   "O veículo apenas reduz a velocidade.",
+   "O veículo percorre quase 100 metros sem controle nenhum, o equivalente a dirigir de olhos fechados por um quarteirão inteiro.",
+   "O veículo percorre apenas 10 metros, sem risco.",
+   "O veículo se autocontrola e não sai da faixa."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 106,
+  "q": "Por que não devemos entrar em desespero ao receber uma multa?",
+  "a": [
+   "Porque multas não valem nada",
+   "Porque é possível entender, agir e aprender com ela",
+   "Porque sempre é um engano",
+   "Porque alguém vai resolver"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4,
+   6
+  ]
+ },
+ {
+  "id": 107,
+  "q": "Por que não se deve usar o celular enquanto dirige?",
+  "a": [
+   "Porque tira a atenção e aumenta o risco de sinistros.",
+   "Porque pode não ter sinal para mandar mensagens.",
+   "Porque atrapalha a buzina.",
+   "Porque consome bateria do carro."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 108,
+  "q": "O que  fazer ao receber uma multa?",
+  "a": [
+   "Passar a dirigir mais rápido",
+   "Ignorar e esperar prescrever",
+   "Reclamar na internet",
+   "Ler, entender e agir com responsabilidade"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 109,
+  "q": "Cada vez que o motorista comete uma infração, ele recebe a pontuação correspondente. O que a Pontuação na Carteira representa?",
+  "a": [
+   "O número de Medidas Administrativas.",
+   "O valor da multa a ser pago.",
+   "O número de crimes de trânsito.",
+   "Pontos na CNH que ficam registrados no prontuário."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 110,
+  "q": "O que significa aprender com o erro após receber uma multa?",
+  "a": [
+   "Achar que é azar",
+   "Não dirigir mais",
+   "Entender por que cometeu a infração e não repetir",
+   "Culpar o agente de trânsito"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 111,
+  "q": "Transportar uma criança sem o dispositivo de retenção adequado (bebê-conforto, cadeirinha, etc.) é uma infração de qual natureza?",
+  "a": [
+   "Leve",
+   "Gravíssima",
+   "Média",
+   "Grave"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 112,
+  "q": "Por que obedecer ao agente de trânsito é essencial?",
+  "a": [
+   "Porque não há alternativa",
+   "Porque evita conversa",
+   "Porque ele organiza a via e garante segurança",
+   "Porque agiliza o trajeto"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 113,
+  "q": "O condutor do veículo à frente está aprendendo a dirigir e hesita para sair. Qual atitude?",
+  "a": [
+   "Aguardar com calma e manter distância.",
+   "Buzinar sem parar.",
+   "Xingá-lo pela janela.",
+   "Acelerar e passar bem perto."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 114,
+  "q": "Na Categoria B, que é a mais procurada, qual é o limite de peso total (PBT) do veículo que você pode dirigir?",
+  "a": [
+   "1.000 kg (mil quilos).",
+   "Não há limite de peso, desde que não seja ônibus ou caminhão.",
+   "4.500 kg (quatro mil e quinhentos quilos).",
+   "3.500 kg (três mil e quinhentos quilos)."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 115,
+  "q": "Ao se deparar com uma rotatória, quem tem a preferência de passagem?",
+  "a": [
+   "O veículo que está entrando na rotatória.",
+   "O veículo que vem pela direita, mesmo que vá entrar na rotatória.",
+   "O veículo maior ou mais rápido.",
+   "O veículo que já está circulando dentro dela."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 116,
+  "q": "O que o condutor deve manter sempre ligado na rodovia, mesmo durante o dia, para ajudar outros motoristas a perceberem sua presença?",
+  "a": [
+   "O pisca-alerta.",
+   "As luzes de neblina.",
+   "O farol baixo.",
+   "O farol alto."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 117,
+  "q": "Qual o tipo de veículo de três rodas com motor que se encaixa na Categoria A?",
+  "a": [
+   "Triciclos motorizados.",
+   "Ciclomotores com quatro rodas.",
+   "Veículos de três rodas sem motor.",
+   "Carros de passeio de três rodas."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 118,
+  "q": "Qual deve ser a prioridade número um no trânsito?",
+  "a": [
+   "O tamanho da via.",
+   "A vida das pessoas.",
+   "O valor do combustível.",
+   "O tempo de viagem."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 119,
+  "q": "É permitido ultrapassar pela direita quando:",
+  "a": [
+   "O outro veículo for lento.",
+   "O veículo à frente sinaliza que vai virar à esquerda.",
+   "A pista estiver livre.",
+   "A pressa for grande."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 120,
+  "q": "Qual é a recomendação para o uso do acostamento em uma rodovia?",
+  "a": [
+   "Trafegar por ele quando o trânsito na pista principal estiver lento.",
+   "Usá-lo apenas em casos de emergência, como pane mecânica.",
+   "Utilizá-lo para fazer ultrapassagens mais rápidas.",
+   "Parar para atender ao celular ou descansar."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   4
+  ]
+ },
+ {
+  "id": 121,
+  "q": "Num cruzamento semaforizado, você percebe pedestres já iniciando a travessia no fim do sinal verde. Qual a conduta segura?",
+  "a": [
+   "Desviar pela faixa de ônibus.",
+   "Acelerar no amarelo para sair.",
+   "Buzinar forte para abrir caminho.",
+   "Aguardar a liberação total da faixa antes de partir."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 122,
+  "q": "Qual tipo de via urbana é caracterizada por ser uma grande avenida expressa que não tem semáforos e nem cruzamentos diretos?",
+  "a": [
+   "Vias Arteriais.",
+   "Vias Coletoras.",
+   "Vias de Trânsito Rápido.",
+   "Vias Locais."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 123,
+  "q": "O que significa estacionar um veículo?",
+  "a": [
+   "Parar na esquina para ir ao mercado rapidinho.",
+   "Deixar o veículo parado por tempo maior do que o de embarque e desembarque, com ou sem condutor.",
+   "Só encostar por 10 segundos em cima da faixa.",
+   "Ligar o pisca-alerta e poder qualquer coisa."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 124,
+  "q": "Por que o motorista deve reduzir perto de escolas e praças?",
+  "a": [
+   "Porque é área sem fiscalização.",
+   "Porque pode estacionar melhor.",
+   "Porque a rua é estreita.",
+   "Porque há pedestres e crianças atravessando."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 125,
+  "q": "Antes de mudar de faixa com a moto, o que o condutor deve fazer?",
+  "a": [
+   "Deitar a moto e cortar várias faixas de uma vez.",
+   "Ligar a seta com antecedência e checar espelhos e ponto cego.",
+   "Buzinar e jogar a moto para o lado.",
+   "Mudar rápido sem avisar, para não “perder a chance”."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 126,
+  "q": "Em uma estrada com muitas curvas, qual atitude mostra um motorista prudente?",
+  "a": [
+   "Frear toda hora.",
+   "Ficar colado no carro da frente.",
+   "Manter distância do carro da frente e velocidade permitida e segura.",
+   "Ligar o pisca-alerta e andar devagar no meio da pista."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 127,
+  "q": "Pedro conduz sua motocicleta em uma via quando um pedestre sinaliza que vai atravessar na faixa de pedestres. O que Pedro deve fazer?",
+  "a": [
+   "Passar rápido antes do pedestre atravessar a via.",
+   "Desviar pela calçada.",
+   "Buzinar para ele correr.",
+   "Parar e dar a preferência, esperando a travessia segura."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 128,
+  "q": "O acostamento serve para quê?",
+  "a": [
+   "Para vender comida.",
+   "Para emergência (pneu furado, pane) e, em vias rurais, também para pedestres e ciclistas quando não há calçada.",
+   "Para estacionar o dia todo.",
+   "Para andar mais rápido e ultrapassar pela direita."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 129,
+  "q": "Um motorista vê uma placa de curva perigosa. O que deve fazer?",
+  "a": [
+   "Frear bruscamente no meio da curva.",
+   "Acelerar para sair logo.",
+   "Reduzir a velocidade e manter controle do veículo.",
+   "Ignorar a sinalização."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 130,
+  "q": "Carlos dirige à noite e vê a placa acima antes de uma curva acentuada. Por que essa proibição existe?",
+  "a": [
+   "Porque há radar fixo mais adiante.",
+   "Porque é área urbana.",
+   "Porque a pista é larga.",
+   "Porque a visibilidade é reduzida e não há campo de visão suficiente para a manobra."
+  ],
+  "c": 3,
+  "img": "R-7",
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 131,
+  "q": "Por que é importante o uso da placa acima?",
+  "a": [
+   "Para proibir o trânsito de pedestres.",
+   "Para restringir o uso de bicicletas.",
+   "Para orientar a convivência segura entre pedestres e ciclistas.",
+   "Para aumentar a velocidade dos ciclistas."
+  ],
+  "c": 2,
+  "img": "R-44",
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 132,
+  "q": "A faixa de pedestres, com suas largas listras brancas, concede qual direito ao pedestre?",
+  "a": [
+   "O direito de atravessar, mas somente quando o semáforo de pedestres estiver verde.",
+   "O direito de atravessar apenas se não houver veículos se aproximando.",
+   "A prioridade de travessia, exigindo que os veículos parem.",
+   "Direito do pedestre esperar até que não passe mais carro."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 133,
+  "q": "O que indica a placa acima?",
+  "a": [
+   "Que é proibido o trânsito de ônibus.",
+   "Que é ponto de parada de ônibus.",
+   "Que a via ou faixa é de circulação exclusiva de ônibus.",
+   "Que o estacionamento é permitido a ônibus."
+  ],
+  "c": 2,
+  "img": "R-32",
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 134,
+  "q": "Como o proprietário de um veículo pode verificar se há um recall pendente para o seu carro?",
+  "a": [
+   "Só na loja onde comprou.",
+   "CDT (aplicativo), site da Senatran ou site da montadora.",
+   "Não é possível consultar.",
+   "Apenas perguntando a amigos."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 135,
+  "q": "Para circular legalmente, um veículo precisa estar com a manutenção em dia. Qual a condição legal obrigatória para que o veículo esteja regularizado, além de estar em boas condições de segurança?",
+  "a": [
+   "Ter o licenciamento do ano em dia e o IPVA pago.",
+   "Ter airbag instalado.",
+   "Ter o seguro total.",
+   "Estar com o tanque cheio."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 136,
+  "q": "A prática de costurar no trânsito com a motocicleta, realizando manobras em zigue-zague entre os veículos, representa:",
+  "a": [
+   "Um risco, pois surpreende os outros condutores, invade pontos cegos e aumenta muito o risco de batida lateral.",
+   "A preferência por estar mais rápido, obrigando os demais veículos a abrir espaço.",
+   "Habilidade do condutor.",
+   "Economia de tempo, por que vai mais rápido em relação aos outros veículos."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 137,
+  "q": "Se você tem um problema mecânico na rodovia e precisa parar no acostamento, o triângulo de sinalização deve ser colocado:",
+  "a": [
+   "A pelo menos 30 metros atrás do carro.",
+   "No exato local onde o carro parou.",
+   "Na frente do carro, voltado para a via.",
+   "A 10 metros atrás do carro."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 138,
+  "q": "Qual a função das Vias Coletoras no sistema de trânsito urbano?",
+  "a": [
+   "Servir apenas como área de convivência e lazer.",
+   "Fazer a ligação entre as ruas dos bairros (Locais) e as grandes avenidas (Arteriais).",
+   "Ligar cidades e estados, sem semáforos.",
+   "Cortar a cidade em grandes eixos expressos."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 139,
+  "q": "Em cruzamentos, para ser visto e evitar sinistro, o motociclista deve:",
+  "a": [
+   "Passar sem reduzir.",
+   "Acelerar para “ganhar a frente”.",
+   "Posicionar-se visível, sinalizar e buscar contato visual.",
+   "Parar no ponto cego do carro."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 140,
+  "q": "Se a luz indicadora do airbag no painel do carro permanecer acesa após ligar o veículo, o que isso pode indicar?",
+  "a": [
+   "Que o sistema está ativado e pronto para uso.",
+   "Que o veículo está em modo de segurança para estacionamento.",
+   "Uma possível falha no sistema do airbag.",
+   "Que o óleo está baixo."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 141,
+  "q": "“Bebi uma taça de vinho, dá para dirigir?” Qual a resposta correta para esta pergunta?",
+  "a": [
+   "Não, pois pode ser denunciado.",
+   "Sim, se for perto de casa.",
+   "Não. Qualquer quantidade de álcool aumenta o risco de sinistros e é infração.",
+   "Sim, se não tiver fiscalização."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 142,
+  "q": "Qual item é listado como um equipamento obrigatório para carros que deve ser checado antes de sair?",
+  "a": [
+   "Kit de primeiros socorros.",
+   "GPS.",
+   "Estepe calibrado.",
+   "Extintor de incêndio."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 143,
+  "q": "O que a Penalidade de Multa pode acompanhar, fazendo parte de um processo administrativo?",
+  "a": [
+   "Uma cassação definitiva.",
+   "Uma prisão.",
+   "Um crime de trânsito.",
+   "A pontuação na carteira."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 144,
+  "q": "Maria possui permissão para dirigir e cometeu uma infração de natureza grave. O que ocorre com o processo de obtenção da Carteira Nacional de Habilitação (CNH)?",
+  "a": [
+   "Basta pagar uma taxa extra e segue.",
+   "Nada muda, ela conseguirá obter a CNH ao término de um ano.",
+   "Só precisa escrever uma carta ao Detran.",
+   "Perde o direito de se obter a CNH  e  precisará reiniciar o processo para obtenção da CNH novamente."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 145,
+  "q": "Um mecânico revisou o carro e garantiu que tudo estava funcionando para uma viagem segura. Qual o conjunto de itens que deve estar funcionando para o veículo estar em condições de segurança?",
+  "a": [
+   "Faróis, freios, retrovisores, buzina, pneus em bom estado e setas.",
+   "Sistema de som e rastreador.",
+   "Câmera de ré e sensor de estacionamento.",
+   "Ar-condicionado, GPS e airbag."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 146,
+  "q": "Qual é a gravidade da infração por desobedecer às ordens de um agente de trânsito?",
+  "a": [
+   "Gravíssima.",
+   "Leve, pois o agente pode apenas dar uma advertência verbal.",
+   "Média, se a desobediência não causar um sinistro.",
+   "Grave."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 147,
+  "q": "O que é infração de trânsito?",
+  "a": [
+   "Inobservância a qualquer preceito do CTB.",
+   "Só bater o carro em sinistro.",
+   "Um aviso sem efeito legal.",
+   "Qualquer ato que desagrada outro condutor."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 148,
+  "q": "O que é um atendimento de primeiros socorros?",
+  "a": [
+   "Tratamento médico realizado em hospital.",
+   "Atendimento feito apenas por profissionais de saúde.",
+   "Cuidados imediatos prestados antes da chegada de ajuda especializada.",
+   "Aplicação de medicamentos específicos."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 149,
+  "q": "Em rodovia turística, placas marrons podem aparecer com frequência. Por quê?",
+  "a": [
+   "Indicam acessibilidade",
+   "Impõem regras",
+   "Sinalizam perigo",
+   "Indicam atrativos próximos ou zonas de interesse"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   5,
+   9
+  ]
+ },
+ {
+  "id": 150,
+  "q": "Quais penalidades o CTB prevê?",
+  "a": [
+   "Advertência por escrito, multa, suspensão, cassação e curso de reciclagem.",
+   "Prisão do condutor.",
+   "Advertência e multa.",
+   "Multa e apreensão do veículo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   5
+  ]
+ },
+ {
+  "id": 151,
+  "q": "Quando passar por uma placa como essa e em seguida encontrar um semáforo que estiver intermitente (piscando em amarelo), o que o condutor deve fazer?",
+  "a": [
+   "Ignorar o sinal.",
+   "Parar obrigatoriamente.",
+   "Acelerar para aproveitar o sinal.",
+   "Reduzir a velocidade e prosseguir com atenção."
+  ],
+  "c": 3,
+  "img": "A-14",
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 152,
+  "q": "Por que a velocidade máxima da via nem sempre é a mais segura?",
+  "a": [
+   "Porque os limites são sempre exagerados.",
+   "Porque o semáforo determina a velocidade.",
+   "Porque locais urbanos não têm limites.",
+   "Porque condições como chuva exigem reduzir abaixo do limite."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 153,
+  "q": "Por que as infrações podem variar de leves a gravíssimas?",
+  "a": [
+   "Porque muda a cada cidade sem regra.",
+   "Porque o risco e a gravidade do comportamento variam e as penas acompanham isso.",
+   "Porque os fiscais decidem aleatoriamente.",
+   "Porque depende do tipo de veículo."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 154,
+  "q": "O que a cor azul das placas de indicação representa?",
+  "a": [
+   "Informações úteis ao motorista",
+   "Situações emergenciais",
+   "Riscos na pista",
+   "Regras obrigatórias"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 155,
+  "q": "Você está dirigindo e vê uma placa de regulamentação com o símbolo de um 'E' cortado por uma faixa vermelha. O que essa placa permite?",
+  "a": [
+   "Permite estacionar, mas proíbe a parada rápida para embarque e desembarque.",
+   "Permite uma parada rápida para embarque e desembarque, mas proíbe estacionar o veículo no local.",
+   "Indica que o estacionamento é exclusivo para um determinado tipo de veículo.",
+   "Não permite nenhuma forma de imobilização do veículo, nem mesmo por um instante."
+  ],
+  "c": 1,
+  "img": "R-6A",
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 156,
+  "q": "Qual luz é obrigatória à noite?",
+  "a": [
+   "Apenas DRL.",
+   "Farol baixo.",
+   "Farol alto sempre.",
+   "Lanternas traseiras apagadas."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 157,
+  "q": "O que significa o princípio “o maior cuida do menor” no trânsito?",
+  "a": [
+   "O condutor de um veículo motorizado tem a responsabilidade de zelar pela segurança de ciclistas e pedestres.",
+   "Veículos maiores, como caminhões, sempre têm a preferência.",
+   "Pedestres e ciclistas devem sempre ceder a passagem para os carros.",
+   "Apenas veículos de emergência, como ambulâncias, precisam seguir esta regra."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 158,
+  "q": "O que significa dizer que o trânsito é um espaço coletivo?",
+  "a": [
+   "Que é cada um por si.",
+   "Que todos compartilham as vias e têm deveres e direitos próprios.",
+   "Que só os motoristas decidem as regras.",
+   "Que quem paga imposto manda."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 159,
+  "q": "Qual o limite máximo de lugares que um veículo da Categoria B pode ter, sem contar o motorista?",
+  "a": [
+   "5 lugares.",
+   "12 lugares.",
+   "8 lugares.",
+   "10 lugares."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 160,
+  "q": "O que pode acontecer se o motorista fizer as curvas rápidas demais?",
+  "a": [
+   "Nada acontece.",
+   "O pneu esfria mais rápido.",
+   "O carro pode sair da pista ou tombar.",
+   "O carro fica mais econômico."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 161,
+  "q": "Maria está aprendendo a dirigir. Ao ver um pedestre atravessar fora da faixa, ela decide frear para evitar o atropelamento. A ação dela foi correta?",
+  "a": [
+   "Tinha o direito de seguir sem frear.",
+   "Deveria ter acelerado para não parar o trânsito.",
+   "Agiu corretamente, evitando um sinistro.",
+   "Errou, porque o pedestre estava errado."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 162,
+  "q": "Qual é a atitude correta ao ser ultrapassado?",
+  "a": [
+   "Fechar a passagem.",
+   "Manter a velocidade ou reduzir, sem acelerar.",
+   "Mudar de faixa repentinamente.",
+   "Aumentar a velocidade para impedir a ultrapassagem."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 163,
+  "q": "Carlos dirige seu carro e usa o celular para mandar mensagem. Ele perde a atenção e bate no carro da frente. Esse fato é:",
+  "a": [
+   "Um problema de sorte, sem culpa de ninguém.",
+   "Um acidente inevitável, que acontece com qualquer pessoa.",
+   "Um defeito do carro.",
+   "Um sinistro de trânsito, que poderia ter sido evitado se ele não usasse o celular."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 164,
+  "q": "“Durante trilha turística, Helena dirige e vê sequência de placas marrons com símbolos naturais”. O que isso representa?",
+  "a": [
+   "Via bloqueada",
+   "Complexo turístico com vários atrativos",
+   "Curva perigosa",
+   "Restrição de tráfego"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 165,
+  "q": "Uso correto do capacete inclui:",
+  "a": [
+   "Sem selo de qualidade.",
+   "Óculos de sol no lugar da viseira.",
+   "Viseira abaixada ou óculos de proteção e fecho ajustado.",
+   "Viseira aberta e sem fecho."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 166,
+  "q": "Ao sair de uma via de trânsito rápido para uma via arterial com semáforo e área comercial, o que deve ser feito?",
+  "a": [
+   "Reduzir, preparar-se para parar em semáforos, observar acessos laterais e travessias, e adequar-se à velocidade da arterial (60 km/h).",
+   "Ligar farol alto e buzinar para os outros veículos.",
+   "Manter 80 km/h e passar no semáforo com a luz amarela sempre.",
+   "Seguir no acostamento para ir mais rápido."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 167,
+  "q": "Qual o procedimento crucial sobre a Faixa Subabdominal do cinto de segurança, especialmente para mulheres grávidas?",
+  "a": [
+   "Deve ser afrouxada para que não pressione o abdômen durante o impacto.",
+   "Deve ser totalmente ignorada, usando apenas a faixa diagonal.",
+   "Deve repousar sobre os ossos do quadril (pélvis), e nunca sobre o abdômen.",
+   "Deve ser passada sobre o centro da barriga para proteger a região."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 168,
+  "q": "Qual é a principal restrição de peso para um veículo ser conduzido com a Categoria B da CNH?",
+  "a": [
+   "Não há restrição de peso, apenas de lugares.",
+   "O veículo não pode ter mais de 1.500 kg.",
+   "O peso bruto total não pode passar de 3.500 kg.",
+   "O peso do veículo não pode ultrapassar o do motorista."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 169,
+  "q": "Qual é a infração de trânsito que indica \"problemas graves no motor e emissão altíssima de poluentes\"?",
+  "a": [
+   "Estacionar sobre a calçada.",
+   "Avançar o sinal vermelho.",
+   "Circular com o carro soltando fumaça preta.",
+   "Dirigir sem cinto de segurança."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 170,
+  "q": "Ao prestar assistência a uma vítima de sinistro, o que significa  'não remova, não movimente, não transporte'?",
+  "a": [
+   "Que é ilegal mover uma vítima de sinistro, configurando crime de lesão corporal culposa.",
+   "Que a vítima deve permanecer exatamente na mesma posição em que foi encontrada até a conclusão da perícia técnica.",
+   "Que qualquer movimento pode agravar lesões ocultas, especialmente na coluna, e só deve ser feito por profissionais ou em caso de perigo iminente.",
+   "Que a vítima não deve ser tocada em nenhuma circunstância, nem mesmo para confortá-la."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 171,
+  "q": "De acordo com o CTB, qual é a natureza da infração cometida ao estacionar o veículo bloqueando o acesso a hidrantes, garagens, tampas de poço de visita ou galerias pluviais?",
+  "a": [
+   "Permitido se o carro ficar ligado.",
+   "Permitido à noite e domingos.",
+   "Proibido, porque atrapalha serviços essenciais e causa risco.",
+   "Permitido com pisca-alerta."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 172,
+  "q": "Como contribuir com o meio ambiente ao dirigir?",
+  "a": [
+   "Ignorar pneus murchos.",
+   "Deixar o motor em marcha lenta.",
+   "Acelerar forte nas saídas.",
+   "Adotar condução suave e ter a manutenção do veículo em dia."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 173,
+  "q": "Dirigir com documento cassado ou com suspensão é:",
+  "a": [
+   "Permitido, desde que ligue o pisca-alerta.",
+   "Infração gravíssima, com multa (três vezes), recolhimento do documento e retenção do veículo.",
+   "Infração leve.",
+   "Permitido se for perto de casa."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 174,
+  "q": "Por que saber agir certo no dia a dia é importante?",
+  "a": [
+   "Porque evita ter carro",
+   "Porque reduz o uso da via",
+   "Porque aumenta velocidade",
+   "Porque pequenas atitudes tornam o condutor responsável"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 175,
+  "q": "O que pode acontecer se você não pagar uma multa de trânsito dentro do prazo?",
+  "a": [
+   "O veículo pode ficar com restrições no licenciamento, impedindo sua circulação e transferência.",
+   "O valor da multa é descontado diretamente do seu salário.",
+   "Você perde pontos na CNH, mas não precisa pagar a multa.",
+   "A multa é perdoada automaticamente após um ano."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 176,
+  "q": "Qual é a classificação da infração por não dar passagem a um veículo de emergência com sirene e luzes ligadas?",
+  "a": [
+   "Gravíssima.",
+   "Média, pois é uma questão de gentileza.",
+   "Grave, pois atrapalha o trânsito.",
+   "Leve, se o motorista não percebeu a tempo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 177,
+  "q": "O que fazer se você não era o condutor no momento da infração?",
+  "a": [
+   "Apagar a notificação",
+   "Esperar outra multa",
+   "Assumir a culpa",
+   "Indicar quem dirigia"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 178,
+  "q": "Parar o veículo sobre faixa de pedestre para embarque é:",
+  "a": [
+   "Proibido e perigoso, obriga pedestres a desviar para a via.",
+   "Permitido se o passageiro for criança.",
+   "Permitido só por um minuto.",
+   "Permitido se o motor estiver ligado."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 179,
+  "q": "Por que as infrações gravíssimas podem ter multa multiplicada?",
+  "a": [
+   "Para punir só quem é reincidente.",
+   "Pelo alto potencial de dano à vida e à coletividade.",
+   "Porque são raras.",
+   "Para arrecadar mais."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   6
+  ]
+ },
+ {
+  "id": 180,
+  "q": "Dirigir com sono, mesmo que por poucos segundos, pode causar:",
+  "a": [
+   "O carro desacelera automaticamente, prevenindo acidente.",
+   "Perda de controle do veículo e maior chance de acidente.",
+   "Nenhum problema, se o cochilo for rápido.",
+   "Apenas distração leve, sem risco real."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 181,
+  "q": "Por que obedecer ao agente de trânsito é essencial?",
+  "a": [
+   "Porque evita conversa",
+   "Porque agiliza o trajeto",
+   "Porque não há alternativa",
+   "Porque ele organiza a via e garante segurança"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 182,
+  "q": "O que significa aprender com o erro?",
+  "a": [
+   "Refletir e não repetir a infração",
+   "Evitar falar sobre o assunto",
+   "Ignorar a situação",
+   "Culpar o agente de trânsito"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 183,
+  "q": "Maria possui permissão para dirigir e cometeu uma infração de natureza grave. O que ocorre com o processo de obtenção da Carteira Nacional de Habilitação (CNH)?",
+  "a": [
+   "Nada muda, ela conseguirá obter a CNH ao término de um ano.",
+   "Perde o direito de se obter a CNH  e  precisará reiniciar o processo para obtenção da CNH novamente.",
+   "Basta pagar uma taxa extra e segue.",
+   "Só precisa escrever uma carta ao Detran."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 184,
+  "q": "Um motorista sai de casa atrasado e decide dirigir acima da velocidade permitida para a via. Essa atitude:",
+  "a": [
+   "É correta se a rua estiver vazia.",
+   "Aumenta o risco de sinistro e pode causar mortes.",
+   "Ajuda a economizar tempo com segurança.",
+   "Evita multas por atraso."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 185,
+  "q": "Um mecânico revisou o carro e garantiu que tudo estava funcionando para uma viagem segura. Qual o conjunto de itens que deve estar funcionando para o veículo estar em condições de segurança?",
+  "a": [
+   "Faróis, freios, retrovisores, buzina, pneus em bom estado e setas.",
+   "Ar-condicionado, GPS e airbag.",
+   "Sistema de som e rastreador.",
+   "Câmera de ré e sensor de estacionamento."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 186,
+  "q": "Qual a vantagem de pagar a multa antecipadamente?",
+  "a": [
+   "Poder dirigir mais rápido",
+   "Evitar pontos automaticamente",
+   "Liberar a CNH do outro condutor",
+   "Possibilidade de até 40% de desconto"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 187,
+  "q": "Por que olhar notificações no celular por “5 segundos” é perigoso?",
+  "a": [
+   "Porque nesse tempo, a 70 km/h, o carro percorre quase um campo de futebol sem controle.",
+   "Porque o celular pode desligar.",
+   "Porque gasta internet.",
+   "Porque só atrapalha em estrada."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 188,
+  "q": "Quais penalidades o CTB prevê?",
+  "a": [
+   "Advertência e multa.",
+   "Multa e apreensão do veículo.",
+   "Prisão do condutor.",
+   "Advertência por escrito, multa, suspensão, cassação e curso de reciclagem."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 189,
+  "q": "Por que não se deve ultrapassar em trechos com essa placa?",
+  "a": [
+   "Porque o piso sempre é irregular.",
+   "Porque veículos podem entrar repentinamente pela esquerda.",
+   "Porque o carro pode perder a direção.",
+   "Porque é um local de pedágio."
+  ],
+  "c": 1,
+  "img": "A-7A",
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 190,
+  "q": "Se a via deixa de ser duplicada e surge a placa acima, o que isso significa para o condutor?",
+  "a": [
+   "Que a via passa a ser exclusiva para ônibus.",
+   "Que o limite de velocidade aumenta.",
+   "Que haverá tráfego nos dois sentidos em um mesmo pavimento.",
+   "Que deve parar o veículo."
+  ],
+  "c": 2,
+  "img": "R-28",
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 191,
+  "q": "Ao entrar em uma curva indicada pela placa acima, com excesso de velocidade, o veículo tende a:",
+  "a": [
+   "Reduzir automaticamente a tração.",
+   "Seguir reto.",
+   "Girar sobre o próprio eixo.",
+   "Fazer a curva com mais facilidade."
+  ],
+  "c": 1,
+  "img": "A-2B",
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 192,
+  "q": "Por que reduzir a velocidade “antes da curva” é mais seguro?",
+  "a": [
+   "Porque evita farol alto.",
+   "Porque economiza combustível.",
+   "Porque o carro mantém estabilidade e não perde aderência.",
+   "Porque melhora o conforto."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 193,
+  "q": "Em avenida molhada, qual combinação é mais segura?",
+  "a": [
+   "Reduzir a velocidade e manter distância maior.",
+   "Frear no último momento.",
+   "Acender farol alto e acelerar.",
+   "Seguir colado em veículo maior."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 194,
+  "q": "Em áreas de grande circulação de pessoas, o motorista deve:",
+  "a": [
+   "Reduzir a velocidade e manter distância segura.",
+   "Ligar o pisca-alerta.",
+   "Ultrapassar com buzina.",
+   "Aumentar a velocidade para sair logo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 195,
+  "q": "Qual a função das Vias Coletoras no sistema de trânsito urbano?",
+  "a": [
+   "Servir apenas como área de convivência e lazer.",
+   "Ligar cidades e estados, sem semáforos.",
+   "Cortar a cidade em grandes eixos expressos.",
+   "Fazer a ligação entre as ruas dos bairros (Locais) e as grandes avenidas (Arteriais)."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 196,
+  "q": "Se João, dirigindo a 80km/h, tiver um micro-sono de apenas 4 segundos, qual o risco real dessa situação?",
+  "a": [
+   "O veículo percorre quase 100 metros sem controle nenhum, o equivalente a dirigir de olhos fechados por um quarteirão inteiro.",
+   "O veículo apenas reduz a velocidade.",
+   "O veículo se autocontrola e não sai da faixa.",
+   "O veículo percorre apenas 10 metros, sem risco."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 197,
+  "q": "Um condutor foi pego dirigindo sob efeito de bebida alcoólica. Qual das punições a seguir é listada como exemplo de Crime de Trânsito?",
+  "a": [
+   "Advertência por escrito.",
+   "Dirigir embriagado.",
+   "Reter o veículo.",
+   "Multa por estacionamento."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 198,
+  "q": "Qual é o objetivo da condução segura?",
+  "a": [
+   "Usar o freio o mínimo possível.",
+   "Evitar sinistros e preservar vidas.",
+   "Chegar mais rápido ao destino.",
+   "Mostrar habilidade no volante."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 199,
+  "q": "Qual a principal função principal do cinto de segurança em um veículo?",
+  "a": [
+   "Conter o corpo e reduzir lesões graves.",
+   "Substituir o airbag.",
+   "Evitar multas apenas.",
+   "Aumentar conforto do banco."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 200,
+  "q": "Para conseguir a CNH definitiva, qual infração gravíssima você não pode cometer durante o período de 1 ano da PPD?",
+  "a": [
+   "Apenas infrações gravíssimas relacionadas à velocidade.",
+   "Nenhuma infração gravíssima.",
+   "Apenas uma infração gravíssima é permitida.",
+   "Nenhuma, mas pode cometer 2 infrações graves."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 201,
+  "q": "Quando o pedestre inicia a travessia, o motorista deve:",
+  "a": [
+   "Buzinar para apressar a travessia.",
+   "Seguir ao lado do pedestre.",
+   "Parar o veículo e aguardar a passagem completa.",
+   "Passar rápido antes que ele termine."
+  ],
+  "c": 2,
+  "img": "A-32A",
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 202,
+  "q": "O que o condutor deve manter sempre ligado na rodovia, mesmo durante o dia, para ajudar outros motoristas a perceberem sua presença?",
+  "a": [
+   "As luzes de neblina.",
+   "O pisca-alerta.",
+   "O farol alto.",
+   "O farol baixo."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 203,
+  "q": "Qual é a regra fundamental ao se aproximar de uma faixa de pedestres?",
+  "a": [
+   "Acelerar para passar antes que o pedestre comece a atravessar.",
+   "Manter a velocidade se o pedestre ainda não colocou o pé na faixa.",
+   "Reduzir a velocidade e parar, pois a preferência é sempre do pedestre na faixa.",
+   "Buzinar para alertar o pedestre da sua aproximação."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 204,
+  "q": "O que os equipamentos de segurança, como cinto, airbag, apoio de cabeça e capacete, podem fazer por quem está dentro e fora do veículo?",
+  "a": [
+   "Podem salvar vidas.",
+   "Apenas evitar multas.",
+   "Aumentar a velocidade.",
+   "Apenas dar conforto na direção."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 205,
+  "q": "Qual exemplo é condição adversa de luz?",
+  "a": [
+   "Via duplicada e limpa.",
+   "Dia nublado sem chuva.",
+   "Pista seca e clara.",
+   "Ofuscamento ao sair de túnel."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 206,
+  "q": "O que a alteração irregular de suspensão, faróis ou outras modificações sem autorização compromete, além da segurança e emissão de poluentes?",
+  "a": [
+   "Apenas o valor de revenda do veículo.",
+   "Aumentam o risco de sinistros e podem gerar multas.",
+   "Apenas a durabilidade das palhetas.",
+   "Apenas o consumo de água do radiador."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 207,
+  "q": "O que indica a placa acima?",
+  "a": [
+   "Que a via é exclusiva para ônibus.",
+   "Que o sentido é obrigatório para frente.",
+   "Que a via passa a ter duplo sentido de circulação.",
+   "Que há mão única à direita."
+  ],
+  "c": 2,
+  "img": "R-28",
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 208,
+  "q": "Qual a conduta a ser adotada quando ver uma escola e alunos na calçada?",
+  "a": [
+   "Acelerar para passar rápido.",
+   "Reduzir bem a velocidade e ficar atento a travessias.",
+   "Seguir no limite da via sem reduzir.",
+   "Buzinar para avisar."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 209,
+  "q": "Quando há mensagens conflitantes entre placas, faixas e semáforo, o que o condutor deve fazer?",
+  "a": [
+   "Seguir a hierarquia da sinalização.",
+   "Escolher o que achar mais conveniente.",
+   "Priorizar sempre o semáforo.",
+   "Seguir o veículo à frente."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   7
+  ]
+ },
+ {
+  "id": 210,
+  "q": "Avaliar riscos ao dirigir significa:",
+  "a": [
+   "Ter a visão de eventuais erros antes que esses aconteçam.",
+   "Pensar apenas em chegar rápido.",
+   "Evitar olhar para os lados.",
+   "Confiar que os outros sempre agirão certo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 211,
+  "q": "O que acontece se um carro particular trafegar em via sinalizada com acima?",
+  "a": [
+   "O veículo tem prioridade sobre o ônibus.",
+   "O condutor comete infração de trânsito.",
+   "A via é livre para todos.",
+   "Nenhuma consequência legal."
+  ],
+  "c": 1,
+  "img": "R-32",
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 212,
+  "q": "Gustavo vê uma placa marrom indicando “Cachoeira Véu da Noiva”. O que isso significa?",
+  "a": [
+   "Atrativo turístico adiante",
+   "Sentido único obrigatório",
+   "Pista em obras",
+   "Risco de quedas de barreira"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 213,
+  "q": "Se João, dirigindo a 80km/h, tiver um micro-sono de apenas 4 segundos, qual o risco real dessa situação?",
+  "a": [
+   "O veículo se autocontrola e não sai da faixa.",
+   "O veículo percorre quase 100 metros sem controle nenhum, o equivalente a dirigir de olhos fechados por um quarteirão inteiro.",
+   "O veículo percorre apenas 10 metros, sem risco.",
+   "O veículo apenas reduz a velocidade."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 214,
+  "q": "Qual atitude do motorista é citada como perigosa, pois ele perde o controle não do carro, mas de si mesmo?",
+  "a": [
+   "Dirigir respeitando o limite de velocidade.",
+   "Dirigir com emoções alteradas como raiva, ansiedade ou tristeza.",
+   "Dirigir seguindo o protocolo de sinistro.",
+   "Dirigir em estado mental equilibrado."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 215,
+  "q": "Paulo percebe que não era ele quem dirigia no momento da multa. O que ele pode fazer?",
+  "a": [
+   "Cancelar a multa",
+   "Transferir a placa do carro",
+   "Indicar o real condutor",
+   "Ignorar a notificação"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 216,
+  "q": "Por que ler atentamente uma notificação de multa?",
+  "a": [
+   "Para reduzir o valor automaticamente",
+   "Para descobrir quem fez a denúncia",
+   "Para confirmar se os dados estão corretos",
+   "Para evitar usar o carro"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 217,
+  "q": "O instrutor perguntou aos alunos qual era a primeira atitude que definia um condutor verdadeiramente responsável. Qual foi a resposta correta?",
+  "a": [
+   "Apenas evitar multas.",
+   "Decorar todas as leis.",
+   "Dirigir em alta velocidade.",
+   "Seguir as regras de trânsito."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 218,
+  "q": "O que significa aprender com o erro após receber uma multa?",
+  "a": [
+   "Achar que é azar",
+   "Não dirigir mais",
+   "Culpar o agente de trânsito",
+   "Entender por que cometeu a infração e não repetir"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 219,
+  "q": "Transportar uma criança sem o dispositivo de retenção adequado (bebê-conforto, cadeirinha, etc.) é uma infração de qual natureza?",
+  "a": [
+   "Leve",
+   "Grave",
+   "Gravíssima",
+   "Média"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 220,
+  "q": "Maria possui permissão para dirigir e cometeu uma infração de natureza grave. O que ocorre com o processo de obtenção da Carteira Nacional de Habilitação (CNH)?",
+  "a": [
+   "Nada muda, ela conseguirá obter a CNH ao término de um ano.",
+   "Só precisa escrever uma carta ao Detran.",
+   "Basta pagar uma taxa extra e segue.",
+   "Perde o direito de se obter a CNH  e  precisará reiniciar o processo para obtenção da CNH novamente."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 221,
+  "q": "Qual é a gravidade da infração por desobedecer às ordens de um agente de trânsito?",
+  "a": [
+   "Grave.",
+   "Gravíssima.",
+   "Leve, pois o agente pode apenas dar uma advertência verbal.",
+   "Média, se a desobediência não causar um sinistro."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 222,
+  "q": "Quais são as três partes mais resistentes do corpo pelas quais o cinto de três pontos foi projetado para distribuir a força do impacto?",
+  "a": [
+   "Ombros, tórax e pélvis.",
+   "Mãos, pés e cotovelos.",
+   "Braços, pernas e cabeça.",
+   "Pescoço, barriga e joelhos."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 223,
+  "q": "O apoio de cabeça serve para:",
+  "a": [
+   "Apoiar para dormir.",
+   "Proteger o pescoço contra o efeito chicote.",
+   "Deixar o banco mais bonito.",
+   "Aumentar espaço no carro."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 224,
+  "q": "Qual conduta traduz educação no trânsito no dia a dia?",
+  "a": [
+   "Ter conhecimento de onde ficam os semáforos com fiscalização de velocidade.",
+   "Apenas decorar multas e valores.",
+   "Buscar vantagem em todo momento.",
+   "Respeitar as normas e agir com empatia e tolerância."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 225,
+  "q": "O que significa dizer que o trânsito é um espaço coletivo?",
+  "a": [
+   "Que todos compartilham as vias e têm deveres e direitos próprios.",
+   "Que quem paga imposto manda.",
+   "Que é cada um por si.",
+   "Que só os motoristas decidem as regras."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 226,
+  "q": "O que pode acontecer se o motorista passar muito rápido sobre uma lombada?",
+  "a": [
+   "Melhora no desempenho do veículo.",
+   "Nenhum risco.",
+   "Danos na suspensão, perda de controle ou sinistro, dependendo da velocidade.",
+   "Economia de combustível."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 227,
+  "q": "Qual a regra geral de uso que se aplica a todos os dispositivos para crianças (bebê conforto, cadeirinha, assento de elevação)?",
+  "a": [
+   "Podem ser utilizados no banco traseiro ou dianteiro, dependendo da conveniência do motorista.",
+   "A obrigatoriedade só se aplica a viagens em rodovias, não em perímetros urbanos.",
+   "Devem ser utilizados no banco dianteiro, desde que o airbag esteja desligado.",
+   "Devem ser utilizados sempre no banco traseiro de acordo com a idade e o peso da criança."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 228,
+  "q": "Em que tipo de vias urbanas a velocidade máxima é \"bem baixinha\" (30km/h), perto de escolas, hospitais e faixas de pedestres?",
+  "a": [
+   "Nas Vias Arteriais.",
+   "Nas Vias de Trânsito Rápido.",
+   "Em zonas residenciais e perto de escolas.",
+   "Nas Vias Coletoras."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 229,
+  "q": "Um motorista sente o volante vibrar fortemente ao frear. O que essa percepção indica?",
+  "a": [
+   "Possível irregularidade na pista ou falha no sistema de freios.",
+   "Que o veículo precisa de alinhamento apenas.",
+   "Que deve acelerar para estabilizar.",
+   "Normalidade do piso e dos pneus."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 230,
+  "q": "Qual das punições a seguir é listada como exemplo de Crime de Trânsito?",
+  "a": [
+   "Reter o veículo.",
+   "Multa por estacionamento.",
+   "Dirigir embriagado.",
+   "Advertência por escrito."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 231,
+  "q": "Quais penalidades o CTB prevê?",
+  "a": [
+   "Multa e apreensão do veículo.",
+   "Advertência por escrito, multa, suspensão, cassação e curso de reciclagem.",
+   "Advertência e multa.",
+   "Prisão do condutor."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 232,
+  "q": "Cláudia está de moto e vê a placa acima. Ela pode seguir?",
+  "a": [
+   "Sim, se estiver em baixa velocidade.",
+   "Não, pois motocicletas também são veículos automotores.",
+   "Apenas se for moradora da rua.",
+   "Sim, pois vale apenas para carros."
+  ],
+  "c": 1,
+  "img": "R-10",
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 233,
+  "q": "Qual combinação potencializa a eficácia do airbag frontal?",
+  "a": [
+   "Só DRL ligado.",
+   "Cinto correto + mãos bem posicionadas + apoio de cabeça ajustado.",
+   "Apenas airbag e banco deitado.",
+   "Apenas pneu novo."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 234,
+  "q": "Quando um ônibus está parado para embarque ou desembarque, o que o condutor deve fazer ao passar ao lado?",
+  "a": [
+   "Buzinar para o pedestre correr.",
+   "Passar colado ao ônibus.",
+   "Acelerar para sair logo.",
+   "Reduzir a velocidade, ficar atento e parar, se necessário, para proteger pedestres."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 235,
+  "q": "Durante um engarrafamento, o motorista decide andar pelo acostamento. Qual o risco?",
+  "a": [
+   "Provocar sinistros e atrapalhar veículos de emergência.",
+   "Mostrar habilidade ao volante.",
+   "Evitar atrasos sem causar perigo.",
+   "Melhorar o fluxo do trânsito."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 236,
+  "q": "Por que o PNATRANS é importante para o motorista comum?",
+  "a": [
+   "Porque só vale para capitais.",
+   "Porque pretende reduzir pela metade as mortes até 2030.",
+   "Porque só fala de obras em rodovias.",
+   "Porque libera todos de obedecer as regras."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 237,
+  "q": "Uma placa azul com símbolo de uma cruz vermelha representa:",
+  "a": [
+   "Local religioso.",
+   "Serviço médico ou pronto-atendimento.",
+   "Cemitério.",
+   "Proibição de parar."
+  ],
+  "c": 1,
+  "img": "SAU-10",
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 238,
+  "q": "Cruzamento sem semáforo. Você vai virar à esquerda e há pedestres iniciando a travessia na faixa. Ao mesmo tempo, vem carro no sentido contrário. O que fazer?",
+  "a": [
+   "Buzinar para todos saírem.",
+   "Virar rápido no espaço entre eles.",
+   "Parar, ceder passagem aos pedestres e também aos veículos do sentido contrário, só convertendo quando tudo estiver seguro e sinalizado.",
+   "Forçar a entrada com farol alto."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 239,
+  "q": "Por que a sinalização horizontal (pinturas no chão) é tão importante?",
+  "a": [
+   "Porque substitui as placas verticais.",
+   "Porque mostra apenas os limites de velocidade.",
+   "Porque orienta o fluxo e define o espaço de cada usuário da via.",
+   "Porque serve apenas como enfeite."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   8
+  ]
+ },
+ {
+  "id": 240,
+  "q": "Qual o prazo, em dias, que o condutor tem para providenciar a renovação da CNH a partir do seu vencimento?",
+  "a": [
+   "90 dias.",
+   "60 dias.",
+   "10 dias.",
+   "30 dias."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 241,
+  "q": "Qual das atitudes a seguir pode ser considerada um crime de trânsito?",
+  "a": [
+   "Estacionar em fila dupla para um desembarque rápido.",
+   "Fugir do pagamento do pedágio.",
+   "Transitar pela faixa exclusiva de ônibus.",
+   "Participar de 'racha' ou exibição perigosa em via pública."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 242,
+  "q": "Por que devemos respeitar a faixa de pedestre mesmo quando não há semáforo?",
+  "a": [
+   "Porque o motorista perde tempo.",
+   "Porque melhora o trânsito.",
+   "Porque o pedestre tem prioridade de passagem.",
+   "Porque evita multa leve."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 243,
+  "q": "Fatores de Risco: Uma psicóloga do trânsito explicou que o motorista não dirige sozinho, pois seu estado mental afeta as decisões. Qual condição física e mental afeta reflexos, atenção e capacidade de decisão do condutor?",
+  "a": [
+   "Estar com a janela aberta.",
+   "Estar cansado, sob efeito de álcool ou emocionalmente abalado.",
+   "Estar com o carro limpo.",
+   "Estar com o som alto."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 244,
+  "q": "João estava ao volante e usando o celular para checar uma mensagem. Qual é o tipo de infração que ele cometeu?",
+  "a": [
+   "Transitar 20% acima da velocidade.",
+   "Não usar cinto de segurança.",
+   "Estacionar afastado da guia.",
+   "Usar celular ao volante."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 245,
+  "q": "Leo recebe uma multa e decide pagar logo no início porque leu que isso é vantajoso. Qual é o benefício da ação?",
+  "a": [
+   "Parcelamento automático",
+   "Aumento de prazo",
+   "Até 40% de desconto",
+   "Perdão total da multa"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 246,
+  "q": "Durante o período da Permissão Para Dirigir , qual combinação de infrações resultará na perda do direito de obter a CNH definitiva?",
+  "a": [
+   "Não cometer infração.",
+   "Cometer uma única infração de natureza média.",
+   "Cometer duas infrações de natureza leve em um ano.",
+   "Ser reincidente em uma infração de natureza média."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 247,
+  "q": "Por que não usar almofadas, capas ou toalhas no banco?",
+  "a": [
+   "Atrapalham o ar-condicionado.",
+   "Esfriam o assento.",
+   "Só sujam o estofado.",
+   "Facilitam o deslizamento do corpo e anulam o cinto."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 248,
+  "q": "Previsão, na direção defensiva, significa:",
+  "a": [
+   "Imaginar o que pode acontecer e agir antes do risco.",
+   "Confiar no olhar dos outros.",
+   "Reagir apenas após o perigo.",
+   "Andar sempre mais rápido."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 249,
+  "q": "O ciclomotor deve trafegar:",
+  "a": [
+   "No corredor.",
+   "Pela direita da pista, preferencialmente no centro da faixa mais à direita.",
+   "Pela contramão.",
+   "Entre duas faixas."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 250,
+  "q": "Ao avistar ciclovia ou ciclofaixa, o condutor deve:",
+  "a": [
+   "Ignorar os ciclistas",
+   "Buzinar para que os ciclistas saiam da via.",
+   "Reduzir a velocidade e respeitar a passagem de ciclistas.",
+   "Acelerar para ultrapassar rapidamente a ciclovia ou ciclofaixa."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 251,
+  "q": "O que a classificação das infrações em quatro níveis de gravidade reflete?",
+  "a": [
+   "Apenas o humor do condutor.",
+   "Apenas a opinião do agente de trânsito.",
+   "Apenas o número de acidentes da semana.",
+   "Estudos, estatísticas de sinistros e análise de comportamentos que mais causam mortes e ferimentos."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 252,
+  "q": "Por que a pressa é mostrada como inimiga da segurança?",
+  "a": [
+   "Porque aumenta o consumo",
+   "Porque reduz multas",
+   "Porque irrita passageiros",
+   "Porque leva a decisões erradas e perigosas"
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 253,
+  "q": "Qual o objetivo principal da placa acima?",
+  "a": [
+   "Proteger ciclistas e garantir a convivência segura entre modais.",
+   "Evitar o uso de bicicletas.",
+   "Facilitar o tráfego de automóveis.",
+   "Reservar estacionamento de motos."
+  ],
+  "c": 0,
+  "img": "R-34",
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 254,
+  "q": "Qual o significado da placa acima?",
+  "a": [
+   "Indica que o condutor deve ignorar o aviso e seguir em alta velocidade.",
+   "Indica que o condutor deve ultrapassar pelo acostamento.",
+   "Indica a presença ou o cruzamento de máquinas agrícolas na pista.",
+   "Indica que o condutor deve ultrapassar sempre que possível, mesmo sem visibilidade."
+  ],
+  "c": 2,
+  "img": "A-31",
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 255,
+  "q": "Cruzamento sem semáforo. Você vai virar à esquerda e há pedestres iniciando a travessia na faixa. Ao mesmo tempo, vem carro no sentido contrário. O que fazer?",
+  "a": [
+   "Parar, ceder passagem aos pedestres e também aos veículos do sentido contrário, só convertendo quando tudo estiver seguro e sinalizado.",
+   "Buzinar para todos saírem.",
+   "Virar rápido no espaço entre eles.",
+   "Forçar a entrada com farol alto."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 256,
+  "q": "O que um condutor recém-habilitado com a Categoria A está autorizado a pilotar?",
+  "a": [
+   "Qualquer tipo de motocicleta, exceto triciclos motorizados.",
+   "Motocicletas, motonetas e ciclomotores.",
+   "Veículos de duas rodas e picapes leves.",
+   "Apenas motocicletas de até 50 cilindradas."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 257,
+  "q": "Um condutor nervoso e ansioso tende a:",
+  "a": [
+   "Perder concentração e cometer erros simples.",
+   "Dirigir com mais segurança.",
+   "Reduzir o risco de sinistros.",
+   "Aumentar o controle do veículo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 258,
+  "q": "O que indica a marcação de canalização (faixas em “V” ou diagonais)?",
+  "a": [
+   "Trecho de conversão.",
+   "Local seguro para estacionar.",
+   "Área proibida para tráfego de veículos.",
+   "Faixa de ultrapassagem."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 259,
+  "q": "Uma placa marrom com símbolo de árvores indica:",
+  "a": [
+   "Área escolar",
+   "Perigo",
+   "Parque urbano",
+   "Desvio"
+  ],
+  "c": 2,
+  "img": "TAR-03",
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 260,
+  "q": "Dirigir com pneus murchos, além de perigoso, causa um impacto negativo específico. Qual é ele?",
+  "a": [
+   "Aumenta o consumo de combustível.",
+   "Causa superaquecimento no sistema de freios.",
+   "Danifica o sistema de escapamento do carro.",
+   "Aumenta a poluição sonora do veículo."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 261,
+  "q": "Até que a criança atinja 1,45 m de altura, em qual local do veículo ela deve ser transportada?",
+  "a": [
+   "No banco dianteiro, se estiver usando assento de elevação.",
+   "No banco traseiro, utilizando o dispositivo de retenção adequado.",
+   "No banco traseiro, no colo de um adulto.",
+   "Em qualquer assento, desde que use o cinto de segurança do veículo"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 262,
+  "q": "O que é manter distância segura?",
+  "a": [
+   "Andar muito próximo ao veículo da frente.",
+   "Reduzir a distância apenas em congestionamentos.",
+   "Ignorar o espaço lateral.",
+   "Deixar espaço suficiente na lateral e frontal entre o seu veículo e os demais, bem como em relação ao bordo da pista."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 263,
+  "q": "Sobre o uso do cinto de segurança no banco de trás, o que podemos afirmar?",
+  "a": [
+   "É recomendado, mas não obrigatório.",
+   "É obrigatório para todos os passageiros.",
+   "É obrigatório apenas para crianças.",
+   "É obrigatório apenas em viagens intermunicipais."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 264,
+  "q": "A sinalização de manobras com a seta é opcional ou obrigatória?",
+  "a": [
+   "É recomendada apenas em rodovias",
+   "Deve ser usada apenas ao mudar de faixa",
+   "É obrigatória e deve ser usada com pelo menos três segundos de antecedência",
+   "É opcional se não houver outros carros por perto"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 265,
+  "q": "Quando um pedestre inicia a travessia na faixa de pedestres, o condutor deve:",
+  "a": [
+   "Buzinar e seguir.",
+   "Parar o veículo e aguardar o pedestre concluir a travessia.",
+   "Ignorar se estiver com pressa.",
+   "Acelerar para passar antes."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 266,
+  "q": "Qual é a atitude correta ao ver uma pessoa com muletas atravessando a rua?",
+  "a": [
+   "Acelerar para passar antes.",
+   "Buzinar para apressar.",
+   "Passar ao lado, bem perto.",
+   "Parar e permitir a travessia com calma."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 267,
+  "q": "Por que é fundamental evitar distrações como o celular ao dirigir?",
+  "a": [
+   "Diminui a vida útil da bateria",
+   "Aumenta o consumo de combustível",
+   "Tira a atenção da via, colocando  vidas em risco",
+   "Apenas gera multas de trânsito"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 268,
+  "q": "Quando o condutor deve usar a seta?",
+  "a": [
+   "Só quando houver pedestres.",
+   "Apenas em avenidas.",
+   "Sempre que for mudar de faixa, de direção ou entrar/sair de uma via.",
+   "Apenas durante o dia."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   9
+  ]
+ },
+ {
+  "id": 269,
+  "q": "Quando o semáforo está verde, mas um agente de trânsito manda parar, o que o motorista deve fazer?",
+  "a": [
+   "Buzinar para avisar que o sinal está verde.",
+   "Seguir porque o sinal está aberto.",
+   "Obedecer ao agente de trânsito.",
+   "Aguardar o agente sair da via."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 270,
+  "q": "Eduardo estaciona seu carro sobre uma calçada com a placa acima próxima. O que diz a lei?",
+  "a": [
+   "É permitido se não atrapalhar pedestres.",
+   "Só é proibido se houver sinalização vertical.",
+   "É infração grave estacionar sobre passeio, mesmo sem placa específica.",
+   "É infração leve."
+  ],
+  "c": 2,
+  "img": "R-6A",
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 271,
+  "q": "Paula vê placa azul com símbolo de cadeira de rodas e uma seta. O que isso indica?",
+  "a": [
+   "Direção de ponto acessível",
+   "Faixa exclusiva",
+   "Proibição de parar",
+   "Risco de queda"
+  ],
+  "c": 0,
+  "img": "DEF-01",
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 272,
+  "q": "O que indica a placa acima?",
+  "a": [
+   "Deve realizar retorno.",
+   "É proibido estacionar.",
+   "O condutor deve virar à esquerda.",
+   "O condutor deve seguir em frente ou virar à direita."
+  ],
+  "c": 3,
+  "img": "R-25D",
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 273,
+  "q": "Onde é mais comum encontrar essa placa?",
+  "a": [
+   "Em centros urbanos.",
+   "Em estacionamentos.",
+   "Em túneis e viadutos.",
+   "Em estradas rurais e próximas a fazendas."
+  ],
+  "c": 3,
+  "img": "A-31",
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 274,
+  "q": "Em uma emergência, Rafael tentou ligar para a família antes do socorro. Qual é o procedimento correto?",
+  "a": [
+   "Postar em redes sociais",
+   "Ligar primeiro para os números de emergência",
+   "Ligar para amigos",
+   "Gravar um vídeo do sinistro"
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 275,
+  "q": "A medida administrativa de retenção do veículo (art. 270) significa:",
+  "a": [
+   "Perda do veículo.",
+   "Que será aplicada multa em dobro.",
+   "Fica parado até sanar a irregularidade no local, se possível.",
+   "Vai direto ao pátio do órgão de trânsito."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 276,
+  "q": "As placas de formato octogonal (oito lados) e triangular invertido são exceções dentro de qual família de placas?",
+  "a": [
+   "Placas de Sinalização Temporária",
+   "Placas de Advertência",
+   "Placas de Regulamentação",
+   "Placas de Indicação"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 277,
+  "q": "Para conduzir um ciclomotor, qual é a habilitação mínima exigida?",
+  "a": [
+   "Qualquer documento serve.",
+   "Não precisa de habilitação.",
+   "Somente categoria B.",
+   "ACC ou Categoria A, conforme o veículo."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 278,
+  "q": "Antes de mudar de faixa com a moto, o que o condutor deve fazer?",
+  "a": [
+   "Buzinar e jogar a moto para o lado.",
+   "Ligar a seta com antecedência e checar espelhos e ponto cego.",
+   "Mudar rápido sem avisar, para não “perder a chance”.",
+   "Deitar a moto e cortar várias faixas de uma vez."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 279,
+  "q": "O que o material afirma ser a atitude que faz toda a diferença no trânsito, ao lado de revisar os equipamentos?",
+  "a": [
+   "Usar o farol alto em todas as vias.",
+   "Dirigir o mais rápido possível.",
+   "Ignorar a preferência de outros motoristas.",
+   "Manter a calma no trânsito."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 280,
+  "q": "Carlos dirige à noite com o farol queimado. Isso representa:",
+  "a": [
+   "Economia de energia para o carro.",
+   "Um risco, pois diminui a visibilidade e aumenta o risco de sinistro.",
+   "Cuidado, se o condutor andar devagar.",
+   "Consciência, só estando errado se a via for sem iluminação."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 281,
+  "q": "Qual o tipo de via rural que é descrita como não pavimentada, sendo de terra batida ou cascalho, e que exige mais cuidado?",
+  "a": [
+   "Vias Arteriais.",
+   "Estradas de Terra.",
+   "Vias de Trânsito Rápido.",
+   "Rodovias Pavimentadas."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 282,
+  "q": "O motociclista deve ultrapassar outro veículo:",
+  "a": [
+   "Pelo acostamento.",
+   "Pela direita, se for mais rápido.",
+   "Pela esquerda, desde que haja espaço e sinalizando antes.",
+   "Entre os carros."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 283,
+  "q": "Quando um pedestre inicia a travessia na faixa de pedestres, o condutor deve:",
+  "a": [
+   "Buzinar e seguir.",
+   "Acelerar para passar antes.",
+   "Ignorar se estiver com pressa.",
+   "Parar o veículo e aguardar o pedestre concluir a travessia."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 284,
+  "q": "Qual a principal função principal do cinto de segurança em um veículo?",
+  "a": [
+   "Aumentar conforto do banco.",
+   "Conter o corpo e reduzir lesões graves.",
+   "Evitar multas apenas.",
+   "Substituir o airbag."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 285,
+  "q": "É correto parar ou estacionar na esquina a menos de 5 metros do cruzamento?",
+  "a": [
+   "Não. Isso esconde o carro e aumenta o risco de batida.",
+   "Sim, se for rapidinho.",
+   "Sim, se deixar alguém dentro.",
+   "Sim, se ligar o pisca-alerta."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 286,
+  "q": "O motorista deve proteger quem no trânsito?",
+  "a": [
+   "Quem anda rápido.",
+   "Os mais frágeis: pedestres, ciclistas e motociclistas.",
+   "Ninguém além dele mesmo.",
+   "Somente quem tem carro."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 287,
+  "q": "Qual a finalidade do Selo do Inmetro no capacete do motociclista?",
+  "a": [
+   "Indica que o capacete foi feito com material biodegradável.",
+   "Atestar sua conformidade com as normas brasileiras de segurança e que ele passou por testes rigorosos.",
+   "Indica que o capacete pode ser usado sem a viseira abaixada.",
+   "Indica que o capacete deve ser trocado a cada 5 anos."
+  ],
+  "c": 1,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 288,
+  "q": "Na condução em uma Estrada de Terra, a baixa segurança e aderência exigem qual ação do motorista no volante?",
+  "a": [
+   "Segurar o volante com uma mão e usar a outra para segurar objetos.",
+   "Manter apenas uma mão, para ter mais agilidade ao fazer curvas.",
+   "Soltar o volante e deixar o carro seguir a direção sozinho.",
+   "Manter as duas mãos firmes no volante para correções constantes na direção."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 289,
+  "q": "Sobre crianças no carro, a conduta segura é:",
+  "a": [
+   "Colocar no colo com cinto do adulto.",
+   "Ficar à frente sem cadeirinha.",
+   "Sentar solta no banco traseiro.",
+   "Usar sempre dispositivo de retenção adequado."
+  ],
+  "c": 3,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 290,
+  "q": "O que um cochilo de apenas 3 ou 4 segundos a 80km/h faz você percorrer?",
+  "a": [
+   "Quase 100 metros sem controle nenhum do veículo, o equivalente a dirigir de olhos fechados por um quarteirão inteiro.",
+   "Menos de 5 metros, sem risco.",
+   "Cerca de 30 metros, mas com o carro se autocontrolando.",
+   "Apenas 10 metros com o controle total do carro."
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 291,
+  "q": "O que  a sonolência reduz no motorista, tornando a direção perigosa?",
+  "a": [
+   "O consumo de combustível.",
+   "A sua velocidade.",
+   "Seus reflexos, sua atenção e sua capacidade de reagir a imprevistos.",
+   "A necessidade de frear."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 292,
+  "q": "Dirigir com a CNH vencida há mais de 30 dias é considerado qual tipo de infração?",
+  "a": [
+   "Gravíssima",
+   "Média",
+   "Leve",
+   "Grave"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 293,
+  "q": "Por que ignorar a sinalização em área de obras é perigoso?",
+  "a": [
+   "Porque causa pequenas multas",
+   "Porque atrasa o condutor",
+   "Porque coloca em risco quem trabalha no local",
+   "Porque reduz velocidade"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 294,
+  "q": "Qual item é listado como um equipamento obrigatório para motos que deve ser checado antes de sair?",
+  "a": [
+   "Macaco.",
+   "Estepe calibrado.",
+   "Capacete com viseira ou óculos de proteção.",
+   "Kit de ferramentas avançado."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 295,
+  "q": "Por que manusear o celular ao volante é tão arriscado?",
+  "a": [
+   "Porque atrapalha notificações",
+   "Porque reduz bateria",
+   "Porque desvia o olhar por segundos e cria grande risco",
+   "Porque o carro vibra"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 296,
+  "q": "Laura está conduzindo o carro e decide parar afastada do meio-fio. Por que isso é proibido?",
+  "a": [
+   "Porque economiza tempo",
+   "Porque desgasta o pneu",
+   "Porque atrapalha o fluxo e gera risco",
+   "Porque deixa o carro torto"
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 297,
+  "q": "Por que parar afastado da guia é proibido?",
+  "a": [
+   "Porque atrapalha o fluxo e causa risco",
+   "Porque economiza combustível",
+   "Porque facilita ultrapassagens",
+   "Porque deixa o carro bonito"
+  ],
+  "c": 0,
+  "img": null,
+  "provas": [
+   10
+  ]
+ },
+ {
+  "id": 298,
+  "q": "Trafegar em velocidade incompatível com a segurança perto de escola ou hospital configura o quê?",
+  "a": [
+   "Só orientação verbal.",
+   "Apenas multa leve.",
+   "Configura crime de trânsito, conforme previstono art. 311 do CTB.",
+   "Infração média."
+  ],
+  "c": 2,
+  "img": null,
+  "provas": [
+   10
+  ]
+ }
+]
