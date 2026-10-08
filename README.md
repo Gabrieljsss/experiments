@@ -16,7 +16,7 @@ A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/pl
 - **Review**: finished bites feed a spaced-repetition deck (Leitner boxes). Quiz questions you miss come back first.
 - **Search** (🔍 icon or press `/`): type a topic like `redis` to list every lesson that covers it, ranked, with highlighted snippets.
 - Light/dark themes, keyboard navigation (← →), mobile-first layout, and a "☰" one-page view of any lesson.
-- Progress is saved in your browser (`localStorage`). Optionally, **sign in by email to sync it across devices** (Supabase, see below).
+- Progress is saved in your browser (`localStorage`). Optionally, **sign in with a username and password to sync it across devices** (see below).
 
 ## Run it
 
@@ -31,15 +31,21 @@ You can also open `index.html` directly, or publish the repo with GitHub Pages (
 
 ## Cross-device sync (optional)
 
-Sync uses a free [Supabase](https://supabase.com) project. Without a key in `app/config.js` the app runs fully offline and hides the sync card.
+Sync stores progress in a free [Supabase](https://supabase.com) Postgres database. Sign-in is a plain **username + password**, with no email. Without a key in `app/config.js` the app runs fully offline and hides the sync card.
 
-1. **Create the table.** Open `supabase/migrations/20261005000000_progress.sql`, copy its **contents** (not the file path) into the Supabase SQL Editor and click Run. Or run
-   `supabase link --project-ref <ref>` and then `supabase db push`. It creates one `progress` row per user (a JSON blob), protected by row-level security so each user can only read and write their own row.
-2. **Allow the redirect.** Go to Authentication → URL Configuration. Set **Site URL** to `https://gabrieljsss.github.io/experiments/` and add it (plus `http://localhost:8000/` for local testing) to **Redirect URLs**.
-3. **Add the public key.** In Project Settings → API Keys, copy the **anon / publishable** key into `supabaseAnonKey` in `app/config.js`. That key is meant to be public; never put the `service_role` / secret key in the site.
+1. **Create the tables and functions.** Open `supabase/migrations/20261008000000_username_accounts.sql`, copy its **contents** (not the file path) into the Supabase SQL Editor and click Run. Or use the CLI: `supabase link --project-ref <ref>`, then `supabase db push`.
+2. **Add the public key.** In Project Settings → API Keys, copy the **anon / publishable** key into `supabaseAnonKey` in `app/config.js`. That key is meant to be public; never put the `service_role` / secret key in the site.
 
-How it works: you sign in with an email magic link (PKCE flow), so open the link in the same browser you requested it from.
-Progress is always saved locally first. When you're signed in, the app reads the cloud copy, merges it with yours and writes the result back on load, when you return to the tab, and about 1.5 s after each change. The merge is a state-based CRDT (bite 21): finished lessons and study days are unioned, a correct quiz answer on any device counts, and the most recently graded copy of each review card wins. Devices can therefore sync in any order and still converge.
+How it's secured:
+- The tables can't be read or written directly with the public key: row-level security is on, there are no policies, and table access is revoked.
+- The app can only call five SQL functions: `sd_register`, `sd_login`, `sd_pull`, `sd_push` and `sd_logout`.
+- Passwords are stored as bcrypt hashes. Signing in gives the device a random sync token; only its SHA-256 hash is kept in the database, and only the token (never the password) is kept on the device.
+- After 10 wrong passwords in 15 minutes, logins for that username pause until the window passes.
+- There's no password reset (there's no email), so use a password you don't use elsewhere.
+
+How syncing works: progress is always saved locally first. When you're signed in, the app reads the cloud copy, merges it with yours and writes the result back on load, when you return to the tab, and about 1.5 s after each change. The merge is a state-based CRDT (bite 21): finished lessons and study days are unioned, a correct quiz answer on any device counts, and the most recently graded copy of each review card wins. Devices can therefore sync in any order and still converge.
+
+`supabase/migrations/20261005000000_progress.sql` is the earlier email-based version and is no longer used.
 
 ## How the content was made
 
@@ -62,9 +68,9 @@ index.html                 app shell and credits
 app/styles.css             theme tokens (light/dark) and components
 app/visuals.js             renders lesson diagrams (flow, table, steps, lanes, cells, meter, cards, pros/cons)
 app/app.js                 router, daily plan, lesson player, quiz, spaced-repetition review, search
-app/sync.js                optional Supabase sync + CRDT merge of progress
+app/sync.js                optional sync (username/password via SQL functions) + CRDT merge of progress
 app/config.js              Supabase URL and public anon key (empty key = offline only)
-supabase/migrations/       SQL for the progress table and its row-level security
+supabase/migrations/       SQL for accounts, sync functions and their permissions
 app/data/lessons-*.js      lesson content, one file per group of modules
 data/playlist.json         playlist metadata (titles, ids, durations)
 scripts/fetch_transcripts.py

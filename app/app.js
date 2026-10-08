@@ -399,9 +399,6 @@
 
   /* ---------------- cloud sync ---------------- */
   let syncStatus = { state: "loading" };
-  // the email a code was sent to, so the code box survives switching to the Mail app and back
-  const getPending = () => { try { return localStorage.getItem("sd-bites:pending-email") || ""; } catch { return ""; } };
-  const setPending = (v) => { try { v ? localStorage.setItem("sd-bites:pending-email", v) : localStorage.removeItem("sd-bites:pending-email"); } catch { /* ignore */ } };
   let syncNote = "";
   function ago(d) {
     if (!d) return "";
@@ -415,68 +412,51 @@
     let body;
     if (st.state === "loading") {
       body = `<p class="muted" style="margin:0">Checking sync…</p>`;
-    } else if (st.state === "signed-out" || (st.state === "error" && !st.email)) {
-      const pending = getPending();
-      body = pending
-        ? `<p style="margin:0 0 10px">Type the code from the latest sign-in email sent to <b>${esc(pending)}</b>. Codes work on any device or browser:</p>
-          <form class="sync-form" id="codeForm">
-            <input id="syncCode" required inputmode="numeric" autocomplete="one-time-code" maxlength="14" placeholder="123456" aria-label="Sign-in code">
-            <button class="btn primary" type="submit">Sign in</button>
-          </form>
-          <p class="muted" style="margin:10px 0 0;font-size:.88rem">Or tap the link in that email, if it opens in this browser. <a href="#" id="syncReset">Use a different email / resend</a></p>`
-        : `<p class="muted" style="margin:0 0 10px">Sign in with your email to keep your progress, streak and review cards in sync across your phone, tablet and laptop.</p>
-          <form class="sync-form" id="syncForm">
-            <input type="email" id="syncEmail" required placeholder="you@example.com" autocomplete="email" aria-label="Email address">
-            <button class="btn primary" type="submit">Email me a code</button>
-          </form>`;
-      body += `${syncNote ? `<p class="sync-note">${syncNote}</p>` : ""}
-        ${st.state === "error" ? `<p class="sync-note bad">${esc(st.error || "Sync error")}</p>` : ""}`;
+    } else if (!st.user) {
+      body = `<p class="muted" style="margin:0 0 10px">Sign in to keep your progress, streak and review cards in sync across your phone, tablet and laptop. New here? Pick a username and password and tap <b>Create account</b>. No email needed.</p>
+        <form class="sync-form login" id="syncForm" autocomplete="on">
+          <input id="syncUser" name="username" required autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Username" aria-label="Username" minlength="3" maxlength="32">
+          <input id="syncPass" name="password" type="password" required autocomplete="current-password" placeholder="Password" aria-label="Password" minlength="6">
+          <div class="row" style="gap:8px">
+            <button class="btn primary" type="submit" data-act="login">Sign in</button>
+            <button class="btn" type="submit" data-act="register">Create account</button>
+          </div>
+        </form>
+        <p class="muted" style="margin:10px 0 0;font-size:.85rem">Use a password you don't use anywhere else. There's no password reset without email.</p>
+        ${syncNote ? `<p class="sync-note">${syncNote}</p>` : ""}`;
     } else {
       const line = st.state === "syncing" ? "Syncing…" : st.state === "error" ? `<span class="bad">Sync failed: ${esc(st.error || "")}</span>` : `Synced ${ago(st.lastSync)}`;
       body = `<div class="row" style="flex-wrap:nowrap"><span class="sync-dot ${st.state}"></span>
-          <span style="flex:1;min-width:0;overflow-wrap:anywhere">Signed in as <b>${esc(st.email || "")}</b><br><small class="muted">${line}</small></span></div>
+          <span style="flex:1;min-width:0;overflow-wrap:anywhere">Signed in as <b>${esc(st.user)}</b><br><small class="muted">${line}</small></span></div>
         <div class="row" style="margin-top:12px"><button class="btn" id="syncNow">Sync now</button><button class="btn ghost" id="syncOut">Sign out</button></div>`;
     }
     el.innerHTML = `<h3 style="margin:0 0 8px">☁️ Sync across devices</h3>${body}`;
     const form = document.getElementById("syncForm");
+    if (form) form.addEventListener("input", () => {
+      // an old error shouldn't linger once you start fixing it
+      if (syncNote) { syncNote = ""; const n = el.querySelector(".sync-note"); if (n) n.remove(); }
+    });
     if (form) form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = document.getElementById("syncEmail").value.trim();
-      const btn = form.querySelector("button");
-      btn.disabled = true; btn.textContent = "Sending…";
+      const act = (e.submitter && e.submitter.dataset.act) || "login";
+      const user = document.getElementById("syncUser").value;
+      const pass = document.getElementById("syncPass").value;
+      form.querySelectorAll("button").forEach((x) => { x.disabled = true; });
+      e.submitter && (e.submitter.textContent = act === "register" ? "Creating…" : "Signing in…");
       try {
-        await window.Sync.signIn(email);
-        setPending(email);
+        await (act === "register" ? window.Sync.register(user, pass) : window.Sync.signIn(user, pass));
         syncNote = "";
+        toast(`✅ Signed in as ${user.trim().toLowerCase()}. Your progress is synced.`, 4000);
       } catch (err) {
-        // even when no new email can be sent, a code from an earlier email may still work
-        if (err.rateLimited) setPending(email);
-        syncNote = `<span class="bad">${esc(err.message || "Couldn't send the email")}</span>`;
+        syncNote = `<span class="bad">⚠️ ${esc(err.message || "Couldn't sign in")}</span>`;
+        renderSyncCard();
+        const u = document.getElementById("syncUser"); if (u) u.value = user;
       }
-      renderSyncCard();
     });
-    const codeForm = document.getElementById("codeForm");
-    if (codeForm) {
-      codeForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const code = document.getElementById("syncCode").value.replace(/\D/g, "");
-        const btn = codeForm.querySelector("button");
-        btn.disabled = true; btn.textContent = "Checking…";
-        try {
-          await window.Sync.verifyCode(getPending(), code);
-          setPending("");
-          syncNote = "";
-        } catch (err) {
-          syncNote = `<span class="bad">⚠️ ${esc(err.message)}</span>`;
-          renderSyncCard();
-        }
-      });
-      document.getElementById("syncReset").addEventListener("click", (e) => { e.preventDefault(); setPending(""); syncNote = ""; renderSyncCard(); });
-    }
     const now = document.getElementById("syncNow");
     if (now) now.addEventListener("click", () => window.Sync.syncNow());
     const out = document.getElementById("syncOut");
-    if (out) out.addEventListener("click", async () => { await window.Sync.signOut(); syncNote = "Signed out. Your progress stays on this device."; toast("Signed out"); });
+    if (out) out.addEventListener("click", async () => { await window.Sync.signOut(); syncNote = "Signed out. Your progress stays on this device."; toast("Signed out"); renderSyncCard(); });
   }
   if (window.Sync && window.Sync.enabled) {
     window.Sync.init({
@@ -488,21 +468,7 @@
         // refresh overview screens if the merge brought in anything new (never interrupt a lesson)
         if (JSON.stringify(S) !== before && /^#?\/?(path)?$/.test(location.hash)) route();
       },
-      onStatus: (st) => {
-        syncStatus = st;
-        if (st.email && st.state !== "signed-out") setPending(""); // signed in, however it happened
-        renderSyncCard(); renderAcct();
-      },
-      onAuthResult: (r) => {
-        if (r.ok) {
-          syncNote = ""; setPending("");
-          toast(`✅ Signed in as ${r.email || "you"}. Syncing your progress…`, 5000);
-        } else {
-          syncNote = `<span class="bad">⚠️ ${esc(r.message)}</span>`;
-          toast(`⚠️ ${r.message}`, 8000);
-        }
-        renderSyncCard();
-      },
+      onStatus: (st) => { syncStatus = st; renderSyncCard(); renderAcct(); },
     });
     // top-bar status: cloud icon, green dot when signed in; tap to open the sync card
     const acct = document.getElementById("acctBtn");
@@ -513,8 +479,8 @@
         const card = document.getElementById("syncCard");
         if (!card) return;
         card.scrollIntoView({ behavior: "smooth", block: "center" });
-        const email = document.getElementById("syncEmail");
-        if (email) email.focus({ preventScroll: true });
+        const user = document.getElementById("syncUser");
+        if (user) user.focus({ preventScroll: true });
       };
       if (/^#?\/?$/.test(location.hash)) go(); else { location.hash = "#/"; setTimeout(go, 60); }
     });
@@ -523,10 +489,10 @@
     const acct = document.getElementById("acctBtn");
     if (!acct) return;
     const st = syncStatus;
-    const signedIn = !!st.email && st.state !== "signed-out";
+    const signedIn = !!st.user;
     acct.dataset.state = signedIn ? st.state : "signed-out";
     const label = signedIn
-      ? `Signed in as ${st.email}${st.state === "error" ? ": sync failed" : st.state === "syncing" ? ": syncing…" : ""}`
+      ? `Signed in as ${st.user}${st.state === "error" ? ": sync failed" : st.state === "syncing" ? ": syncing…" : ""}`
       : "Not signed in: tap to sync across devices";
     acct.title = label; acct.setAttribute("aria-label", label);
   }

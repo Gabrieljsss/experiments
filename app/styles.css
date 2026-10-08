@@ -409,3 +409,5 @@ mark { background: color-mix(in srgb, var(--warn) 32%, transparent); color: var(
 .acct[data-state="error"] .acct-dot { display: block; background: var(--bad); }
 .acct[data-state="idle"] svg, .acct[data-state="syncing"] svg { stroke: var(--good); }
 .toast { width: max-content; max-width: calc(100vw - 32px); text-align: center; line-height: 1.4; }
+.sync-form.login { flex-direction: column; align-items: stretch; }
+.sync-form.login input { flex: none; }
