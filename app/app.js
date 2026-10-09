@@ -31,10 +31,11 @@
 
   /* ---------------- state ---------------- */
   const KEY = "sd-bites:v1";
-  const blank = () => ({ done: {}, quiz: {}, days: [], goal: 1, cards: {}, detran: { q: {}, sessions: [], days: [], examMin: 60 } });
+  const blank = () => ({ done: {}, quiz: {}, days: [], goal: 1, cards: {}, detran: { q: {}, sessions: [], days: [], examMin: 60 }, mestrado: { q: {}, sessions: [], days: [] } });
   let S;
   try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "{}")); } catch { S = blank(); }
   S.detran = Object.assign(blank().detran, S.detran || {});
+S.mestrado = Object.assign(blank().mestrado, S.mestrado || {});
   const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ } };
   // every change is saved locally first, then (if signed in) pushed to the cloud shortly after
   const save = () => { persist(); if (window.Sync) window.Sync.queuePush(); };
@@ -466,9 +467,10 @@
         const before = JSON.stringify(S);
         S = Object.assign(blank(), merged);
         S.detran = Object.assign(blank().detran, S.detran || {});
+        S.mestrado = Object.assign(blank().mestrado, S.mestrado || {});
         persist();
         // refresh overview screens if the merge brought in anything new (never interrupt a lesson or quiz)
-        if (JSON.stringify(S) !== before && /^#?\/?(path|detran\/?(erros|banco)?)?$/.test(location.hash)) route();
+        if (JSON.stringify(S) !== before && /^#?\/?(path|detran\/?(erros|banco)?|mestrado\/?(erros|banco|livro)?)?$/.test(location.hash)) route();
       },
       onStatus: (st) => { syncStatus = st; renderSyncCard(); renderAcct(); },
     });
@@ -484,7 +486,7 @@
         const user = document.getElementById("syncUser");
         if (user) user.focus({ preventScroll: true });
       };
-      const homeHash = currentApp === "detran" ? "#/detran" : "#/";
+      const homeHash = currentApp === "sd" ? "#/" : `#/${currentApp}`;
       if (location.hash.replace(/\/$/, "") === homeHash.replace(/\/$/, "") || (!location.hash && currentApp === "sd")) go();
       else { location.hash = homeHash; setTimeout(go, 80); }
     });
@@ -642,13 +644,15 @@
   const APPS = {
     sd: { name: "Systems Design <b>Bites</b>", title: "Systems Design Bites", logo: '<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h11" /></svg>' },
     detran: { name: "DETRAN-RJ <b>Habilitação</b>", title: "DETRAN-RJ Habilitação", logo: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 4v6M5.2 15.5l5.2-2.5M18.8 15.5l-5.2-2.5"/></svg>' },
+    mestrado: { name: "Mestrado <b>Epidemio</b>", title: "Mestrado em Epidemiologia · UERJ", logo: '<svg viewBox="0 0 24 24"><path d="M4 19h16M7 16v-5M12 16V6M17 16v-8"/></svg>' },
   };
+  const MODULES_BY_APP = { detran: () => window.Detran, mestrado: () => window.Mestrado };
   let currentApp = null;
   function setApp(app) {
     if (app === currentApp) return;
     currentApp = app;
     document.body.dataset.app = app;
-    document.documentElement.lang = app === "detran" ? "pt-BR" : "en";
+    document.documentElement.lang = app === "sd" ? "en" : "pt-BR";
     $("#brandName").innerHTML = APPS[app].name;
     $("#brandLogo").innerHTML = APPS[app].logo;
     $("#brandLogo").className = `logo ${app}`;
@@ -669,15 +673,16 @@
   drawer.querySelectorAll(".app-item").forEach((a) => a.addEventListener("click", () => openDrawer(false)));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !drawer.hidden) openDrawer(false); });
 
-  // what the DETRAN app (app/detran/detran.js) gets to use
-  const shell = {
+  // what the DETRAN and Mestrado apps (app/detran/, app/mestrado/) get to use
+  const makeShell = (key) => ({
     view, esc, rich, toast, setNav, today, addDays,
-    getState: () => S.detran,
+    getState: () => S[key],
     save,
     syncCard: () => (window.Sync && window.Sync.enabled ? `<section class="card" id="syncCard"></section>` : ""),
     renderSyncCard: () => renderSyncCard(),
     setKeyHandler: (fn) => { keyHandler = fn; },
-  };
+  });
+  const shells = { detran: makeShell("detran"), mestrado: makeShell("mestrado") };
 
   /* ---------------- router ---------------- */
   let keyHandler = null;
@@ -686,10 +691,10 @@
     keyHandler = null;
     let h = location.hash.replace(/^#\/?/, "");
     // a bare visit reopens whichever app you used last
-    if (!location.hash) { let last = "sd"; try { last = localStorage.getItem("sd-bites:app") || "sd"; } catch { /* ignore */ } if (last === "detran") h = "detran"; }
+    if (!location.hash) { let last = "sd"; try { last = localStorage.getItem("sd-bites:app") || "sd"; } catch { /* ignore */ } if (MODULES_BY_APP[last]) h = last; }
     const [a, b, c] = h.split("/");
-    setApp(a === "detran" && window.Detran ? "detran" : "sd");
-    if (currentApp === "detran") { window.Detran.route(h.split("/").slice(1), shell); view.focus({ preventScroll: true }); window.scrollTo({ top: 0 }); return; }
+    setApp(MODULES_BY_APP[a] && MODULES_BY_APP[a]() ? a : "sd");
+    if (currentApp !== "sd") { MODULES_BY_APP[currentApp]().route(h.split("/").slice(1), shells[currentApp]); view.focus({ preventScroll: true }); window.scrollTo({ top: 0 }); return; }
     if (a === "lesson") lesson(+b, c);
     else if (a === "path") path();
     else if (a === "review") review();

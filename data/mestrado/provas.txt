@@ -1,0 +1,373 @@
+# Provas anteriores: seleção de Mestrado em Epidemiologia, PPGSC/IMS/UERJ (turmas 2023, 2024 e 2025).
+# Enunciados reproduzidos das provas públicas, com crédito ao IMS/UERJ. O gabarito NÃO é oficial
+# (não foi publicado). Foi escrito com base no livro (Medronho et al., Epidemiologia, 2ª ed.).
+# Um "?" depois de V/F marca uma assertiva ambígua, em que o gabarito pode ser discutido.
+#
+# Formato: veja scripts/build_mestrado.py.
+
+=== p2023-q1
+prova: 2023
+num: 1
+cap: 8
+type: choice
+title: Identificação de desenhos de estudo
+ctx: Identifique o tipo de desenho de estudo de cada resumo.
+opts: Estudo experimental; Estudo de coorte; Estudo caso-controle; Estudo transversal; Estudo ecológico; Nenhum dos anteriores
+1 | OBJETIVO: Analisar a eficácia e segurança de vacina recombinante contra hepatite B em recém-nascidos. MÉTODOS: O estudo foi conduzido em hospital geral do município de Guarulhos, SP, entre 2002 e 2005. A vacina recombinante contra hepatite B do Instituto Butantan (VrHB-IB) foi analisada em dois ensaios. Em ambos, os recém-nascidos foram alocados aleatoriamente ao grupo intervenção ou controle (vacina de referência). Os recém-nascidos receberam três doses das vacinas, uma em até 24 h após o nascimento e as subsequentes 30 e 180 dias após. No primeiro ensaio 538 recém-nascidos completaram o protocolo e no segundo ensaio, 486. Considerou-se critério de equivalência a diferença na soroproteção inferior a 5%. RESULTADOS: A soroproteção no primeiro ensaio (anti HBs > 10mUI/ml) foi de 92,5% (247/267) no grupo experimental, comparada a 98,5% (267/271) no grupo controle (p = 0,001). Com este resultado, a VrHB-IB não atingiu o critério de equivalência estabelecido. Após o aumento da concentração de antígeno na vacina para 25µg, a soroproteção no segundo ensaio foi de 100% no grupo experimental e 99,2% no grupo controle. Nenhum evento adverso grave foi registrado. | O pesquisador controla a exposição (qual vacina cada um recebe) e a alocação é aleatória: é um ensaio clínico profilático, o tipo mais comum de estudo experimental. | 8:176-177
+4 | Objetivo: Descrever a prevalência de indicadores do tabagismo entre escolares brasileiros segundo características sociodemográficas em 2019 e comparar as prevalências entre 2015 e 2019. Métodos: Utilizaram-se dados da Pesquisa Nacional de Saúde do Escolar de 2015 e 2019. Foram analisados os indicadores referentes ao uso do tabaco, que foram comparados entre as edições de 2015 e 2019. Foram calculadas as prevalências e os respectivos intervalos de confiança de 95% (IC95%) para a população total e segundo sexo, faixa etária e tipo de escola. Resultados: Dos escolares, 22,6% (IC95% 21,7–23,4) já experimentaram cigarro alguma vez, porcentagem mais elevada entre os de 16 a 17 anos de idade (32,6%; IC95% 31,4–33,8) e no sexo masculino (35,0%; IC95% 33,6–36,4). A experimentação de narguilé, cigarro eletrônico e outros produtos do tabaco também se mostra elevada, com 26,9%, 16,8% e 9,3%, respectivamente, sendo mais alta entre os escolares do sexo masculino de 16 a 17 anos. Destaca-se que não houve mudanças nos indicadores entre os anos indicados. | Duas edições de um inquérito, cada uma uma "fotografia" de indivíduos diferentes num único momento, medindo prevalências. Comparar duas edições não torna o estudo longitudinal: são inquéritos transversais repetidos. | 8:177-178
+5 | Objetivo: Identificar padrões espaciais em casos de lactentes com alterações de crescimento e desenvolvimento relacionadas à infecção pelo vírus Zika (síndrome congênita pelo vírus Zika), notificados no Maranhão de 2015 a 2018 e sua relação com variáveis socioeconômicas e demográficas. Métodos: Estudo com casos suspeitos notificados nos 217 municípios do Maranhão. Calculou-se a autocorrelação espacial pelos índices de Moran local e global (I) univariado e bivariado da taxa de detecção de casos suspeitos com índice de desenvolvimento humano municipal, densidade demográfica, índice de Gini e tempo de emancipação dos municípios. Resultados: Houve autocorrelação espacial da taxa municipal de detecção (I=0,494; p=0,001) e correlação positiva com IDH municipal, densidade demográfica e tempo de emancipação. Não houve correlação significativa com o índice de Gini. Cinco clusters de alta detecção foram encontrados. | A unidade de análise é o município (taxas e indicadores agregados), não o indivíduo. Não se sabe se exposição e desfecho estão na mesma pessoa: estudo ecológico, aqui com análise espacial. | 8:177-178; 4:85-86
+3 | Esse estudo teve como objetivo determinar os fatores associados à dependência para atividades instrumentais da vida diária em idosos. O estudo foi de base populacional, com 180 idosos de Passo Fundo-RS, 2014. Os casos foram representados por 60 indivíduos com idade ≥ 60 anos, dependentes para as atividades instrumentais de vida diária. Os controles foram representados por 120 idosos não dependentes, residentes nos domicílios urbanos do município. Foram estimadas razões de chance (OR) brutas e ajustadas. Permaneceram significativos: ter 80 anos ou mais (OR = 1,76), ter estudado de 1 a 4 anos (OR = 2,36), ser analfabeto (OR = 2,98), ter Parkinson (OR = 2,44) e comprometimento cognitivo (OR = 1,88). | Os participantes foram selecionados pelo desfecho (dependentes = casos; não dependentes = controles) e comparou-se a exposição entre os grupos: caso-controle (esquema de seleção incompleto da base populacional). A medida é a odds ratio. | 8:178
+2 | O uso de medicação é parte importante do processo de saúde, e a prevalência de uso entre lactentes pode chegar a 65% nos primeiros meses de vida. O estudo buscou descrever o uso de medicação em crianças aos 3, 12, 24 e 48 meses. Foram aplicados questionários padronizados. O uso de medicação foi definido como ter recebido qualquer medicação nos 15 dias anteriores à entrevista. A prevalência do uso de medicação foi de 67,2%, 68,2%, 52,4% e 47,2% aos 3, 12, 24 e 48 meses, respectivamente. Ao longo dos anos, foram observados uma diminuição na proporção de medicamentos com prescrição médica e um aumento na automedicação. | As mesmas crianças foram acompanhadas e entrevistadas em várias idades (3, 12, 24 e 48 meses): observação longitudinal de uma coorte de nascimentos. Por isso a resposta mais provável é coorte, mesmo que o objetivo seja descritivo. (Gabarito não oficial.) | 8:177-178
+
+=== p2023-q2
+prova: 2023
+num: 2
+cap: 4
+title: Séries temporais: meningite viral e dengue
+ctx: Figura 1: taxas de incidência mensal de meningite viral (por 100 mil habitantes) no Recife-PE, 1998 a 2008. Figura 2: número mensal de casos de dengue e precipitação pluviométrica acumulada em Barreiras, Bahia, janeiro de 2007 a março de 2013.
+img: 2023-q2-meningite-recife.png | Figura 1 · meningite viral, Recife
+img: 2023-q2-dengue-barreiras.png | Figura 2 · dengue e chuva, Barreiras-BA
+V | As figuras se referem à análise de séries temporais de duas doenças distintas, meningite viral e dengue, respectivamente. Estudos deste tipo têm como objetivo avaliar a evolução das taxas de adoecimento ou de mortalidade de acordo com o período ou tempo calendário. | Ambas mostram uma medida de ocorrência (taxa ou nº de casos) ao longo do tempo calendário. É isso que define uma série temporal. | 4:88; 18:334
+V? | Analisando as figuras, podemos concluir que a meningite viral não apresentou uma variação sazonal, enquanto a ocorrência de dengue apresentou sazonalidade, principalmente a partir do final de 2008. | Na dengue os picos se repetem na mesma época do ano (verão/chuvas: início de 2009, 2011 e 2013), o que caracteriza a sazonalidade. Na meningite viral o que chama atenção é o grande pico isolado de 2007-2008, sem um padrão anual claro. A assertiva é ambígua, porque há pequenas oscilações. | 4:90-91
+F | Analisando somente a Figura 2, podemos observar que a ocorrência dos casos de dengue não apresentou variação cíclica. | Variação cíclica é a flutuação com período maior que um ano. Os picos de dengue se alternam a cada dois anos, com grandes epidemias em 2009, 2011 e 2013, sugerindo um ciclo, típico de doenças em que suscetíveis se acumulam entre as epidemias. | 4:90
+F | Analisando mais detalhadamente a Figura 1 e levando em consideração a definição de epidemia, podemos concluir que em janeiro de 2008 não houve uma epidemia de meningite viral em Recife, PE. | Entre o fim de 2007 e o início de 2008 a taxa saltou de cerca de 2 para mais de 25/100 mil. Uma elevação brusca, temporária e muito acima do esperado é a definição de epidemia. | 4:92
+F | Nos estudos de séries temporais é possível avaliar apenas o efeito de idade e período na ocorrência dos casos e óbitos observados. | Séries temporais permitem estudar tendência secular, variações cíclicas, sazonais e irregulares, além dos efeitos de idade, período e coorte. | 4:88; 4:97-102
+
+=== p2023-q3
+prova: 2023
+num: 3
+cap: 2
+title: Prevalência e incidência de doença crônica
+ctx: Considere uma população com uma dada prevalência e incidência de doença crônica não transmissível.
+F | A incidência, quando expressa na forma de taxa de incidência, representa a real medida de risco de surgimento da doença em um dado intervalo de tempo na população. | A taxa de incidência (casos/pessoa-tempo) mede a velocidade de surgimento de casos: tem dimensão de tempo⁻¹ e pode passar de 1. Quem estima o risco num intervalo é a incidência acumulada (uma proporção). TI × Δt só se aproxima do risco quando a TI é constante e o intervalo é curto. | 2:21-22
+F | A introdução de um tratamento eficaz leva a uma redução na incidência. | Tratamento atua sobre quem já está doente: reduz a duração (cura) ou a letalidade, e com isso a prevalência ou a mortalidade. Não impede casos novos. Quem reduz a incidência é a prevenção primária. | 2:27-28
+V | O aumento da sobrevida leva a um aumento na prevalência. | P ≈ I × D: se os doentes vivem mais (maior duração), acumulam-se mais casos existentes, mesmo com incidência igual. | 2:27-28
+F | Uma vez estabilizada a incidência (constante no tempo), a prevalência também será constante no tempo. | A prevalência depende da incidência, da duração (cura, sobrevida) e da migração. Com incidência constante, a prevalência ainda muda se a duração ou a migração mudarem. | 2:27-28
+V | Para expressar a frequência de nascimentos de crianças com malformação congênita, utilizamos a medida de prevalência. | A proporção de RN com malformação é prevalência ao nascer: não se conhecem os casos perdidos como abortos e perdas fetais, então não é incidência. | 2:29-30
+
+=== p2023-q4
+prova: 2023
+num: 4
+cap: 3
+title: Coeficientes de mortalidade
+F | A padronização dos coeficientes de mortalidade é necessária quando comparamos populações de tamanhos diferentes. | O tamanho já é corrigido pelo próprio coeficiente (óbitos/população). Padroniza-se quando as populações têm estrutura etária (ou por sexo) diferente, que confunde a comparação. | 3:38
+V | O coeficiente geral de mortalidade não padronizado é a expressão da intensidade com que ocorrem óbitos em uma população. | O CGM bruto mede o risco real de morrer naquela população, com a estrutura etária que ela tem. O padronizado é um número hipotético, só para comparação. | 3:36-37; 3:40
+F | A taxa de mortalidade por causa de óbito representa o número de mortes por uma causa específica pelo número total de mortes no período. | Óbitos por uma causa / total de óbitos é a mortalidade proporcional. A taxa de mortalidade por causa usa a população (meio do período) no denominador. | 3:43-45
+V | Na prática, a taxa de mortalidade infantil é uma aproximação da medida de risco ou probabilidade de morte antes de completar um ano de vida. | Óbitos de menores de 1 ano / nascidos vivos é uma proporção que estima o risco. É aproximação porque numerador e denominador misturam coortes de anos calendário vizinhos. | 3:51
+F | O coeficiente de mortalidade pode ser expresso de 3 formas: geral, bruto, e padronizado. | "Geral" e "bruto" são a mesma coisa (CGM = taxa bruta de mortalidade). As formas são: geral/bruto, específico (por idade, sexo, causa) e padronizado. | 3:36-41
+
+=== p2023-q5
+prova: 2023
+num: 5
+cap: 5
+title: Notificação compulsória
+F | A notificação compulsória de casos deve ser feita por profissionais de saúde ligados ao sistema único de saúde. | São obrigados todos os profissionais de saúde e os responsáveis por estabelecimentos de saúde e de ensino, públicos e privados. Qualquer cidadão pode notificar. | 5:106
+V | A notificação das doenças constantes na Lista Nacional de Doenças e Agravos de Notificação Compulsória deve ser feita mesmo na ausência de casos. | É a notificação negativa: informar que não houve casos distingue "sistema alerta, sem casos" de "casos não notificados". Também é um indicador de eficiência do sistema. | 5:107-108
+F | As notificações devem, idealmente, ser feitas em períodos de epidemias. | A vigilância é contínua e sistemática: notifica-se sempre, inclusive a notificação negativa. É assim que se detecta o que excede o esperado. | 5:103; 5:107
+V | Os critérios que norteiam a escolha de doenças que fazem parte da Lista Nacional de Doenças e Agravos de Notificação Compulsória não se restringem a aspectos epidemiológicos. | Além de magnitude e potencial de disseminação, entram transcendência (relevância social e econômica), vulnerabilidade, valor da notificação e compromissos internacionais (RSI). | 5:107
+F | Epidemia é a ocorrência de muitos casos de uma doença em um determinado período. | Epidemia é a ocorrência acima do esperado, não "muitos casos". Um único caso autóctone de uma doença eliminada já é uma epidemia. | 4:92; 5:115
+
+=== p2023-q6
+prova: 2023
+num: 6
+cap: 3
+title: Indicadores de mortalidade
+F | Um problema do coeficiente geral de mortalidade é que os óbitos sem causas conhecidas não podem ser computados no seu cálculo, levando à redução deste coeficiente. | O CGM usa todos os óbitos, com ou sem causa definida. A vantagem dele é justamente não precisar de idade, sexo ou causa. | 3:36-37
+V | A taxa de mortalidade infantil neonatal é mais difícil de ser reduzida do que a taxa de mortalidade infantil pós-neonatal, por ser mais influenciada por anomalias congênitas e afecções perinatais. | O componente neonatal tem causas endógenas, ligadas à gestação e ao parto, que exigem intervenções complexas e caras. O pós-neonatal cai com medidas simples (TRO, vacinação, saneamento). | 3:51-52
+V? | O coeficiente de mortalidade por causas externas (que inclui as mortes violentas) é calculado com base no local onde houve a morte, e não o local de residência, para poder dimensionar o impacto da violência sobre a saúde em uma dada região. | O livro diz que o local de residência é o de maior interesse, exceto para causas externas, em que o local de ocorrência importa para dimensionar a violência na área. Nos indicadores de risco (ex. RIPSA) usa-se a residência, por isso a assertiva é discutível. | 5:111; 3:35
+V? | O indicador Anos Potenciais de Vida Perdidos exclui de seu cálculo os óbitos infantis, pois muitas mortes nesse período são decorrentes de causas específicas do primeiro ano de vida. | É a proposta de Romeder e McWhinnie (APVP entre 1 e 70 anos): os óbitos infantis têm causas próprias e superdimensionariam o indicador. O livro avisa que isso não é consenso. Muitos cálculos usam de 0 a L. | 3:65-66
+F | O coeficiente geral de mortalidade de um município é calculado pela razão entre o número de óbitos no município e a população no meio do período do Estado ao qual pertence o município. | Numerador e denominador devem se referir à mesma área e período: óbitos de residentes no município / população do município no meio do período × 1000. | 3:36
+
+=== p2023-q7
+prova: 2023
+num: 7
+cap: 6
+title: Pirâmides etárias e transição demográfica
+ctx: Figura 1: distribuição proporcional (%) da população por sexo e idade, Brasil, 1980, 1991 e 2000. Figura 2: transição demográfica, número de nascimentos e óbitos no Brasil, 1950-2100 (ONU, World Population Prospects 2019).
+img: 2023-q7-piramides.png | Figura 1 · pirâmides 1980, 1991 e 2000
+img: 2023-q7-nascimentos-obitos.png | Figura 2 · nascimentos e óbitos (ONU)
+F | A pirâmide etária do Brasil caracteriza o processo de envelhecimento da população brasileira, que está se concretizando na atualidade devido ao aumento das taxas de natalidade e de fecundidade da população. | É o contrário: o envelhecimento se deve sobretudo à queda da fecundidade e da natalidade, que estreita a base da pirâmide. | 6:129-131
+V | A pirâmide também nos permite observar a feminização do processo de envelhecimento da população brasileira, uma vez que a população masculina apresentou padrão mais jovem que a feminina. | Nas idades mais altas as barras femininas são maiores: as mulheres têm menor mortalidade e maior esperança de vida, e o envelhecimento é "feminino". | 6:126; 6:132
+F | Um dos fatores mais importantes envolvidos no processo de envelhecimento populacional é a redução da mortalidade geral e infantil. | O fator mais importante é a queda da fecundidade. A queda da mortalidade infantil, sozinha, tenderia a rejuvenescer a população, porque mais crianças sobrevivem. | 6:131
+V | Pela projeção da ONU, as curvas de nascimentos e óbitos no Brasil vão se encontrar em 2045 e a partir desta data se inicia a fase de decrescimento populacional no país. | No gráfico as curvas se cruzam por volta de 2045. Depois disso os óbitos superam os nascimentos e o crescimento vegetativo fica negativo (desconsiderando migração). | 6:128; 6:130
+V | A queda da natalidade observada na Figura 2 foi ainda mais acentuada com a pandemia do novo coronavírus. Considerando esse fator, associado ao aumento da mortalidade observado na pandemia, podemos concluir que houve menor crescimento vegetativo. | Crescimento vegetativo = natalidade − mortalidade. Menos nascimentos e mais óbitos reduzem esse saldo. | 6:128
+
+=== p2023-q8
+prova: 2023
+num: 8
+cap: 6
+type: open
+pts: 1.5
+title: Óbitos em 2020 por sexo e idade (Covid-19)
+ctx: O gráfico apresenta a variação relativa do número de óbitos registrados (%) entre 2018-2019 e 2019-2020 no Brasil, por sexo e grupo etário. Com base nos dados apresentados e no seu conhecimento sobre o perfil de morbimortalidade do Brasil, descreva o padrão de mortalidade observado no período em ambos os sexos e faixas etárias, buscando relacioná-lo à chegada da pandemia da Covid-19 ao país, em 2020.
+img: 2023-q8-obitos-2020.png | Variação relativa do nº de óbitos registrados (IBGE, Registro Civil 2020)
+key: Entre 2018 e 2019 as variações foram pequenas (de −2,3% a +4,7%), o padrão "esperado" de uma população que envelhece devagar.
+key: Em 2019-2020 os óbitos aumentaram muito entre adultos de 15 a 59 anos (+14,7% homens; +15,4% mulheres) e idosos de 60+ (+19,4% homens; +13,1% mulheres): excesso de mortalidade compatível com a Covid-19, que mata mais idosos e pessoas com DCNT.
+key: Nos homens idosos o aumento foi maior: sobremortalidade masculina (maior letalidade da Covid, mais comorbidades, menor procura por serviços).
+key: Entre 0 e 14 anos houve queda (cerca de −15%), provavelmente pelo distanciamento social e escolas fechadas, que reduziram outras infecções respiratórias, diarreias e acidentes. Pode ter havido também sub-registro.
+key: Relacionar com a transição epidemiológica e a dupla carga: uma doença infecciosa emergente atingiu mais os grupos com doenças crônicas, e a pandemia reduziu a esperança de vida e o crescimento vegetativo.
+key: Lembrar das limitações: dados de registro civil (cobertura, atraso de registro) e números absolutos, não taxas.
+ans: Quem responde bem descreve os números por sexo e idade, aponta o excesso de óbitos em adultos e idosos em 2020 como efeito direto (e indireto) da Covid-19, explica a queda nas crianças e liga o padrão ao perfil de morbimortalidade do país (envelhecimento, DCNT como comorbidade, desigualdade).
+ref: 6:132-137; 3:43-45; 4:92
+
+=== p2023-q9
+prova: 2023
+num: 9
+cap: 8
+type: open
+pts: 1.5
+title: Teoria, hipótese conceitual e hipótese operacional
+ctx: O processo de investigação epidemiológica busca conectar observações e teorias. Existe um caminho para que a teoria possa ser confrontada com os dados da investigação, no qual as hipóteses são trabalhadas. Descreva as fases desse caminho, indicando o que cabe a cada uma delas: a) Teoria; b) Hipótese conceitual; c) Hipótese operacional.
+key: Teoria: explicação ampla de um fenômeno, que dá origem às hipóteses. Exemplo do livro, a teoria de Barker: o ambiente nutricional, hormonal e metabólico materno "programa" de forma permanente a estrutura e a fisiologia do bebê.
+key: Hipótese conceitual: afirmação ampla, derivada da teoria, sobre a relação entre fenômenos, mas ainda não mensurável. Exemplo: a subnutrição intrauterina é fator de risco para doença cardiovascular.
+key: Hipótese operacional: a hipótese conceitual reescrita em termos de variáveis mensuráveis, para ser testada com dados. Exemplo: crianças com baixo peso ao nascer (< 2.500 g) têm maior probabilidade de doença coronariana na vida adulta do que as com peso normal.
+key: Os dados coletados aceitam ou rejeitam a hipótese operacional. Daí se fazem inferências causais e a teoria é mantida, reformulada ou gera novas hipóteses.
+key: Os desenhos de estudo fazem a ponte entre a hipótese conceitual e a operacional.
+ref: 8:174-176
+
+=== p2024-q1
+prova: 2024
+num: 1
+cap: 2
+title: Medidas de frequência
+F | A prevalência é definida como a frequência de casos novos de uma doença, em uma determinada população, em um período de tempo. | Essa é a definição de incidência. Prevalência são os casos existentes (novos e antigos) num dado momento. | 2:14; 2:25-26
+V | O que determina a prevalência de uma doença é a sua incidência e duração, além dos movimentos migratórios. | São os três determinantes da prevalência. Emigração de doentes ou imigração de sadios reduz a prevalência; o contrário a aumenta. | 2:27
+V | A taxa de incidência reflete a velocidade com que surgem novos casos de uma doença ou problema de saúde na população e pode ser calculada como a razão entre o número de casos novos e o total de pessoa-tempo obtido num determinado período de tempo, a partir do acompanhamento da população estudada. | TI = I / pessoa-tempo, também chamada densidade de incidência ou força de morbidade. | 2:17
+V | Letalidade é a razão entre o número de óbitos por uma doença X e o número de indivíduos que apresentam a doença X. | É a mortalidade restrita a quem tem a doença. Como proporção, o denominador são os casos diagnosticados no período. | 2:24-25
+V | Incidência acumulada é uma proporção e representa uma estimativa de risco de desenvolver uma doença, durante um intervalo de tempo determinado. | IA = casos novos / não-doentes no início (t0). O numerador está contido no denominador, vai de 0 a 1 e precisa da referência de tempo. | 2:21-22
+
+=== p2024-q2
+prova: 2024
+num: 2
+cap: 3
+title: Mortalidade materna, infantil e padronização
+F | O denominador da taxa de mortalidade materna na área A e período P é o número de mulheres em idade reprodutiva na área A e período P. | A razão de mortalidade materna usa os nascidos vivos (× 100.000) como aproximação do número de gestantes expostas. | 3:47
+F | A redução do componente neonatal da mortalidade infantil pode ser atingida por medidas simples, como o uso de sais de hidratação oral nos casos de diarreia infantil. | A TRO reduz o componente pós-neonatal (causas exógenas, como a diarreia). O neonatal depende de pré-natal, parto e cuidados perinatais, que são mais complexos. | 3:51-52
+V | A queda da taxa de mortalidade infantil no Brasil entre 1960 e 2000 pode ser atribuída fundamentalmente à melhoria de fatores ambientais e sociais. | A queda veio sobretudo do componente pós-neonatal: saneamento, infraestrutura urbana, ações de saúde coletiva (vacinação, TRO) e queda da fecundidade. | 3:52-53; 6:130
+V | A padronização dos coeficientes gerais de mortalidade tem como objetivo aumentar a comparabilidade entre locais com composição etária distintas, podendo ser feita por meio do método direto ou indireto. | Direto: aplica as taxas específicas a uma população-padrão. Indireto: aplica as taxas do padrão à população estudada, dando a RMP (SMR). | 3:38-41
+F | Um dos indicadores baseados em medidas do tempo de vida é os anos potenciais de vida perdidos. Expressa o efeito das mortes ocorridas precocemente em relação à duração esperada da vida. Ele é calculado por meio da técnica denominada tábua de sobrevivência ou tábua de vida. | O começo está certo, mas o APVP é calculado como a soma de dx × (L − x), com uma idade-limite L. A tábua de vida é a técnica da esperança de vida. | 3:61; 3:64-65
+
+=== p2024-q3
+prova: 2024
+num: 3
+cap: 3
+title: Mortalidade por doenças do aparelho circulatório
+ctx: Mortalidade por doenças do aparelho circulatório (DCV) no Brasil por faixa etária e sexo, 2009. TME = taxa de mortalidade específica (óbitos por 100.000 hab.); MP = mortalidade proporcional (%). Fonte: SIM/IBGE.
+table: Faixa etária; Homens TME; Homens MP; Mulheres TME; Mulheres MP; Total TME
+table: 0 a 29; 0,8; 15,0; 0,3; 25,3; 0,6
+table: 30 a 39; 9,8; 10,2; 3,7; 16,9; 6,7
+table: 40 a 49; 40,7; 21,1; 17,8; 27,3; 28,8
+table: 50 a 59; 126,1; 31,5; 51,2; 32,0; 86,7
+table: 60 a 69; 281,0; 37,5; 136,5; 37,0; 203,3
+table: 70 a 79; 550,1; 39,7; 323,5; 40,5; 422,2
+table: 80 e mais; 960,8; 40,2; 822,1; 42,9; 878,2
+table: Total; 59,7; 28,7; 41,2; 34,8; 50,3
+V | O risco de morrer por DCV é maior em homens do que em mulheres. | Risco = taxa: em todas as faixas etárias a TME masculina é maior que a feminina (no total, 59,7 contra 41,2/100 mil). | 3:44-45
+F | O aumento do número de casos de DCV em um determinado período T e área A aumenta, necessariamente, a Mortalidade Proporcional por DCV no mesmo período e área. | A MP depende também dos óbitos por outras causas (o denominador é o total de óbitos), e casos não são óbitos. No livro, a MP por DAC no Sul caiu enquanto o número absoluto subiu. | 3:44
+V | O principal motivo de a Mortalidade Proporcional por DCV entre indivíduos menores de 49 anos ser menor no sexo masculino é o fato das Taxas de Mortalidade por Causas Externas serem muito mais elevadas entre adolescentes e jovens do sexo masculino do que entre adolescentes e jovens do sexo feminino. | Entre homens jovens as causas externas "ocupam" grande parte do total de óbitos, então a fatia das DCV fica menor, mesmo com taxa de DCV maior que a das mulheres. | 3:45; 6:137-138
+V | De acordo com a tabela acima, cerca de 28% e 34% dos óbitos entre homens e mulheres, respectivamente, são devidos às DCV. | A MP total é 28,7% nos homens e 34,8% nas mulheres. | 3:43
+F | A Taxa de Mortalidade Específica por DCV é calculada dividindo-se o número de óbitos por DCV em um determinado período P e área A pela população com DCV, residente naquela mesma área A e período P. | Dividir pelos doentes dá a letalidade. A taxa de mortalidade por causa usa toda a população residente (meio do período). | 3:45; 2:25
+
+=== p2024-q4
+prova: 2024
+num: 4
+cap: 4
+title: Diagrama de controle da doença meningocócica
+ctx: Diagrama de controle da doença meningocócica no período 1983-1993, Brasil, 1994 (Guia de Vigilância Epidemiológica, MS). Linhas: média, limite máximo esperado e incidência de 1994 (casos/100 mil hab.).
+img: 2024-q4-meningococica.png | Diagrama de controle (média, limite máximo esperado, 1994)
+V | O Limite Máximo Esperado para cada mês do calendário foi calculado a partir das médias e desvios-padrão mensais das taxas de incidência de doença meningocócica em anos anteriores naquele mesmo mês. | No método da distribuição normal, para cada mês o limite superior é a média + 1,96 desvio-padrão das incidências daquele mês nos anos anteriores (geralmente 10, sem os anos epidêmicos). | 4:95-96
+V | A incidência da doença meningocócica apresenta um padrão sazonal. | A média histórica (e 1994) sobe no inverno (junho a agosto) e cai no verão: variação que se repete nas estações do ano. | 4:90; 4:95
+F | Constata-se que houve uma epidemia de doença meningocócica apenas no mês de julho de 1994 porque a Taxa de Incidência da doença ultrapassou o valor de 0,45 casos para 100.000 habitantes. | O critério é ultrapassar o limite máximo esperado de cada mês, não um valor fixo. Em 1994 a incidência ficou acima do limite em vários meses (jan, jun-set, nov). | 4:95-96
+F | Há uma tendência de aumento na taxa de incidência de doença meningocócica. | O diagrama compara um ano com o padrão histórico mensal; não mostra uma série de vários anos, então não permite avaliar tendência secular. | 4:88; 4:95
+F | Epidemia pode ser definida como uma elevação temporária e lenta da Taxa de Incidência de uma determinada doença. | Epidemia é uma elevação brusca, temporária e significativamente acima do esperado. | 4:92
+
+=== p2024-q5
+prova: 2024
+num: 5
+cap: 2
+title: Diagrama de seguimento: pessoa-tempo
+ctx: O diagrama representa o acompanhamento de uma população em estudo epidemiológico realizado entre o início de 2000 e o final de 2014 para estudar fatores de risco para uma doença X. As entradas ocorreram no início do ano e os eventos (óbito ou adoecimento) no meio do ano. Todos os participantes foram acompanhados até a ocorrência do evento. Legenda: * início do seguimento; – seguimento; + perda; ! adoecimento.
+img: 2024-q5-diagrama.png | Diagrama de seguimento dos 12 participantes
+V | O diagrama acima representa uma população dinâmica. | Os participantes entram em momentos diferentes (2000, 2002, 2004) e saem por adoecimento ou perda: população dinâmica (aberta). | 2:17-18
+F | A quantidade de pessoa-tempo é 12. | 12 é o número de pessoas. Somando o tempo de cada uma (anos completos + 0,5 no ano do evento ou perda): 2,5 + 11,5 + 13,5 + 15 + 8,5 + 5,5 + 13 + 10,5 + 4,5 + 6,5 + 2,5 + 6,5 = 100 pessoas-ano. | 2:17-19
+V | A taxa de incidência da doença é 0,08 caso por pessoa/ano. | São 8 adoecimentos (IDs 02, 03, 05, 08, 09, 10, 11, 12) em 100 pessoas-ano: TI = 8/100 = 0,08. | 2:17-19
+F | A letalidade da doença é 0,2. | O diagrama não informa óbitos entre os doentes, então não é possível calcular a letalidade. | 2:25
+V | A prevalência de período da doença considerando os 15 anos de acompanhamento é 0,67. | Prevalência de período = (casos no início + casos novos) / população = (0 + 8)/12 ≈ 0,67. | 2:28-29
+
+=== p2024-q6
+prova: 2024
+num: 6
+cap: 5
+title: Sistema de vigilância epidemiológica
+V | Detectar epidemias, recomendar adoções de medidas de prevenção e avaliar o impacto de intervenções são alguns dos seus objetivos. | Estão entre os objetivos listados, junto com descrever tendências e grupos de risco, estimar magnitude e avaliar as estratégias. | 5:104
+F | Coleta, processamento e análise de dados, investigação epidemiológica e divulgação de informações são atividades de competência exclusiva do nível federal. | As atividades são feitas em todos os níveis, com prioridade para o municipal (descentralização no SUS). O nível federal e o estadual têm papel estratégico, normativo e avaliativo. | 5:104-105
+F | Apenas médicos podem notificar doenças, agravos e eventos de saúde de notificação compulsória. | Todos os profissionais de saúde e os responsáveis por estabelecimentos de saúde e ensino são obrigados; qualquer cidadão pode notificar. | 5:106
+V | Oportunidade caracteriza a capacidade que um sistema tem para rapidamente promover atividades que possam interromper a propagação da doença. | Oportunidade é a agilidade do sistema: o intervalo entre a ocorrência, a notificação, a investigação e as medidas de controle. | 5:114
+F | Uma característica desejável de um sistema de vigilância epidemiológica é a sua capacidade de detectar todos os casos de doença, ou seja, sua especificidade. | Detectar todos os casos é sensibilidade. Especificidade é a capacidade de excluir os não-casos. | 5:114
+
+=== p2024-q7
+prova: 2024
+num: 7
+cap: 2
+title: Inquérito na cidade C
+ctx: Um inquérito populacional censitário foi realizado na primeira semana de janeiro de 2009 e contemplou 10.000 moradores da cidade C. Este inquérito identificou 500 casos da doença D. Esta população dinâmica encontra-se em estado estacionário (estável) em termos demográficos e sanitários. Ao longo do ano (2009), mais 200 indivíduos foram diagnosticados com a doença D. De todos os casos identificados nesse período, 10 morreram.
+V | A prevalência da doença D no início de 2009 é 5%. | 500 casos existentes / 10.000 moradores = 0,05 = 5%. | 2:26
+F | A taxa de incidência da doença D no ano de 2009 é 0,05 caso por pessoa/ano. | Só quem não tinha a doença está sob risco: cerca de 9.500 pessoas-ano (população estável, 1 ano). TI ≈ 200/9.500 ≈ 0,021 caso/pessoa-ano. 0,05 é a prevalência. | 2:17-20
+V | A incidência acumulada da doença D em um período de um ano (2009) é 2/95 (i.e., 0,02). | IA = casos novos / não-doentes no início = 200 / 9.500 = 2/95 ≈ 0,021. | 2:21
+F | A prevalência da doença D em 31 de dezembro de 2009 é 7%. | Somar 500 + 200 ignora os 10 óbitos e possíveis curas. Além disso, em estado estacionário a prevalência tende a se manter. 7% não decorre dos dados. | 2:26-28
+F | A letalidade da doença é 1/20 (5%). | Letalidade = óbitos / casos da doença no período = 10 / 700 = 1/70 ≈ 1,4%. 1/20 só seria correto se o denominador fosse 200. | 2:25
+
+=== p2024-q8
+prova: 2024
+num: 8
+cap: 8
+type: choice
+title: Identificação de desenhos de estudo
+ctx: Identifique a que tipo concerne cada um dos estudos descritos. (Na prova de 2024 a numeração era: 1 experimental, 2 ecológico, 3 coorte, 4 caso-controle, 5 transversal, 6 nenhum.)
+opts: Estudo experimental; Estudo de coorte; Estudo caso-controle; Estudo transversal; Estudo ecológico; Nenhum dos anteriores
+5 | Objetivo: Analisar a distribuição espacial e a tendência temporal da taxa de incidência de AIDS no Brasil no período de 2005 a 2020. Métodos: Dados do SINAN/DATASUS foram estratificados por ano do diagnóstico, região do país/municípios de residência e faixa etária. Foram calculadas as taxas de incidência para a estimativa temporal por meio do modelo de joinpoint, bem como taxas bayesianas empíricas espaciais para a distribuição espacial pelo estimador de densidade de Kernel. Resultados: A TI no Brasil em 2020 foi de 17,69 casos por 100 mil habitantes. A tendência geral (2005–2020) foi de diminuição no Brasil, Sudeste e Sul; o Norte demonstrou aumento. | Taxas por ano, região e município (dados agregados), com análise de tendência e espacial: estudo ecológico. | 8:177-178; 4:85
+4 | Objetivo: analisar a prevalência de saúde cardiovascular (SCV) ideal na população adulta brasileira. Métodos: estudo com base na Pesquisa Nacional de Saúde de 2019 (n = 77.494); foram estimadas as prevalências e IC95% de SCV ideal (sete metas alcançadas simultaneamente) e por metas individuais. Resultados: apenas 0,5% da população apresentou SCV ideal, com maior prevalência entre os de maior escolaridade e os residentes em áreas urbanas. | Inquérito de base populacional, dados individuais num único momento, medindo prevalência: transversal. | 8:178
+3 | Estudo com o objetivo de verificar a associação entre ocupações e cânceres linfohematopoiéticos em um hospital público de referência no Ceará, 2019-2021. O grupo caso foi constituído por pacientes com mieloma múltiplo, leucemias ou linfomas não Hodgkin (n = 114), enquanto indivíduos comparáveis de unidade hospitalar distinta constituíram o grupo controle (n = 114), formando pares 1:1. Comparamos os grupos em regressão logística condicional. Tipo de ocupação, zona de residência, tipo de abastecimento de água e Superintendência Regional de residência se mostraram associados ao desfecho. | Seleção por desfecho (com câncer = casos; sem = controles pareados) e comparação das exposições (ocupação): caso-controle pareado. | 8:178
+2 | O objetivo foi avaliar a associação das condições de nascimento, do estado nutricional e do crescimento infantil com fatores de risco cardiometabólicos aos 30 anos de idade. O estudo incluiu todos os nascidos vivos em 1982 em hospitais de Pelotas, RS, residentes da área urbana. As mães foram entrevistadas no parto e os participantes foram acompanhados em diferentes idades. Foram usados dados de peso e altura ao nascer e aos 2 e 4 anos e fatores de risco cardiovascular aos 30 anos. | Um grupo definido (nascidos em 1982) foi acompanhado ao longo do tempo, com exposições medidas antes do desfecho: coorte (de nascimentos). | 8:178
+1 | Objetivo: Avaliar o efeito da modificação do ambiente escolar sobre a atividade física em estudantes adolescentes. Métodos: Sete escolas públicas em Duque de Caxias foram aleatorizadas em grupos controle e intervenção. O grupo de intervenção sofreu modificações no ambiente escolar (pintura de quadra, amarelinhas, equipamentos esportivos, personagem Super Ativa). Foram utilizados modelos lineares generalizados. Resultados: 975 adolescentes; o tempo de atividade física aumentou em ambos os grupos, sem diferença entre intervenção e controle (p=0,52). | O pesquisador controlou a intervenção e as escolas foram aleatorizadas: estudo experimental (ensaio comunitário, randomizado por conglomerado). | 8:176-177
+
+=== p2024-q9
+prova: 2024
+num: 9
+cap: 6
+type: open
+pts: 2
+title: Mudanças do perfil epidemiológico brasileiro
+ctx: Figuras: estimativas de distribuição populacional por idade e sexo (Brasil 1980, 2000 e 2050); crescimento natural, taxa de mortalidade e crescimento populacional (Brasil 2000-2060); evolução da proporção de mortalidade por grupos de causas (Brasil 1930-2005). Com base no seu conhecimento sobre as mudanças do perfil epidemiológico brasileiro nos últimos 50-70 anos, analise e justifique as alterações visualizadas nas figuras.
+img: 2024-q9-piramide-1980.png | Pirâmide 1980
+img: 2024-q9-piramide-2000.png | Pirâmide 2000
+img: 2024-q9-piramide-2050.png | Pirâmide 2050 (projeção)
+img: 2024-q9-crescimento.png | Natalidade, mortalidade e população, 2000-2060
+img: 2024-q9-mortalidade-causas.png | Mortalidade proporcional por grupos de causas, 1930-2005
+key: Pirâmides: em 1980 a base é larga (alta fecundidade). Em 2000 a base se estreita. Em 2050 o formato é quase retangular, com topo largo: envelhecimento demográfico.
+key: Causa principal do envelhecimento: queda da fecundidade (de ~6 filhos por mulher até 1960 para ~2,35 em 2000 e abaixo da reposição), somada à queda da mortalidade e ao aumento da esperança de vida (de 45,9 anos em 1950 para 70,4 em 2000).
+key: Feminização do envelhecimento: mais mulheres nas idades avançadas (menor mortalidade feminina).
+key: Natalidade e mortalidade: a taxa bruta de natalidade cai e a de mortalidade sobe a partir de ~2020 por causa do envelhecimento. As curvas se cruzam por volta de 2040-2045, o crescimento natural fica negativo e a população atinge o pico e depois diminui. É a fase final da transição demográfica.
+key: Mortalidade por causas: as DIP caem de ~45% dos óbitos em 1930 para ~5% em 2005; aparelho circulatório, neoplasias e causas externas crescem. É a transição epidemiológica (Omran: era das doenças degenerativas e provocadas pelo homem).
+key: Explicações: urbanização e industrialização, saneamento, vacinação (PNI, 1973), antibióticos, TRO, escolaridade e queda da mortalidade infantil.
+key: Particularidades do Brasil: transição "prolongada" ou polarizada (Frenk), com superposição de DIP e DCNT (dupla carga), reemergência (dengue, cólera), desigualdades regionais e sociais, e peso das causas externas entre homens jovens.
+ref: 6:126-132; 6:134-139; 3:32
+
+=== p2025-q1
+prova: 2025
+num: 1
+cap: 4
+title: Incidência de sarampo em São Paulo, 1960-1993
+ctx: Incidência mensal de sarampo na cidade de São Paulo, 1960 a 1993 (Waldman & Rosa).
+img: 2025-q1-sarampo.png | Incidência mensal de sarampo, São Paulo, 1960-1993
+F | As flutuações na incidência de sarampo mostradas no gráfico acima indicam a existência de uma variação sazonal da doença no estado de São Paulo, principalmente entre as semanas 67 e 69. | O eixo mostra anos (60 a 93), não semanas. Os grandes picos de 1967-1969 se repetem a cada 2-3 anos: são variações cíclicas, não sazonais. E os dados são da cidade, não do estado. | 4:90
+V | A figura apresenta tendência crescente na incidência de sarampo em São Paulo-SP, nos anos 1960, com declínio posterior. Essa redução pode ter sido ocasionada pelas melhorias gerais das condições de vida na cidade e à introdução e aumento de cobertura da vacinação a posteriori. | Os picos crescem até ~1970 e depois a incidência despenca, coincidindo com a vacinação e a melhora das condições de vida. | 4:88-90
+V | Analisando a figura, observa-se que a ocorrência de um surto tende a reduzir o risco de incidência no curto prazo de sarampo. Os sobreviventes da doença adquirem imunidade e, com menos crianças suscetíveis, a transmissão torna-se menos provável. | É o mecanismo dos ciclos do sarampo: depois da epidemia sobram poucos suscetíveis; com os nascimentos eles se acumulam de novo e vem outro pico. | 4:90
+F | Mesmo nos períodos quando não houve surtos epidêmicos (entre 1975 e 1983) com grande aumento do número de casos da doença, observa-se um aumento não cíclico da incidência mensal. | Entre 1975 e 1983 a incidência fica baixa, com pequenas oscilações e tendência de queda. Não há aumento. | 4:88
+V | Sobre os diferentes tipos de variação na incidência de uma doença, alterações diferentes do esperado são denominadas variações irregulares. Neste caso, a análise da evolução temporal utilizando dados históricos é essencial para avaliar se a incidência da doença está dentro do esperado ou não. | Variações irregulares são alterações inusitadas. Para saber se algo está fora do esperado é preciso comparar com a série histórica (padrão endêmico, diagrama de controle). | 4:91; 4:95
+
+=== p2025-q2
+prova: 2025
+num: 2
+cap: 5
+title: Conceitos de vigilância epidemiológica
+F | A vigilância epidemiológica é definida como um conjunto de ações que proporciona o conhecimento, detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde coletiva, com a finalidade de recomendar e adotar as medidas de prevenção e controle de doenças. Este conceito é restrito às doenças transmissíveis. | A definição (Lei 8.080/90) está certa, mas não se restringe às transmissíveis: inclui DCNT, agravos, acidentes, violências e fatores de risco. | 5:103-104
+F | Coleta, processamento e análise de dados, investigação epidemiológica e divulgação de informações são atividades de competência do nível federal e estadual. | Essas atividades acontecem em todos os níveis, e o SUS prioriza o municipal (local). | 5:104-105
+V | Dados de morbidade podem ser obtidos a partir da notificação de casos e surtos, da investigação epidemiológica, da busca ativa de casos, levantamento da produção de serviços laboratoriais e de atenção ambulatorial e hospitalar, inquéritos e sistemas de informação, como o SINAN e SIH. | O livro lista exatamente essas fontes para os dados de morbidade. | 5:105
+V | A base do sistema de vigilância epidemiológica é formada pela notificação compulsória de doenças e agravos. Entretanto, fontes complementares são fundamentais para garantir maior qualidade e abrangência da informação. | A notificação compulsória é a principal fonte. Investigações, laboratórios, sistemas de informação, sentinelas, imprensa e comunidade a complementam. | 5:106
+F | A lista de doenças de notificação é atualizada sistematicamente. Entretanto, alguns aspectos devem ser considerados ao realizar a notificação, um deles é notificar apenas casos confirmados da doença. | Deve-se notificar já a simples suspeita, o que dá sensibilidade e oportunidade, sem esperar a confirmação laboratorial. | 5:106-107
+
+=== p2025-q3
+prova: 2025
+num: 3
+cap: 5
+title: Sistemas de informação, investigação e sentinela
+F | Os sistemas de informação em saúde têm como um de seus principais objetivos possibilitar a análise da situação de saúde no nível local, tendo como referências regiões heterogêneas. | O objetivo é analisar a situação de saúde no nível local tomando como referência microrregiões homogêneas. A palavra "heterogêneas" invalida a assertiva. | 5:107
+V | A investigação epidemiológica é um trabalho de campo, realizado a partir de dados notificados e seus contatos que tem como propósito final orientar a recomendação e adoção oportuna de medidas de controle para impedir a ocorrência de novos casos. | É a definição do livro: confirmar o diagnóstico, achar a fonte e o modo de transmissão, os expostos e os casos secundários, para controlar. | 5:112
+F | Sistemas de vigilância sentinela utilizam apenas um subconjunto das fontes de dados possíveis, aumentando a capacidade de obter informações detalhadas e válidas. Tais dados são suficientes para o cálculo de taxas de incidência para uma determinada população. | A primeira parte está certa, mas a perda de representatividade faz os dados de sentinela serem insuficientes para calcular incidências e pouco generalizáveis. | 5:113
+F | Algumas medidas quantitativas podem ser utilizadas para a avaliação de um sistema de vigilância epidemiológica. Dentre elas, destaca-se o valor preditivo positivo (VPP), que consiste na proporção dos casos identificados pelo sistema que não o são. O VPP diminui com a especificidade do critério utilizado para a definição do caso e com a incidência do agravo. | O VPP é a proporção dos identificados que de fato são casos, e aumenta com a especificidade da definição de caso e com a frequência (prevalência) do agravo. | 5:114
+V | Define-se como surto ou epidemia a ocorrência de um evento relacionado à saúde/doença que excede a expectativa normal. Este ano, por exemplo, observou-se uma epidemia de dengue no Brasil devido ao número de casos de dengue maior do que o esperado desta doença no país. | A definição está correta e o exemplo também: em 2024 os casos de dengue superaram muito o esperado. | 5:115
+
+=== p2025-q4
+prova: 2025
+num: 4
+cap: 8
+type: choice
+title: Identificação de desenhos de estudo
+ctx: Identifique o tipo de desenho de estudo de cada resumo.
+opts: Estudo experimental; Estudo de coorte; Estudo caso-controle; Estudo transversal; Estudo ecológico; Nenhum dos anteriores
+4 | Objetivo: Identificar os padrões alimentares de adolescentes brasileiros para cada uma das cinco regiões do país, e verificar se há diferença na adesão dos padrões alimentares de acordo com idade, sexo e tipo de escola. Métodos: Foram analisados dados de 71.298 adolescentes de 12 a 17 anos que participaram do Estudo de Riscos Cardiovasculares em Adolescentes (ERICA). Os dados de consumo alimentar foram obtidos por recordatório de 24h e os padrões identificados por análise fatorial; usou-se regressão linear. Resultados: três padrões comuns às regiões (tradicional, pão e café, não saudável) e um quarto na Região Norte. | Dados individuais coletados num único momento (inquérito escolar), sem seguimento: transversal. | 8:178
+6 | Objetivo: Atualizar o conhecimento sobre o aborto inseguro no país. Métodos: Foi realizada busca e seleção de estudos via MEDLINE e LILACS, no período 2008 a 2018, com avaliação da qualidade dos artigos (Instituto Joanna Briggs). Resultados: Foram avaliados 50 artigos. A prevalência de aborto induzido foi estimada em 15% em 2010 e 13% em 2016; a razão de aborto induzido por 1.000 mulheres em idade fértil reduziu de 1995 a 2013. Há provável sub-registro de óbitos maternos por aborto. | É uma revisão da literatura (sistemática): a unidade de análise são artigos, não pessoas ou populações. Não é nenhum dos cinco desenhos. | 8:176-179
+6 | Objetivo: Avaliar a influência da variação da implantação do Sistema de Informações sobre Mortalidade (SIM) nos resultados antes e depois da intervenção para aprimoramento do sistema em Pernambuco. Métodos: Foram explicitados o modelo lógico e a matriz de indicadores e julgamento do SIM. Coletaram-se dados nos 184 municípios. Obteve-se o grau de implantação a partir de indicadores de estrutura e processo, relacionado aos de resultado. Resultados: o SIM foi classificado como parcialmente implantado antes (70,6%) e depois (73,1%) da intervenção. | É uma pesquisa avaliativa (avaliação de implantação de um sistema de informação), não um estudo epidemiológico de exposição e desfecho em pessoas. A melhor opção é "nenhum dos anteriores". (Gabarito não oficial.) | 8:179
+2 | Objetivo: Avaliar se as trajetórias do nível de educação e de renda influenciam na mudança do consumo de vegetais ao longo de 13 anos entre funcionários públicos de uma universidade do Rio de Janeiro. Métodos: consumo de vegetais, renda e educação foram avaliados no início (1999) e na quarta onda (2011–12) do estudo Pró-Saúde; 2.381 participantes; modelos lineares generalizados. Resultados: homens e mulheres em mobilidade educacional ascendente aumentaram o consumo; mulheres que reduziram a renda tiveram menor probabilidade de consumir vegetais. | Os mesmos indivíduos foram medidos em ondas sucessivas ao longo de 13 anos: coorte (Estudo Pró-Saúde). | 8:178
+5 | Objetivo: Identificar aglomerados espaciais para ocorrência da COVID-19 na população privada de liberdade (PPL) e analisar a tendência temporal dos casos confirmados no sistema penitenciário do Brasil. Métodos: unidades de análise: as cinco macrorregiões, os 26 estados e o Distrito Federal; todos os casos confirmados de 14/04 a 31/08/2020, do Painel do Departamento Penitenciário Nacional; estatística de varredura e análise de tendência. Resultados: 18.767 casos; 14 clusters espaciais de risco, o maior no Distrito Federal. | Unidades de análise são estados e regiões (dados agregados): estudo ecológico, com análise espacial e temporal. | 8:177-178
+
+=== p2025-q5
+prova: 2025
+num: 5
+cap: 6
+title: DALY e mortalidade por grupos de causa, 1990-2019
+ctx: Entre 1990 e 2019, o Brasil passou por uma série de mudanças e avanços na estruturação de seu sistema de saúde pública e de proteção social básica. As figuras apresentam a mortalidade proporcional e os DALY (anos de vida perdidos ajustados por incapacidade) por grupos de causa (infecciosas, DCNT, externas), segundo sexo e grupos etários, em 1990 e em 2019 (GBD, 2021).
+img: 2025-q5-daly-1990.png | 1990: DALY e mortalidade proporcional por grupo de causas
+img: 2025-q5-daly-2019.png | 2019: DALY e mortalidade proporcional por grupo de causas
+V | A carga de doenças infecciosas e parasitárias, tanto no DALY quanto na mortalidade ajustada, se destacam nas faixas etárias de crianças menores que 10 anos e, principalmente, entre as menores de 1 ano. | As barras escuras (infecciosas) são maiores em < 1 ano e vão diminuindo até os 10 anos, nos dois anos e nos dois indicadores. | 3:76-77; 6:137
+F | Observa-se um aumento na participação da carga de doenças infecciosas e parasitárias entre as crianças menores de 1 ano, de 1990 a 2019. | Em menores de 1 ano a fatia das infecciosas cai (de ~80% para ~65%) entre 1990 e 2019. | 6:137-139
+V | A partir dos 40 anos a contribuição das doenças crônicas passa a ser mais destacada e aumenta conforme a idade. | Nas faixas a partir de 40-44 a DCNT domina e chega a mais de 90% nos idosos. | 6:134; 3:77
+F | A mortalidade por causas externas aumentou de forma exponencial no Brasil, no período investigado. | As figuras mostram proporções por faixa etária, não taxas ao longo do tempo, e não há crescimento exponencial. As causas externas pesam muito nos homens jovens (15-39) nos dois anos. | 6:137-138
+V | Nota-se que o país se encontra em avançado estágio no seu processo de transição epidemiológica, tendo reduzido progressivamente o peso da mortalidade por doenças infecto-parasitárias, de uma forma geral, e aumentado o peso da morbimortalidade por doenças crônicas não transmissíveis (DCNT), especialmente nos grupos etários mais idosos. | É a leitura geral das figuras. Ressalva do livro: no Brasil a transição é prolongada ou polarizada, com DIP ainda relevantes em alguns grupos e regiões. | 6:134-137
+
+=== p2025-q6
+prova: 2025
+num: 6
+cap: 6
+title: Transição nutricional (PNS 2013 e 2019)
+ctx: Tabela 2: distribuição proporcional (%) dos indivíduos de 18 anos ou mais segundo indicadores de condições de saúde e médias de peso e altura, Brasil, PNS 2013 e 2019. Tabela 3: prevalências de obesidade segundo características sociodemográficas por sexo, PNS 2013 e 2019.
+img: 2025-q6-tabela2.png | Tabela 2 · condições de saúde, peso e altura
+img: 2025-q6-tabela3.png | Tabela 3 · obesidade por características sociodemográficas
+F | O aumento das prevalências de obesidade e excesso de peso na população total entre os anos de 2013 e 2019 reflete o declínio do processo de transição nutricional no Brasil. | O aumento da obesidade (20,8% → 25,9%) e do excesso de peso mostra que a transição nutricional avança: o país vai da desnutrição para a obesidade. | 6:143; 6:146
+F | O aumento significativo da estatura pode ser atribuído às melhorias nas condições socioeconômicas e de saúde e ao aumento da desnutrição em crianças ao longo dos anos. | A melhora das condições explica o aumento da estatura; o aumento da desnutrição infantil, ao contrário, reduziria a altura. | 6:146
+F | O aumento das prevalências de obesidade reflete a melhoria geral das condições de vida da população, devido à redução das doenças infecciosas. | O livro adverte que a transição nutricional não deve ser lida mecanicamente como melhoria de vida: a obesidade cresce justamente nas camadas desfavorecidas (má alimentação, alimentos baratos e calóricos, sedentarismo). | 6:146
+V | O aumento dos indivíduos que relataram ter colesterol alto, diagnóstico de doença do coração, hipertensão arterial, diabetes ou pelo menos uma DCNT pode refletir o processo de envelhecimento populacional, caracterizado pelo aumento da expectativa de vida da população. | Com a população mais velha, as DCNT ficam mais frequentes. É a transição demográfica alimentando a epidemiológica. | 6:131-134
+V | Os maiores acréscimos na prevalência de obesidade ocorreram entre os homens com faixa de renda mediana (≥1 e < 2 SM), e nas mulheres com renda domiciliar per capita menor que 1 SM, indicando o papel da desigualdade social e de gênero no processo de transição nutricional no Brasil. | Homens com 1-2 SM: 18,0% → 26,3% (+8,3 p.p., o maior entre eles); mulheres com < 1 SM: 24,5% → 30,1% (+5,6 p.p., o maior entre elas). | 6:146
+
+=== p2025-q7
+prova: 2025
+num: 7
+cap: 2
+title: Pessoa-tempo e incidência acumulada
+ctx: A) Assinale V ou F. B) Considere a incidência acumulada IA = I / (N'0 − W/2), em que I é o número de casos incidentes entre t0 e t; N'0 é a população de não-doentes no instante t0; W é o número de perdas de seguimento entre t0 e t. Calcule a incidência acumulada do primeiro ano de um estudo no qual inicialmente 21 indivíduos participaram, 2 adoeceram e 2 não completaram o acompanhamento no primeiro ano (perda de seguimento).
+F | Para o cálculo da prevalência e da incidência de uma dada doença é necessário saber quantas pessoas adoeceram em um determinado período. | Isso vale para a incidência (casos novos no período). A prevalência conta os casos existentes num momento, novos ou antigos. | 2:14; 2:26
+F | Considere um estudo no qual 100 pessoas foram acompanhadas durante um ano e 2 pessoas foram acompanhadas durante 6 meses. No cálculo de pessoa-tempo de exposição, as duas pessoas que não completaram um ano são excluídas da conta pois não completaram um ano de acompanhamento. | Pessoa-tempo soma o tempo de cada um: 100 × 1 + 2 × 0,5 = 101 pessoas-ano. Quem foi seguido por menos tempo contribui com o tempo que teve. | 2:17-18
+V | Em um estudo foram observadas 10 pessoas durante 6 meses, em outro estudo foram observadas 5 pessoas durante um ano. Pode-se concluir que a quantidade pessoa-tempo é exatamente igual nos dois estudos. | 10 × 0,5 = 5 pessoas-ano e 5 × 1 = 5 pessoas-ano. | 2:17
+V | (Parte B) A incidência acumulada calculada é 0,1. | IA = 2 / (21 − 2/2) = 2/20 = 0,1. É o método atuarial: as perdas contam como metade do período. | 2:22
+F | (Parte B) A incidência acumulada calculada é 1,0. | O valor correto é 0,1. Uma IA de 1,0 significaria que todos os não-doentes adoeceram. | 2:22
+
+=== p2025-q8
+prova: 2025
+num: 8
+cap: 3
+title: Mortalidade proporcional por causa
+ctx: Considere a mortalidade proporcional segundo a causa de óbito. A Tabela 3.5 do livro mostra taxas médias de mortalidade (por 100.000 habitantes) por grandes grupos de causas segundo sexo, Estado do Rio de Janeiro, 2003-2004.
+img: 2025-q8-tabela35.png | Tabela 3.5 · taxas de mortalidade por causa e sexo, RJ 2003-2004
+F | Se na cidade A o número de óbitos por Covid-19 foi 1000 vezes maior do que o número de óbitos por Covid-19 na cidade B, podemos dizer que a mortalidade proporcional segundo a causa de óbito por Covid-19 na cidade A é maior do que na cidade B. | A MP divide pelo total de óbitos de cada cidade. Sem conhecer esse total não dá para comparar; uma cidade muito maior pode ter MP igual ou menor. | 3:43-44
+F | O cálculo da mortalidade proporcional segundo a causa de óbito pode ser afetado quando não se tem estimativas populacionais precisas. | A MP não usa população: são óbitos por causa / total de óbitos. É uma das vantagens dela. | 3:43
+V | A mortalidade proporcional segundo a causa de óbito indica a importância de uma causa ou um grupo de causas de morte em uma determinada população e pode ser utilizada no delineamento de prioridades na área da saúde. | Ela mede a importância relativa das causas e serve para definir prioridades. | 3:43
+V | Existe uma uniformidade no conceito de morte, entretanto os indicadores de saúde baseados em dados de mortalidade não são isentos de erro. | O conceito de morte é uniforme, mas sub-registro, causas mal definidas, erros de declaração e problemas no denominador afetam os indicadores. | 3:35; 3:37-38; 3:48-50
+F | Pela análise da tabela 3.5, não podemos fazer análises comparativas por sexo, pois não sabemos o total de homens e de mulheres. | A tabela traz taxas (por 100 mil habitantes de cada sexo): já estão relativizadas pela população e podem ser comparadas, por exemplo causas externas 179,8 nos homens contra 30,9 nas mulheres. | 3:45
+
+=== p2025-q9
+prova: 2025
+num: 9
+cap: 5
+type: open
+pts: 2
+title: O papel da epidemiologia na hesitação vacinal
+ctx: O termo hesitação vacinal foi proposto pela OMS, referindo-se ao atraso na aceitação ou recusa da vacinação, apesar da disponibilidade dos imunizantes nos serviços de saúde. A queda da cobertura vacinal desde 2016, as políticas de austeridade fiscal e o cenário político da pandemia deram ao tema maior relevância. Pela primeira vez na história do PNI, órgãos públicos de comunicação foram responsáveis pela disseminação de desinformação e desincentivo a uma vacina. (Texto adaptado de notícia da Fiocruz, 2024, sobre estudo de Ester Paiva Souto.) Considerando os conceitos básicos de epidemiologia e vigilância epidemiológica: qual o papel da epidemiologia na compreensão e controle da hesitação vacinal?
+key: Descrever: medir coberturas vacinais e taxas de abandono (SI-PNI) por pessoa, lugar e tempo, e identificar grupos, regiões e períodos com queda de cobertura (tendências, mapas, clusters). É o objetivo descritivo da epidemiologia.
+key: Explicar: estudar os determinantes da hesitação (escolaridade, renda, confiança nos serviços, desinformação, acesso, religião, política) com estudos transversais (inquéritos), caso-controle e coortes. É o objetivo analítico, para identificar fatores associados.
+key: Vigilância: monitorar continuamente as coberturas e os eventos adversos pós-vacinação (de notificação compulsória), detectar a reemergência de doenças imunopreveníveis (sarampo, polio) e investigar surtos. É "informação para ação".
+key: Predizer e controlar: estimar o risco de epidemias quando suscetíveis se acumulam (ex. ciclos do sarampo), avaliar o impacto de campanhas e intervenções de comunicação e orientar as prioridades.
+key: Ação e comunicação: retroalimentar e divulgar informações confiáveis (controle social), apoiar a atenção básica e os ACS, e fortalecer o combate à desinformação.
+key: Lembrar a história: o PNI (1973) erradicou a varíola, eliminou a poliomielite (último caso em 1989) e o sarampo. A hesitação ameaça esses ganhos (contratransição).
+ref: 8:173; 5:103-104; 5:114; 4:90; 6:139
+

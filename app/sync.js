@@ -34,22 +34,26 @@
     };
     for (const src of [a.cards || {}, b.cards || {}])
       for (const [k, c] of Object.entries(src)) out.cards[k] = out.cards[k] ? { ...newer(out.cards[k], c) } : { ...c };
-    out.detran = mergeDetran(a.detran, b.detran);
+    out.detran = mergeStudy(a.detran, b.detran, { examMin: (a.detran || {}).examMin || (b.detran || {}).examMin || 60 });
+    out.mestrado = mergeStudy(a.mestrado, b.mestrado, {});
     return out;
   }
 
-  // DETRAN app progress: per-question records (newest answer wins), finished sessions
-  // (a set keyed by id) and study days (a set). Same CRDT properties as above.
-  function mergeDetran(a, b) {
+  // DETRAN and Mestrado progress: per-question records (newest answer wins), finished
+  // sessions (a set keyed by id; a session edited later, e.g. a self-graded essay, carries
+  // a newer "upd" and wins) and study days (a set). Same CRDT properties as above.
+  function mergeStudy(a, b, extra) {
     a = a || {}; b = b || {};
-    const out = { q: {}, sessions: [], days: [], examMin: a.examMin || b.examMin || 60 };
+    const out = { q: {}, sessions: [], days: [], ...extra };
     for (const src of [a.q || {}, b.q || {}])
       for (const [id, r] of Object.entries(src)) {
         const cur = out.q[id];
         if (!cur || (r.at || 0) > (cur.at || 0) || ((r.at || 0) === (cur.at || 0) && (r.r || 0) + (r.w || 0) > (cur.r || 0) + (cur.w || 0))) out.q[id] = { ...r };
       }
     const byId = {};
-    for (const s of [...(a.sessions || []), ...(b.sessions || [])]) if (s && s.id && !byId[s.id]) byId[s.id] = s;
+    const ver = (s) => s.upd || s.at || 0;
+    for (const s of [...(a.sessions || []), ...(b.sessions || [])])
+      if (s && s.id && (!byId[s.id] || ver(s) > ver(byId[s.id]) || (ver(s) === ver(byId[s.id]) && JSON.stringify(s) > JSON.stringify(byId[s.id])))) byId[s.id] = s;
     out.sessions = Object.values(byId).sort((x, y) => y.at - x.at || (x.id < y.id ? -1 : 1)).slice(0, 200);
     out.days = [...new Set([...(a.days || []), ...(b.days || [])])].sort();
     return out;

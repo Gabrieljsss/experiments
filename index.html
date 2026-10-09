@@ -28,6 +28,10 @@
       <a href="#/detran" data-nav="dt-home" data-app="detran">Início</a>
       <a href="#/detran/erros" data-nav="dt-erros" data-app="detran">Erros</a>
       <a href="#/detran/banco" data-nav="dt-banco" data-app="detran">Banco</a>
+      <a href="#/mestrado" data-nav="ms-home" data-app="mestrado">Início</a>
+      <a href="#/mestrado/livro" data-nav="ms-livro" data-app="mestrado">Livro</a>
+      <a href="#/mestrado/erros" data-nav="ms-erros" data-app="mestrado">Erros</a>
+      <a href="#/mestrado/banco" data-nav="ms-banco" data-app="mestrado">Banco</a>
       <a href="#/search" data-nav="search" data-app="sd" class="icon-btn" aria-label="Search lessons" title="Search lessons ( / )">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
       </a>
@@ -52,7 +56,11 @@
       <span class="logo detran" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 4v6M5.2 15.5l5.2-2.5M18.8 15.5l-5.2-2.5"/></svg></span>
       <span><b>DETRAN-RJ Habilitação</b><small>Simulados e questões da prova teórica</small></span>
     </a>
-    <p class="muted drawer-note">Your progress in both apps syncs with the same account (☁️).</p>
+    <a class="app-item" href="#/mestrado" data-app-link="mestrado">
+      <span class="logo mestrado" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16M7 16v-5M12 16V6M17 16v-8"/></svg></span>
+      <span><b>Mestrado em Epidemiologia</b><small>Provas da UERJ e questões do livro (Medronho)</small></span>
+    </a>
+    <p class="muted drawer-note">Your progress in all apps syncs with the same account (☁️).</p>
   </aside>
 
   <main id="view" tabindex="-1"></main>
@@ -74,6 +82,13 @@
     </p>
     <p class="muted">Ferramenta de estudo não oficial e sem fins comerciais. Não é afiliada ao DETRAN-RJ. Confira regras e prazos no site oficial.</p>
   </footer>
+  <footer class="credit" data-app="mestrado">
+    <p>
+      Provas de seleção do <b>Programa de Pós-Graduação em Saúde Coletiva do IMS/UERJ</b> (Mestrado, Epidemiologia, turmas 2023-2025), com crédito à UERJ.
+      Gabarito e explicações <b>não oficiais</b>. Resumos e questões escritos a partir de Medronho RA et al., <i>Epidemiologia</i>, 2ª ed. (Atheneu), capítulos 1-6, 8 e 18; leia o livro.
+    </p>
+    <p class="muted">Ferramenta de estudo não oficial e sem fins comerciais. Não é afiliada à UERJ nem à editora. Confira o edital no site do IMS.</p>
+  </footer>
 
   <script src="app/data/lessons-01-foundations.js"></script>
   <script src="app/data/lessons-02-transactions.js"></script>
@@ -88,6 +103,8 @@
   <script src="app/sync.js"></script>
   <script src="app/detran/questions.js"></script>
   <script src="app/detran/detran.js"></script>
+  <script src="app/mestrado/data.js"></script>
+  <script src="app/mestrado/mestrado.js"></script>
   <script src="app/app.js"></script>
 </body>
 </html>

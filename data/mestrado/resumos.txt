@@ -1,0 +1,258 @@
+# Resumos por capítulo, escritos para este app a partir do livro-texto
+# (Medronho RA et al., Epidemiologia, 2ª ed., Atheneu). Não substituem a leitura do livro:
+# cada seção indica as páginas correspondentes.
+#
+# Formato: "# cap | título | autores | páginas"; "## título da seção | páginas"; "- tópico".
+
+# 1 | Formação Histórica da Epidemiologia | Naomar de Almeida Filho, Roberto A. Medronho | 3-12
+## Antiguidade ao século XVIII | 3-4
+- Hipócrates (Ares, Águas e Lugares): doença ligada a clima, água e modo de vida; termos epidêmico e endêmico.
+- Asclépios e suas filhas: Panaceia (cura) e Higeia (prevenção, vida saudável).
+- Roma: censos e registro obrigatório de nascimentos e óbitos. Galeno; depois Avicena e Averróis.
+- Três eixos que formam a epidemiologia (Almeida Filho): clínica moderna, Estatística e Medicina Social.
+- Sydenham: constituição epidêmica e história natural das doenças. Petty (Aritmética Política), Graunt (tábuas de mortalidade), Conring ("Statistik" = assuntos de Estado).
+- Probabilidade: Pascal, Bernoulli (vacinação contra varíola), Laplace.
+## Século XIX: método numérico e medicina social | 5-6
+- Pierre Louis (1825): estudo de 1.960 casos de tuberculose com o "método numérico", visto como início da epidemiologia.
+- William Farr (1839): registro geral de estatísticas vitais e classificação de causas de morte.
+- Medicina urbana (França), polícia médica do Estado (Alemanha), medicina da força de trabalho (Inglaterra).
+- Jules Guérin cunha "Medicina Social" (1838). Virchow e a epidemia de tifo.
+- Sociedade Epidemiológica de Londres (1850): Florence Nightingale (infecção na Crimeia) e John Snow (cólera e água).
+- Angelerio (séc. XVI) usou o termo "epidemiologia" pela primeira vez; Villalba publicou a "Epidemiología Española" (1802).
+- Era bacteriológica (Pasteur, Koch): fortalece o enfoque clínico, individual e curativo. Relatório Flexner (1910).
+- Johns Hopkins (1918, Rockefeller): Wade Hampton Frost, 1º professor de Epidemiologia. Major Greenwood em Londres (1928).
+## Século XX: risco, preventivismo e métodos | 7-8
+- O conceito de risco vira objeto central (Topley 1919; Howard 1921; Frost 1933).
+- Goldberger (1915): pelagra é carencial, não infecciosa. Ryle (1936): história natural e medicina preventiva.
+- Prevenção primária, secundária e terciária (preventivismo, muito retórico).
+- Anos 1950: grandes coortes (Framingham) e ensaios clínicos (Bradford Hill); IEA (1954); American Journal of Epidemiology (1964).
+- Cornfield: estimadores do risco relativo e regressão logística. Anos 1960: computação e análise multivariada (confundimento).
+- Anos 1970-80: bases matemáticas, epidemiologia clínica (Feinstein) e abordagens críticas e sociais (Cassel).
+- Hoje: epidemiologia molecular, genética, farmacoepidemiologia, etnoepidemiologia, epidemiologia de serviços.
+## Epidemiologia no Brasil | 8-11
+- Medicina tropical e Escola Tropicalista Baiana (pré-pasteuriana).
+- Oswaldo Cruz (1903): febre amarela, peste, varíola. A vacinação obrigatória gera a Revolta da Vacina (1904).
+- Carlos Chagas: malária em Itatinga (1905) e o Trypanosoma cruzi (1909).
+- Rockefeller, Instituto/Faculdade de Higiene e Saúde Pública (SP), SESP (1942).
+- Erradicação da varíola e controle da poliomielite levam ao Sistema Nacional de Vigilância Epidemiológica (meados dos anos 1970).
+- ABRASCO (1979); VIII Conferência Nacional de Saúde (1986, marco do SUS); Planos Diretores da Epidemiologia; Congressos (Campinas 1990: "Epidemiologia e desigualdade social"); CENEPI (1990).
+- Grande crescimento da pós-graduação e da produção científica em Saúde Coletiva.
+
+# 2 | Medidas de Frequência de Doença | Antonio José Leal Costa, Pauline Lorena Kale | 13-30
+## Conceitos: prevalência × incidência | 13-15
+- Medir é estimar: os valores vêm de amostras.
+- Prevalência: casos existentes num momento (fotografia, medida estática, estudo transversal).
+- Incidência: casos novos num intervalo, entre quem estava sob risco (medida dinâmica, estudos longitudinais).
+- Definição de caso: critérios clínicos, laboratoriais e epidemiológicos. Erros de classificação dependem de sensibilidade e especificidade.
+- Incidência = 1º episódio; "incidência total" = todos os episódios (doenças agudas sem imunidade).
+- Toda medida deve ser referida a tempo, lugar e população. Para comparar, usam-se frequências relativas.
+## Taxa de incidência e pessoa-tempo | 16-21
+- Taxa = variação de um fenômeno por unidade de tempo. Taxa relativa = por tempo e por população sob risco.
+- TI = casos novos / pessoa-tempo (densidade de incidência, força de morbidade).
+- Pessoa-tempo: soma do tempo de cada um sob risco (1 pessoa × 1 ano = 2 × 6 meses = 1 pessoa-ano).
+- População fechada (coorte fixa, sem entradas) × dinâmica (aberta) × estável (estacionária: saídas repostas).
+- Perdas (censura): migração, recusa, morte por outra causa, fim do estudo. Contribuem até a saída; assume-se o meio do intervalo.
+- População estável: PT ≈ N' × Δt. A população de 1º de julho aproxima as pessoas-ano do ano.
+- TI tem dimensão tempo⁻¹, vai de 0 a infinito e pode passar de 1. Não é exatamente risco: TI × Δt ≈ risco se a TI for constante e o Δt curto.
+## Incidência acumulada, sobrevida e odds | 21-24
+- IA = casos novos / não-doentes no início (proporção, de 0 a 1, estima o risco médio do grupo).
+- Sinônimos: proporção de incidência, incidência cumulativa, taxa de ataque (surtos).
+- Com perdas (método atuarial): IA = I / (N'0 − W/2). IA de vários anos = 1 − Π(1 − IAano).
+- A IA sempre precisa da referência de tempo (0,4 em horas ≠ 0,4 em dias).
+- Sobrevida S = 1 − IA. Hazard (taxa de dano, força de mortalidade) = taxa instantânea.
+- Odds de incidência = IA/(1 − IA): pouco usada como frequência, mas a odds ratio é muito usada.
+## Mortalidade e letalidade | 24-25
+- Mortalidade = incidência do evento óbito; denominador = toda a população (pessoa-tempo).
+- Mortalidade geral = todas as causas. "Por x" = causa básica; "com x" = causa associada.
+- Letalidade = óbitos entre os que têm a doença (proporção ou taxa), sempre com referência de tempo.
+- Mortalidade = f(incidência, letalidade): raiva tem letalidade ~100% mas mortalidade baixa.
+## Prevalência e seus determinantes | 25-30
+- Prevalência pontual = casos existentes / população num instante. Proporção, não "taxa"; chance de prevalência = P/(1 − P).
+- Determinantes: incidência, duração e migração. Agudas (alta incidência, curta duração) têm prevalência baixa; crônicas, alta.
+- Modelo em população estável: P/(1 − P) = TI × D; se P é pequena, P ≈ TI × D (1%/ano × 15 anos ≈ 15%).
+- Prevalência de período = (casos no início + novos)/N, pouco usada. Prevalência de toda a vida: igual à pontual nas incuráveis.
+- Soroprevalência: anticorpos indicam infecção atual ou passada.
+- Usos: planejar serviços. Em geral é inadequada para etiologia (mistura risco com sobrevida e não dá a sequência temporal).
+- Malformações congênitas e baixo peso ao nascer: prevalência ao nascer. Prevalência também serve para doenças de início insidioso.
+
+# 3 | Indicadores de Saúde | Antonio José Leal Costa, Pauline Lorena Kale, Mário Vermelho | 31-82
+## Conceito, histórico e requisitos | 31-35
+- Indicador: mede o que não se observa diretamente (nível de saúde). Mede-se a saúde pelo "lado negativo".
+- Transição demográfica e epidemiológica deslocam o foco: mortalidade, depois morbidade, depois funcionalidade e qualidade de vida.
+- Requisitos: disponibilidade, uniformidade, simplicidade, sinteticidade, poder discriminatório, validade, relevância, ética.
+- Grupos da OMS (1957): saúde, meio ambiente, serviços (insumos, processo, resultado).
+- Indicador (um aspecto) × índice (várias dimensões: Apgar, IDH).
+- Proporção × coeficiente/taxa; população do meio do ano ≈ pessoa-tempo; residência (risco) × ocorrência (serviços); base arbitrária.
+## Fontes de mortalidade e CGM | 35-38
+- DO obrigatória para sepultamento (Lei dos Registros Públicos, 1973). SIM (1975/76) e SINASC (1990, DNV).
+- CGM (taxa bruta) = óbitos / população do meio do período × 1.000. Só precisa do total de óbitos.
+- Erros: sub-registro (subestima), evasão (subestima) e invasão (superestima) de óbitos; erro no denominador. Valor esperado: 6 a 10 por 1.000.
+- O CGM é média ponderada das taxas por idade, então a estrutura etária confunde as comparações.
+## Padronização | 38-42
+- Direta: taxas específicas da população estudada × população-padrão, dando os óbitos esperados.
+- Indireta: taxas do padrão × estrutura da população estudada. RMP (SMR) = observados/esperados (Brasil × Inglaterra = 1,51).
+- O padronizado é hipotético e só serve para comparar. Brasil: bruto 5,5 × padronizado 12,8 (Inglaterra 10,1).
+- Causas externas: padronizar por idade e sexo.
+## Mortalidade por causas | 42-46
+- Causa básica (OMS); causas associadas; causas múltiplas. Graunt, Farr, CID (CID-10 no Brasil desde 1996).
+- Mortalidade proporcional = óbitos pela causa / total de óbitos (não usa população; mostra a importância relativa).
+- Cuidado: a MP pode cair com o número absoluto subindo.
+- Taxa por causa = óbitos pela causa / população × 100.000. No RJ, causas externas: homens 179,8 × mulheres 30,9.
+- DIP em queda (vacinas, TRO); a Aids entrou no cap. I da CID-10.
+## Mortalidade materna | 46-48
+- Morte materna: na gestação ou até 42 dias após, por causa ligada à gravidez, exceto acidental. Tardia: de 42 dias a 1 ano.
+- Diretas (complicações obstétricas) × indiretas (doenças agravadas pela gravidez).
+- RMM = óbitos maternos / nascidos vivos × 100.000. Evento sentinela.
+- A DO tem baixa sensibilidade e VPP alto para morte materna; o sub-registro chega a cerca de 40-50%. Aceitável: 10-20 por 100 mil NV.
+## Mal definidas e qualidade dos dados | 48-50
+- Cap. XVIII da CID (sintomas e sinais): indicador da qualidade do SIM; aceitável 4-6%. Brasil 2004: 12,4% (NE 23,7%).
+- Óbitos sem assistência (R98) e "causas lixo" (septicemia, insuficiências) espalhadas pela CID.
+## Mortalidade infantil, fetal e perinatal | 50-57
+- TMI = óbitos < 1 ano / nascidos vivos × 1.000 (é uma proporção, aproximação do risco).
+- Neonatal (0-27 dias: precoce 0-6, tardia 7-27; causas endógenas) × pós-neonatal (28 dias a < 1 ano; exógenas).
+- TMI alta: predomina o pós-neonatal; TMI baixa: o neonatal. Classificação: < 20 baixa; 20-49 intermediária; ≥ 50 alta.
+- Brasil: queda forte, sobretudo pós-neonatal (saneamento, TRO, vacinas, menor fecundidade); desigualdades regionais.
+- Limitações: sub-registro, confusão natimorto × nascido vivo; intervenções pontuais.
+- Óbitos evitáveis (imunoprevenção, pré-natal, parto, diagnóstico e tratamento, intersetorial).
+- Óbito fetal declarado a partir de 20 semanas, 500 g ou 25 cm. Mortalidade perinatal: de 22 semanas a 7 dias. Não é afetada pela confusão natimorto × NV.
+- Mortalidade em menores de 5 anos (Unicef): óbitos < 5 / NV × 1.000.
+## Swaroop-Uemura e Nelson de Moraes | 57-60
+- Swaroop-Uemura: % de óbitos com ≥ 50 anos. 1º nível ≥ 75%; 2º 50-74,9%; 3º 25-49,9%; 4º < 25%. Brasil: 48,9% (1980), 67,1% (2000).
+- O sub-registro de óbitos infantis superestima o indicador.
+- Curvas de Nelson de Moraes (faixas < 1, 1-4, 5-19, 20-49, 50+): "N" (muito baixo), "L" (baixo), "U" (regular), "J" (elevado).
+## Esperança de vida e tábuas | 60-64
+- Tábua de geração (coorte real) × de coorte sintética (taxas de um período aplicadas a uma coorte hipotética).
+- e0 não depende da estrutura etária. Ganha mais com a queda da mortalidade nas idades jovens.
+- Mortalidade infantil alta: e1 > e0. Brasil 2005: e0 ≈ 72 anos; as mulheres vivem mais.
+- Riscos competitivos (tábua de múltiplo decremento): ganho em e0 ao eliminar uma causa.
+## Anos potenciais de vida perdidos | 64-67
+- APVP = Σ dx(L − x). Dempsey (tuberculose); magnitude × transcendência.
+- L arbitrário: L baixo destaca mortes prematuras. Romeder e McWhinnie: de 1 a 70 anos (sem óbitos infantis, sem consenso).
+- Taxas de APVP, APVP médio por óbito; APVP padronizado usa a esperança de vida (ex).
+- No ranking por APVP sobem acidentes, homicídios, causas perinatais e anomalias; descem neoplasias e AVC.
+## Morbidade, funcionalidade e qualidade de vida | 67-73
+- Doença (disease, organismo), enfermidade (illness, percepção), anormalidade (sickness, social). Terris: gradiente de sanidade.
+- Fontes: notificação (Sinan), SIH (pagamento; depende da oferta), SIA, registros de câncer, inquéritos (PNAD).
+- Modelos: biomédico; OMS (CIDID: doença → deficiência → incapacidade → desvantagem; depois CIF 2001); utilitarista (QALY); qualidade de vida (WHOQOL, SF-36).
+- Escalas de AVD/AIVD; limitação × restrição de atividade; PNAD 2003.
+## Medidas-resumo: DALY | 73-77
+- Esperança de vida livre de incapacidade (Sullivan: tábua de vida + prevalência de incapacidade).
+- DALY = YLL + YLD; pesos de 0 (saúde) a 1 (morte); só idade e sexo; taxa de desconto; tábua-modelo de Coale-Demeny.
+- Brasil 1998: condições neuropsiquiátricas em 1º lugar em DALY (por YLD); cardiovasculares em 1º em óbitos e YLL.
+## RIPSA e fontes de indicadores | 78-79
+- RIPSA (1996): MS, OPAS, IBGE, ABRASCO, IPEA… Matriz de indicadores básicos (demográficos, socioeconômicos, mortalidade, morbidade, recursos, cobertura). IDB anual (DATASUS: Tabnet, Tabwin).
+
+# 4 | Distribuição das Doenças no Espaço e no Tempo | Roberto A. Medronho, Guilherme L. Werneck, Maurício A. Perez | 83-102
+## Pessoa, lugar e tempo; geografia médica | 83-84
+- Quem, onde e quando: gerar hipóteses, planejar, orientar a clínica. O espaço é social (Milton Santos).
+- Lind (1768), Seaman, Guerry, Berghaus (1º atlas de doenças). Snow e a cólera (1854). Pavlovsky: focos naturais.
+- Distribuições espaciais sugerem hipóteses, mas exposição e desfecho não são medidos no mesmo indivíduo (ecológico).
+## Análise espacial | 85-87
+- Visualização, exploração e modelagem (Gatrell e Bailey). Geoprocessamento e SIG.
+- Geoestatística (variação contínua; pontos próximos são parecidos); dados de área (vizinhança); padrões pontuais (agregação × aleatoriedade).
+- Estudos de migrantes: separam ambiente de genética.
+## Tempo: tendência e variações | 87-91
+- Tipos: tendência secular, variações cíclicas (> 1 ano: sarampo a cada 2-3 anos), sazonais (estações) e irregulares.
+- Antes de interpretar uma tendência, descarte mudanças de diagnóstico, cobertura, classificação e letalidade.
+- TB e coqueluche (Inglaterra) já caíam antes dos agentes, vacinas e drogas: papel das condições de vida.
+## Endemia, epidemia e surtos | 92-94
+- Epidemia: elevação brusca, temporária e acima do esperado. Endemia: presença habitual dentro do esperado.
+- Um caso autóctone de doença eliminada já é epidemia. Autóctone × alóctone (importado).
+- Pandemia: vários países/continentes. Surto: casos relacionados em área restrita ou instituição.
+- Fonte comum (pontual ou persistente: pico rápido; o pico corresponde à incubação média) × propagada (pessoa a pessoa, mais lenta).
+## Diagrama de controle | 95-97
+- Normal: média ± 1,96 DP por mês, com ~10 anos sem epidemias. Limite inferior negativo vira zero.
+- Quartis: acima do 3º quartil = epidêmico.
+## Idade, período e coorte | 97-102
+- Efeito de idade (envelhecimento), de período (evento no calendário que afeta todos) e de coorte (geração).
+- Os três são linearmente dependentes. A análise transversal pode enganar quando há forte efeito de coorte.
+
+# 5 | Vigilância Epidemiológica | José Ueleres Braga, Guilherme L. Werneck | 103-122
+## Conceito e histórico | 103-104
+- Coleta, análise, interpretação e disseminação sistemáticas e contínuas para ação (prevenção e controle).
+- Quarentena (séc. XIV); notificação nacional na Itália (1881) e nos EUA (1901); "vigilância de pessoas" → vigilância de doenças.
+- Raska (1964) e a OMS (1965). Lei 8.080/90: inclui qualquer mudança nos determinantes; não só transmissíveis.
+- Prioridade ao nível municipal. Vigilância ≠ monitoração.
+## Objetivos, atividades e dados | 104-106
+- Objetivos: tendências e grupos de risco, detectar epidemias, magnitude, recomendar medidas, avaliar impacto e estratégias.
+- Atividades: coleta, processamento, análise, investigação, recomendação, avaliação, retroalimentação e divulgação.
+- Dados demográficos, ambientais, socioeconômicos, de morbidade e de mortalidade (melhores para doenças letais).
+## Notificação compulsória | 106-111
+- Base do sistema. Qualquer cidadão pode notificar; profissionais e estabelecimentos de saúde e de ensino são obrigados (Portaria 5/2006).
+- Notificar a suspeita, de forma sigilosa, e fazer a notificação negativa.
+- Critérios da lista: magnitude, potencial de disseminação, transcendência, vulnerabilidade, valor da notificação, compromissos internacionais, agravos inusitados.
+- Estados e municípios podem acrescentar doenças. Há uma lista de notificação imediata.
+- SINAN (FIN e FII), SIM (DO em 3 vias; residência), SINASC, SIH (pagamento), SIA (sem CID), SIAB, SISVAN, SI-PNI, SISÁGUA.
+## Investigação, laboratório e sentinela | 112-114
+- Investigação: trabalho de campo para confirmar o diagnóstico, achar fonte, transmissão, expostos e casos secundários.
+- Laboratórios, imprensa e população (antraz de Sverdlovsk); estudos (seccionais; caso-controle em surtos).
+- Sentinela: subconjunto de fontes; mais detalhe, menos representatividade, não dá para calcular incidência; vigilância sindrômica.
+## Avaliação do sistema | 114-115
+- Atributos: utilidade, oportunidade, aceitabilidade, simplicidade, flexibilidade, representatividade, sensibilidade, especificidade, VPP.
+- VPP cresce com a especificidade e com a prevalência. Problemas: subnotificação (sistemas passivos), baixa representatividade, baixa oportunidade.
+## Investigação de surtos e emergências | 115-120
+- Surto: excesso em relação ao esperado (sem número mínimo). Por que surtos começam e por que acabam.
+- Etapas: confirmar o diagnóstico e o surto, caracterizar, levantar hipóteses, busca ativa, análise, controle, relatório e divulgação.
+- Definição de caso sensível no início e específica para o teste. Taxa de ataque dos expostos > não-expostos.
+- Emergentes no Brasil; Chagas por caldo de cana (SC, 2005). CIEVS (2005): notificação 24 h e Unidade de Respostas Rápidas.
+
+# 6 | Transição Demográfica e Epidemiológica | Pontes, Ramos Jr., Kerr, Bosi | 123-151
+## Crescimento populacional e teorias | 123-125
+- A população mundial acelera a partir do séc. XVIII (Revolução Industrial): 2,5 bilhões em 1950 e 6 bilhões em 2000.
+- Malthus (progressão geométrica × aritmética) × Marx e Engels (sem lei universal). Teoria da transição demográfica.
+## Fases da transição demográfica | 126-128
+- 1: natalidade e mortalidade altas. 2: a mortalidade cai (explosão). 3: a natalidade cai (envelhecimento). 4: ambas baixas.
+- Brasil: lento até 1900; explosão desde 1950; desaceleração desde 1970. Urbanização: 81% em 2000.
+## Indicadores demográficos | 128-133
+- Fertilidade (fisiológica) × fecundidade (efetiva). Fecundidade: > 6 filhos (até 1960), 2,35 (2000), abaixo da reposição depois.
+- Natalidade de 44 para 21 por 1.000; mortalidade geral de 29 para 6. A queda da mortalidade precedeu a da natalidade.
+- TMI: 162 (1930), 27 (2000). e0: 33,7 (1900), 70,4 (2000). Idade mediana ~18 → 40 (2050).
+- O envelhecimento se deve sobretudo à queda da fecundidade; é feminino. Pirâmides de triângulo para retângulo.
+## Transição epidemiológica: Omran e críticas | 132-136
+- Omran (1971): era da pestilência e fome; do declínio das pandemias; das doenças degenerativas e provocadas pelo homem.
+- Críticas: determinista, linear, baseada na Europa. Olshansky e Ault: 4ª era (doenças degenerativas adiadas).
+- Frenk: modelo tardio-polarizado (superposição, contratransição, polarização). Aids e doenças emergentes.
+## Brasil: mortalidade, internações e infecciosas | 136-145
+- MP: DIP 45,7% (1930) → 4,6% (2003); circulatório 11,8 → 27,3%; neoplasias e externas ~12,6%.
+- Internações SUS: 1º respiratório, 2º circulatório, 3º DIP (polarização); neoplasias por último.
+- DIP decrescentes (imunopreveníveis; varíola erradicada em 1978; polio sem casos desde 1989), persistentes (malária, TB, leishmanioses) e emergentes (Aids, dengue, cólera, hantavirose).
+## Transição nutricional e desigual | 143-149
+- Desnutrição → obesidade; coexistência de fome e obesidade nas camadas pobres; não é sinônimo de melhoria.
+- Desigualdade regional: MP, TMI, Swaroop-Uemura e curvas de Nelson de Moraes por região (Norte/Nordeste atrás).
+
+# 8 | Fundamentos da Pesquisa Epidemiológica | Katia Vergetti Bloch, Evandro da Silva Freire Coutinho | 173-179
+## Definição e objetivos | 173-174
+- Distribuição e determinantes dos eventos de saúde em populações definidas, e a aplicação para controlá-los.
+- Objetivos: descrever, explicar, predizer, controlar. Procedimentos: mensuração, estimação (estimativa × parâmetro) e testes de hipótese (acaso).
+## Causalidade e método científico | 174-176
+- Modelo probabilístico: quantos adoecem, não quem. Fator de risco: associação, precedência temporal, sem erro (acaso, confusão, viés).
+- Teoria → hipótese conceitual → hipótese operacional (ex.: Barker e baixo peso ao nascer).
+- Inferência indutiva (problema de Hume; falácia de afirmar o consequente), por refutação (Popper), por consenso (Kuhn), bayesiana.
+- Rothman e Greenland: "provar é impossível"; experimentos não são prova definitiva.
+## Populações e desenhos | 176-179
+- População do estudo (amostra), população-fonte (elegíveis), população-alvo (inferência), base populacional (de onde surgem os casos).
+- Experimental (alocação aleatória, exposição controlada), quase-experimental (sem aleatorização), observacional.
+- Dimensões: seccional × longitudinal; seleção completa × incompleta; individual × agregado.
+- Coorte (expostos × não expostos acompanhados), caso-controle (casos × controles), seccional (prevalências), ecológico (agregado).
+- Prospectivo (concorrente) × retrospectivo (histórico). O julgamento causal usa a totalidade das evidências.
+
+# 18 | Análise Exploratória de Dados | Rejane Sobrino Pinheiro, Tânia Zdenka Guillen de Torres | 323-341
+## Coleta e organização | 323-325
+- Análise descritiva ou exploratória: tabelas, gráficos e medidas-resumo para achar padrões.
+- Matriz: elemento (linha), variável (coluna), observação (célula), caso (linha completa).
+- Escalas: nominal, ordinal (categóricas); intervalar (zero arbitrário), razão (zero absoluto). Discretas (contagem) × contínuas (medição).
+## Tabelas e distribuições de frequência | 325-328
+- Tabela autoexplicativa: título (o quê, onde, quando), fonte abaixo, sem bordas laterais. Quadro × tabela.
+- Frequência absoluta, percentual e percentual acumulada. Classes com "|—" (inclui o inferior, exclui o superior). Sem regra fixa de classes.
+## Medidas-resumo | 328-333
+- Moda, média (centro de gravidade, sensível a extremos), mediana (robusta; preferível na assimetria).
+- Quartis, quintis, percentis. Amplitude total; distância interquartílica (Q3 − Q1).
+- Desvio médio absoluto; variância (n ou n − 1); desvio-padrão (mesma unidade; 68% e 95%); CV = DP/média (adimensional).
+## Gráficos | 334-337
+- Setores (poucas categorias), barras e colunas (categóricas, discretas, séries curtas), linhas (séries temporais).
+- Histograma (contínuas; com classes desiguais a área é proporcional à frequência); formatos: simétrico, assimétrico, truncado, multimodal.
+- Polígono de frequências (pontos médios). Box plot (Q1, mediana, Q3, bigodes de 1,5 DIQ, outliers).
+## Análise bivariada | 337-341
+- Duas categóricas: tabela de dupla entrada, totais marginais, barras agrupadas ou empilhadas.
+- Quantitativa × categórica: séries por grupo, classes por categoria, medidas-resumo por grupo, barras de erro (média ± DP), box plots lado a lado.
+- Duas quantitativas: diagrama de dispersão (relação direta ou inversa, pontos atípicos).

@@ -1,0 +1,722 @@
+# Questões elaboradas a partir do livro-texto (Medronho et al., Epidemiologia, 2ª ed., Atheneu),
+# capítulos 1-6, 8 e 18. Enunciados e explicações escritos para este app, no estilo V/F da prova
+# do IMS/UERJ. Cada assertiva aponta a página do livro onde o assunto é explicado.
+
+# ------------------------------------------------------------------ Cap. 1
+=== c1-01
+cap: 1
+title: Origens da epidemiologia
+V | Na mitologia grega, Panaceia simbolizava a medicina curativa, enquanto Higeia representava a ideia de prevenção e de condições de vida saudáveis. | As duas filhas de Asclépios representam as duas vertentes da medicina: a cura (Panaceia) e a saúde/prevenção (Higeia). | 1:3
+F | Hipócrates atribuía a ocorrência das doenças a causas sobrenaturais, sem relação com o ambiente. | Em "Ares, Águas e Lugares" Hipócrates relaciona as doenças ao clima, à água e ao modo de vida: uma visão naturalista e ambiental. | 1:3; 4:83
+V | Thomas Sydenham contribuiu com as noções de constituição epidêmica e de história natural das doenças. | Sydenham observava as doenças na população e no tempo. É um dos marcos do eixo da clínica moderna na formação da epidemiologia. | 1:4
+V | A Aritmética Política de William Petty e as tábuas de mortalidade de John Graunt estão entre as raízes estatísticas da epidemiologia. | Graunt analisou os registros de óbitos (Bills of Mortality) de Londres no século XVII, um marco da estatística vital. | 1:4; 3:43
+F | O termo "Medicina Social" foi cunhado por Rudolf Virchow em 1900, no contexto da bacteriologia. | O termo foi cunhado por Jules Guérin em 1838. Virchow é lembrado pelo estudo da epidemia de tifo e pela defesa da medicina como ciência social. | 1:5
+
+=== c1-02
+cap: 1
+title: Século XIX: método numérico e saneamento
+V | Pierre Louis, com seu estudo de 1825 sobre a tuberculose usando o "método numérico", é considerado por muitos um marco inaugural da epidemiologia. | Louis aplicou contagem e comparação sistemática a 1.960 casos de tuberculose. | 1:5
+V | John Snow demonstrou a transmissão hídrica da cólera em Londres antes da identificação do agente causal. | Em 1854, ao mapear as mortes em torno das bombas de água (Soho), Snow associou a cólera à água contaminada, quando a teoria dominante era a dos miasmas. | 1:6; 4:84
+F | William Farr ficou conhecido por organizar o primeiro sistema de vigilância de doenças crônicas nos Estados Unidos. | Farr organizou o registro geral de estatísticas vitais na Inglaterra (1839) e uma classificação de causas de morte, precursora da CID. | 1:5; 3:43
+V | Florence Nightingale usou dados para mostrar a mortalidade por infecção entre os feridos na Guerra da Crimeia. | Ela integrava a Sociedade Epidemiológica de Londres (1850), junto com John Snow. | 1:6
+F | Com a era bacteriológica (Pasteur e Koch), a ênfase da saúde passou do indivíduo para o coletivo, fortalecendo a Medicina Social. | Foi o contrário: entre 1860 e 1900 a bacteriologia fortaleceu o enfoque clínico, curativo e individual, que suplantou o coletivo. | 1:6
+
+=== c1-03
+cap: 1
+title: Século XX: risco, preventivismo e métodos
+V | O conceito de risco tornou-se objeto central da epidemiologia com a incorporação do raciocínio estatístico no início do século XX. | Topley (1919), Howard (1921) e Frost (1933) usaram o "risco" como instrumento científico. | 1:7
+V | Wade Hampton Frost foi o primeiro professor de Epidemiologia, na Escola de Higiene e Saúde Pública da Johns Hopkins, criada em 1918 com apoio da Fundação Rockefeller. | Na Inglaterra, Major Greenwood ocupou cargo equivalente na London School em 1928. | 1:6
+F | Goldberger demonstrou que a pelagra era uma doença infecciosa transmitida por insetos. | Goldberger (1915) demonstrou a natureza carencial (nutricional) da pelagra, contra a teoria infecciosa. | 1:7
+V | Nos anos 1950 consolidaram-se os grandes estudos de coorte, como o de Framingham, e os ensaios clínicos controlados de Bradford Hill. | Também nessa época Cornfield propôs estimadores do risco relativo, e a epidemiologia das doenças crônicas ganhou força. | 1:8
+F | O preventivismo dos anos 1930-40 levou à efetiva integração entre prevenção primária, secundária e terciária nos serviços de saúde americanos. | Os níveis de prevenção foram formulados, mas o livro observa que o preventivismo ficou em grande parte na retórica. | 1:7
+
+=== c1-04
+cap: 1
+title: Epidemiologia no Brasil
+V | Oswaldo Cruz comandou campanhas contra a febre amarela, a peste bubônica e a varíola no início do século XX, e a vacinação obrigatória contra a varíola deflagrou a Revolta da Vacina (1904). | As campanhas tinham moldes militares e se somaram às reformas urbanas de Pereira Passos, o que gerou forte resistência popular. | 1:9
+V | Carlos Chagas descreveu em 1909 o Trypanosoma cruzi, agente da doença que leva seu nome. | Antes disso, em 1905, ele controlou a malária em Itatinga (SP). | 1:9; 6:137
+F | O Sistema Nacional de Vigilância Epidemiológica foi criado no Brasil logo após a Revolta da Vacina, em 1905. | O SNVE surgiu em meados dos anos 1970, após as experiências da erradicação da varíola, do controle da poliomielite e da epidemia de doença meningocócica. | 1:9
+V | A ABRASCO foi criada em 1979, e o I Congresso Brasileiro de Epidemiologia (Campinas, 1990) teve como tema "Epidemiologia e desigualdade social". | A VIII Conferência Nacional de Saúde (1986) é considerada o marco do SUS. | 1:10
+F | O Serviço Especial de Saúde Pública (SESP), criado em 1942, foi um programa exclusivamente nacional voltado às doenças crônicas nas capitais. | O SESP nasceu de acordo com os EUA durante a 2ª Guerra, com foco em doenças como a malária na Amazônia. | 1:9
+
+# ------------------------------------------------------------------ Cap. 2
+=== c2-01
+cap: 2
+title: Incidência e prevalência: conceitos
+V | Prevalência refere-se aos casos existentes num momento, enquanto incidência refere-se aos casos novos surgidos num intervalo de tempo. | Prevalência é uma "fotografia" (medida estática). Incidência é dinâmica e exige observar a população em pelo menos dois momentos. | 2:14-15; 2:26
+V | Mortalidade, letalidade e sobrevida podem ser vistas como variações do conceito de incidência. | Todas contam eventos novos (óbitos, por exemplo) num período, numa população sob risco. | 2:14; 2:24
+F | Para medir incidência basta um estudo transversal, pois ele identifica todos os casos existentes. | O transversal mede prevalência. Para incidência é preciso saber quem não estava doente no início e acompanhar: estudos longitudinais (coorte, intervenção). | 2:15
+V | Em doenças agudas sem imunidade duradoura, pode-se contar todos os episódios de um mesmo indivíduo, o que o livro chama de "incidência total". | Para doenças com imunidade permanente ou crônicas (diabetes), conta-se apenas o primeiro episódio. | 2:15
+F | Comparar o número absoluto de casos entre duas cidades é suficiente para dizer onde o risco é maior. | Comparações exigem frequências relativas (taxas, proporções) referidas a tempo, lugar e população. | 2:14; 2:16
+
+=== c2-02
+cap: 2
+title: Taxa de incidência e pessoa-tempo
+V | A taxa de incidência (densidade de incidência) é o número de casos novos dividido pela soma do tempo em que cada pessoa esteve sob risco (pessoa-tempo). | TI = I / PT. Também é chamada força de morbidade ou taxa por pessoa-tempo. | 2:17
+V | Uma pessoa acompanhada por 1 ano e duas pessoas acompanhadas por 6 meses cada contribuem, ambas, com 1 pessoa-ano. | Pessoa-tempo soma as experiências individuais de exposição ao risco. | 2:17
+F | A taxa de incidência é adimensional e varia de 0 a 1. | Ela tem dimensão de tempo⁻¹ e varia de 0 a infinito: o numerador não está contido no denominador. Ex.: 100 casos/pessoa-ano = 8,33 casos/pessoa-mês. | 2:21
+V | Quando não se conhece o tempo individual de cada participante, numa população dinâmica estável pode-se estimar a pessoa-tempo multiplicando o número de pessoas sob risco pela duração do período. | PT = N' × Δt. Por isso a população estimada para 1º de julho é usada como aproximação das pessoas-ano de um ano. | 2:19-21
+F | Perdas de seguimento (mudança, recusa, morte por outra causa) devem ser excluídas do cálculo de pessoa-tempo. | Quem é perdido contribui com o tempo observado até a perda (censura). Na falta da data exata, assume-se o meio do intervalo. | 2:18
+
+=== c2-03
+cap: 2
+title: Populações fechadas, dinâmicas e estáveis
+V | Uma população fechada (coorte fixa) não admite novos membros após o início, embora possa perder membros. | Exemplo do livro: os sobreviventes de um acidente nuclear. | 2:17-18
+V | Numa população dinâmica (aberta) há entradas (nascimentos, imigração, admissões) e saídas ao longo do período. | Ela pode ser analisada como coorte fixa referindo todas as entradas a um t0 comum. | 2:18
+V | População estável (estacionária) é aquela em que cada indivíduo que sai é reposto, mantendo o tamanho e a estrutura. | Esse pressuposto permite usar PT = N × Δt e o modelo P/(1−P) = TI × D. | 2:17; 2:27-28
+F | Em estudos de coorte, a perda de seguimento por histerectomia num estudo sobre câncer de útero não é considerada censura, pois a mulher continua viva. | É censura: a mulher deixa de estar sob risco do evento estudado, mesmo viva. | 2:18
+F | Pessoas-tempo de 200 pessoas-ano só podem ser obtidas acompanhando 200 pessoas por exatamente um ano. | 200 pessoas-ano = 200 × 1 ano = 100 × 2 anos = 20 × 10 anos. | 2:20
+
+=== c2-04
+cap: 2
+title: Incidência acumulada (risco)
+V | A incidência acumulada é uma proporção: os casos novos no período divididos pelos não-doentes sob risco no início. | IA = I / N'0. O numerador está incluído no denominador, varia de 0 a 1 e estima o risco médio do grupo. | 2:21-22
+V | Taxa de ataque, usada em surtos, é na verdade uma incidência acumulada (uma proporção), não uma taxa. | Também é chamada proporção de incidência ou incidência cumulativa. | 2:22
+V | Uma IA não faz sentido sem a referência ao tempo: IA de 0,4 em 2-4 horas sugere intoxicação estafilocócica; em 7 dias, Salmonella typhi. | O valor só se interpreta junto com o intervalo a que se refere. | 2:22
+F | Pelo método atuarial, as perdas de seguimento são somadas aos casos no numerador. | No método atuarial, as perdas saem do denominador como metade: IA = I / (N'0 − W/2). | 2:22
+V | A IA de 3 anos pode ser obtida das IA anuais por 1 − (1 − IA1)(1 − IA2)(1 − IA3). | Multiplicam-se as probabilidades de "sobreviver" sem adoecer em cada ano; o complemento é o risco acumulado. | 2:22-23
+
+=== c2-05
+cap: 2
+title: Sobrevida, hazard e odds
+V | A sobrevida é o complemento da incidência acumulada: S = 1 − IA. | Se a IA de um período é 0,11, a probabilidade de terminar o período sem o evento é 0,89. | 2:23
+V | A taxa de dano (hazard rate), ou força de mortalidade, é a taxa instantânea de ocorrência do evento entre os que ainda não o tiveram. | É a base das tábuas de vida e da análise de sobrevida. | 2:24
+F | A odds de incidência é calculada como IA dividida por (1 + IA). | A odds de incidência é IA/(1 − IA). Com IA = 0,11, a odds é 0,12 (cerca de 1 caso para 8 sadios). | 2:24
+F | A odds (chance) é a medida de frequência mais usada nos estudos epidemiológicos. | Como medida de frequência a odds é pouco usada. Muito usada é a razão de chances (odds ratio), uma medida de associação. | 2:24; 2:27
+V | A chance de prevalência é P/(1 − P). Para diabetes com prevalência de 2,7% (30-39 anos), ela é cerca de 0,028, ou 1 diabético para cada 36 não-diabéticos. | 0,027/0,973 ≈ 0,028. | 2:26-27
+
+=== c2-06
+cap: 2
+title: Mortalidade e letalidade
+V | A mortalidade por uma causa é uma forma de incidência em que o evento é o óbito, e o denominador inclui toda a população (doentes e não-doentes). | Todos estão sob risco de morrer, inclusive os já doentes. | 2:25
+V | Letalidade é a mortalidade restrita a quem tem a doença; pode ser expressa como proporção ou como taxa por pessoa-tempo desde o diagnóstico. | Também precisa de referência temporal: 50% no primeiro ano é diferente de 50% na primeira semana. | 2:25
+F | Uma doença muito letal sempre produz alta mortalidade na população. | Mortalidade depende de incidência e letalidade. Doença rara e letal (raiva humana, letalidade ~100%) tem mortalidade baixa. | 2:25
+V | "Mortalidade por x" refere-se a x como causa básica do óbito; "mortalidade com x" inclui x como causa associada ou contribuinte. | Causa básica (OMS) é a doença ou lesão que iniciou a cadeia de eventos, ou as circunstâncias do acidente ou violência. | 2:24; 3:43
+F | A mortalidade geral se refere apenas aos óbitos por causas naturais, excluindo as causas externas. | Mortalidade geral inclui óbitos por todas as causas. | 2:24-25
+
+=== c2-07
+cap: 2
+title: Prevalência: tipos e interpretação
+V | Chamar a prevalência de "taxa de prevalência" é tecnicamente incorreto, pois se trata de uma proporção. | Prevalência pontual = casos existentes / população, num dado momento. É adimensional, de 0 a 1. | 2:26
+V | A prevalência de período soma os casos existentes no início com os casos novos do período. Por ter significado pouco claro, é pouco usada. | PP = (C0 + I)/N. No exemplo de TB, 90 casos em 1º de janeiro + 70 novos dão 160. | 2:28-29
+V | Para doenças crônicas incuráveis, a prevalência "de toda a vida" é igual à prevalência pontual. | Já em doenças remitentes ou curáveis sem imunidade, a de toda a vida inclui os curados e é maior. | 2:29
+F | A soroprevalência indica apenas infecções atuais. | Anticorpos indicam infecção atual ou passada (ou vacinação). Ex.: 98,9% de soropositividade para sarampo em Niterói após vacinação em massa. | 2:29
+V | Estudos de prevalência são úteis para planejar serviços (recursos, leitos), mas em geral são inadequados para estudar etiologia. | A prevalência mistura fatores de risco com fatores de sobrevida (duração) e não estabelece precedência temporal. | 2:29
+
+=== c2-08
+cap: 2
+title: Determinantes da prevalência
+V | Doenças agudas com alta incidência e curta duração, como a dengue, tendem a ter prevalência baixa. | Os casos se resolvem rápido (cura ou óbito) e não se acumulam. | 2:27
+V | Doenças crônicas com baixa incidência e longa duração, como a hipertensão, tendem a ter prevalência alta. | Os casos se acumulam ao longo dos anos. | 2:27
+F | A emigração de pessoas doentes aumenta a prevalência na área de origem. | Saída de doentes (ou entrada de sadios) reduz a prevalência; entrada de doentes (ou saída de sadios) a aumenta. | 2:27
+V | Em população estável e prevalência baixa, P ≈ TI × D. Com incidência de 1% ao ano e duração de 15 anos, a prevalência esperada é de cerca de 15%. | De forma exata, a chance de prevalência P/(1 − P) = TI × D. | 2:28
+V | Em doença incurável, a taxa de "saída" do estado doente é dada pela letalidade, e 1/(taxa de saída) corresponde à duração média. | Sem migração, TI' (taxa de cura ou óbito) = 1/D. | 2:27-28
+
+=== c2-09
+cap: 2
+type: choice
+title: Cálculo: coorte com perdas
+ctx: Uma coorte começa com 20 homens sem a doença. No 1º ano não há casos nem perdas. No 2º ano ocorrem 2 casos e 2 perdas de seguimento. No 3º ano, dos 13 que restaram em observação, 1 adoece e não há perdas.
+opts: 0,10; 0,11; 0,18; 0,25; 0,08
+2 | Pelo método atuarial, qual é a incidência acumulada do 2º ano (arredondada)? | No início do 2º ano havia 20 sob risco. IA2 = 2 / (20 − 2/2) = 2/19 ≈ 0,11. | 2:22
+3 | Qual é a incidência acumulada dos 3 anos, sabendo que IA1 = 0, IA2 ≈ 0,11 e IA3 ≈ 0,08? | IA(3 anos) = 1 − (1 − 0)(1 − 0,11)(1 − 0,08) = 1 − 0,89 × 0,92 ≈ 0,18. | 2:22-23
+
+=== c2-10
+cap: 2
+type: choice
+title: Cálculo: TI e IA
+ctx: Num estudo, 4 infartos ocorreram em 95,5 pessoas-ano de observação de homens de 50-59 anos.
+opts: 0,04 caso por pessoa-ano; 4 casos por pessoa-ano; 0,4 caso por pessoa-ano; 0,02 caso por pessoa-ano; 0,24 caso por pessoa-ano
+1 | Qual é a taxa de incidência aproximada? | TI = 4 / 95,5 ≈ 0,042 caso por pessoa-ano (cerca de 4 casos por 100 pessoas-ano). | 2:19
+
+# ------------------------------------------------------------------ Cap. 3
+=== c3-01
+cap: 3
+title: Indicadores: conceito e requisitos
+V | Um indicador de saúde busca medir uma característica que não pode ser observada diretamente, como o nível de saúde de uma população. | Exemplos: a esperança de vida ao nascer e a mortalidade infantil, para populações; a pressão arterial e o Apgar, para indivíduos. | 3:31
+V | Paradoxalmente, a maioria dos indicadores de saúde mede a ausência de saúde (doença, morte). | A definição da OMS (completo bem-estar) é ampla e difícil de medir, então mede-se pelo "lado negativo" por facilidade operacional. | 3:31-32; 3:79
+V | Disponibilidade de dados, uniformidade, simplicidade, sinteticidade e poder discriminatório estão entre os requisitos de um bom indicador. | Também importam a validade (medir o que se propõe), relevância, custo-efetividade e ética. | 3:33
+F | Índice e indicador são sinônimos: ambos medem uma única dimensão. | O indicador mede um aspecto (ex. coeficiente de mortalidade). O índice sintetiza várias dimensões (ex. IDH, Apgar). | 3:33-34
+V | O IDH combina educação, longevidade (esperança de vida ao nascer) e renda (PIB per capita ajustado), variando de 0 a 1. | Abaixo de 0,5 é baixo; de 0,5 a 0,8, médio; acima de 0,8, alto. | 3:34
+
+=== c3-02
+cap: 3
+title: Proporções, coeficientes e local de referência
+V | Na proporção, o numerador é um subconjunto do denominador, como na mortalidade proporcional. | A prevalência também é uma proporção. | 3:34
+V | Nos coeficientes (taxas) populacionais, a população no meio do período aproxima o total de pessoas-tempo, supondo distribuição homogênea de nascimentos, mortes e migrações. | Por isso a população de 1º de julho é usada no denominador. | 3:34
+V | Os dados por local de residência estimam o risco da população; os por local de ocorrência servem para avaliar serviços. | A análise por ocorrência mistura pacientes de fora atendidos na cidade ("invasão" de óbitos). | 3:35; 3:37-38
+F | A base de multiplicação (100, 1.000, 100.000) é definida por lei e não pode ser alterada. | A base é arbitrária e deve ser explicitada. | 3:35
+V | Numa transição demográfica com queda da mortalidade e da fecundidade, o foco dos indicadores passou da mortalidade para a morbidade, a capacidade funcional e a qualidade de vida. | É a evolução histórica dos indicadores descrita no capítulo. | 3:32
+
+=== c3-03
+cap: 3
+title: Fontes: SIM, SINASC e registro civil
+V | O SIM, implantado pelo Ministério da Saúde em 1975/76, usa diretamente a Declaração de Óbito, inclusive dos óbitos fetais. | A causa básica é codificada pela CID (CID-10 desde 1996). | 3:35-36; 5:111
+V | O SINASC, criado em 1990, usa a Declaração de Nascido Vivo, com dados como peso ao nascer, Apgar, idade gestacional e tipo de parto. | A DNV é preenchida pelo estabelecimento de saúde (partos domiciliares, no cartório). | 3:36
+F | A Declaração de Óbito pode ser emitida por qualquer servidor público municipal. | A DO deve ser assinada por médico, ou, na falta dele, por duas testemunhas qualificadas. É impressa e distribuída pelo Ministério da Saúde. | 3:35; 5:111
+V | No Brasil, o sepultamento só pode ocorrer com a certidão de óbito, que exige a DO (Lei dos Registros Públicos, 1973). | Mesmo assim existem sepultamentos clandestinos, que causam sub-registro. | 3:35; 3:54
+F | O SIH/SUS foi concebido com lógica epidemiológica para medir a morbidade de toda a população. | O SIH foi criado para pagar internações. Cobre apenas hospitais públicos e conveniados (~70%) e é influenciado pela oferta de leitos. | 3:69; 5:111-112
+
+=== c3-04
+cap: 3
+title: Coeficiente geral de mortalidade
+V | O CGM é o número de óbitos da área no período dividido pela população no meio do período, multiplicado por 1.000. | Brasil 2000: 946.686 / 169.799.170 ≈ 5,6 por 1.000. | 3:36-37
+V | O sub-registro de óbitos subestima o CGM; a "invasão" de óbitos (residentes de outras áreas) o superestima. | Analisar por residência reduz os problemas de evasão e invasão. | 3:37-38
+F | Uma subestimação da população (denominador) leva a subestimar o CGM. | Com o denominador menor, o CGM fica superestimado. | 3:38
+V | Valores de CGM abaixo de 6 por 1.000 sugerem, em geral, problemas de sub-registro. | Espera-se algo entre 6 e 10 por 1.000. | 3:38
+V | O CGM é uma média ponderada dos coeficientes específicos por idade, com pesos dados pela proporção da população em cada faixa etária. | Por isso depende da estrutura etária: um país jovem pode ter CGM menor sem ter melhor saúde. | 3:38
+
+=== c3-05
+cap: 3
+title: Padronização direta e indireta
+V | No método direto, aplicam-se os coeficientes específicos por idade da população estudada a uma população-padrão, obtendo óbitos esperados. | A soma dos óbitos esperados dividida pela população-padrão dá o coeficiente padronizado. | 3:38-39
+V | O método indireto é indicado quando não se conhece a distribuição dos óbitos por idade, ou quando os contingentes são pequenos e os coeficientes específicos, instáveis. | Aplicam-se os coeficientes do padrão à estrutura da população estudada. | 3:41
+V | A razão de mortalidade padronizada (RMP/SMR) divide os óbitos observados pelos esperados. Brasil × Inglaterra deu 1,51: 151 óbitos para cada 100 esperados. | A RMP também é usada como medida de associação. | 3:41
+F | O coeficiente padronizado corrige o valor verdadeiro da mortalidade da população. | Ele é hipotético e serve só para comparar. Não "corrige", apenas controla a interferência da estrutura etária. | 3:40
+V | O Brasil tinha CGM bruto menor que o da Inglaterra e Gales, mas, padronizado pela estrutura inglesa, o seu passou a ser maior (12,8 contra 10,1 por 1.000). | Os coeficientes específicos do Brasil eram maiores em todas as idades; a população jovem "escondia" isso no bruto. | 3:39-40
+
+=== c3-06
+cap: 3
+title: Mortalidade por causas e CID
+V | A causa básica de morte é a doença ou lesão que iniciou a cadeia de acontecimentos que levou à morte, ou as circunstâncias do acidente ou violência. | É a causa usada nas estatísticas oficiais (OMS). As demais são causas associadas. | 3:43
+V | A mortalidade proporcional por causa não precisa de estimativas populacionais. | MP = óbitos por uma causa / total de óbitos × 100. | 3:43
+F | Uma queda da mortalidade proporcional por uma causa implica, necessariamente, queda do número de óbitos por essa causa. | No Sul do Brasil a MP por doenças do aparelho circulatório caiu (34,7% → 33,1%) enquanto os óbitos aumentaram (47.184 → 50.612), porque outras causas cresceram mais. | 3:44
+V | A Aids passou a ser classificada no capítulo de doenças infecciosas e parasitárias (cap. I) na CID-10, o que aumentou a mortalidade registrada por DIP a partir de 1996. | Na CID-9 ela ficava entre os transtornos imunitários. | 3:44; 3:46
+V | Causas externas (agressões, acidentes) exigem padronização por idade e por sexo, pois afetam sobretudo homens jovens. | No RJ, 2003-04, a taxa por causas externas foi 179,8/100 mil nos homens contra 30,9 nas mulheres. | 3:42; 3:45
+
+=== c3-07
+cap: 3
+title: Mortalidade materna
+V | Morte materna é a que ocorre durante a gestação ou até 42 dias após o seu término, por causa relacionada ou agravada pela gravidez, excluídas as causas acidentais ou incidentais. | A morte materna tardia ocorre depois de 42 dias e antes de 1 ano (O96). | 3:46
+V | A razão de mortalidade materna usa os nascidos vivos no denominador (× 100.000). | Os nascidos vivos aproximam o número de gestantes expostas. | 3:47
+V | Causas obstétricas diretas (ex.: toxemia, descolamento de placenta) predominam onde a mortalidade materna é alta; com sua queda, ganham peso as indiretas. | Indiretas são doenças preexistentes agravadas pela gravidez (diabetes, cardiopatias). | 3:46-47
+F | A Declaração de Óbito tem alta sensibilidade para identificar mortes maternas. | A DO tem baixa sensibilidade (há muito sub-registro), embora seu valor preditivo positivo seja alto. Por isso existe a investigação de óbitos de mulheres em idade fértil. | 3:47-48
+V | A morte materna é um evento sentinela, pois a maioria é evitável e reflete a qualidade da atenção à saúde da mulher. | O nível aceitável (OMS/Unicef) seria de 10 a 20 por 100.000 nascidos vivos. | 3:47-48
+
+=== c3-08
+cap: 3
+title: Mortalidade infantil e seus componentes
+V | O componente neonatal (0-27 dias) reflete sobretudo as condições da gestação, do parto e da assistência perinatal (causas endógenas). | O neonatal se divide em precoce (0-6 dias) e tardio (7-27 dias). | 3:51
+V | O componente pós-neonatal (28 dias a menos de 1 ano) está mais ligado a fatores ambientais e sociais: diarreias, infecções respiratórias e imunopreveníveis. | São causas exógenas, sensíveis a saneamento, TRO e vacinação. | 3:51
+V | Quando a mortalidade infantil é alta, predomina o componente pós-neonatal; com a queda, o neonatal passa a predominar. | No Brasil o pós-neonatal era 57% dos óbitos infantis em 1979-81 e 47,1% em 1993-95. | 3:52-53
+F | Pela classificação citada no livro, uma TMI de 25 por 1.000 nascidos vivos é considerada baixa. | Menos de 20 é baixa, de 20 a 49 é intermediária e 50 ou mais é elevada. O Brasil tinha 25,9 em 2004 (intermediária). | 3:52
+F | A taxa de mortalidade infantil é imune a intervenções pontuais; ela só cai com mudanças estruturais das condições de vida. | Uma limitação apontada é que intervenções pontuais (ex.: TRO) podem reduzi-la mesmo sem melhora geral das condições de vida. | 3:54
+
+=== c3-09
+cap: 3
+title: Mortalidade fetal e perinatal
+V | Desde a CID-10 é obrigatório declarar os óbitos fetais com 20 semanas ou mais de gestação, ou peso igual ou superior a 500 g, ou estatura de 25 cm ou mais. | Abaixo desses limites a declaração é facultativa. | 3:55
+V | O período perinatal vai de 22 semanas completas de gestação até 7 dias completos após o nascimento. | TMP = (natimortos + óbitos neonatais precoces) / (natimortos + nascidos vivos) × 1.000. | 3:56
+V | A mortalidade perinatal não é afetada por erros de classificação entre natimorto e nascido vivo que morre logo após o parto. | As duas categorias entram no numerador. | 3:56
+F | Mortalidade perinatal e mortalidade por afecções perinatais (cap. XVI da CID-10) são a mesma coisa. | São conceitos diferentes. Uma parte dos óbitos por afecções perinatais ocorre depois da primeira semana. | 3:56
+V | A razão de mortalidade fetal (óbitos fetais / nascidos vivos) é, na verdade, uma medida de chance (odds). | O coeficiente de mortalidade fetal usa natimortos + nascidos vivos no denominador. | 3:55-56
+
+=== c3-10
+cap: 3
+title: Swaroop-Uemura e curvas de Nelson de Moraes
+V | O indicador de Swaroop-Uemura é a proporção de óbitos de pessoas com 50 anos ou mais no total de óbitos. Valores altos indicam melhores condições de saúde. | Ele é o contrário da proporção de óbitos de menores de 1 ano. | 3:57
+V | Pela classificação do indicador de Swaroop-Uemura, 75% ou mais corresponde ao 1º nível (países desenvolvidos). | 2º nível: 50-74,9%; 3º nível: 25-49,9%; 4º nível: menos de 25%. | 3:57-58
+F | O sub-registro de óbitos infantis tende a subestimar o indicador de Swaroop-Uemura. | Faltando óbitos infantis no total, a proporção de 50+ fica maior: o indicador é superestimado. | 3:59
+V | As curvas de mortalidade proporcional de Nelson de Moraes usam as faixas: menores de 1 ano, 1-4, 5-19, 20-49 e 50 anos ou mais. | O formato da curva ("N", "L", "U", "J") classifica o nível de saúde. | 3:59-60
+V | Uma curva em "J", com quase todos os óbitos em idades avançadas, indica nível de saúde elevado. | A curva em "L", com predomínio de óbitos infantis e pré-escolares, indica nível baixo. | 3:60
+
+=== c3-11
+cap: 3
+title: Esperança de vida e tábuas de vida
+V | Em populações humanas, a esperança de vida é calculada por tábua de vida de coorte sintética: aplicam-se as probabilidades de morte por idade de um período a uma coorte hipotética. | Seguir uma geração real exigiria mais de 100 anos de dados. | 3:61
+V | A esperança de vida ao nascer não é influenciada pela estrutura etária da população, e por isso pode ser comparada diretamente. | Não precisa de padronização. | 3:62
+V | Em contextos de alta mortalidade infantil, a esperança de vida aos 1 ano (e1) pode ser maior do que ao nascer (e0). | Quem sobrevive ao primeiro ano escapa do maior risco. | 3:62
+F | Reduções da mortalidade em idades avançadas produzem os maiores ganhos de esperança de vida ao nascer. | Os maiores ganhos vêm da redução de óbitos precoces, sobretudo no 1º ano de vida. | 3:62-63
+V | Tábuas de vida de múltiplo decremento permitem estimar o ganho de esperança de vida se uma causa de morte fosse eliminada. | No RJ (1996), eliminar as doenças cardiovasculares daria os maiores ganhos; nos homens, eliminar as agressões daria mais que eliminar as neoplasias. | 3:63-64
+
+=== c3-12
+cap: 3
+title: Anos potenciais de vida perdidos
+V | O APVP é a soma, para cada óbito antes da idade-limite L, da diferença entre L e a idade do óbito. | APVP = Σ dx(L − x). Óbitos com idade de L ou mais têm peso zero. | 3:65
+V | O APVP valoriza a transcendência das mortes precoces. Dempsey o criou para mostrar a importância da tuberculose, subestimada pelos coeficientes de mortalidade. | Critérios de prioridade: magnitude (quantidade) e transcendência (valor social). | 3:64
+V | Com L = 70, a morte de uma criança de 2 anos equivale em APVP à de dois adultos de 36 anos. | 70 − 2 = 68 = 2 × (70 − 36). | 3:65
+F | Quanto maior a idade-limite L escolhida, mais destaque o APVP dá às mortes prematuras. | É o contrário: um L baixo destaca as mortes prematuras; um L alto inclui mais óbitos. | 3:65
+V | No exemplo de Santa Catarina, os acidentes de trânsito ficaram em 1º lugar em APVP, embora fossem a 2ª causa em número de óbitos. | Causas de jovens (acidentes, homicídios, anomalias, perinatais) sobem no ranking; neoplasias e AVC descem. | 3:65-67
+
+=== c3-13
+cap: 3
+title: Morbidade, CIF e qualidade de vida
+V | Na terminologia do livro, doença (disease) é o plano do organismo, enfermidade (illness) é a percepção do indivíduo e anormalidade (sickness) é o plano social. | As três dimensões não coincidem: alguém pode ter doença pré-clínica sem se sentir enfermo. | 3:67-68
+V | A CIDID (OMS) seguia a sequência linear doença → deficiência → incapacidade → desvantagem. | Ela foi revista e substituída pela CIF (2001). | 3:70
+V | A CIF (Classificação Internacional de Funcionalidade) é complementar à CID-10 e inclui fatores ambientais como facilitadores ou barreiras. | Funcionalidade abrange estruturas e funções do corpo, atividade e participação. | 3:70
+F | O WHOQOL-Bref e o SF-36 são instrumentos específicos para pacientes com câncer. | O WHOQOL-Bref (domínios físico, psicológico, relações sociais e meio ambiente) e o SF-36 são instrumentos genéricos de qualidade de vida. | 3:71
+V | As atividades instrumentais da vida diária (AIVD), como fazer compras e controlar finanças, captam incapacidades menos graves que as atividades básicas (banhar-se, alimentar-se). | Por isso as escalas AIVD servem melhor para a população geral. | 3:72
+
+=== c3-14
+cap: 3
+title: Medidas-resumo: DALY e esperança de vida livre de incapacidade
+V | O DALY soma os anos de vida perdidos por morte prematura (YLL) e os anos vividos com incapacidade (YLD). | DALY = YLL + YLD. Ele é usado nos estudos de carga de doença (Banco Mundial/OMS). | 3:75-76
+V | O QALY expressa ganhos de vida com qualidade; o DALY expressa perdas. | O QALY vem da tradição utilitarista (custo-utilidade). | 3:70; 3:75
+V | No estudo de carga de doença do Brasil (1998), as condições neuropsiquiátricas ficaram em 1º lugar em DALY, principalmente pelos anos vividos com incapacidade. | Em mortalidade (YLL) elas eram apenas a 12ª causa. Só os dados de óbito subestimariam essa carga. | 3:77
+F | O DALY considera características socioeconômicas, de modo que a mesma doença tem pesos diferentes para ricos e pobres. | Por pressuposto, só sexo e idade entram, para garantir comparabilidade: a mesma condição tem o mesmo peso em qualquer população. | 3:75
+V | O método de Sullivan combina a tábua de vida com a prevalência de incapacidade (de inquéritos) para estimar a esperança de vida livre de incapacidade. | No Brasil, as mulheres vivem mais e mais anos sem incapacidade, mas os homens passam proporcionalmente mais tempo sem incapacidade. | 3:74
+
+# ------------------------------------------------------------------ Cap. 4
+=== c4-01
+cap: 4
+title: Pessoa, lugar e tempo
+V | A epidemiologia descritiva organiza a ocorrência das doenças segundo pessoa (quem), lugar (onde) e tempo (quando). | Essas três perguntas ajudam a gerar hipóteses, planejar e orientar a clínica. | 4:83
+V | O mapa de John Snow (1854) mostrou associação espacial entre mortes por cólera e uma bomba de água, sem que o agente fosse conhecido. | A distribuição espacial dá pistas etiológicas, mas nem sempre prova nexo causal. | 4:84
+V | Os estudos de migrantes mostram que eles tendem a adquirir as taxas de câncer do novo local, sugerindo que fatores genéticos não são os principais responsáveis pelas diferenças entre países. | Esses estudos ajudam a separar efeitos do lugar (ambiente) dos efeitos do indivíduo. | 4:87
+F | Estudos de distribuição espacial de taxas agregadas costumam testar hipóteses causais, porque medem exposição e desfecho no mesmo indivíduo. | Em geral eles formulam hipóteses (são ecológicos): exposição e desfecho não são medidos no mesmo indivíduo. | 4:84
+V | A teoria dos focos naturais das doenças, ligada a Pavlovsky, destaca o papel do ambiente na transmissão de doenças como a peste e a leishmaniose. | É um marco da geografia médica do século XX. | 4:84
+
+=== c4-02
+cap: 4
+title: Análise espacial
+V | Gatrell e Bailey agrupam as técnicas de análise espacial em visualização, análise exploratória e modelagem. | Visualizar (mapas), explorar (padrões, relações) e modelar (testar hipóteses, estimar relações). | 4:85
+V | A geoestatística trata de fenômenos que variam continuamente no espaço, partindo da ideia de que pontos próximos têm valores mais parecidos que pontos distantes. | Exemplo do livro: soropositividade para hepatite A em Duque de Caxias. | 4:85-86
+V | Na análise de dados de área, as observações estão ligadas a regiões (bairros, municípios), e a noção de vizinhança é central. | A vizinhança pode ser definida por fronteira comum, distância ou pesos. | 4:86
+F | Na análise de padrões pontuais, a variável de interesse é a taxa média de cada município. | Em padrões pontuais a variável é a localização dos eventos; busca-se aleatoriedade, agregação (clusters) ou regularidade. | 4:86
+V | Geoprocessamento e SIG (sistemas de informação geográfica) servem para capturar, armazenar, manipular, analisar e exibir dados georreferenciados. | São muito usados em vigilância e planejamento. | 4:85
+
+=== c4-03
+cap: 4
+title: Tendência secular e variações temporais
+V | A tendência secular descreve o comportamento da doença ao longo de décadas, sem um critério rígido de duração mínima. | Exemplo: tuberculose em São Paulo, estável até 1945, em forte queda até 1985 e com discreto recrudescimento depois (HIV). | 4:88
+V | Na Inglaterra e no País de Gales, a mortalidade por tuberculose e por coqueluche já caía antes da identificação dos agentes e da introdução de vacinas e quimioterapia. | Isso aponta o papel das melhorias sociais e das condições de vida (McKeown). | 4:89-90
+V | Variações cíclicas são flutuações com periodicidade maior que um ano, como os picos de sarampo a cada 2-3 anos em populações suscetíveis. | Os ciclos dependem do acúmulo de suscetíveis e mudam com a cobertura vacinal. | 4:90
+F | Variações sazonais têm, por definição, periodicidade de vários anos. | Variações sazonais acompanham as estações, dentro de um ano (ex.: acidentes ofídicos no verão, gripe no inverno). | 4:90-91
+V | Antes de atribuir uma tendência a mudanças sociais, deve-se descartar mudanças em critérios diagnósticos, cobertura dos sistemas, classificação e letalidade. | Explicações alternativas podem produzir tendências "artificiais". | 4:89
+
+=== c4-04
+cap: 4
+title: Endemia, epidemia, surto e pandemia
+V | Endemia é a presença habitual de uma doença numa área, dentro dos limites esperados, por tempo indeterminado. | Exemplos: malária, Chagas e esquistossomose em certas regiões. | 4:92
+V | Um único caso autóctone de uma doença ausente há muitos anos, como a poliomielite, pode configurar uma epidemia. | Epidemia é o excesso em relação ao esperado, não um número mínimo de casos. | 4:92
+V | Pandemia é uma epidemia com ampla distribuição geográfica, atingindo várias nações ou continentes. | A Aids é um exemplo. | 4:93
+F | Caso alóctone é aquele que se originou no mesmo local onde foi detectado. | Esse é o caso autóctone. Alóctone é o caso importado de outra localidade. | 4:92
+V | Surto é uma ocorrência epidêmica com casos relacionados entre si, numa área pequena e delimitada ou numa população institucionalizada, como creches e quartéis. | Exemplo: intoxicação por mamadeira numa creche. | 4:93
+
+=== c4-05
+cap: 4
+title: Epidemias por fonte comum e propagadas
+V | Na epidemia por fonte comum, os casos aumentam rapidamente, o pico é curto e há declínio, em geral sem transmissão pessoa a pessoa. | Ela costuma ser explosiva e restrita no tempo e no espaço (água, alimento, ar). | 4:93
+V | Na fonte comum pontual, o pico da curva corresponde aproximadamente ao período médio (ou mediano) de incubação após a exposição. | A data provável de exposição pode ser estimada a partir do primeiro e do último caso, usando os períodos mínimo e máximo de incubação. | 4:94
+V | A leptospirose no Rio de Janeiro em 1996, depois de chuvas e inundações, é um exemplo de epidemia maciça por fonte comum. | A exposição foi simultânea, à água contaminada das enchentes. | 4:94
+F | Epidemias propagadas (progressivas) são sempre explosivas, com pico alto e rápido. | Em geral são mais lentas e prolongadas (pessoa a pessoa, vetores). Só se tornam explosivas em comunidades totalmente suscetíveis e isoladas. | 4:93-94
+V | A epidemia de sarampo no Rio em 1997 foi do tipo propagada. | A transmissão foi respiratória, pessoa a pessoa, ao longo de meses. | 4:94
+
+=== c4-06
+cap: 4
+title: Diagrama de controle
+V | No diagrama de controle pela distribuição normal, calculam-se para cada mês a média e o desvio-padrão das incidências de um período anterior (geralmente 10 anos sem epidemias). | Os limites esperados são média ± 1,96 DP (95%). | 4:95
+V | Se o limite inferior calculado for negativo, plota-se zero, pois incidência negativa não é plausível. | Exemplo do livro: meningocócica em setembro, limite −0,04. | 4:96
+V | No método dos quartis, a faixa entre o 1º e o 3º quartil é considerada o esperado, e valores acima do 3º quartil indicam situação epidêmica. | Ordenam-se os valores de cada mês nos anos anteriores e obtêm-se mediana, Q1 e Q3. | 4:96
+F | Anos epidêmicos devem ser incluídos no período de referência para que o limite esperado seja mais sensível. | Os anos epidêmicos devem ser descartados; senão o limite sobe e o diagrama perde a capacidade de detectar epidemias. | 4:95
+V | O diagrama de controle é uma ferramenta de vigilância para detectar alterações na distribuição habitual de uma doença e desencadear medidas de controle. | No eixo X fica o tempo (semanas epidemiológicas ou meses); no eixo Y, a incidência. | 4:95
+
+=== c4-07
+cap: 4
+title: Efeitos de idade, período e coorte
+V | Efeito de idade é a mudança associada ao envelhecimento, como o aumento do câncer de próstata com a idade. | É um dos três efeitos temporais. | 4:98
+V | Efeito de período está ligado a um evento restrito no tempo calendário que afeta todas as idades, como uma mudança na forma de declarar causas de óbito. | Exemplo do livro: a portaria de 1990 no RJ fez disparar os óbitos por causa mal definida. | 4:98-99
+V | Efeito de coorte é uma mudança compartilhada pelos membros de uma geração, como a exposição a um lote de vacina de baixa efetividade. | Outro exemplo é o suicídio nas gerações mais novas. | 4:99
+F | Idade, período e coorte são independentes entre si, por isso seus efeitos são fáceis de separar. | São linearmente dependentes (ano do óbito − ano de nascimento = idade), o que torna difícil separar os efeitos. | 4:98
+V | Uma análise transversal (taxas por idade num ano) pode sugerir queda das taxas com a idade quando, na verdade, cada coorte mostra aumento com a idade e as gerações mais novas têm taxas maiores. | Um forte efeito de coorte pode mascarar o efeito de idade. | 4:101-102
+
+# ------------------------------------------------------------------ Cap. 5
+=== c5-01
+cap: 5
+title: Conceito e história da vigilância
+V | A quarentena surgiu no século XIV, no combate à peste, quando Veneza isolava navios e contatos por 30-40 dias. | É o embrião da "vigilância de pessoas". | 5:103
+V | O termo "vigilância epidemiológica" foi cunhado em 1964 por Karel Raska e difundido pela OMS a partir de 1965. | A ênfase passou da vigilância de pessoas para a vigilância de doenças na população. | 5:104
+V | A vigilância deixou de ser apenas "vigilância de pessoas" (observar casos e contatos) e passou a acompanhar a ocorrência de eventos adversos na comunidade, como "informação para ação". | A definição da Lei 8.080/90 inclui qualquer mudança nos determinantes de saúde. | 5:103-104
+F | Monitoração e vigilância são sinônimos. | Monitoração acompanha indicadores (econômicos, ambientais, demográficos) sem vínculo essencial com saúde; vigilância foca eventos de saúde nas populações. | 5:104
+V | Itália (1881) e Estados Unidos (1901) estão entre os primeiros países a adotar a notificação compulsória de algumas doenças em âmbito nacional. | Nos EUA, todos os estados passaram a notificar varíola, tuberculose e cólera. | 5:103
+
+=== c5-02
+cap: 5
+title: Objetivos e atividades da vigilância
+V | Identificar tendências e grupos de risco, detectar epidemias, estimar a magnitude da morbimortalidade, recomendar medidas e avaliar seu impacto são objetivos da vigilância. | Também é objetivo avaliar a adequação das estratégias. | 5:104
+V | A retroalimentação (feedback) e a divulgação das informações aumentam a adesão dos notificadores e permitem o controle social. | Profissionais que não veem utilidade nos dados tendem a não notificar. | 5:106; 5:114
+V | Para doenças de alta letalidade, dados de mortalidade podem ser mais úteis à vigilância do que os de morbidade. | O óbito é um fato vital bem definido, com maior abrangência e validade. | 5:105
+F | A análise dos dados de vigilância deve ser centralizada no nível federal, para evitar que os municípios tomem decisões isoladas. | O SUS prioriza a análise no nível local (municipal), com autonomia técnico-gerencial, para que a informação gere ação. | 5:104; 5:107
+V | Nem todo o trabalho da epidemiologia é vigilância: pesquisa e desenvolvimento de programas vão além do escopo da vigilância, que por isso às vezes é chamada de "vigilância em saúde pública". | A vigilância pode, porém, gerar hipóteses para pesquisa. | 5:104
+
+=== c5-03
+cap: 5
+title: Notificação compulsória
+V | Notificar é comunicar a ocorrência de doença, agravo ou surto à autoridade sanitária, e isso pode ser feito por qualquer cidadão. | Para profissionais e estabelecimentos de saúde e de ensino, a notificação é obrigatória (Portaria nº 5/2006). | 5:106
+V | A notificação deve ser feita já na suspeita, sem esperar confirmação, o que aumenta a sensibilidade e a oportunidade do sistema. | A investigação posterior confirma ou descarta o caso. | 5:106-107
+V | Estados e municípios podem incluir doenças na lista nacional de notificação compulsória, mas não podem retirá-las. | A lista nacional é um mínimo comum. | 5:107
+F | A notificação compulsória deve ser pública e identificada, para que a comunidade saiba quem está doente. | A notificação é sigilosa. A divulgação só ocorre se houver risco para a comunidade, e mesmo assim preservando o anonimato. | 5:107
+V | O descumprimento da notificação por profissionais pode ser comunicado aos conselhos de classe e ao Ministério Público. | A Portaria nº 5/2006 prevê essa sanção. | 5:106
+
+=== c5-04
+cap: 5
+title: Critérios da lista de notificação
+V | Magnitude refere-se à frequência da doença (incidência, prevalência, mortalidade). | É um dos critérios para incluir uma doença na lista. | 5:107
+V | Transcendência envolve a gravidade (letalidade, sequelas), a relevância social (medo, estigma) e o impacto econômico. | A meningocócica (medo) e a polio (estigma das sequelas) são exemplos. | 5:107
+V | Vulnerabilidade é a existência de meios efetivos de prevenção e controle. | Notificar faz sentido quando é possível agir. | 5:107
+F | Compromissos internacionais não são critério de inclusão na lista, que é decisão apenas epidemiológica. | O Regulamento Sanitário Internacional (OMS) exige notificar doenças como cólera, febre amarela e peste. | 5:107
+V | O potencial de disseminação (transmissibilidade) e o valor da notificação para desencadear ações oportunas também são critérios. | Epidemias, surtos e agravos inusitados devem ser notificados imediatamente. | 5:107
+
+=== c5-05
+cap: 5
+title: Sistemas de informação para a vigilância
+V | O SINAN registra os agravos de notificação a partir da Ficha Individual de Notificação (FIN) e da Ficha Individual de Investigação (FII). | A FIN é preenchida para cada paciente suspeito e também para a notificação negativa e para surtos. | 5:108-111
+V | A notificação negativa é a notificação da não ocorrência de casos e permite diferenciar ausência de casos de falha do sistema. | Ela também é um indicador de eficiência. | 5:107-108
+F | O SIA/SUS registra o diagnóstico (CID) de cada atendimento ambulatorial e é a principal fonte do perfil de morbidade ambulatorial. | O SIA paga por procedimento e não registra a CID, então não serve para traçar perfis de morbidade. | 5:112
+V | O tétano neonatal confirmado, a raiva humana e casos suspeitos de sarampo, poliomielite e cólera estão entre os eventos de notificação imediata. | Surtos e agravos inusitados também exigem notificação imediata. | 5:111
+V | Os dados do SIM são codificados pelo município de residência, embora o registro em cartório ocorra no local de ocorrência. | A residência interessa para medir o risco; o local de ocorrência interessa, por exemplo, nas causas externas. | 5:111
+
+=== c5-06
+cap: 5
+title: Atributos e avaliação do sistema
+V | Sensibilidade é a capacidade de detectar os casos que de fato ocorrem; especificidade é a capacidade de excluir os não-casos. | Os dois atributos dependem da definição de caso. | 5:114
+V | O valor preditivo positivo é a proporção dos casos notificados que são realmente casos, e aumenta com a especificidade da definição e com a prevalência. | Um VPP baixo leva a investigar e tratar não-doentes. | 5:114
+V | A aceitabilidade reflete a disposição de pessoas, profissionais e instituições em participar do sistema. | Pode ser avaliada pela completude e qualidade do preenchimento das fichas. | 5:114
+F | A subnotificação se deve principalmente ao caráter ativo dos sistemas, que buscam casos demais. | A subnotificação vem do caráter passivo da maioria dos sistemas, do desconhecimento da lista, da falta de retorno e do tempo para preencher fichas. | 5:114-115
+V | A subnotificação seletiva, maior em doenças com sinais pouco evidentes (rubéola, coqueluche) do que nas graves (meningocócica), compromete a representatividade. | Casos graves, hospitalizados ou de interesse da mídia são mais notificados. | 5:115
+
+=== c5-07
+cap: 5
+title: Fontes complementares e sentinela
+V | Laboratórios confirmam casos e detectam casos não notificados. A vigilância laboratorial integra Lacens, hemocentros e laboratórios públicos e privados. | No exemplo do Egito, a vigilância laboratorial de meningite identificou os agentes e os fatores de óbito. | 5:112-113
+V | A imprensa e a população são frequentemente a primeira indicação de agravos inusitados, como no episódio do antraz em Sverdlovsk (1979). | A investigação ligou os casos a aerossóis de uma instalação militar. | 5:113
+V | Em investigações de surto, o desenho analítico mais usado é o caso-controle. | Estudos seccionais (inquéritos) são os mais comuns no apoio à vigilância; coortes são úteis para agravos agudos de latência curta. | 5:113
+F | Sistemas sentinela oferecem dados mais representativos da população do que a vigilância universal. | Eles ganham detalhe e validade, mas perdem representatividade, e não permitem calcular incidência. | 5:113
+V | A vigilância sindrômica foca grupos de sinais e sintomas (ex.: síndromes diarreicas agudas, doenças exantemáticas) em vez de diagnósticos confirmados. | É uma forma de vigilância sentinela. | 5:113
+
+=== c5-08
+cap: 5
+title: Investigação de surtos
+V | As primeiras etapas de uma investigação de surto são confirmar o diagnóstico, confirmar a existência do surto e caracterizá-lo por pessoa, lugar e tempo. | O livro destaca que essas três primeiras são fundamentais. | 5:117
+V | No início, usa-se uma definição de caso mais sensível (confirmados, prováveis e possíveis); para testar hipóteses, uma mais específica. | A definição sensível dimensiona o surto; a específica evita falsos-positivos na análise. | 5:117
+V | A hipótese sobre a fonte é reforçada quando a taxa de ataque entre os expostos é significativamente maior que entre os não-expostos. | Além disso, nenhum outro modo de transmissão deve explicar a mesma distribuição. | 5:117
+F | Não há regra para o fim de um surto: ele só termina com intervenção do serviço de saúde. | Surtos podem acabar porque acabam os suscetíveis, cessa a exposição ou a fonte, cai a suscetibilidade (vacinação) ou o patógeno perde virulência. | 5:116
+V | No surto de Chagas aguda em Santa Catarina (2005), a fonte foi caldo de cana contaminado num quiosque à beira da BR-101. | Era uma área não endêmica, o que dificultou o diagnóstico; o período de incubação variou de 3 a 17 dias. | 5:118
+
+=== c5-09
+cap: 5
+title: Doenças emergentes e CIEVS
+V | Doenças emergentes são as que surgiram, foram descobertas, aumentaram ou mudaram de padrão nas últimas décadas; reemergentes são as que voltam a aparecer. | No Brasil, Aids (1981), dengue (1982), cólera (1991) e hantavirose (1993) são exemplos. | 5:117-118
+V | O CIEVS, criado pela SVS/MS em 2005, recebe notificações 24 horas por dia e monitora emergências de saúde pública de relevância nacional. | Ele se inspira no SHOC da OMS. Os eventos relevantes são investigados pela Unidade de Respostas Rápidas. | 5:119
+F | O CIEVS só aceita notificações enviadas por formulário em papel. | Ele recebe notificações por telefone, fax e e-mail, além de acompanhar diariamente as notícias da imprensa. | 5:119
+V | Epidemias funcionam como "experimentos naturais" e podem trazer conhecimento novo sobre as doenças. | Por isso os primeiros casos são investigados em profundidade. | 5:116
+V | Uma epidemia pode ocorrer quando suscetíveis viajam para áreas endêmicas ou quando novas práticas sociais levam a infecção a grupos suscetíveis. | Introdução de agente novo e mudanças na suscetibilidade do hospedeiro (imunossupressão, desnutrição) também são circunstâncias. | 5:115-116
+
+# ------------------------------------------------------------------ Cap. 6
+=== c6-01
+cap: 6
+title: Teorias populacionais
+V | Malthus afirmava que a população cresce em progressão geométrica e os recursos em progressão aritmética. | Para ele, a miséria vinha da incapacidade dos pobres de limitar a prole. | 6:125
+V | Para a visão marxista não há uma lei populacional universal: cada fase do desenvolvimento tem sua própria lei, e a miséria decorre da distribuição desigual. | Os neomalthusianos defendiam o controle da natalidade; os marxistas, o desenvolvimento econômico. | 6:125
+V | A teoria da transição demográfica relaciona a queda da natalidade e da mortalidade com a industrialização, tendo como referência os países europeus. | Uma crítica é a generalização desse modelo a contextos muito diferentes. | 6:125
+F | A população mundial levou cerca de 50 anos para dobrar no início da era cristã. | No início da era cristã levou mais de 1.200 anos para dobrar; o crescimento acelerou só a partir do século XVIII. | 6:123-124
+V | A transição demográfica é a passagem de altos coeficientes de natalidade e mortalidade para valores muito reduzidos. | É um processo lento, como sugere a própria palavra "transição". | 6:125
+
+=== c6-02
+cap: 6
+title: Fases da transição demográfica
+V | Na fase 1 (pré-industrial), natalidade e mortalidade são altas e o crescimento é lento. | Isso é chamado de "equilíbrio populacional". | 6:126
+V | Na fase 2, a mortalidade cai enquanto a natalidade continua alta, gerando a "explosão populacional". | Nos países em desenvolvimento isso ocorreu de forma mais tardia e repentina (século XX). | 6:126
+V | Na fase 3, a natalidade começa a cair de forma importante e o efeito mais marcante é o envelhecimento populacional. | O crescimento ainda é relativamente alto. | 6:126
+F | Na fase 4, a natalidade volta a subir e a população rejuvenesce. | Na fase 4 natalidade e mortalidade são baixas, a fecundidade fica perto da reposição e a população envelhece, sobretudo à custa das mulheres. | 6:126
+V | No Brasil, o rápido crescimento a partir de 1950 corresponde à fase 2; a desaceleração a partir de 1970 corresponde à fase 3. | O equilíbrio deve se completar nas primeiras décadas do século XXI. | 6:126
+
+=== c6-03
+cap: 6
+title: Indicadores demográficos do Brasil
+V | Fertilidade é a capacidade fisiológica de conceber; fecundidade é o desempenho reprodutivo efetivo, medido em filhos por mulher. | O período reprodutivo considerado vai dos 15 aos 49 anos. | 6:128-129
+V | O coeficiente geral de natalidade usa a população total no denominador; o de fecundidade, as mulheres de 15 a 49 anos. | Ambos têm os nascidos vivos no numerador (× 1.000). | 6:129
+V | A fecundidade brasileira caiu de mais de 6 filhos por mulher (até 1960) para cerca de 2,35 em 2000, com projeção abaixo da reposição. | A queda começou nos anos 1970. | 6:129-130
+F | No Brasil, a queda da natalidade precedeu a queda da mortalidade. | O declínio da mortalidade (já nos anos 1940) precedeu o da natalidade (intensificado nos anos 1970). | 6:129-130
+V | Crescimento vegetativo é a diferença entre natalidade e mortalidade. | Quando os óbitos superam os nascimentos, ele fica negativo. | 6:128
+
+=== c6-04
+cap: 6
+title: Envelhecimento e urbanização
+V | O principal fator do envelhecimento populacional é a queda da fecundidade. | Ela estreita a base da pirâmide (menos crianças), sobretudo quando a mortalidade já é baixa. | 6:131
+V | A queda isolada da mortalidade infantil tenderia, inicialmente, a rejuvenescer a população. | Mais crianças sobrevivem e engrossam a base da pirâmide. | 6:131
+V | A idade mediana da população brasileira era de cerca de 18 anos em 1950 e tende a dobrar, chegando a cerca de 40 anos em 2050. | A idade mediana divide a população em duas metades. | 6:131
+F | Em 2000 a maioria da população brasileira ainda era rural. | Em 1940, 68,8% eram rurais; em 2000, 81,2% eram urbanos. | 6:126
+V | A urbanização amplia o acesso a serviços de saúde, mas também traz riscos como poluição, violência, estresse e tabagismo. | O resultado é um perfil epidemiológico mais complexo. | 6:127
+
+=== c6-05
+cap: 6
+title: Transição epidemiológica: Omran
+V | Abdel Omran propôs em 1971 a teoria da transição epidemiológica, com três "eras". | A base foram os países industrializados. | 6:134
+V | Na "era da pestilência e da fome", a mortalidade era alta e flutuante e a esperança de vida ficava abaixo de 30 anos. | Essa era vai até o fim da Idade Média. | 6:134
+V | Na "era das doenças degenerativas e provocadas pelo homem", predominam doenças cardiovasculares, neoplasias e causas externas. | Ela começa com a Revolução Industrial. | 6:134
+F | Na "era do declínio das pandemias", as doenças crônicas já eram as principais causas de morte. | Nessa era as doenças infecciosas ainda eram as principais causas, mas as pandemias diminuíam e a esperança de vida subia para 40-50 anos. | 6:134
+V | Uma crítica ao modelo de Omran é seu caráter determinista e linear, baseado na experiência europeia. | Ele não explica a reemergência de doenças nem a superposição de padrões. | 6:134-135
+
+=== c6-06
+cap: 6
+title: Modelos complementares e Brasil
+V | Olshansky e Ault propuseram uma "quarta era", em que a mortalidade por doenças degenerativas é adiada para idades mais avançadas. | É a chamada "revolução cardiovascular". | 6:135
+V | O modelo "tardio-polarizado" de Frenk descreve países de renda média, com superposição de doenças infecciosas e crônicas, contratransição e polarização epidemiológica. | No Brasil se fala em transição "prolongada". | 6:135-136
+V | A Aids, surgida no início dos anos 1980, foi o fato mais importante para questionar a ideia de que as doenças infecciosas iriam desaparecer. | Depois dela vieram muitas doenças emergentes e reemergentes. | 6:135
+F | No Brasil, as doenças infecciosas e parasitárias deixaram de ser a principal causa de morte já em 1930. | Em 1930 elas eram 45,7% dos óbitos e foram a principal causa até meados dos anos 1960. As cardiovasculares lideram desde o início dos anos 1960. | 6:137
+V | Polarização epidemiológica é a coexistência de padrões diferentes de morbimortalidade em subgrupos de uma mesma população (regiões, classes sociais). | Pode ser geográfica ou social. | 6:135-136
+
+=== c6-07
+cap: 6
+title: Mortalidade e internações por causas no Brasil
+V | Entre 1930 e 2003, a mortalidade proporcional por doenças do aparelho circulatório subiu de 11,8% para 27,3%. | As neoplasias subiram de 2,7% para 12,6%, e as causas externas de 2,6% para 12,6%. | 6:137
+V | As doenças do aparelho respiratório são a principal causa de internação no SUS, embora fiquem em último lugar entre as principais causas de óbito. | As neoplasias, ao contrário, são a 2ª causa de morte e a última entre as principais causas de internação. | 6:137-139
+V | O fato de as doenças infecciosas e parasitárias ainda estarem em 3º lugar nas internações é visto como um indicador indireto da polarização epidemiológica. | Elas ficam à frente das causas externas e das neoplasias. | 6:138-139
+F | As causas externas afetam igualmente homens e mulheres de todas as idades. | Elas afetam sobretudo homens jovens (armas de fogo, acidentes de trânsito). | 6:137-138
+V | A varíola foi a única doença erradicada no Brasil (1978); a poliomielite teve seu último caso em 1989. | O sarampo foi eliminado após a epidemia de 1997. | 6:139
+
+=== c6-08
+cap: 6
+title: Tendências das doenças infecciosas
+V | O Ministério da Saúde classifica as doenças infecciosas em três tendências: decrescente, persistente e emergente/reemergente. | É uma forma de mostrar a não linearidade da transição. | 6:139
+V | Doença de Chagas, difteria, coqueluche e tétano estão entre as doenças com tendência decrescente; ainda assim ocorrem surtos de Chagas por transmissão oral. | A transmissão vetorial e transfusional da doença de Chagas está sob controle. | 6:141
+V | Malária, tuberculose, leishmanioses e hanseníase estão entre as doenças com tendência de persistência. | As hepatites B e C e a leptospirose também. | 6:141
+F | Dengue e cólera são exemplos de doenças com tendência decrescente no Brasil desde 1980. | São emergentes ou reemergentes: dengue desde 1982 e cólera reintroduzida em 1991. | 6:141-143
+V | A difusão da Aids repercutiu em outras doenças infecciosas, em particular a tuberculose. | A coinfecção HIV-TB explica parte do recrudescimento da TB. | 6:143; 4:88
+
+=== c6-09
+cap: 6
+title: Transição nutricional e desigual
+V | A transição nutricional é a passagem de um perfil dominado pela desnutrição para outro dominado pela obesidade. | Ela acompanha mudanças econômicas, sociais e demográficas. | 6:143; 6:146
+V | O livro adverte que a transição nutricional não deve ser lida como melhoria geral das condições de vida, pois fome e obesidade coexistem, sobretudo nas camadas desfavorecidas. | Alimentos baratos, calóricos e pouco nutritivos, sedentarismo e má distribuição de renda estão por trás disso. | 6:146
+V | Em 2003, as regiões mais ricas tinham maior mortalidade proporcional por neoplasias e doenças circulatórias. | Já o Norte e o Centro-Oeste tinham mais peso de DIP e causas externas: polarização geográfica. | 6:146-147
+F | As desigualdades regionais na mortalidade infantil desapareceram entre 1930 e 2001. | A TMI caiu em todas as regiões, mas em 2001 o Nordeste ainda tinha 43,0 contra 16,4 no Sul. | 6:148
+V | Entre 1979 e 2003, o indicador de Swaroop-Uemura subiu em todas as regiões, mas o Norte continuou abaixo da média nacional. | O Norte foi de 31,5% para 55%; o Sul, de 53,5% para 74,5%. | 6:148
+
+# ------------------------------------------------------------------ Cap. 8
+=== c8-01
+cap: 8
+title: Epidemiologia e pesquisa
+V | A epidemiologia estuda a distribuição e os determinantes dos eventos de saúde em populações definidas e aplica esse conhecimento ao controle dos problemas de saúde. | É a definição do Dicionário de Epidemiologia (Last). | 8:173
+V | Descrever, explicar, predizer e controlar a ocorrência das doenças são objetivos da pesquisa epidemiológica. | O foco está tanto em compreender quanto em intervir. | 8:173
+V | Mensuração, estimação de parâmetros e testes de hipóteses são os três procedimentos do tratamento numérico na pesquisa epidemiológica. | A estimativa vem da amostra; o parâmetro é da população e em geral é desconhecido. | 8:173-174
+F | Testes estatísticos de hipóteses avaliam se uma associação é causal. | Eles avaliam quanto o acaso pode explicar o resultado. Causalidade exige julgar o conjunto das evidências. | 8:174; 8:179
+V | Um motivo para estudar populações é que, mesmo quando o interesse é o indivíduo, inferências sobre fatores e doença exigem grupos. | O objetivo final é melhorar a saúde das populações. | 8:173
+
+=== c8-02
+cap: 8
+title: Causalidade e fator de risco
+V | No modelo probabilístico, a epidemiologia consegue prever quantos irão adoecer numa população, mas não quem adoecerá. | Estimam-se parâmetros causais para populações, não determinísticos para indivíduos. | 8:174
+V | Para ser fator de risco, a doença deve variar com o fator, o fator deve preceder a doença e a associação não pode ser totalmente explicada por erro aleatório, confusão ou viés. | Exemplo do livro: o tabagismo precisa começar antes do enfisema. | 8:174
+V | Fatores prognósticos são os que influenciam o curso de uma doença já estabelecida. | Fatores de risco influenciam o surgimento. | 8:174
+F | A hipótese operacional é mais ampla e abstrata que a hipótese conceitual. | A hipótese conceitual é a ampla. A operacional a traduz em variáveis mensuráveis. | 8:174
+V | Na teoria de Barker, a hipótese "baixo peso ao nascer (< 2.500 g) aumenta a probabilidade de doença coronariana na vida adulta" é uma hipótese operacional. | A conceitual seria "a subnutrição intrauterina é fator de risco para doença cardiovascular". | 8:174
+
+=== c8-03
+cap: 8
+title: Modos de inferência causal
+V | A inferência indutiva parte de observações específicas para generalizações, como na conclusão de que a pelagra se devia à deficiência de nutrientes. | Hume mostrou que repetições não garantem causalidade: é o "problema de Hume". | 8:175
+V | Para Popper, a ciência avança pela refutação: hipóteses são conjecturas testadas por predições dedutivas, e uma hipótese não refutada permanece aceita. | Isso estimula testar múltiplas hipóteses. | 8:175
+V | Para Kuhn, aceitar ou refutar teorias depende do consenso da comunidade científica; quando se rejeita a infraestrutura em vez da teoria, ocorre uma revolução científica. | É a inferência por consenso. | 8:175
+V | A inferência bayesiana atribui uma probabilidade a priori às premissas e calcula uma probabilidade a posteriori para a conclusão. | Ela lida com conclusões que não são 100% certas. | 8:175
+F | Rothman e Greenland concluem que só os ensaios randomizados produzem prova definitiva de causalidade. | Eles afirmam que "provar é impossível": nem experimentos produzem prova, e a ciência não experimental pode ser muito sólida (ex.: cigarro). | 8:176
+
+=== c8-04
+cap: 8
+title: Populações do estudo
+V | População do estudo (amostra) é o grupo de indivíduos efetivamente observado. | Ex.: 100 crianças nascidas em 2000 no município X. | 8:176
+V | População-fonte (universo amostral) é o conjunto dos elegíveis, representado pela amostra. | Ex.: todas as crianças nascidas em 2000 no município X. | 8:176
+V | População-alvo é aquela para a qual se deseja fazer as inferências. | Se a amostra não a representa, há erro sistemático (viés). | 8:176
+F | A base populacional é o conjunto dos casos já diagnosticados que participam do estudo. | Base populacional é o conjunto de indivíduos de onde surgem os casos. | 8:176
+V | Se nascimentos registrados em cartório forem usados como fonte e houver sub-registro, a população do estudo pode não representar a população-alvo. | É um exemplo de viés de seleção. | 8:176
+
+=== c8-05
+cap: 8
+title: Experimental, quase-experimental e observacional
+V | Nos estudos experimentais o investigador controla a exposição e aloca os indivíduos aleatoriamente. | Por isso, por razões éticas, eles se restringem em geral a fatores protetores. | 8:176
+V | Ensaios clínicos terapêuticos avaliam tratamentos em doentes; ensaios profiláticos avaliam intervenções em não-doentes, como a aspirina para prevenir infarto. | Intervenções comunitárias estendem o ensaio profilático a uma comunidade (ex.: tratamento da água). | 8:176-177
+V | No estudo quase-experimental o investigador controla o fator, mas a alocação não é aleatória, como na comparação de cárie entre uma cidade com fluoretação e outra sem. | Em geral são direcionados a populações. | 8:177
+F | Os estudos observacionais apresentam mais problemas éticos que os experimentais, pois o investigador decide quem fica exposto. | No observacional o investigador não controla a exposição, que acontece independentemente dele. Por isso ele não tem esse problema ético para estudar fatores de risco. | 8:177
+V | Estudos preliminares, mais baratos e menos rigorosos, podem selecionar hipóteses que depois serão testadas com desenhos de maior validade. | A escolha do desenho depende da doença, da exposição, do conhecimento prévio e dos recursos. | 8:179
+
+=== c8-06
+cap: 8
+title: Dimensões dos estudos observacionais
+V | Os estudos observacionais podem ser classificados por estratégia de observação (seccional ou longitudinal), esquema de seleção (completo ou incompleto) e unidade de análise (individual ou agregada). | São as três dimensões da taxonomia do capítulo. | 8:177
+V | Na observação seccional, em geral não se pode estabelecer a relação temporal entre as características, exceto para variáveis constitucionais como sexo e grupo sanguíneo. | É como uma fotografia, em que o momento fica congelado. | 8:177
+V | No esquema de seleção completo, todos os indivíduos da base populacional são observados; no incompleto, apenas uma fração dos não-casos. | A coorte usa esquema completo; o caso-controle, incompleto. | 8:177-178
+F | Nos estudos ecológicos, sabe-se para cada indivíduo se ele é exposto e se é doente. | No nível agregado só se conhecem proporções por grupo (cidade, área), não a distribuição conjunta individual. | 8:177-178
+V | Os termos prospectivo (concorrente) e retrospectivo (histórico, não concorrente) referem-se ao momento da medição da exposição e do desfecho em relação à sua ocorrência. | A qualidade dos dados tende a ser melhor na medição concorrente. | 8:178-179
+
+=== c8-07
+cap: 8
+title: Coorte, caso-controle, seccional e ecológico
+V | Na coorte, indivíduos sem a doença são classificados pela exposição e acompanhados para comparar a ocorrência da doença. | É longitudinal, com esquema completo e dados individuais. | 8:178
+V | No caso-controle, parte-se dos casos e de uma amostra de não-casos da mesma base populacional (controles) e compara-se a exposição. | É longitudinal, porque exposição e doença se referem a momentos diferentes. | 8:178
+V | O estudo seccional é mais adequado para estimar prevalências e médias ou levantar hipóteses do que para testar causalidade. | Exposição e desfecho são medidos no mesmo momento. | 8:178
+V | O estudo ecológico pode ser visto como um estudo seccional com informação no nível agregado. | Exemplo: comparar proporções de fumantes e taxas de doença coronariana entre cidades. | 8:178
+F | Coorte e caso-controle sobre tabagismo e infarto em funcionários de uma universidade teriam bases populacionais diferentes. | A base é a mesma (os funcionários). A diferença é que a coorte observa toda a base e o caso-controle só uma amostra para os controles. | 8:178
+
+=== c8-08
+cap: 8
+type: choice
+title: Qual é o desenho? (exercícios)
+ctx: Classifique cada descrição (exemplos criados para treino, no estilo da prova).
+opts: Estudo experimental; Estudo de coorte; Estudo caso-controle; Estudo transversal; Estudo ecológico; Nenhum dos anteriores
+3 | Mulheres com diagnóstico recente de câncer de mama atendidas em um hospital e mulheres sem câncer da mesma área foram entrevistadas sobre o uso prévio de anticoncepcionais orais. Calcularam-se odds ratios. | Seleção por desfecho (casos e controles) e investigação da exposição passada: caso-controle. | 8:178
+5 | Foram correlacionadas, para os 92 municípios de um estado, a cobertura da Estratégia Saúde da Família e a taxa de internação por condições sensíveis à atenção primária em 2019. | Unidades de análise agregadas (municípios): ecológico. | 8:177-178
+2 | Gestantes foram classificadas, no 1º trimestre, segundo o consumo de álcool e acompanhadas até o parto para comparar a incidência de baixo peso ao nascer entre os grupos. | Classificação pela exposição em pessoas sem o desfecho, seguida de acompanhamento: coorte (prospectiva). | 8:178
+4 | Um inquérito domiciliar com amostra probabilística de adultos de uma capital estimou a prevalência de hipertensão autorreferida e sua associação com escolaridade, num único momento. | Medição de exposição e desfecho no mesmo momento, em indivíduos: transversal. | 8:178
+1 | Idosos de 20 instituições de longa permanência foram sorteados para receber suplementação de vitamina D ou placebo, e comparou-se a ocorrência de quedas em 12 meses. | O investigador controla a intervenção e a alocação é aleatória: experimental (ensaio clínico). | 8:176-177
+6 | Pesquisadores reuniram os resultados de 35 ensaios clínicos publicados sobre um antidepressivo e calcularam uma medida de efeito combinada. | Revisão sistemática com metanálise: a unidade são estudos publicados, não é nenhum dos desenhos primários listados. | 8:179
+2 | Registros de admissão de trabalhadores de uma fábrica desde 1970 foram usados para classificar a exposição ao amianto; os registros de óbito até 2020 permitiram comparar a mortalidade por mesotelioma entre expostos e não expostos. | Coorte histórica (retrospectiva, não concorrente): exposição e desfecho já ocorreram e são obtidos de registros, mas a lógica vai da exposição ao desfecho. | 8:178-179
+5 | Comparou-se a evolução anual das taxas de mortalidade por câncer de pulmão com o consumo per capita de cigarros nos países da América do Sul entre 1980 e 2015. | Dados agregados por país, ao longo do tempo: ecológico (de séries temporais). | 8:178; 4:88
+
+# ------------------------------------------------------------------ Cap. 18
+=== c18-01
+cap: 18
+title: Elementos e variáveis
+V | Na matriz de dados, cada linha corresponde a um elemento (unidade observada) e cada coluna a uma variável. | A observação é o valor de uma variável para um elemento; o caso é o conjunto de observações de um elemento. | 18:324; 18:326
+V | Coletar o valor bruto (ex.: peso em gramas) dá mais flexibilidade para criar faixas depois; perguntas fechadas por faixa ajudam quando o valor exato não é conhecido. | Perguntas fechadas também reduzem o não preenchimento. | 18:323
+V | A análise exploratória (descritiva) é a primeira etapa da análise e busca padrões em grandes volumes de dados. | Tabelas são indicadas quando os valores importam; gráficos, para distribuições, tendências e relações. | 18:323
+F | Na análise univariada não é necessário verificar dados faltantes (missing values). | A análise de cada variável deve incluir a identificação das não respostas. | 18:325
+V | Depois da análise univariada, fazem-se análises bivariadas e, depois, estratificadas por uma terceira variável. | É a sequência sugerida no capítulo. | 18:325
+
+=== c18-02
+cap: 18
+title: Escalas de medida
+V | Variáveis nominais têm categorias sem ordem, e códigos numéricos não têm significado aritmético, como sexo, diagnóstico (CID) e bairro. | Com elas só se pode contar. | 18:324
+V | Variáveis ordinais têm categorias ordenadas, mas a distância entre elas não é mensurável, como grau de hipertensão, gravidade e escolaridade. | Um paciente com gravidade 4 não é "duas vezes" mais grave que um com gravidade 2. | 18:324
+V | Na escala intervalar o zero é arbitrário, como na temperatura em °C. | Por isso 20 °C não é "o dobro" de 10 °C. | 18:324
+V | Na escala de razão o zero indica ausência da característica, como em peso, idade e tempo, e faz sentido dizer que 70 kg é o dobro de 35 kg. | Variáveis quantitativas são medidas em escala intervalar ou de razão. | 18:325
+F | Número de leitos e número de casos são exemplos de variáveis quantitativas contínuas. | São discretas (contagens, valores inteiros). Pressão arterial e peso são contínuas. | 18:325
+
+=== c18-03
+cap: 18
+title: Tabelas e distribuição de frequências
+V | Uma tabela deve ser autoexplicativa, com título indicando conteúdo, local e época, e com a fonte logo abaixo. | Tabelas são fechadas em cima e embaixo por linhas horizontais, sem linhas verticais nas laterais. | 18:325; 18:327
+V | A frequência percentual acumulada de uma categoria é a soma do seu percentual com os das categorias anteriores, e a última chega a 100%. | Ela só faz sentido em variáveis com ordem (ordinais e quantitativas). | 18:327
+V | Na convenção "800 |— 1.000", o valor 800 está incluído na classe e o valor 1.000 não. | Assim cada observação cai em uma única classe. | 18:328
+F | Existe uma fórmula obrigatória para definir o número e a amplitude das classes de uma distribuição de frequências. | Há fórmulas sugeridas, mas não há regra fixa; as classes devem expressar faixas de interesse. | 18:328
+V | Diferenciam-se tabelas de quadros: os quadros têm bordas laterais e apresentação mais livre; as tabelas seguem normas mais rígidas. | É uma distinção de padronização. | 18:325
+
+=== c18-04
+cap: 18
+title: Medidas de tendência central
+V | Moda é o valor mais frequente. Um conjunto pode ser amodal, unimodal, bimodal ou multimodal. | Ex.: 1 2 3 6 6 9 10 10 é bimodal (6 e 10). | 18:329
+V | A média aritmética funciona como "centro de gravidade" (ponto de equilíbrio) dos dados. | D = {1, 1, 4, 8, 10} tem média 24/5 = 4,8. | 18:329
+V | A mediana divide os dados ordenados em duas metades. Com n ímpar é o valor na posição (n + 1)/2; com n par, a média dos dois valores centrais. | É preciso ordenar os dados antes. | 18:330
+V | A mediana é mais robusta que a média a valores extremos, e é preferível em distribuições fortemente assimétricas, como a renda. | Trocar 1,30 m por 1,80 m mudou a média de 1,26 para 1,31 m, mas não a mediana. | 18:330
+F | Em distribuições simétricas sem valores atípicos, deve-se preferir a mediana à média, porque ela usa todas as observações. | Nesse caso prefere-se a média: interpretação intuitiva e uso de todas as observações. A mediana não usa todos os valores. | 18:330
+
+=== c18-05
+cap: 18
+title: Quartis e percentis
+V | Os quartis Q1, Q2 e Q3 correspondem aos percentis 25, 50 e 75, e Q2 é a mediana. | Os quintis dividem os dados em cinco partes (percentis 20, 40, 60, 80). | 18:330
+V | Com muitos valores repetidos, a mediana pode não representar bem o conjunto. Por exemplo, a mediana de filhos é 1 mesmo que só 15% das famílias tenham menos de 1 filho. | Nesses casos a média ou a moda podem sintetizar melhor. | 18:330
+V | Nos pesos dos 48 recém-nascidos do exemplo do livro, Q1 = 700 g, mediana = 810 g e Q3 = 910 g. | Q1 é a média do 12º e 13º valores; a mediana, do 24º e 25º; Q3, do 36º e 37º. | 18:330-331
+F | A distância interquartílica é a diferença entre o valor máximo e o mínimo. | Essa é a amplitude total. A distância interquartílica é Q3 − Q1 e cobre os 50% centrais. | 18:331
+V | A amplitude total é fácil de calcular, mas muito sensível a valores atípicos, porque usa só os dois extremos. | Por isso muitos trabalhos apresentam (mínimo; máximo) junto da medida central. | 18:331
+
+=== c18-06
+cap: 18
+title: Variância, desvio-padrão e CV
+V | A soma dos desvios em relação à média é sempre zero; por isso usa-se o módulo (desvio médio absoluto) ou o quadrado (variância). | O desvio médio simples não serve como medida de dispersão. | 18:332
+V | O desvio-padrão é a raiz quadrada da variância e tem a mesma unidade dos dados. | A variância fica em unidade ao quadrado, o que dificulta a interpretação. | 18:333
+V | Para a variância de uma amostra divide-se por n − 1; para a da população, por n. A diferença pesa em amostras pequenas. | É a nota do capítulo sobre o denominador. | 18:332
+V | Numa distribuição aproximadamente normal, cerca de 68% das observações ficam entre média ± 1 DP e 95% entre média ± 2 DP. | Daí o uso comum de "média ± DP". | 18:333
+F | O coeficiente de variação tem a mesma unidade da variável e não serve para comparar variáveis diferentes. | O CV = DP/média é adimensional (em geral em %) e serve justamente para comparar dispersões de grupos ou variáveis com ordens de grandeza diferentes. | 18:333
+
+=== c18-07
+cap: 18
+type: choice
+title: Cálculo: notas dos alunos
+ctx: Quatro alunos tiveram estas notas no ano: A = 5, 5, 5, 5; B = 4, 4, 6, 6; C = 0, 5, 5, 10; D = 0, 0, 10, 10. Todos têm média 5.
+opts: Aluno A; Aluno B; Aluno C; Aluno D; Todos iguais
+1 | Qual aluno tem desvio-padrão zero? | Sem variação: todas as notas de A são iguais à média. | 18:331-333
+4 | Qual aluno tem a maior variância (25)? | D: desvios de ±5, quadrados 25, média 25 (DP = 5, CV = 100%). | 18:332-333
+5 | Em qual(is) aluno(s) a média é igual a 5? | Todos têm média 5, o que mostra que medidas de centro sozinhas não descrevem um conjunto. | 18:331
+
+=== c18-08
+cap: 18
+title: Gráficos
+V | O gráfico de setores (pizza) é indicado para mostrar a participação percentual de poucas categorias, nominais ou ordinais. | A soma das fatias é 100%. | 18:334
+V | Gráficos de barras e colunas servem para variáveis nominais, ordinais, discretas com poucos valores e séries temporais com poucas datas. | Exceto nesses casos com ordem natural, recomenda-se ordenar as colunas de forma decrescente. | 18:334
+V | O gráfico de linhas é adequado para séries temporais, mostrando tendência e periodicidade. | Ex.: casos de Aids por ano. | 18:334
+F | No histograma, os retângulos devem ser separados por espaços, como no gráfico de colunas. | No histograma os retângulos são contíguos, porque as classes são encadeadas. | 18:335
+V | O polígono de frequências é construído ligando os pontos médios das classes e é fechado com classes fictícias nas extremidades. | O histograma, por sua vez, é construído a partir dos limites das classes. | 18:336-337
+
+=== c18-09
+cap: 18
+title: Histograma: formatos e classes desiguais
+V | Se as classes têm amplitudes diferentes, a área (e não a altura) de cada retângulo deve ser proporcional à frequência. | Divide-se a frequência pela amplitude (densidade). Sem isso o gráfico distorce, como no exemplo da Aids por idade. | 18:335-336
+V | Um histograma multimodal sugere que os dados vêm de duas ou mais populações diferentes. | Há duas ou mais classes com frequência maior que as vizinhas. | 18:336
+V | Um histograma truncado, com queda abrupta de um lado, sugere censura dos dados. | Só entraram dados que satisfaziam algum requisito. | 18:336
+F | No histograma assimétrico à esquerda, os valores se concentram à esquerda, com cauda longa à direita. | No assimétrico à esquerda os valores se concentram à direita e a cauda fica à esquerda. O assimétrico à direita é o oposto. | 18:336
+V | Num histograma simétrico, os valores se concentram numa classe central e as frequências diminuem nos dois sentidos. | Nesse caso média e mediana são próximas. | 18:336
+
+=== c18-10
+cap: 18
+title: Box plot e análise bivariada
+V | O box plot mostra Q1, mediana e Q3 numa caixa, e as linhas (bigodes) costumam ir até 1,5 vez a distância interquartílica. | Pontos além disso são considerados outliers. | 18:337-338
+V | No exemplo do comprimento dos recém-nascidos (Q1 = 35, Md = 38, Q3 = 39 cm), o limite superior é 39 + 1,5 × 4 = 45 cm. | Valores acima de 45 cm aparecem como observações extremas. | 18:338
+V | Para duas variáveis categóricas usa-se a tabela de dupla entrada, e os subtotais das margens são os totais marginais. | Os percentuais por linha permitem comparar grupos (ex.: óbito neonatal com e sem pré-natal). | 18:338
+V | O gráfico de barras de erro mostra, para cada categoria, a média ± desvio-padrão de uma variável quantitativa. | O box plot também permite comparar distribuições entre categorias. | 18:340-341
+F | No diagrama de dispersão, uma nuvem de pontos ascendente indica relação inversa entre as variáveis. | Uma nuvem ascendente indica relação direta (as duas variáveis crescem juntas), como peso e comprimento ao nascer. | 18:341
+
+# ------------------------------------------------------------------ extras
+=== c3-15
+cap: 3
+title: Causas mal definidas e RIPSA
+V | A proporção de óbitos por causas mal definidas (capítulo XVIII da CID-10) é usada como indicador da qualidade das informações do SIM. | Valores de 4 a 6% são considerados aceitáveis. Em 2004 o Brasil tinha 12,4%, com Norte e Nordeste acima de 20%. | 3:49-50
+V | Os óbitos sem assistência médica (código R98) correspondiam a cerca de metade dos óbitos por causas mal definidas no Brasil em 2004. | Isso também reflete a cobertura e a qualidade da assistência. | 3:50
+F | Diagnósticos como "septicemia", "insuficiência cardíaca" ou "hepatopatia", por estarem fora do capítulo XVIII, são sempre causas básicas bem definidas. | São "causas residuais" ou diagnósticos incompletos (os "lixões" da CID). Pouco informam sobre a causa básica, embora fiquem fora do cap. XVIII. | 3:50
+V | Se a subenumeração de óbitos é homogênea entre as causas, as taxas por causa ficam subestimadas, mas a mortalidade proporcional não se altera. | Se é heterogênea (falta mais em umas causas que em outras), as duas medidas ficam distorcidas. | 3:49
+V | A RIPSA, criada em 1996, reúne instituições como o Ministério da Saúde, a OPAS, o IBGE e a ABRASCO e publica anualmente os Indicadores e Dados Básicos (IDB). | A matriz tem seis grupos: demográficos, socioeconômicos, mortalidade, morbidade e fatores de risco, recursos e cobertura. | 3:78-79
+
+=== c2-open
+cap: 2
+type: open
+pts: 2
+title: Incidência, prevalência e duração
+ctx: Explique a diferença entre incidência e prevalência, como cada uma é calculada e para que serve. Discuta a relação entre incidência, prevalência e duração da doença, e o que acontece com a prevalência de uma doença crônica quando surge um tratamento que prolonga a vida sem curar.
+key: Incidência: casos novos num período, entre os que estavam sob risco no início. Pode ser taxa (casos/pessoa-tempo, velocidade, dimensão tempo⁻¹) ou incidência acumulada (proporção, risco num intervalo).
+key: Prevalência: casos existentes (novos e antigos) num momento / população. É uma proporção estática, medida em estudos transversais.
+key: Usos: a incidência serve para estudar risco e etiologia (estudos longitudinais); a prevalência, para planejar serviços. A prevalência é pouco adequada para etiologia, porque mistura risco com sobrevida.
+key: Determinantes da prevalência: incidência, duração e migração. Em população estável, P/(1 − P) = TI × D, e P ≈ TI × D quando P é pequena.
+key: Um tratamento que prolonga a vida sem curar aumenta a duração e, portanto, a prevalência, mesmo sem mudar a incidência. Só a prevenção primária reduz a incidência.
+key: Exemplos: dengue (alta incidência, baixa prevalência) e hipertensão (o contrário). Malformação congênita é medida como prevalência ao nascer.
+ref: 2:14-17; 2:21-22; 2:25-30
+
+=== c3-open
+cap: 3
+type: open
+pts: 2
+title: Comparar mortalidade entre populações
+ctx: Um gestor quer comparar o nível de saúde de dois estados usando o coeficiente geral de mortalidade (CGM). Discuta os cuidados necessários: problemas do numerador e do denominador, o efeito da estrutura etária e as alternativas (padronização, indicadores específicos e outros indicadores do nível de saúde).
+key: CGM = óbitos / população do meio do período × 1.000. É simples e só precisa do total de óbitos.
+key: Numerador: sub-registro (subestima), evasão e invasão de óbitos (por isso usar a residência), causas mal definidas como sinal de qualidade.
+key: Denominador: estimativas intercensitárias imprecisas. População subestimada superestima o CGM. Valores abaixo de 6 por 1.000 sugerem sub-registro.
+key: O CGM é média ponderada das taxas por idade. Uma população mais jovem tem CGM menor sem ser necessariamente mais saudável (Brasil × Inglaterra).
+key: Alternativas: padronização direta (população-padrão) ou indireta (RMP = O/E); comparar taxas específicas por idade; usar e0 (que não depende da estrutura etária), TMI, Swaroop-Uemura, APVP, mortalidade proporcional.
+key: O coeficiente padronizado é hipotético e só serve para comparar.
+ref: 3:36-41; 3:57; 3:61-62
+
+=== c5-open
+cap: 5
+type: open
+pts: 2
+title: Investigação de um surto
+ctx: Uma escola municipal comunica dezenas de casos de diarreia e vômitos entre alunos, dois dias após uma festa. Descreva as etapas da investigação epidemiológica desse possível surto e como você testaria a hipótese sobre a fonte.
+key: Confirmar o diagnóstico (clínica, coleta de fezes e alimentos) e confirmar o surto (comparar com o esperado, a frequência habitual).
+key: Definir caso: primeiro uma definição sensível, para dimensionar o surto; depois uma específica, para a análise.
+key: Caracterizar por pessoa, lugar e tempo: curva epidêmica (fonte comum pontual; o pico corresponde à incubação média) para estimar a hora de exposição.
+key: Formular hipóteses (alimento, água), fazer busca ativa de casos e coletar dados adicionais (alimentos consumidos).
+key: Testar com taxas de ataque específicas por alimento (expostos × não expostos) ou com um estudo caso-controle.
+key: Medidas de controle oportunas, notificação (surto é de notificação imediata), relatório final e divulgação (retroalimentação).
+ref: 5:112-117; 4:93-94; 2:22
+
+=== c8-open
+cap: 8
+type: open
+pts: 2
+title: Coorte × caso-controle
+ctx: Você quer investigar se o uso de agrotóxicos está associado à doença de Parkinson. Compare como seriam um estudo de coorte e um estudo caso-controle para essa pergunta (seleção, medidas, vantagens e limitações) e diga qual escolheria.
+key: Coorte: pessoas sem Parkinson classificadas pela exposição a agrotóxicos e acompanhadas para medir a incidência. Esquema completo, nível individual, longitudinal.
+key: Caso-controle: casos de Parkinson e controles sem a doença, da mesma base populacional, comparados quanto à exposição passada (odds ratio). Esquema incompleto.
+key: A coorte estabelece melhor a sequência temporal e permite medir incidência, mas para doença rara e de latência longa é cara e demorada (perdas de seguimento).
+key: O caso-controle é eficiente para doenças raras e de latência longa, mas está sujeito a viés de memória e de seleção dos controles.
+key: Um estudo ecológico (áreas agrícolas × taxas) só geraria hipóteses; um ensaio experimental seria antiético para um fator de risco.
+key: Escolha justificada: em geral, caso-controle como primeiro passo, ou coorte histórica se houver registros de exposição.
+ref: 8:174; 8:176-179

@@ -1,4 +1,4 @@
-# Systems Design Bites (+ DETRAN-RJ)
+# Systems Design Bites (+ DETRAN-RJ, + Mestrado em Epidemiologia)
 
 A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/playlist?list=PLjTveVh7FakLdTmm42TMxbN8PvVn5g4KJ)** playlist by
 **[Jordan has no life](https://www.youtube.com/@jordanhasnolife5163)** into daily, bite-sized, visual lessons.
@@ -39,6 +39,31 @@ python3 scripts/build_detran.py    # merges near-duplicates, adds subjects → a
 
 The site serves one of a fixed set of numbered provas at random, with the answer key embedded. The scraper keeps sampling until 60 requests in a row bring nothing new. Subjects (Legislação, Sinalização, Direção defensiva, Primeiros socorros, Meio ambiente e cidadania, Mecânica básica) were assigned by reading each question (`data/detran/topics.json`); anything new falls back to a keyword guess.
 
+## Mestrado em Epidemiologia · UERJ (third app)
+
+Practice for the written exam of the **PPGSC/IMS/UERJ master's selection (Epidemiologia)**, in Portuguese.
+
+- **Past exams 2023, 2024 and 2025**, with all their figures and tables. UERJ never published an answer key, so the key here is **unofficial**. It was written from the textbook, and debatable statements are flagged "discutível".
+- **Textbook questions** written from Medronho et al., *Epidemiologia*, 2nd ed., chapters 1-6, 8 and 18, in the exam's true/false style. Some cover study-design identification and calculations, and there are open questions with model answers.
+- Together that makes 103 questions with 469 gradable statements.
+- **Every statement links to the book.** You see an explanation and a reference ("Cap. 2, p. 22"). The reference opens a short chapter summary written for this app, at the right section.
+- **Optional PDF links:** load your chapter PDFs on the "Livro" screen and every reference also gets a "PDF ↗" button that opens that page. The PDFs stay in the browser (IndexedDB); they are never uploaded or committed.
+- **Exam format and pacing:**
+  - 3 hours for 8 true/false questions (1 point each) plus 1 open question (2 points), so 18 min per point.
+  - Do a full simulado (random, or a past year), or bites of 1-5 questions with instant correction.
+  - The timer shows whether you're on the exam's pace.
+- **Open questions:** write a draft, compare it with the key points, and grade yourself 0-2.
+- **Erros** lists statements whose last answer was wrong. **Banco** searches every statement with its answer and explanation.
+- Progress syncs with the same account.
+
+Content lives in plain text under `data/mestrado/`:
+
+- `provas.txt`: past exams with the unofficial key.
+- `livro.txt`: book questions.
+- `resumos.txt`: chapter summaries.
+
+Rebuild with `python3 scripts/build_mestrado.py`. It checks that every reference points to a real page and summary section, then writes `app/mestrado/data.js`. Exam figures were extracted from the exam PDFs into `app/mestrado/img/`.
+
 ## Run it
 
 It's plain static HTML/CSS/JS with no build step:
@@ -78,6 +103,7 @@ The lessons in `app/data/*.js` are hand-written summaries of those transcripts.
 pip install yt-dlp
 python3 scripts/fetch_transcripts.py
 scripts/scrape_detran.py, scripts/build_detran.py
+scripts/build_mestrado.py
 ```
 
 YouTube rate-limits caption downloads from cloud IPs, so the script backs off and can be re-run;
@@ -94,9 +120,12 @@ app/sync.js                optional sync (username/password via SQL functions) +
 app/config.js              Supabase URL and public anon key (empty key = offline only)
 supabase/migrations/       SQL for accounts, sync functions and their permissions
 app/data/lessons-*.js      lesson content, one file per group of modules
+app/mestrado/              Mestrado app: mestrado.js (screens, V/F grading, timer, book links), data.js (generated), img/ (exam figures)
 app/detran/                DETRAN app: detran.js (screens, quiz, timer), questions.js (generated), img/ (sign images)
+data/mestrado/             past exams, book questions and chapter summaries (source of data.js)
 data/detran/               scraped provas, deduplicated questions, hand-assigned subjects
 data/playlist.json         playlist metadata (titles, ids, durations)
 scripts/fetch_transcripts.py
 scripts/scrape_detran.py, scripts/build_detran.py
+scripts/build_mestrado.py
 ```
