@@ -3,6 +3,7 @@
 Sources (plain text, easy to edit):
   provas.txt   past UERJ exams (2023-2025) with an unofficial answer key
   livro.txt    questions written from the textbook (Medronho et al., caps 1-6, 8, 18)
+  caderno.txt  the book's exercise workbook, converted to true/false with its own answer key
   resumos.txt  per-chapter summaries; every question reference links to a section
 
 Question format (one block per question):
@@ -44,6 +45,8 @@ PDFS = [
     {"key": "Cap8e18", "from": 173, "to": 179, "offset": 172},
     {"key": "Cap8e18", "from": 323, "to": 341, "offset": 315},
 ]
+# the exercise workbook (Caderno de Exercícios): printed page -> PDF page
+CADERNO = [{"from": 1, "to": 29, "offset": 0}, {"from": 33, "to": 37, "offset": 3}, {"from": 77, "to": 82, "offset": 42}]
 
 errors = []
 
@@ -102,14 +105,14 @@ def parse_questions(path, source):
         if cur is None:
             continue
         where = f"{path.name}:{n} ({cur['id']})"
-        m = re.match(r"^(cap|prova|num|type|title|ctx|img|table|opts|key|ans|pts|ref): ?(.*)$", line)
+        m = re.match(r"^(cap|prova|num|type|title|ctx|img|table|opts|key|ans|pts|ref|ex|cad): ?(.*)$", line)
         if m:
             k, v = m.group(1), m.group(2).strip()
             if k in ("cap", "prova", "num"):
                 cur[k] = int(v)
             elif k == "pts":
                 cur["pts"] = float(v)
-            elif k in ("type", "title", "ans"):
+            elif k in ("type", "title", "ans", "ex"):
                 cur[k] = v
             elif k == "ctx":
                 cur["ctx"].append(v)
@@ -124,6 +127,9 @@ def parse_questions(path, source):
                 cur["opts"] = [x.strip() for x in v.split(";")]
             elif k == "key":
                 cur["keys"].append(v)
+            elif k == "cad":
+                a, _, b = v.partition("-")
+                cur["cad"] = {"p": int(a), "p2": int(b or a)}
             elif k == "ref":
                 cur["refs"] = parse_refs(v, cur.get("cap", 0), where)
             continue
@@ -147,7 +153,8 @@ def parse_questions(path, source):
 
 def main():
     caps, sections = parse_resumos()
-    questions = parse_questions(SRC / "provas.txt", "prova") + parse_questions(SRC / "livro.txt", "livro")
+    questions = (parse_questions(SRC / "provas.txt", "prova") + parse_questions(SRC / "livro.txt", "livro")
+                 + parse_questions(SRC / "caderno.txt", "caderno"))
 
     def section_for(c, p):
         best = None
@@ -204,7 +211,7 @@ def main():
     for s in sections:
         s["n"] = counts.get(s["id"], 0)
 
-    data = {"caps": caps, "sections": sections, "questions": questions, "pdfs": PDFS}
+    data = {"caps": caps, "sections": sections, "questions": questions, "pdfs": PDFS, "caderno": CADERNO}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(
         "/* Mestrado em Epidemiologia (IMS/UERJ): question bank and chapter summaries.\n"
@@ -214,7 +221,8 @@ def main():
     by = {}
     for q in questions:
         by[q["cap"]] = by.get(q["cap"], 0) + len(q.get("items", []))
-    print(f"{len(questions)} questions ({sum(q['src'] == 'prova' for q in questions)} from past exams), "
+    print(f"{len(questions)} questions ({sum(q['src'] == 'prova' for q in questions)} from past exams, "
+          f"{sum(q['src'] == 'caderno' for q in questions)} from the workbook), "
           f"{items} gradable items, {sum(q['type'] == 'open' for q in questions)} open, {len(sections)} summary sections")
     print("items by chapter:", dict(sorted(by.items())))
     empty = [s["id"] for s in sections if not s["n"]]

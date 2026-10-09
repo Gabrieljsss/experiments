@@ -1,0 +1,347 @@
+# Questões baseadas no Caderno de Exercícios do livro (Medronho et al., Epidemiologia, 2ª ed., Atheneu).
+# Os enunciados foram resumidos e convertidos para o formato V/F da prova da UERJ. As respostas seguem
+# o gabarito do próprio caderno; as explicações estão escritas com as minhas palavras.
+# Os dados numéricos (fontes públicas como DATASUS e IBGE, ou dados fictícios do caderno) são reproduzidos
+# apenas o necessário para resolver a questão; as figuras do caderno não são reproduzidas.
+# "ex:" identifica o exercício; "cad:" indica a página do gabarito no caderno.
+
+# ------------------------------------------------------------------ Cap. 2
+=== x2-1
+cap: 2
+ex: Cap. 2, ex. 1
+cad: 4
+title: Soroprevalência de hepatite A (PAISQUA)
+ctx: Em 1996, um estudo-piloto do projeto PAISQUA (NESC/UFRJ) estimou, ao longo de três meses, a proporção de pessoas de 1 a 59 anos com anticorpos para o vírus da hepatite A (VHA) em três áreas com diferentes condições de saneamento (Duque de Caxias e Ilha do Governador). Uma amostra aleatória teve uma alíquota de sangue colhida uma única vez.
+table: Área; Com anticorpos anti-VHA; Tamanho da amostra
+table: RJ Colônia Z-10; 79; 386
+table: DC Setor 111; 92; 362
+table: DC Setor 112; 138; 349
+V | A medida de frequência adequada é a prevalência pontual (soroprevalência), pois cada pessoa foi examinada uma única vez. | Os três meses de coleta são curtos o bastante para a prevalência não mudar. Ninguém foi acompanhado, então não há como medir casos novos (incidência). | 2:26; 2:29
+V | A soroprevalência no Setor 112 de Duque de Caxias foi de cerca de 39,5%, quase o dobro da observada na Colônia Z-10. | 138/349 = 39,5%; Z-10: 79/386 = 20,5%; Setor 111: 92/362 = 25,4%. | 2:26
+F | Como a soroprevalência mede infecção passada ou atual, ela tende a diminuir com a idade. | É o contrário: a soropositividade dura a vida toda e se acumula. No Setor 112 foi de 12,9% (1-4 anos) a 95,5% (20 anos ou mais). | 2:28-29
+V | O salto da soroprevalência da faixa de 1-4 anos (12,9%) para a de 5-9 anos (44,4%) no Setor 112 sugere alta incidência de infecção pelo VHA nos primeiros anos de vida. | Como P ≈ I × D e a duração (soropositividade) é permanente, a subida rápida nas idades jovens indica muitas infecções precoces, ligadas ao saneamento precário. | 2:28
+F | Esse desenho permite calcular a taxa de incidência de hepatite A em cada área. | Sem seguimento não se conhecem os casos novos nem a pessoa-tempo. Só a prevalência pode ser estimada. | 2:15; 2:29
+
+=== x2-2
+cap: 2
+ex: Cap. 2, ex. 2
+cad: 4-5
+title: Tuberculose em um município
+ctx: Em 01/01/2006 havia 1.800 casos de tuberculose em tratamento num município da região metropolitana do Rio. Ao longo do ano, 300 casos novos foram notificados e 450 pacientes tiveram alta por cura. Todos foram tratados com o esquema I (6 meses). População estimada para 2006: 960.000 habitantes (suponha população estável).
+V | A prevalência no início de 2006 era de cerca de 19 casos por 10.000 habitantes. | 1.800/960.000 = 0,19%. | 2:26
+V | A prevalência no fim de 2006 era de cerca de 17 casos por 10.000 habitantes. | (1.800 + 300 − 450)/960.000 = 1.650/960.000 ≈ 0,17%. | 2:26
+V | A taxa de incidência de 2006 foi de cerca de 31 casos por 100.000 pessoas-ano. | 300/960.000 × 10⁵ = 31,25. A população estável do meio do ano aproxima as pessoas-ano. Excluir os 1.800 prevalentes do denominador quase não muda o valor (31,31). | 2:17; 2:20-21
+F | A prevalência caiu porque a duração da doença diminuiu ao longo de 2006. | O tratamento e a duração não mudaram. A prevalência caiu porque saíram mais pessoas (450 curas) do que entraram (300 casos novos). | 2:27-28
+F | A prevalência de período de 2006 seria (1.800 − 450)/960.000. | Prevalência de período = (casos no início + casos novos)/população = (1.800 + 300)/960.000. | 2:28-29
+
+=== x2-3
+cap: 2
+ex: Cap. 2, ex. 3
+cad: 5
+title: Surto de gastroenterite após um jantar
+ctx: Após um jantar comemorativo, 75 participantes foram entrevistados: 46 tiveram gastroenterite aguda (GEA) horas depois. Ingestão de alimentos (dados fictícios):
+table: Alimento; Comeram: GEA/total; Não comeram: GEA/total
+table: Presunto; 29/46; 17/29
+table: Sorvete de baunilha; 43/54; 3/21
+table: Bolo de chocolate; 26/48; 20/27
+V | A medida apropriada é a incidência acumulada (taxa de ataque), pois é uma coorte fixa, sem perdas e com período de incubação curto. | Todos os 75 estavam sob risco desde o jantar e foram acompanhados até adoecer ou não. | 2:21-22; 4:93
+V | A incidência acumulada entre todos os participantes foi de cerca de 61%. | 46/75 = 61,3%. | 2:21
+V | O sorvete de baunilha é a fonte mais provável: a incidência entre quem comeu foi cerca de 5,6 vezes a de quem não comeu. | 43/54 = 79,6% contra 3/21 = 14,3%; razão ≈ 5,6. Presunto: 63,0% contra 58,6% (≈ 1,1). | 2:22; 5:117
+F | O bolo de chocolate também é suspeito, pois 26 dos que o comeram adoeceram. | Quem não comeu o bolo adoeceu mais (74,1%) do que quem comeu (54,2%); razão ≈ 0,7. Olhar só o número absoluto engana. | 2:22; 5:117
+F | Num surto como este, por fonte comum pontual, a taxa de incidência por pessoa-tempo é a melhor medida. | Com seguimento curto e completo de todos, a incidência acumulada (taxa de ataque) é a medida natural. | 2:22
+
+=== x2-4
+cap: 2
+ex: Cap. 2, ex. 4
+cad: 5-6
+title: Coorte dinâmica de 20 pessoas (5 anos)
+ctx: Um estudo de 5 anos acompanhou 20 pessoas para estimar a incidência da doença X. Elas entraram em anos diferentes (sempre no 1º dia do ano), algumas saíram por perda de seguimento e outras adoeceram (perdas e adoecimentos no meio do ano). No total, as 20 pessoas somaram 53 pessoas-ano sob risco e houve 5 casos novos. Os casos existentes no meio de cada ano foram: ano 1, 0 de 7 acompanhados; ano 2, 0 de 11; ano 3, 2 de 14; ano 4, 1 de 13; ano 5, 2 de 13.
+V | A taxa de incidência foi de cerca de 9,4 casos por 100 pessoas-ano. | TI = 5/53 ≈ 0,094 caso por pessoa-ano. | 2:17-19
+V | A prevalência no 5º ano foi de cerca de 15%. | 2/13 ≈ 15,4%. Nos anos 1 e 2 foi zero, pois os casos só surgiram a partir do 3º ano. | 2:26
+V | Supondo que todos tivessem começado juntos (coorte fixa) e ignorando as perdas, a incidência acumulada em 5 anos seria 5/20 = 25%. | É uma aproximação: as perdas não foram levadas em conta (o método atuarial as consideraria como meio período). | 2:21-22
+F | A taxa de incidência é uma estimativa direta do risco de adoecer em 5 anos. | A TI mede a velocidade de surgimento de casos. Quem estima diretamente o risco é a incidência acumulada. Ainda assim, quanto maior a TI, maior o risco. | 2:21
+V | As prevalências anuais são medidas estáticas, que incluem casos novos e antigos existentes em cada momento. | Diferem da TI (velocidade) e da IA (risco no período). | 2:26
+
+=== x2-5
+cap: 2
+ex: Cap. 2, ex. 5
+cad: 6
+title: Acidentes de trabalho em duas fábricas
+ctx: Num ano, a fábrica A teve 40 acidentes de trabalho e a B teve 60. Cada uma tinha 1.000 empregados. Na B, todos trabalharam 12 meses. Na A, 100 trabalharam 12 meses, 200 trabalharam 9 meses, 500 trabalharam 6 meses e 200 trabalharam 3 meses (dados fictícios).
+V | A medida mais adequada é a taxa de incidência, porque o tempo de exposição dos trabalhadores da fábrica A foi variável. | É preciso considerar a pessoa-tempo, não só o número de empregados. | 2:17
+V | A fábrica A acumulou 550 pessoas-ano de exposição. | 100 × 1 + 200 × 0,75 + 500 × 0,5 + 200 × 0,25 = 100 + 150 + 250 + 50 = 550. | 2:17-18
+V | A taxa de incidência na fábrica A (cerca de 72,7 por 1.000 pessoas-ano) é maior que na B (60 por 1.000 pessoas-ano). | 40/550 × 1.000 ≈ 72,7 e 60/1.000 × 1.000 = 60. O risco é maior em A, apesar de ela ter menos acidentes. | 2:17
+F | Como teve mais acidentes, a fábrica B oferece maior risco a seus trabalhadores. | Números absolutos não comparam risco: falta o denominador (tempo de exposição). | 2:16
+F | A incidência acumulada (40/1.000 e 60/1.000) seria a medida correta aqui, porque o número de empregados é igual nas duas fábricas. | Com tempos de exposição diferentes, a IA não compara bem. Por isso se usa a pessoa-tempo. | 2:17; 2:21
+
+=== x2-6
+cap: 2
+ex: Cap. 2, ex. 6 e 7
+cad: 6
+title: Cólera no Zaire e no Brasil; letalidade do sarampo
+ctx: Em 1995 noticiou-se: "Cólera: o Brasil é o segundo no mundo". O Zaire teve cerca de 58 mil casos (4.181 óbitos) e o Brasil cerca de 50 mil casos (544 óbitos).
+F | Com esses dados podemos afirmar que a taxa de incidência de cólera no Zaire foi maior que no Brasil. | Faltam as populações. É preciso calcular casos/população × 100.000 em cada país para comparar. | 2:16; 2:17
+V | A gravidade da cólera, medida pela letalidade, foi maior no Zaire. | Zaire: 4.181/58.000 ≈ 7,2%; Brasil: 544/50.000 ≈ 1,1%. | 2:25
+V | Se a letalidade do sarampo numa comunidade foi de 10% em 1994 e houve 50 óbitos, ocorreram 500 casos. | Letalidade = óbitos/casos; logo, casos = 50/0,10 = 500. | 2:25
+F | A letalidade da cólera no Brasil (cerca de 1%) indica que o risco de adoecer de cólera era baixo no país. | Letalidade mede a gravidade entre os doentes, não o risco de adoecer (incidência). | 2:25
+F | Letalidade e mortalidade são sinônimos. | O denominador da mortalidade é a população toda; o da letalidade, apenas os doentes. | 2:24-25
+
+=== x2-7
+cap: 2
+ex: Cap. 2, ex. 8 e 9
+cad: 6-7
+title: Antirretrovirais, incidência e prevalência
+ctx: Considere uma coorte fixa de pessoas infectadas pelo HIV no mesmo ano. Sem tratamento, elas passam por: infecção (T0) → Aids (T1) → óbito (T2). Avalie o efeito, a curto prazo, de medicamentos que alterem esses intervalos (P = I × D).
+V | Se a droga aumentar o período de incubação (T0 a T1) sem mudar a sobrevida com Aids, aumenta o número de infectados assintomáticos e diminuem os casos novos de Aids. | Menos pessoas progridem para Aids no período; com menos casos novos, a curto prazo também caem os casos prevalentes e os óbitos por Aids. | 2:27-28
+V | Se a droga aumentar a sobrevida com Aids (T1 a T2) sem mudar a incubação, a incidência de Aids não muda, mas a prevalência de Aids aumenta. | A duração aumenta e os óbitos diminuem. Os infectados assintomáticos não mudam. | 2:27-28
+V | Se a droga aumentar a incubação e a sobrevida, o efeito sobre a prevalência de Aids é indeterminado. | Há menos casos novos (pressiona a prevalência para baixo) e maior duração (pressiona para cima). O resultado depende do balanço entre os dois. | 2:27-28
+V | Um tratamento que evita a morte mas não cura não altera a incidência, mas aumenta a prevalência. | Aumenta a duração, e P ≈ I × D. | 2:27-28
+V | Se a doença for transmissível e o tratamento não reduzir a infectividade, o aumento da duração pode também aumentar a incidência. | Doentes vivendo mais tempo e ainda infectantes geram mais casos novos. | 2:27-28
+
+# ------------------------------------------------------------------ Cap. 3
+=== x3-1
+cap: 3
+ex: Cap. 3, ex. 1
+cad: 12-13
+title: Brasil × EUA (1994): CGM e padronização
+ctx: População e óbitos por faixa etária, Brasil e EUA, 1994 (SIM/DATASUS, CDC). Coeficientes de mortalidade (CM) por 1.000 habitantes.
+table: Faixa etária; Brasil %pop; Brasil CM; EUA %pop; EUA CM
+table: 0 a 4; 11,3; 6,0; 7,6; 2,0
+table: 5 a 19; 33,7; 0,6; 21,2; 0,4
+table: 20 a 44; 37,2; 2,6; 38,9; 1,8
+table: 45 a 64; 13,0; 10,3; 19,5; 7,4
+table: 65 e mais; 4,8; 52,7; 12,7; 50,1
+table: Total (CGM); 100; 5,7; 100; 8,8
+V | O CGM bruto dos EUA (8,8 por 1.000) foi maior que o do Brasil (5,7 por 1.000), mesmo considerando um sub-registro de 10-20% no Brasil. | 878.430/153.219.855 × 1.000 = 5,7; 2.278.580/260.340.990 × 1.000 = 8,8. | 3:36-37
+V | Todos os coeficientes específicos por idade do Brasil foram maiores que os dos EUA. | Isso indica condições de saúde piores no Brasil, ao contrário do que os CGM brutos sugerem. | 3:38-39
+V | A população brasileira era mais jovem: menores de 19 anos eram 45% (EUA: 28,8%) e idosos de 65+ eram 4,8% (EUA: 12,7%). | A estrutura etária confunde a comparação dos CGM brutos. | 3:38
+V | Padronizando pelo método direto, com a população brasileira de 1994 como padrão, o CGM dos EUA cai para cerca de 4,4 por 1.000, abaixo do CGM do Brasil (5,7). | Aplicando as taxas dos EUA à população brasileira, os óbitos esperados somam 674.626, e 674.626/153.219.855 × 1.000 ≈ 4,4. | 3:38-40
+F | Na padronização direta usando o Brasil como padrão, também é preciso padronizar o CGM do Brasil. | O Brasil é a própria população-padrão: seu CGM bruto já é o padronizado. | 3:40
+F | Em ambos os países a menor taxa específica está na faixa de 0 a 4 anos. | Os menores coeficientes estão na faixa de 5 a 19 anos. A de 0 a 4 é mais alta por causa da mortalidade no 1º ano. | 3:39
+
+=== x3-2
+cap: 3
+ex: Cap. 3, ex. 2
+cad: 13-14
+title: Nelson de Moraes e Swaroop-Uemura no estado do RJ
+ctx: As curvas de mortalidade proporcional (Nelson de Moraes) do estado do Rio de Janeiro nos triênios 1979-81, 1990-92 e 1999-2001 têm formato próximo de um "J": a proporção de óbitos em menores de 1 ano caiu, de cerca de 17% para cerca de 5%, e a de 50 anos ou mais subiu.
+V | Ao longo dos três triênios, as curvas se aproximaram do tipo de nível de saúde mais elevado (formato em J). | Em 1979-81 a curva sugeria transição entre o nível "regular" (U) e o "elevado" (J); em 1999-2001 estava mais próxima de J. | 3:59-60
+V | A queda da mortalidade proporcional em menores de 1 ano e de 1 a 4 anos, com aumento na faixa de 50+, indica melhora das condições de saúde. | Os óbitos passam a ocorrer em idades mais avançadas, em parte pela queda da mortalidade infantil. | 3:59-60
+V | Os valores aproximados do indicador de Swaroop-Uemura no ERJ foram 55%, 64% e 70% nos três triênios, o que é compatível com aumento da esperança de vida. | O indicador é a proporção de óbitos de pessoas com 50 anos ou mais. | 3:57-58
+F | O indicador de Swaroop-Uemura exige estimativas populacionais por faixa etária. | Ele só usa óbitos (proporção com 50+). Por isso é fácil de calcular e de comparar. | 3:57; 3:59
+F | Uma curva de Nelson de Moraes em "J invertido" (predomínio de óbitos infantis e pré-escolares) indica bom nível de saúde. | Indica nível de saúde baixo. O "J" (óbitos concentrados em idades avançadas) é o melhor nível. | 3:60
+
+=== x3-3
+cap: 3
+ex: Cap. 3, ex. 3 e 4
+cad: 14
+title: Mortalidade infantil e materna (Rio de Janeiro e Niterói)
+ctx: (1) No município do Rio de Janeiro, de 1980 a 1994, a mortalidade infantil (MI) caiu de cerca de 45 para cerca de 30 por 1.000 NV, com ligeira alta no início dos anos 1990. Já a mortalidade infantil por causas redutíveis pela melhor assistência à gravidez e ao parto (MIR) ficou praticamente constante, em torno de 8 por 1.000. (2) Em Niterói, de 1981 a 1993, a MI caiu de 43,4 para 25,9 por 1.000 NV. A razão de mortalidade materna oscilou muito (de 1,0 a 8,0 por 10.000 NV, sem nenhum óbito materno registrado em 1987). Após investigação hospitalar e domiciliar de óbitos de mulheres em idade reprodutiva, as razões de 1992 e 1993 passaram de 5,3 para 9,3 e de 9,8 para 15,5 por 10.000 NV.
+V | No Rio, a queda da MI não pode ser creditada principalmente às causas evitáveis pela assistência à gravidez e ao parto. | A MIR ficou quase constante. A queda veio sobretudo das causas pós-neonatais: diarreia, desnutrição e imunopreveníveis. | 3:51-52; 3:55
+V | A queda da mortalidade infantil em Niterói foi provavelmente maior no componente pós-neonatal. | Políticas sociais, saneamento, atenção primária e queda da fecundidade reduzem rápido as causas evitáveis ligadas ao ambiente. | 3:52
+V | A grande oscilação das razões de mortalidade materna em Niterói indica pouca fidedignidade da informação. | A investigação aumentou as razões porque recuperou óbitos maternos não declarados. | 3:47-48
+V | O sub-registro de óbitos maternos pode decorrer do desconhecimento do declarante sobre a causa básica e do receio de implicações para o estabelecimento (descredenciamento, imagem, processos). | São causas apontadas no gabarito do caderno. | 3:47-48
+F | O aumento da razão de mortalidade materna após a investigação prova que as mortes maternas aumentaram em 1992-1993. | Ele reflete sobretudo a melhora do registro (óbitos recuperados), não necessariamente mais mortes. | 3:47-48
+
+# ------------------------------------------------------------------ Cap. 4
+=== x4-1
+cap: 4
+ex: Cap. 4, ex. 1 e 2
+cad: 18
+title: Poliomielite na China e Aids nos EUA
+ctx: (1) Um mapa da OMS de 2004 mostrava os países com poliovírus selvagem nativo, os com transmissão restabelecida, os com casos importados e os livres do vírus. (2) Entre pessoas de 25 a 44 anos nos EUA, a taxa de mortalidade por infecção pelo HIV subiu de quase zero em 1982 para cerca de 38 por 100 mil em 1994, ultrapassando acidentes, câncer e doenças cardíacas.
+V | Segundo o gabarito do caderno, sem dados de incidência de anos anteriores não é possível afirmar que um único caso de pólio selvagem na China em 2004 configure epidemia. | É preciso saber o esperado (a incidência habitual) para julgar um excesso. (Na prática, em área livre há muitos anos, um caso autóctone já seria tratado como epidemia.) | 4:92; 4:95
+V | Para julgar se a incidência de 2004 foi epidêmica, pode-se construir um diagrama de controle com os 10 anos anteriores, descartando os anos epidêmicos. | Pela distribuição normal (média ± 1,96 DP) ou pelos quartis (acima do 3º quartil = epidêmico). | 4:95-97
+V | O aumento da mortalidade por HIV em adultos jovens nos EUA de 1982 a 1994 se explica pela alta incidência da infecção e pela alta letalidade na época. | Mortalidade = incidência × letalidade, antes da terapia antirretroviral eficaz. | 2:25; 6:135
+F | No diagrama de controle por quartis, valores entre o 1º e o 3º quartil indicam situação epidêmica. | A faixa entre Q1 e Q3 é o esperado. Só valores acima do 3º quartil são considerados epidêmicos. | 4:96
+
+=== x4-2
+cap: 4
+ex: Cap. 4, ex. 3
+cad: 18-19
+title: Diagrama de controle da dengue no Rio (1997-1998)
+ctx: Incidência mensal de dengue no município do Rio de Janeiro (por 100 mil hab.). Os anos não epidêmicos 1988, 1989, 1993 e 1994 foram usados como base. Novembro nesses anos: 0,04; 0,08; 0,16; 0,24. Dezembro: 0,12; 0,08; 0,20; 0,69. Médias (DP) de janeiro e fevereiro: 0,51 (0,33) e 0,24 (0,23). Em 1998 as incidências de janeiro a abril foram 2,12; 2,41; 44,74 e 128,88; no fim de 1997 (outubro a dezembro) ficaram acima do limite máximo.
+V | A média de novembro nos anos não epidêmicos é cerca de 0,13 por 100 mil, com desvio-padrão de cerca de 0,09. | (0,04 + 0,08 + 0,16 + 0,24)/4 = 0,13. | 4:95; 18:329-333
+V | O limite máximo esperado para janeiro é cerca de 1,16 por 100 mil (média + 1,96 DP), e a incidência de janeiro de 1998 (2,12) o ultrapassou. | 0,51 + 1,96 × 0,33 ≈ 1,16. | 4:95-96
+V | Como a incidência ficou acima do limite máximo por vários meses seguidos (janeiro de 1998 foi o 4º), a epidemia de 1998 começou, na verdade, no último trimestre de 1997. | O diagrama de controle detecta a elevação antes do pico (março e abril de 1998). | 4:95-97
+F | Para construir o diagrama de controle, deveriam ser usados todos os anos de 1986 a 1996, inclusive os epidêmicos (1986, 1987, 1991). | Anos epidêmicos devem ser excluídos. Senão os limites sobem e o diagrama deixa de detectar epidemias. | 4:95
+V | Epidemia é uma elevação inesperada e acima do limiar esperado dos coeficientes de incidência, delimitada no tempo e no espaço e provocada por mudanças na estrutura epidemiológica (agente, hospedeiro, ambiente). | É a definição dada no gabarito do caderno. | 4:92
+
+=== x4-3
+cap: 4
+ex: Cap. 4, ex. 4 e 5
+cad: 19
+title: Migrantes japoneses e diarreia infantil
+ctx: (1) Razões de mortalidade padronizadas (japoneses não-migrantes = 100), 1959-62: câncer de estômago em homens: migrantes nascidos fora dos EUA 72, nascidos nos EUA 38, norte-americanos brancos 17; câncer de cólon em homens: 374, 288, 489; câncer de mama: 166, 136, 591. (2) No município do Rio, a diarreia infantil tem dois picos por ano (verão chuvoso e meses secos); em 15 anos a mortalidade caiu, mantendo o perfil mensal.
+V | Para os cânceres de estômago e de cólon, os migrantes japoneses ficaram em posição intermediária entre os japoneses não-migrantes e os norte-americanos brancos. | Isso aponta para fatores ambientais (incluindo hábitos alimentares e culturais) com longos períodos de indução. | 4:87
+V | No câncer de mama, as migrantes ficaram mais próximas das japonesas não-migrantes, o que sugere maior peso de fatores genéticos. | O caderno ressalva que se trata de uma só geração: pode não ter havido tempo para mudar os hábitos ligados ao câncer de mama. | 4:87
+F | Como as taxas dos migrantes não se igualaram às dos norte-americanos brancos, os estudos de migrantes descartam qualquer papel do ambiente. | O deslocamento das taxas na direção do novo país indica efeito ambiental. Não chegar ao mesmo nível só mostra que a genética não está descartada. | 4:87
+V | Os dois picos anuais de diarreia infantil (verão e meses secos) correspondem a uma variação sazonal. | São oscilações periódicas dentro de um ano. | 4:90-91
+V | A queda da mortalidade por diarreia em 15 anos foi identificada pela análise da série histórica (tendência). | É a observação de longo prazo, em geral mais de 10 anos. | 4:88
+
+# ------------------------------------------------------------------ Cap. 5
+=== x5-1
+cap: 5
+ex: Cap. 5 (surto de E. coli O157:H7)
+cad: 23
+title: Surto de E. coli O157:H7: definição de caso e divulgação
+ctx: Em janeiro de 1993, um gastroenterologista pediátrico avisou o Departamento de Saúde de Washington (EUA) sobre mais casos de diarreia sanguinolenta e 3 crianças com síndrome hemolítico-urêmica (SHU) em Seattle. Suspeitou-se de E. coli O157:H7 (incubação de 3 a 8 dias; carne mal cozida, leite não pasteurizado). Definição de caso: diarreia com cultura de fezes positiva para O157:H7, ou SHU após diarreia, de 1/12/1992 a 28/2/1993, em residentes do estado. Em 15/1 começou a busca ativa e em 18/1 o surto foi divulgado ao público. (Bell et al., JAMA 1994)
+V | Exigir cultura de fezes positiva aumenta a especificidade da definição de caso e reduz erros de classificação. | Isso facilita identificar a fonte, porque exclui diarreias não relacionadas ao surto. | 5:117
+V | A exigência de cultura reduz a sensibilidade: exclui quem não procurou atendimento ou não fez exame, e os casos incluídos podem ser diferentes do conjunto dos casos do surto. | É o preço da especificidade. | 5:114; 5:117
+V | Um período longo (três meses) na definição de caso pode incluir casos secundários (pessoa a pessoa) e dificultar a identificação da fonte inicial. | Restringir a residentes do estado também pode excluir visitantes infectados e surtos em outros estados. | 5:117
+V | A ampla divulgação aumenta a sensibilidade do sistema, mas pode gerar alarme, aumentar sem necessidade a procura por atendimento e levar à notificação indevida de casos. | São as vantagens e desvantagens apontadas no gabarito. | 5:113-114
+F | No início de uma investigação de surto, deve-se usar sempre a definição de caso mais específica possível. | Em geral começa-se com uma definição mais sensível, para dimensionar o surto, e ganha-se especificidade à medida que a investigação avança. | 5:117
+
+=== x5-2
+cap: 5
+ex: Cap. 5 (surto de E. coli O157:H7)
+cad: 23-24
+title: Surto de E. coli O157:H7: estudo caso-controle
+ctx: De 37 pacientes entrevistados, 27 (73%) tinham comido hambúrgueres em lojas da rede A nos 10 dias anteriores. Fez-se então um caso-controle com os 16 primeiros pacientes e 16 controles saudáveis indicados pelos próprios pacientes (amigos ou parentes sem diarreia).
+table: Exposição; Casos (%); Controles (%); p
+table: Rede A; 12/16 (75); 0/16 (0); < 0,05
+table: Rede B; 3/15 (20); 3/15 (20); NS
+table: Carne de porco; 1/9 (11); 7/9 (79); < 0,05
+table: Frango; 11/14 (79); 11/14 (79); NS
+F | Saber que 73% dos pacientes comeram na rede A já basta para incriminá-la como fonte. | Essa frequência pode ser parecida com a da população em geral que não adoeceu. É preciso um grupo de comparação, como num estudo caso-controle. | 5:117; 8:178
+V | Usar amigos ou parentes como controles facilita o recrutamento, mas pode causar "superpareamento", em que casos e controles têm hábitos tão parecidos que a diferença de exposição some. | Também aumenta o risco de quebra de confidencialidade. | 8:178; 5:117
+V | Controles escolhidos entre outros pacientes do mesmo médico evitam o superpareamento, mas perdem representatividade, porque pessoas doentes podem ter hábitos diferentes dos da população. | Outra opção são os vizinhos, mais comparáveis, porém com custo e logística maiores. | 8:176; 8:178
+V | Possíveis explicações para 4 dos 16 casos não referirem a rede A: esquecimento, consumo em casa ou no trabalho de comida comprada lá, ou serem casos secundários. | O viés de memória é uma limitação típica do caso-controle. | 8:178
+V | Visitar as lanchonetes para verificar o preparo (os hambúrgueres ficavam abaixo dos 68,3 °C recomendados) e comparar as cepas por técnicas moleculares (PFGE) ajudaram a confirmar a fonte. | Isso mostra a combinação de epidemiologia, ambiente e laboratório na investigação. | 5:112-113; 5:117
+
+# ------------------------------------------------------------------ Cap. 6
+=== x6-1
+cap: 6
+ex: Cap. 6, ex. 1 a 3
+cad: 28
+title: Pirâmides, renda e índice de envelhecimento
+ctx: (1) Pirâmides do Brasil em 1970 (base larga) e 2000 (base estreitada: as faixas de 0-4 e 5-9 anos menores que as de 10-19). (2) Em 2000, a pirâmide da população com rendimento domiciliar per capita de até 0,5 salário mínimo tinha base larga; a de 1 SM ou mais tinha forma de "barril". (3) O índice de envelhecimento (pessoas com 65+ / pessoas de 0-14 × 100) em 2000 foi 47,75 em Niterói e 13,86 em Teresina.
+V | A pirâmide de 2000 reflete a queda da mortalidade somada a uma queda importante e relativamente recente da fecundidade, que estreitou a base. | Há menos menores de 15 anos e mais adultos e idosos, numa "forma de barril". | 6:129-132
+V | A dinâmica populacional resulta de duas variáveis biológicas (mortalidade e fecundidade) e de uma não biológica (migração). | Entre 1870 e 1930 a migração internacional pesou no Brasil; depois de 1930, a queda da mortalidade passou a ditar o crescimento. | 6:126-130
+V | A população mais pobre (até 0,5 SM per capita) ainda não mostrava envelhecimento: sua pirâmide de base larga é a de uma população em crescimento. | Já a pirâmide de quem tem 1 SM ou mais, em barril, é a de uma população estabilizada, parecida com a do Brasil de 2000. | 6:146; 6:132
+V | O índice de envelhecimento bem maior de Niterói indica uma transição demográfica em estágio mais avançado que a de Teresina. | Ele é a razão entre os grupos etários extremos (idosos e jovens). | 6:131
+F | O envelhecimento observado em 2000 se deve principalmente ao aumento da natalidade a partir dos anos 1970. | A natalidade caiu a partir dos anos 1970. O envelhecimento se deve sobretudo à queda da fecundidade. | 6:129-131
+
+=== x6-2
+cap: 6
+ex: Cap. 6, ex. 4 a 6
+cad: 28-29
+title: Esperança de vida em Niterói, Curitiba e Maceió
+ctx: Esperança de vida ao nascer (EVN), em anos, por sexo (Censos de 1970, 1980 e 1991).
+table: Cidade; 1970 H; 1970 M; 1980 H; 1980 M; 1991 H; 1991 M
+table: Niterói; 58,29; 67,11; 60,63; 70,38; 61,57; 73,09
+table: Curitiba; 52,79; 62,52; 61,90; 70,70; 63,83; 72,61
+table: Maceió; 47,55; 53,32; 57,10; 64,19; 61,92; 68,40
+V | O aumento da EVN se deve fundamentalmente à redução da mortalidade infantil. | Das variáveis da dinâmica populacional, só a mortalidade interfere diretamente na EVN; fecundidade e migração não. | 3:62-63; 6:131
+V | A EVN é uma medida-resumo, calculada pela tábua de vida, que sintetiza o efeito da mortalidade em todas as idades. | Ela aplica as taxas por idade a uma coorte fictícia. | 3:61
+V | A EVN maior das mulheres reflete a sobremortalidade masculina: maior mortalidade infantil masculina e mortes violentas entre homens jovens. | É um padrão semelhante ao de países desenvolvidos. | 3:62; 6:132
+V | Curitiba teve o maior ganho e passou Niterói na EVN masculina, embora Niterói tivesse a maior EVN em 1970. | Maceió em 1991 tinha valores pouco acima dos de Niterói em 1970: um sinal da desigualdade regional. | 6:148
+F | A EVN deve ser padronizada por idade antes de comparar as cidades. | A EVN não depende da estrutura etária e pode ser comparada diretamente. | 3:62
+
+=== x6-3
+cap: 6
+ex: Cap. 6, ex. 7 a 9
+cad: 29
+title: Mortalidade proporcional em Niterói (2005)
+ctx: Óbitos de residentes em Niterói em 2005 (total 3.874), por capítulo da CID-10: circulatório (IX) 1.045; neoplasias (II) 706; respiratório (X) 454; causas externas (XX) 446; infecciosas e parasitárias (I) 225; sintomas e sinais mal definidos (XVIII) 296; demais capítulos somando o restante.
+V | Para calcular a mortalidade proporcional por causas definidas, convém retirar do total os óbitos por causas mal definidas: o denominador fica 3.578. | 3.874 − 296 = 3.578. Calcular à parte a proporção de mal definidas indica a qualidade do sistema. | 3:43; 3:49
+V | Com esse denominador, as doenças do aparelho circulatório respondem por cerca de 29% dos óbitos e as neoplasias por cerca de 20%. | 1.045/3.578 ≈ 29,2% e 706/3.578 ≈ 19,7%. Respiratório ≈ 12,7%, externas ≈ 12,5%, infecciosas ≈ 6,3%. | 3:43
+V | A proporção de óbitos por causas mal definidas em Niterói (cerca de 7,6%) foi relativamente baixa, ao contrário de Fortaleza no mesmo ano (cerca de 19,3%). | 296/3.874 ≈ 7,64%. | 3:49-50
+V | O padrão de Niterói, com circulatório e neoplasias somando cerca de 50% dos óbitos e mais de 60% com a terceira causa, se parece com o de países que completaram a transição. | Por exemplo os EUA e os países europeus. | 6:134; 6:137
+V | Para caracterizar melhor o momento da transição epidemiológica, recomenda-se analisar causas específicas dentro dos grandes grupos, como Aids e hepatite B. | Grandes capítulos podem esconder a persistência ou reemergência de doenças infecciosas. | 6:135-136
+
+# ------------------------------------------------------------------ Cap. 8
+=== x8-1
+cap: 8
+type: choice
+ex: Cap. 8, ex. 1
+cad: 35-36
+title: Classifique os desenhos (caderno)
+ctx: Classifique cada estudo segundo o tipo de desenho. O caderno pede ainda a classificação pelos eixos: estratégia de observação, unidade de observação e momento de mensuração da exposição e do desfecho.
+opts: Estudo experimental; Estudo de coorte; Estudo caso-controle; Estudo transversal; Estudo ecológico; Nenhum dos anteriores
+2 | Em 1982 identificou-se cada criança nascida em Pelotas e revisaram-se os registros de nascimento para conhecer o peso ao nascer. As crianças foram classificadas em peso normal (≥ 2.500 g) ou baixo peso e seguidas por um ano, comparando-se a mortalidade infantil nos dois grupos. | Coorte: longitudinal, unidade individual, exposição e desfecho concorrentes (incidência). Apesar de vir de registros, a exposição é colhida no início, antes de se conhecer o desfecho. | 8:177-179
+3 | Para avaliar a associação entre reserpina e câncer de mama, 100 pacientes internadas com câncer de mama (casos novos) num hospital geral, ao longo de dois anos, foram entrevistadas sobre o uso prévio de reserpina. Para cada caso, quatro controles foram sorteados entre mulheres internadas por outros diagnósticos no mesmo período. | Caso-controle: longitudinal, individual, exposição não concorrente (uso passado) e desfecho concorrente (casos incidentes). | 8:178
+4 | Num inquérito domiciliar com amostra representativa de menores de 5 anos da Rocinha, as crianças foram pesadas e medidas (desnutrição) e colheram-se dados sobre nível socioeconômico, peso ao nascer, internação no último ano e aleitamento. | Seccional (inquérito de prevalência): uma única medição, unidade individual, desfecho medido como prevalência. Pode haver viés de sobrevivência seletiva e ambiguidade temporal. | 8:177-178
+1 | Trezentos diabéticos foram alocados aleatoriamente em dois grupos de 150: um recebeu um novo hipoglicemiante e o outro continuou com clorpropamida. O controle metabólico foi comparado após seis meses (glicemia e hemoglobina glicosilada). | Ensaio clínico randomizado. Sem randomização seria um quase-experimento. | 8:176-177
+5 | Áreas de uma localidade da Califórnia foram classificadas pelos níveis de partículas emitidas por indústrias químicas e de petróleo, e a incidência média anual de diversos cânceres foi calculada para cada área. | Ecológico: seccional, unidade agregada (áreas). | 8:177-178
+2 | Algumas pessoas tiveram intoxicação alimentar após uma festa de casamento. Suspeitando da maionese, entrevistaram-se todos os 200 convidados sobre o que comeram e se adoeceram. | Coorte histórica: todos chegaram sadios e a exposição ocorreu na festa. A primeira impressão seria seccional (coleta simultânea), mas a sequência exposição → desfecho é clara e mede-se incidência. | 8:178-179
+3 | Na mesma festa, entrevistaram-se todos os casos de intoxicação e apenas uma amostra dos convidados que não adoeceram. | Seleção incompleta: caso-controle. | 8:178
+
+=== x8-2
+cap: 8
+ex: Cap. 8, ex. 2
+cad: 36
+title: Cocaína na gestação e baixo peso ao nascer
+ctx: Todos os 17.368 nascimentos de 12 hospitais de uma cidade dos EUA em 1988 foram estudados. Uma equipe revisava diariamente os prontuários (parto, peso, pré-natal, uso de cocaína). Em alguns casos o uso de cocaína só foi identificado por testes pedidos para crianças nascidas com graves problemas de saúde. Baixo peso: 110 de 399 filhos de usuárias; 1.073 de 16.969 filhos de não usuárias.
+V | Segundo o caderno, trata-se de um estudo de coorte histórico com amostragem completa (todos os nascimentos da base). | O desfecho é colhido junto com o nascimento; a exposição, retrospectivamente, nos registros de pré-natal. | 8:178-179
+V | Embora os autores falem em incidência acumulada, a interpretação mais correta é prevalência ao nascer e razão de prevalências. | Os nascidos vivos representam as gestações que sobreviveram até o parto. Abortos precoces em usuárias podem gerar viés de sobrevivência seletiva. | 2:29-30
+V | Houve possível viés de informação (classificação) diferencial: crianças nascidas em más condições, inclusive com baixo peso, eram mais testadas para cocaína. | A exposição foi mais bem detectada justamente no grupo com o desfecho, o que tende a superestimar a associação. | 8:174; 8:176
+F | A proporção de baixo peso foi semelhante entre filhos de usuárias e de não usuárias. | 110/399 ≈ 27,6% contra 1.073/16.969 ≈ 6,3%: mais de quatro vezes maior. | 2:26
+F | Como a equipe revisava os prontuários diariamente, não há risco de viés de informação nesse estudo. | A revisão diária ajuda, mas o teste de cocaína pedido seletivamente introduz viés diferencial. | 8:174
+
+=== x8-3
+cap: 8
+ex: Cap. 8, ex. 3 e 4
+cad: 36-37
+title: Álcool, TRH e escolha do desenho
+ctx: (1) Vários estudos mostram associação em "J" entre consumo de álcool e mortalidade cardiovascular. Discute-se se algum tipo de bebida protege mais que outros, com evidências de estudos ecológicos, caso-controle e de coorte. (2) Estudos observacionais associaram a terapia de reposição hormonal (TRH) em mulheres na pós-menopausa a menor risco de doença coronariana.
+V | Estudos ecológicos que comparam o consumo per capita de cada bebida com a mortalidade cardiovascular entre países estão sujeitos à falácia ecológica e não controlam confundidores (ex.: quem bebe vinho pode ter nível socioeconômico maior). | Por outro lado, são rápidos, baratos e bons para gerar hipóteses. | 8:177-178
+V | No caso-controle sobre álcool, a lembrança diferencial do consumo por casos e controles pode causar viés de informação, e escolher controles comparáveis é difícil. | Por outro lado, ele usa dados individuais e é mais rápido e barato que a coorte. | 8:178
+V | A coorte reduz os vieses de informação e seleção e estabelece a sequência temporal, mas é longa e cara e pode ter perdas seletivas. | Ela permite medir diretamente a incidência. | 8:178-179
+V | Se mulheres que fazem TRH têm hábitos mais saudáveis (não fumar, exercício, boa dieta), a menor incidência de doença coronariana entre elas pode não ser efeito da TRH. | O gabarito chama isso de viés de seleção; também se descreve como confundimento. | 8:174
+V | Um ensaio clínico randomizado evitaria esse problema, ao custo de exigir muitas participantes e longo acompanhamento. | Uma alternativa observacional seria comparar doses de hormônio e buscar um gradiente dose-resposta. | 8:176-177
+
+# ------------------------------------------------------------------ Cap. 18
+=== x18-1
+cap: 18
+ex: Cap. 18, ex. 1
+cad: 80
+title: Pacientes internados com infarto (7 casos)
+ctx: Dados simulados de 7 pacientes com infarto. Sexo: f, m, m, m, f, f, f. PA sistólica (mmHg): 140, 130, 150, 120, 140, 130, 120. IMC (kg/m²): 27, 25, 20, 32, 30, 36, 28. Cigarros por dia: 0, 10, 15, 25, 25, 20, 0. Escolaridade: 1º grau, 1º grau, 2º grau, superior, 2º grau, 1º grau, 1º grau.
+V | A pressão sistólica tem média de cerca de 132,9 mmHg, mediana de 130 mmHg e amplitude de 30 mmHg. | Soma 930/7 ≈ 132,9; ordenando, o 4º valor é 130; 150 − 120 = 30. O desvio-padrão é cerca de 11,1 mmHg. | 18:329-333
+V | A distribuição da pressão sistólica é trimodal (120, 130 e 140 mmHg). | Os três valores aparecem duas vezes cada. | 18:329
+V | Número de cigarros e frequência cardíaca são variáveis quantitativas discretas; idade, pressão, IMC e colesterol são contínuas; escolaridade é qualitativa ordinal. | Sexo é qualitativa nominal. | 18:324-325
+V | Categorizar o fumo em não-fumante, leve, moderado e fumante cria uma variável ordinal, para a qual faz sentido calcular a frequência acumulada. | Não-fumante 2 (28,6%), leve 0, moderado 2 (acumulado 57,2%), fumante 3 (acumulado 100%). | 18:324; 18:327
+F | Como as mulheres tiveram IMC médio maior (30,25 contra 25,67 kg/m² nos homens), está demonstrado que o sexo feminino causa obesidade nesses pacientes. | Os dados sugerem diferença, mas com 7 pacientes ela pode ser casual. Além disso, descrição não prova causalidade. | 18:337; 8:174
+
+=== x18-2
+cap: 18
+ex: Cap. 18, ex. 2
+cad: 80
+title: Obesidade e hipertensão (Ilha do Governador)
+ctx: Numa amostra de 50 adultos de um inquérito sobre hipertensão na Ilha do Governador (RJ), o IMC médio foi 27,2 kg/m² nos hipertensos e 23,9 nos normotensos. Classificando como obesos os com IMC ≥ 27 kg/m²:
+table: Obesidade; Hipertensos; Normotensos; Total
+table: Não obeso; 8; 31; 39
+table: Obeso; 5; 6; 11
+table: Total; 13; 37; 50
+V | A média de IMC maior entre os hipertensos sugere associação entre obesidade e hipertensão. | Comparar medidas-resumo de uma variável quantitativa entre categorias é uma análise bivariada. | 18:340
+V | Entre os obesos, 45,5% eram hipertensos, contra 20,5% entre os não obesos. | 5/11 ≈ 45,45% e 8/39 ≈ 20,51%: percentuais na linha, mais que o dobro. | 18:338
+V | Tanto a análise com a variável contínua (IMC) quanto a com a categorizada (corte em 27 kg/m²) sugerem a mesma associação. | São duas formas de explorar a relação. | 18:338-340
+F | Numa tabela de dupla entrada, os totais marginais indicam se as duas variáveis estão associadas. | Os totais marginais correspondem às análises univariadas. A associação aparece comparando os percentuais condicionais (por linha ou coluna). | 18:338
+F | Esse resultado comprova que a obesidade causa hipertensão. | É uma análise exploratória de dados seccionais: sugere uma hipótese, a ser testada estatisticamente e com desenhos adequados. | 18:337; 8:178
+
+=== x18-3
+cap: 18
+type: choice
+ex: Cap. 18, ex. 3
+cad: 80-81
+title: Cálculo: área de superfície corporal
+ctx: Área de superfície corporal (m²) de 13 pacientes: 2,10; 1,74; 1,68; 1,83; 1,57; 1,71; 1,73; 1,65; 1,74; 1,57; 2,76; 1,90; 1,77.
+opts: 1,83 m²; 1,74 m²; 1,57 e 1,74 m²; 1,19 m²; 0,31 m²
+1 | Qual é a média? | Soma 23,75 / 13 ≈ 1,83 m². | 18:329
+2 | Qual é a mediana? | Ordenados, o 7º valor ((13 + 1)/2) é 1,74 m². | 18:330
+3 | Qual é a moda? | Distribuição bimodal: 1,57 e 1,74 aparecem duas vezes cada. | 18:329
+4 | Qual é a amplitude total? | 2,76 − 1,57 = 1,19 m². | 18:331
+5 | Qual é o desvio-padrão amostral (dividindo por n − 1)? | Variância = 1,18/12 ≈ 0,10 m⁴; DP = √0,10 ≈ 0,31 m². Divide-se por n − 1 (graus de liberdade) por ser amostra. | 18:332-333
+
+=== x18-4
+cap: 18
+ex: Cap. 18, ex. 4 a 6
+cad: 81-82
+title: Permanência hospitalar e óbitos por hospital
+ctx: (1) Permanência hospitalar em 1993 (dias): HUCFF: mediana 8, Q1 3, Q3 17, máximo 405, média 12,7 (DP 15,1). HSE: mediana 4, máximo 374, média 8,9. HMSA: mediana 7, máximo 1.101, média 13,9 (DP 24,3). (2) Pacientes com um problema de saúde X: hospital A, 50 altas e 30 óbitos; B, 90 altas e 30 óbitos; C, 25 altas e 25 óbitos.
+V | Para caracterizar a permanência hospitalar, a mediana é mais indicada que a média. | As distribuições são assimétricas à direita (média > mediana), e poucos valores extremos (até 1.101 dias) distorcem a média. | 18:330
+V | O número de óbitos foi igual nos hospitais A e B. | Foram 30 em cada um. | 18:334
+F | A frequência percentual de óbitos foi a mesma nos hospitais A e B. | A: 30/80 = 37,5%; B: 30/120 = 25%. É preciso considerar o total de internados. | 18:327
+V | Proporcionalmente, a mortalidade foi maior no hospital C (50%). | Um gráfico com frequências percentuais mostra isso melhor que o de números absolutos: C, seguido de A. | 18:327; 18:334
+V | O hospital B foi o que mais internou pacientes com o problema X (120). | A internou 80 e C internou 50. | 18:334

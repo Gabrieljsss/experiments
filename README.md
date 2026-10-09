@@ -45,9 +45,10 @@ Practice for the written exam of the **PPGSC/IMS/UERJ master's selection (Epidem
 
 - **Past exams 2023, 2024 and 2025**, with all their figures and tables. UERJ never published an answer key, so the key here is **unofficial**. It was written from the textbook, and debatable statements are flagged "discutível".
 - **Textbook questions** written from Medronho et al., *Epidemiologia*, 2nd ed., chapters 1-6, 8 and 18, in the exam's true/false style. Some cover study-design identification and calculations, and there are open questions with model answers.
-- Together that makes 103 questions with 469 gradable statements.
+- **Exercise workbook** (Caderno de Exercícios): its exercises for chapters 2-6, 8 and 18, condensed into the same true/false format. The answers follow the caderno's own answer key (marked "do caderno"), and each statement also points to the caderno's answer page. The caderno's figures and text aren't reproduced.
+- Together that makes 128 questions with 596 gradable statements.
 - **Every statement links to the book.** You see an explanation and a reference ("Cap. 2, p. 22"). The reference opens a short chapter summary written for this app, at the right section.
-- **Optional PDF links:** load your chapter PDFs on the "Livro" screen and every reference also gets a "PDF ↗" button that opens that page. The PDFs stay in the browser (IndexedDB); they are never uploaded or committed.
+- **Optional PDF links:** load your chapter PDFs (and the caderno) on the "Livro" screen and every reference also gets a "PDF ↗" button that opens that page. The PDFs stay in the browser (IndexedDB); they are never uploaded or committed.
 - **Exam format and pacing:**
   - 3 hours for 8 true/false questions (1 point each) plus 1 open question (2 points), so 18 min per point.
   - Do a full simulado (random, or a past year), or bites of 1-5 questions with instant correction.
@@ -60,6 +61,7 @@ Content lives in plain text under `data/mestrado/`:
 
 - `provas.txt`: past exams with the unofficial key.
 - `livro.txt`: book questions.
+- `caderno.txt`: workbook exercises.
 - `resumos.txt`: chapter summaries.
 
 Rebuild with `python3 scripts/build_mestrado.py`. It checks that every reference points to a real page and summary section, then writes `app/mestrado/data.js`. Exam figures were extracted from the exam PDFs into `app/mestrado/img/`.

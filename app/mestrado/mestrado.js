@@ -43,7 +43,7 @@
   const isDesign = (q) => q.type === "choice" && q.opts && q.opts[0] === "Estudo experimental";
   const optLabel = (q, k) => (isDesign(q) ? DESIGN[k] : q.opts[k]);
   const ansLabel = (q, it) => (q.type === "choice" ? optLabel(q, it.a) : it.a === "V" ? "Verdadeira" : "Falsa");
-  const srcLabel = (q) => (q.prova ? `UERJ ${q.prova} · Questão ${q.num}` : "Questão do livro");
+  const srcLabel = (q) => (q.prova ? `UERJ ${q.prova} · Questão ${q.num}` : q.src === "caderno" ? `Caderno · ${q.ex}` : "Questão do livro");
   const pageLabel = (r) => `p. ${r.p}${r.p2 !== r.p ? `-${r.p2}` : ""}`;
   const imgSrc = (f) => `app/mestrado/img/${encodeURIComponent(f)}`;
 
@@ -120,16 +120,19 @@
     try { pdfKeys = new Set(await pdfOp("readonly", (s) => s.getAllKeys())); } catch { pdfKeys = new Set(); }
   }
   const pdfFor = (page) => DATA.pdfs.find((p) => page >= p.from && page <= p.to);
+  const CADERNO_KEY = "Caderno";
+  const cadPdfPage = (page) => { const r = (DATA.caderno || []).find((x) => page >= x.from && page <= x.to); return r ? page - r.offset : null; };
   function pdfKeyFromName(name) {
     const n = name.replace(/\s+/g, "");
+    if (/caderno|exerc/i.test(n)) return CADERNO_KEY;
     const m = n.match(/Cap(?:itulo)?_?(3)_?Pt_?([12])/i) || n.match(/Cap(?:itulo)?_?(8)e18/i) || n.match(/Cap(?:itulo)?_?(\d+)/i);
     if (!m) return null;
     if (/8e18/i.test(m[0])) return "Cap8e18";
     if (m[2]) return `Cap3_Pt${m[2]}`;
     return `Cap${m[1]}`;
   }
-  async function openPdf(page) {
-    const p = pdfFor(page);
+  async function openPdf(page, caderno) {
+    const p = caderno ? { key: CADERNO_KEY, offset: page - cadPdfPage(page) } : pdfFor(page);
     if (!p || !pdfKeys.has(p.key)) { location.hash = "#/mestrado/livro"; sh.toast("Carregue os PDFs do livro nesta tela"); return; }
     const w = window.open("", "_blank"); // open synchronously so pop-up blockers allow it
     try {
@@ -138,15 +141,17 @@
       if (w) w.location.href = url; else location.href = url;
     } catch { if (w) w.close(); sh.toast("Não consegui abrir o PDF"); }
   }
-  function refsHtml(refs) {
-    return `<div class="ms-refs">${refs.map((r) => {
+  function refsHtml(refs, q) {
+    const cad = q && q.cad
+      ? `<span class="ms-ref cad"><span>📘 Caderno, gabarito p. ${q.cad.p}${q.cad.p2 !== q.cad.p ? `-${q.cad.p2}` : ""}</span>${pdfKeys.has(CADERNO_KEY) ? `<button class="ms-pdf" data-pdf="${q.cad.p}" data-cad="1" title="Abrir o caderno nesta página">PDF ↗</button>` : ""}</span>` : "";
+    return `<div class="ms-refs">${cad}${refs.map((r) => {
       const s = secById[r.s];
       const p = pdfFor(r.p);
       return `<span class="ms-ref"><a href="#/mestrado/livro/${r.c}/${r.s}">📖 Cap. ${r.c}, ${pageLabel(r)}${s ? ` · ${esc(s.title)}` : ""}</a>${p && pdfKeys.has(p.key) ? `<button class="ms-pdf" data-pdf="${r.p}" title="Abrir o PDF do livro nesta página">PDF ↗</button>` : ""}</span>`;
     }).join("")}</div>`;
   }
   function wirePdfButtons(root) {
-    (root || document).querySelectorAll("[data-pdf]").forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); openPdf(+b.dataset.pdf); }));
+    (root || document).querySelectorAll("[data-pdf]").forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); openPdf(+b.dataset.pdf, !!b.dataset.cad); }));
   }
 
   /* ---------------- rendering a question ---------------- */
@@ -157,9 +162,9 @@
   }
   function feedbackHtml(q, it, given) {
     const ok = given === it.a;
-    return `<div class="ms-fb ${ok ? "ok" : "bad"}"><b>${ok ? "✓ Certo" : given == null ? "– Em branco" : "✗ Errado"}</b> · Gabarito${q.prova ? " (não oficial)" : ""}: <b>${esc(ansLabel(q, it))}</b>
+    return `<div class="ms-fb ${ok ? "ok" : "bad"}"><b>${ok ? "✓ Certo" : given == null ? "– Em branco" : "✗ Errado"}</b> · Gabarito${q.prova ? " (não oficial)" : q.src === "caderno" ? " (do caderno)" : ""}: <b>${esc(ansLabel(q, it))}</b>
       ${it.disc ? `<span class="pill warn" title="Assertiva ambígua: o gabarito pode ser discutido">discutível</span>` : ""}
-      <p>${esc(it.e)}</p>${refsHtml(it.refs)}</div>`;
+      <p>${esc(it.e)}</p>${refsHtml(it.refs, q)}</div>`;
   }
   // one gradable statement: V/F buttons, or option chips for choice questions
   function itemHtml(q, it, k, given, reveal) {
@@ -271,6 +276,7 @@
                 <option value="mix">Mistura inteligente (erradas e novas primeiro)</option>
                 <option value="erros" ${wrong ? "" : "disabled"}>Questões com assertivas que errei (${wrong})</option>
                 <option value="provas">Só provas anteriores (${exams})</option>
+                <option value="caderno">Só caderno de exercícios (${QS.filter((q) => q.src === "caderno").length})</option>
                 <option value="design">Identificar desenhos de estudo</option>
                 <option value="open">Questões abertas (${opens})</option>
                 ${CAP_NUMS.map((c) => `<option value="c:${c}">${esc(capName(c))} (${QS.filter((q) => q.cap === c).length})</option>`).join("")}
@@ -304,7 +310,7 @@
 
         <section class="card ms-note">
           <h3 style="margin:0 0 6px">Sobre as questões</h3>
-          <p class="muted" style="margin:0">${QS.length} questões (${ITEMS.length} assertivas): as provas de ${YEARS.join(", ")} e questões escritas a partir dos capítulos 1-6, 8 e 18 do livro. Cada assertiva traz a explicação e a página do livro. <b>O gabarito das provas não é oficial</b> (a UERJ não o publicou); assertivas ambíguas estão marcadas como “discutível”.</p>
+          <p class="muted" style="margin:0">${QS.length} questões (${ITEMS.length} assertivas): as provas de ${YEARS.join(", ")}, os exercícios do caderno do livro (com o gabarito do próprio caderno) e questões escritas a partir dos capítulos 1-6, 8 e 18. Cada assertiva traz a explicação e a página do livro. <b>O gabarito das provas não é oficial</b> (a UERJ não o publicou); assertivas ambíguas estão marcadas como “discutível”.</p>
         </section>
         ${sh.syncCard()}
       </div>`;
@@ -325,6 +331,7 @@
       const f = document.getElementById("msFocus").value;
       let pool, title;
       if (f === "erros") { const ids = new Set(wrongItems().map((it) => itemQ[it.id].id)); pool = QS.filter((q) => ids.has(q.id)); title = "Treino: assertivas erradas"; }
+      else if (f === "caderno") { pool = QS.filter((q) => q.src === "caderno"); title = "Treino: caderno de exercícios"; }
       else if (f === "provas") { pool = QS.filter((q) => q.prova && q.type !== "open"); title = "Treino: provas anteriores"; }
       else if (f === "design") { pool = QS.filter(isDesign); title = "Treino: desenhos de estudo"; }
       else if (f === "open") { pool = QS.filter((q) => q.type === "open"); title = "Treino: questões abertas"; }
@@ -370,7 +377,7 @@
         </div>
         <section class="card slide ms-q">
           <div class="body">
-            <div class="kicker">${esc(srcLabel(q))} · Cap. ${q.cap}</div>
+            <div class="kicker">${esc(srcLabel(q))}${q.src === "caderno" ? "" : ` · Cap. ${q.cap}`}</div>
             <h2 class="ms-title">${esc(q.title)}</h2>
             ${q.type === "vf" ? `<p class="muted ms-hint">Marque V (verdadeira) ou F (falsa) em cada assertiva.</p>` : q.type === "choice" ? `<p class="muted ms-hint">${isDesign(q) ? "Identifique o desenho de estudo de cada resumo." : "Escolha a alternativa certa para cada item."}</p>` : ""}
             ${contextHtml(q)}
@@ -518,7 +525,7 @@
       ${its.length ? `<div class="row" style="margin-bottom:14px"><button class="btn primary" id="msTrain">Treinar ${Math.min(qids.length, 5)} questão(ões) com erros</button></div>
         <ol class="dt-review">${its.map((it) => { const q = itemQ[it.id], rr = st().q[it.id]; return `<li class="bad"><small class="muted">${esc(srcLabel(q))} · ${esc(q.title)} · errou ${rr.w}×, acertou ${rr.r}×</small>
           <p>${esc(q.type === "choice" && it.t.length > 300 ? it.t.slice(0, 300) + "…" : it.t)}</p>
-          <p class="dt-ans good">Gabarito: ${esc(ansLabel(q, it))}</p><p class="ms-exp">${esc(it.e)}</p>${refsHtml(it.refs)}</li>`; }).join("")}</ol>`
+          <p class="dt-ans good">Gabarito: ${esc(ansLabel(q, it))}</p><p class="ms-exp">${esc(it.e)}</p>${refsHtml(it.refs, q)}</li>`; }).join("")}</ol>`
         : `<div class="card done-hero"><div class="big">🎯</div><h2>Nenhuma assertiva errada pendente</h2><p class="muted">Faça um treino para descobrir seus pontos fracos.</p><a class="btn primary" href="#/mestrado">Treinar</a></div>`}`;
     wirePdfButtons(sh.view);
     const b = document.getElementById("msTrain");
@@ -527,32 +534,32 @@
 
   function banco(qs) {
     sh.setNav("ms-banco");
-    let cap = "", onlyExam = false;
+    let cap = "", onlySrc = "";
     sh.view.innerHTML = `<h1>Banco de questões</h1>
       <p class="muted">${ITEMS.length} assertivas em ${QS.length} questões. O gabarito aparece em verde, com a explicação e a página do livro. Gabarito das provas: não oficial.</p>
       <div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <input id="msQ" type="search" placeholder="Buscar: “letalidade”, “pessoa-tempo”, “Swaroop”…" autocomplete="off" aria-label="Buscar assertivas" value="${esc(qs || "")}"></div>
-      <div class="chips" style="margin:12px 0"><button class="chip on" data-c="">Todos</button>${CAP_NUMS.map((c) => `<button class="chip" data-c="${c}">Cap. ${c}</button>`).join("")}<button class="chip" data-exam="1">📝 Só provas</button></div>
+      <div class="chips" style="margin:12px 0"><button class="chip on" data-c="">Todos</button>${CAP_NUMS.map((c) => `<button class="chip" data-c="${c}">Cap. ${c}</button>`).join("")}<button class="chip" data-src="prova">📝 Só provas</button><button class="chip" data-src="caderno">📘 Só caderno</button></div>
       <p class="muted" id="msCount" style="margin:0 0 8px"></p><ol class="dt-review" id="msList"></ol>`;
     const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
     const list = document.getElementById("msList"), input = document.getElementById("msQ");
     function draw() {
       const terms = norm(input.value).split(/\s+/).filter(Boolean);
-      const rows = ITEMS.filter((it) => { const q = itemQ[it.id]; return (!cap || q.cap === +cap) && (!onlyExam || q.prova)
+      const rows = ITEMS.filter((it) => { const q = itemQ[it.id]; return (!cap || q.cap === +cap) && (!onlySrc || q.src === onlySrc)
         && terms.every((t) => norm(`${q.title} ${(q.ctx || []).join(" ")} ${it.t} ${it.e}`).includes(t)); });
       document.getElementById("msCount").textContent = `${rows.length} assertiva(s)`;
       list.innerHTML = rows.slice(0, 200).map((it) => {
         const q = itemQ[it.id], rr = st().q[it.id];
         return `<li><small class="muted">${esc(srcLabel(q))} · ${esc(q.title)}${rr ? ` · você: ✓${rr.r} ✗${rr.w}` : ""}</small>
           <p>${esc(q.type === "choice" && it.t.length > 300 ? it.t.slice(0, 300) + "…" : it.t)}</p>
-          <p class="dt-ans good">Gabarito: ${esc(ansLabel(q, it))}${it.disc ? " (discutível)" : ""}</p><p class="ms-exp">${esc(it.e)}</p>${refsHtml(it.refs)}</li>`;
+          <p class="dt-ans good">Gabarito: ${esc(ansLabel(q, it))}${it.disc ? " (discutível)" : ""}</p><p class="ms-exp">${esc(it.e)}</p>${refsHtml(it.refs, q)}</li>`;
       }).join("") + (rows.length > 200 ? `<li class="muted">… refine a busca para ver mais</li>` : "");
       wirePdfButtons(list);
       history.replaceState(null, "", input.value.trim() ? `#/mestrado/banco/${encodeURIComponent(input.value.trim())}` : "#/mestrado/banco");
     }
     input.addEventListener("input", draw);
     document.querySelectorAll(".chips .chip").forEach((c) => c.addEventListener("click", () => {
-      if (c.dataset.exam) { onlyExam = !onlyExam; c.classList.toggle("on", onlyExam); }
+      if (c.dataset.src) { onlySrc = onlySrc === c.dataset.src ? "" : c.dataset.src; document.querySelectorAll(".chips [data-src]").forEach((x) => x.classList.toggle("on", x.dataset.src === onlySrc)); }
       else { cap = c.dataset.c; document.querySelectorAll(".chips [data-c]").forEach((x) => x.classList.toggle("on", x === c)); }
       draw();
     }));
@@ -563,7 +570,7 @@
   function livro(capArg, secArg) {
     sh.setNav("ms-livro");
     if (capArg) return capitulo(+capArg, secArg);
-    const missing = [...new Set(DATA.pdfs.map((p) => p.key))].filter((k) => !pdfKeys.has(k));
+    const missing = [...new Set(DATA.pdfs.map((p) => p.key)), CADERNO_KEY].filter((k) => !pdfKeys.has(k));
     sh.view.innerHTML = `<h1>Livro-texto</h1>
       <p class="muted">Medronho RA, Bloch KV, Luiz RR, Werneck GL (eds.). <i>Epidemiologia</i>. 2ª ed. São Paulo: Atheneu. Resumos escritos para este app; leia o capítulo no livro para os detalhes.</p>
       <div class="stack">
@@ -576,7 +583,7 @@
           <p style="margin:0 0 10px;font-size:.93rem">${pdfKeys.size ? `✅ Carregados: ${[...pdfKeys].sort().join(", ")}` : "Nenhum PDF carregado neste aparelho."}${missing.length && pdfKeys.size ? `<br><span class="muted">Faltam: ${missing.join(", ")}</span>` : ""}</p>
           <div class="row"><label class="btn primary" for="msPdfIn">Escolher PDFs…</label><input id="msPdfIn" type="file" accept="application/pdf,.pdf" multiple hidden>
             ${pdfKeys.size ? `<button class="btn ghost" id="msPdfClear">Remover deste aparelho</button>` : ""}</div>
-          <p class="muted" style="margin:10px 0 0;font-size:.85rem">Os nomes dos arquivos precisam conter o capítulo, como “Medronho_Cap2.pdf”, “Cap3_Pt1”, “Cap3_Pt2” e “Cap8e18”.</p>
+          <p class="muted" style="margin:10px 0 0;font-size:.85rem">Os nomes dos arquivos precisam conter o capítulo, como “Medronho_Cap2.pdf”, “Cap3_Pt1”, “Cap3_Pt2” e “Cap8e18”; o caderno de exercícios precisa ter “Caderno” ou “Exercícios” no nome.</p>
         </section>
       </div>`;
     document.getElementById("msPdfIn").addEventListener("change", async (e) => {
@@ -584,7 +591,7 @@
       let ok = 0; const skipped = [];
       for (const f of files) {
         const key = pdfKeyFromName(f.name);
-        if (!key || !DATA.pdfs.some((p) => p.key === key)) { skipped.push(f.name); continue; }
+        if (!key || (key !== CADERNO_KEY && !DATA.pdfs.some((p) => p.key === key))) { skipped.push(f.name); continue; }
         try { const buf = await f.arrayBuffer(); await pdfOp("readwrite", (s) => s.put(buf, key)); ok++; } catch { skipped.push(f.name); }
       }
       await refreshPdfKeys();
