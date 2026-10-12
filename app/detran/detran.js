@@ -5,7 +5,11 @@
  * The shell (app/app.js) owns routing, the top bar and sync; this module renders the
  * #/detran/... screens and keeps its progress in state.detran (synced with the account). */
 (function () {
-  const DATA = window.DETRAN || { questions: [], provas: {}, topics: {} };
+  const DATA = window.DETRAN || { questions: [], provas: {}, routes: {}, topics: {} };
+  // provas are keyed "route:number" (route = which simulado page served it)
+  const ROUTES = DATA.routes || {};
+  const provaLabel = (pk) => { const [r, n] = String(pk).split(":"); return n ? `${ROUTES[r] || r} nº ${n}` : `nº ${pk}`; };
+  const provaShort = (pk) => { const [r, n] = String(pk).split(":"); return n ? `${r.split("/")[0].replace("habilitacao", "Hab.").replace("renovacao", "Ren.")}${r.includes("libras") ? " Libras" : ""} ${n}` : String(pk); };
   const Q = DATA.questions;
   const byId = Object.fromEntries(Q.map((q) => [q.id, q]));
   const TOPICS = DATA.topics; // { key: { name, official } }
@@ -105,7 +109,7 @@
     const placas = Q.filter((q) => q.img).length;
     const running = load(RUN_KEY);
     const streak = (() => { const set = new Set(s.days); let d = sh.today(); if (!set.has(d)) d = sh.addDays(d, -1); let n = 0; while (set.has(d)) { n++; d = sh.addDays(d, -1); } return n; })();
-    const provaNums = Object.keys(DATA.provas).map(Number).sort((a, b) => a - b);
+    const provaKeys = Object.keys(DATA.provas);
 
     sh.view.innerHTML = `
       <div class="hello"><div><p class="muted" style="margin:0">Prova teórica · DETRAN-RJ</p><h1>Rumo à sua CNH 🚗</h1></div></div>
@@ -119,8 +123,8 @@
           <p>Igual à prova: aprovação com ${PASS} acertos (70%). As respostas aparecem só no fim.</p>
           <div class="row">
             <button class="btn primary" id="dtExam">Simulado aleatório</button>
-            <label class="dt-select">ou prova oficial nº
-              <select id="dtProva">${provaNums.map((n) => `<option value="${n}">${n}</option>`).join("")}</select>
+            <label class="dt-select">ou prova oficial
+              <select id="dtProva">${Object.keys(ROUTES).filter((r) => provaKeys.some((k) => k.startsWith(r + ":"))).map((r) => `<optgroup label="${esc(ROUTES[r])}">${provaKeys.filter((k) => k.startsWith(r + ":")).map((k) => `<option value="${esc(k)}">${esc(k.split(":")[1])}</option>`).join("")}</optgroup>`).join("")}</select>
               <button class="btn ghost" id="dtProvaGo">Fazer</button></label>
           </div>
         </section>
@@ -185,7 +189,7 @@
     document.getElementById("dtExam").addEventListener("click", () => startRun({ ids: randomExam(), title: "Simulado aleatório", mode: "sim", feedback: false }));
     document.getElementById("dtProvaGo").addEventListener("click", () => {
       const p = document.getElementById("dtProva").value;
-      startRun({ ids: DATA.provas[p].slice(), title: `Prova oficial nº ${p}`, mode: `prova:${p}`, feedback: false });
+      startRun({ ids: DATA.provas[p].slice(), title: `Prova oficial: ${provaLabel(p)}`, mode: `prova:${p}`, feedback: false });
     });
     document.getElementById("dtBite").addEventListener("click", () => {
       const f = document.getElementById("dtFocus").value;
@@ -350,7 +354,7 @@
     sh.setNav("dt-banco");
     let topic = "", onlyImg = false;
     sh.view.innerHTML = `<h1>Banco de questões</h1>
-      <p class="muted">${Q.length} questões únicas de ${Object.keys(DATA.provas).length} provas do simulado oficial. A resposta certa está destacada.</p>
+      <p class="muted">${Q.length} questões únicas de ${Object.keys(DATA.provas).length} provas dos simulados oficiais (habilitação, renovação e CRCI). A resposta certa está destacada.</p>
       <div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <input id="dtQ" type="search" placeholder="Buscar: “rotatória”, “pedestre”, “álcool”…" autocomplete="off" aria-label="Buscar questões" value="${esc(qs || "")}"></div>
       <div class="chips" style="margin:12px 0"><button class="chip on" data-t="">Todos</button>${Object.entries(TOPICS).map(([k, t]) => `<button class="chip" data-t="${k}">${esc(t.name)}</button>`).join("")}<button class="chip" data-img="1">🛑 Com imagem</button></div>
@@ -364,7 +368,7 @@
       document.getElementById("dtCount").textContent = `${rows.length} questão(ões)`;
       list.innerHTML = rows.slice(0, 300).map((q) => {
         const r = st().q[q.id];
-        return `<li><small class="muted">${esc(topicName(q.t))} · provas ${q.provas.join(", ")}${r ? ` · você: ✓${r.r} ✗${r.w}` : ""}</small>
+        return `<li><small class="muted">${esc(topicName(q.t))} · ${q.provas.length === 1 ? "prova" : "provas"} ${q.provas.map(provaShort).join(", ")}${r ? ` · você: ✓${r.r} ✗${r.w}` : ""}</small>
           <p>${esc(q.q)}</p>${q.img ? `<img class="dt-img sm" src="${imgSrc(q.img)}" alt="" loading="lazy">` : ""}
           <ul class="dt-alts">${q.a.map((t, k) => `<li class="${k === q.c ? "good" : ""}">${LETTERS[k]}. ${esc(t)}</li>`).join("")}</ul></li>`;
       }).join("");
