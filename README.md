@@ -22,8 +22,8 @@ A small web app that turns the **[Systems Design 2.0](https://www.youtube.com/pl
 
 Tap the logo in the top-left to switch to a second app for the **DETRAN-RJ theory exam** (prova teórica), in Portuguese.
 
-- **263 questions** from all 10 provas of DETRAN-RJ's public [simulado](http://simulado.detran.rj.gov.br/), plus 25 sign images. All content © DETRAN-RJ, credited in the app.
-- **Simulado completo:** 30 questions, answers only at the end, a question grid and a time limit. Use a random set (following the exam's split by subject) or replay any official prova (1–10).
+- **892 questions** from 59 provas of DETRAN-RJ's public [simulado](http://simulado.detran.rj.gov.br/), plus the sign images. The site has six exam pages: habilitação, its Libras version, renovação, CRCI and their Libras versions. The regular habilitação page uses a newer bank with few first-aid questions. The other pages draw on an older official bank, with many more first-aid and defensive-driving questions, so all six are included. By subject: Legislação 283, Direção defensiva 253, Sinalização 109, Meio ambiente e cidadania 100, Primeiros socorros 90, Mecânica 57. All content © DETRAN-RJ, credited in the app.
+- **Simulado completo:** 30 questions, answers only at the end, a question grid and a time limit. Use a random set (following the exam's split by subject) or replay any official prova (grouped by exam page).
 - **Treino rápido:** bites of 5, 10, 15 or 20 questions, with instant feedback if you want it. Choose a focus: a smart mix (wrong and new questions first), only the ones you missed, signs, or one subject.
 - **Pacing:** the timer budgets each bite at the real exam's pace (default 60 min / 30 questions = 2:00 per question, adjustable to 40 or 50 min). It shows whether you're ahead or behind, and the result screen says whether you'd finish the full exam in time.
 - **Erros** lists questions whose last answer was wrong. **Banco** searches all questions by text, subject or sign images.
@@ -33,11 +33,11 @@ Tap the logo in the top-left to switch to a second app for the **DETRAN-RJ theor
 Refreshing the questions:
 
 ```bash
-python3 scripts/scrape_detran.py   # samples the simulado politely until no new prova shows up; downloads sign images
+python3 scripts/scrape_detran.py   # samples every simulado page politely until no new prova shows up; downloads sign images
 python3 scripts/build_detran.py    # merges near-duplicates, adds subjects → app/detran/questions.js
 ```
 
-The site serves one of a fixed set of numbered provas at random, with the answer key embedded. The scraper keeps sampling until 60 requests in a row bring nothing new. Subjects (Legislação, Sinalização, Direção defensiva, Primeiros socorros, Meio ambiente e cidadania, Mecânica básica) were assigned by reading each question (`data/detran/topics.json`); anything new falls back to a keyword guess.
+Each page serves one of a fixed set of numbered provas at random, with the answer key embedded. The scraper samples each page until 60 requests in a row bring nothing new. Question ids already in `data/detran/questions.json` are kept, so saved progress survives a re-scrape. Subjects (Legislação, Sinalização, Direção defensiva, Primeiros socorros, Meio ambiente e cidadania, Mecânica básica) were assigned by reading each question (`data/detran/topics.json`); anything new falls back to a keyword guess.
 
 ## Mestrado em Epidemiologia · UERJ (third app)
 

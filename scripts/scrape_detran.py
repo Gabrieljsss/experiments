@@ -107,6 +107,8 @@ def main():
     for pk in sorted(provas, key=lambda k: (order.get(k.split(":")[0], 99), int(k.split(":")[1]))):
         for q in provas[pk]:
             img = q["codigoImagem"] if isinstance(q["codigoImagem"], str) and q["codigoImagem"] else None
+            if img:
+                img = re.sub(r"\.gif$", "", img, flags=re.I)  # a few codes already carry the extension
             item = {
                 "q": q["desc_questao"].strip(),
                 "a": [q[f"resposta{j}"].strip() for j in range(1, 5)],
