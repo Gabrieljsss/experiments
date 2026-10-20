@@ -7,7 +7,7 @@ filter on lives here so each run is reproducible from this file alone.
 # --- Price & size ---------------------------------------------------------
 
 # Maximum monthly rent (aluguel) alone, in BRL.
-MAX_RENT = 3700
+MAX_RENT = 4000
 
 # Listings below this are almost always typos, daily/room rentals or bait.
 MIN_RENT = 800
@@ -16,7 +16,7 @@ MIN_RENT = 800
 EXCLUDE_TITLE_WORDS = ["temporada", "diária", "diaria", "quarto em apartamento", "vaga em"]
 
 # Optional cap on rent + condomínio (IPTU not included). None disables it.
-MAX_TOTAL = 3700
+MAX_TOTAL = 4000
 
 # Minimum usable area in m².
 MIN_AREA_M2 = 40
