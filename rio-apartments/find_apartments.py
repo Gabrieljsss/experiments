@@ -100,9 +100,9 @@ def links(group):
     return " ".join(out)
 
 
-def render(entries, run_at, is_first_run, stats):
+def render(entries, run_at, is_first_run, stats, heading="Rio apartments"):
     lines = [
-        f"# Rio apartments — {run_at:%Y-%m-%d %H:%M} UTC",
+        f"# {heading} — {run_at:%Y-%m-%d %H:%M} UTC",
         "",
         f"Rent ≤ {fmt_money(config.MAX_RENT)} · "
         + (f"Rent + condomínio ≤ {fmt_money(config.MAX_TOTAL)} · " if config.MAX_TOTAL is not None else "")
@@ -117,8 +117,8 @@ def render(entries, run_at, is_first_run, stats):
     if not is_first_run:
         lines += [f"**{len(new)} new since the last run** (marked 🆕).", ""]
     lines += [
-        "| # | Published | Bairro | Rent | Rent + condo | m² | Qts | Metro | Title | Links | Key |",
-        "|---|---|---|---|---|---|---|---|---|---|---|",
+        "| # | Published | Bairro | Rent | Rent + condo | m² | Qts | Metro | Mob. | Title | Links | Key |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for i, e in enumerate(entries, 1):
         l = e["main"]
@@ -128,6 +128,7 @@ def render(entries, run_at, is_first_run, stats):
         lines.append(
             f"| {i}{' 🆕' if e['new'] and not is_first_run else ''} | {date} | {l.neighborhood} | "
             f"{fmt_money(l.rent)} | {fmt_money(l.total)} | {l.area} | {l.bedrooms or ''} | {metro} | "
+            f"{ {'mobiliado': 'sim', 'semi-mobiliado': 'semi'}.get(e['furnished'], '') } | "
             f"{title} | {links(e['group'])} | `{l.key}` |"
         )
     lines += ["", "\\* no publication date on the site; date is when this script first saw the listing "
@@ -140,6 +141,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sources", default=",".join(SOURCES))
     ap.add_argument("--out", default=str(ROOT / "reports" / "latest.md"))
+    ap.add_argument("--furnished-out", default=str(ROOT / "reports" / "furnished.md"))
     ap.add_argument("--json", default=str(ROOT / "reports" / "latest.json"))
     ap.add_argument("--dry-run", action="store_true", help="don't write data/state.json")
     args = ap.parse_args()
@@ -200,6 +202,9 @@ def main():
         main_l.neighborhood = allowed[norm(main_l.neighborhood)][0]
         entries.append({
             "main": main_l, "group": group, "metro": metro,
+            # Any copy saying furnished counts; semi wins only if no copy says fully furnished.
+            "furnished": ("mobiliado" if any(l.furnished == "mobiliado" for l in group)
+                          else "semi-mobiliado" if any(l.furnished for l in group) else None),
             "date": published or seen_date, "date_known": published is not None,
             "new": first_seen == run_at,
         })
@@ -209,6 +214,9 @@ def main():
     report = render(entries, run_at, is_first_run, stats)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(report)
+    furnished = [e for e in entries if e["furnished"]]
+    Path(args.furnished_out).write_text(render(
+        furnished, run_at, is_first_run, stats, heading="Rio apartments — mobiliados / semi-mobiliados"))
     Path(args.json).write_text(json.dumps([{
         "key": e["main"].key,
         "keys": [l.key for l in e["group"]],
@@ -216,7 +224,7 @@ def main():
         "rent": e["main"].rent, "total": e["main"].total, "area": e["main"].area,
         "bedrooms": e["main"].bedrooms, "title": e["main"].title, "address": e["main"].address,
         "published": e["date"] and e["date"].isoformat(), "published_known": e["date_known"], "new": e["new"],
-        "metro": e["metro"],
+        "metro": e["metro"], "furnished": e["furnished"],
         "urls": {p: u for l in e["group"] for p, u in (l.extra_urls or {l.source: l.url}).items()},
     } for e in entries], ensure_ascii=False, indent=1))
 
@@ -224,7 +232,7 @@ def main():
         state["runs"].append(run_at.isoformat())
         STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
         STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True))
-    log(f"{len(entries)} apartments -> {args.out}")
+    log(f"{len(entries)} apartments -> {args.out}; {len(furnished)} furnished -> {args.furnished_out}")
 
 
 if __name__ == "__main__":

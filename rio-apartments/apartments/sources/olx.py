@@ -4,7 +4,7 @@ import json
 import re
 from datetime import datetime, timezone
 
-from ..models import Listing, norm
+from ..models import Listing, furnished_status, norm
 
 BASE = "https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-rj/rio-de-janeiro-e-regiao/"
 PUSH_RE = re.compile(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)')
@@ -47,6 +47,7 @@ def _parse(ad):
         # Search results only carry the last "bump" date; the real publication
         # date is filled in from the ad page by enrich().
         tags=[f"bumped:{ad['date']}"] if ad.get("date") else [],
+        furnished=furnished_status("mobiliado" in norm(props.get("re_features")), ad.get("subject")),
     )
 
 

@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-from ..models import Listing
+from ..models import Listing, furnished_status
 
 PORTALS = {
     "zap": ("https://glue-api.zapimoveis.com.br/v2/listings", ".zapimoveis.com.br",
@@ -12,7 +12,7 @@ PORTALS = {
 }
 PAGE_SIZE = 24  # the API rejects anything larger
 FIELDS = ("search(result(listings(listing(id,title,createdAt,updatedAt,usableAreas,bedrooms,"
-          "unitTypes,usageTypes,address,pricingInfos,displayAddressType))),totalCount)")
+          "unitTypes,usageTypes,address,pricingInfos,displayAddressType,amenities,description))),totalCount)")
 
 
 def _price(listing):
@@ -62,6 +62,8 @@ def _parse(item, portal):
         lat=lat, lon=lon,
         published_at=datetime.fromisoformat(created) if created else None,
         extra_urls={portal: PORTALS[portal][2].format(id=l["id"])},
+        furnished=furnished_status("FURNISHED" in (l.get("amenities") or []),
+                                   f"{l.get('title') or ''} {l.get('description') or ''}"),
     )
 
 

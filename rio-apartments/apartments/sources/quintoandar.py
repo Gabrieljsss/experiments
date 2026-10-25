@@ -3,7 +3,7 @@
 import re
 from datetime import datetime
 
-from ..models import Listing
+from ..models import Listing, furnished_status
 
 API = "https://apigw.prod.quintoandar.com.br/house-listing-search/v3/search/list"
 HEADERS = {"Origin": "https://www.quintoandar.com.br", "Referer": "https://www.quintoandar.com.br/"}
@@ -42,8 +42,6 @@ def _parse(hit):
         return None
     loc = s.get("location") or {}
     tags = list((hit.get("fields") or {}).get("listingTags") or [])
-    if s.get("isFurnished"):
-        tags.append("FURNISHED")
     return Listing(
         source="quintoandar",
         id=str(s["id"]),
@@ -59,6 +57,7 @@ def _parse(hit):
         address=s.get("address") or "",
         lat=loc.get("lat"), lon=loc.get("lon"),
         tags=tags,
+        furnished=furnished_status(s.get("isFurnished"), s.get("shortRentDescription")),
     )
 
 
