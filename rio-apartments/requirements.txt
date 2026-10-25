@@ -1,0 +1,3 @@
+# Browser-TLS impersonation: OLX, ZAP and VivaReal sit behind Cloudflare,
+# which rejects plain python-requests/curl fingerprints.
+curl_cffi>=0.7
