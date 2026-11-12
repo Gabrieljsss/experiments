@@ -32,7 +32,7 @@ Menu principal:
 
 Não existe aba "Gráficos": todos os gráficos ficam dentro da ficha de cada paciente.
 
-Login: conta Google da nutricionista (só ela é autorizada).
+Login: e-mail da nutricionista com link de acesso ("magic link"). Só o e-mail dela é autorizado.
 
 ---
 
@@ -353,7 +353,9 @@ O .csv tem problema de acentuação.
 
 ## 9. Google Agenda
 
-- Leitura dos eventos da agenda da nutricionista (somente leitura).
+- Leitura pelo **endereço secreto no formato iCal** da agenda (Google Agenda → Configurações da agenda →
+  "Endereço secreto no formato iCal"). Não precisa de Google Cloud. Somente leitura.
+- *A verificar:* se o iCal traz o e-mail do convidado. Se não trouxer, o vínculo é feito só pelo nome.
 - Só considera eventos cujo título começa com **"Consulta de nutrição - "**.
 - Vínculo com o paciente: 1º pelo **e-mail do convidado**, 2º pelo **nome no título**, 3º "não vinculado"
   na home.
@@ -377,10 +379,12 @@ leitura de exames, relatório de evolução e quadro de insights.
 
 ## 11. Segurança e LGPD
 
-- Acesso só com a conta Google autorizada.
+- Acesso só com o e-mail autorizado (link de acesso).
+- Sem camadas extras de criptografia, por decisão da usuária (uso pessoal).
 - Banco com regras de acesso: o paciente só consegue gravar a resposta do próprio link, sem ler nada.
 - Pedidos para a IA sem dados pessoais (código do paciente).
 - Backup semanal (ver §12).
+- O repositório do código é **público** (exigência do GitHub Pages gratuito). Ele nunca contém dados de pacientes.
 - Recomendação: incluir no termo de atendimento que são usadas ferramentas digitais de acompanhamento.
 
 ---
@@ -389,10 +393,10 @@ leitura de exames, relatório de evolução e quadro de insights.
 
 | Parte | Serviço | Observação |
 |---|---|---|
-| Banco de dados, login e arquivos | Supabase (plano gratuito) | 500 MB de dados, 1 GB de arquivos (imagens comprimidas). Pausa após 7 dias sem uso |
-| Site | Cloudflare Pages (gratuito) | Permite uso profissional. Atualiza sozinho a cada mudança no código |
-| Código | GitHub | Versão de tudo e histórico de mudanças |
-| Agenda | Google Calendar API | Gratuito |
+| Banco de dados, login e arquivos | Supabase (plano gratuito) — **única conta nova** | 500 MB de dados, 1 GB de arquivos (imagens comprimidas). Pausa após 7 dias sem uso |
+| Site | GitHub Pages (gratuito) | Exige repositório público (só o código). Atualiza sozinho a cada mudança |
+| Código | GitHub (repositório `consultorio-nutri`, em outra conta) | Versão de tudo e histórico de mudanças |
+| Agenda | Endereço secreto iCal do Google Agenda | Gratuito, sem Google Cloud |
 | WhatsApp | links `wa.me` | Gratuito |
 | IA | modo B (assinatura que ela já tem) | Sem custo extra |
 | Backup | cópia semanal da base, salva no Google Drive da nutricionista + botão `[Baixar backup]` | O plano gratuito do Supabase não faz backup |
