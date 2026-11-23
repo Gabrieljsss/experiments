@@ -41,6 +41,8 @@
     if (!s.days.includes(sh.today())) s.days.push(sh.today());
   }
   const wrongIds = () => Q.filter((q) => st().q[q.id] && st().q[q.id].last === 0).map((q) => q.id);
+  // every question answered wrong at least once, even if answered right since
+  const everWrongIds = () => Q.filter((q) => st().q[q.id] && st().q[q.id].w > 0).map((q) => q.id);
 
   /* ---------------- choosing questions ---------------- */
   // smart mix: questions you got wrong last time come back most, unseen ones next,
@@ -105,7 +107,7 @@
     const lastRight = seen.filter((q) => s.q[q.id].last === 1).length;
     const acc = seen.length ? lastRight / seen.length : 0;
     const est = Math.round(acc * EXAM_N);
-    const wrong = wrongIds().length;
+    const wrong = wrongIds().length, everWrong = everWrongIds().length;
     const placas = Q.filter((q) => q.img).length;
     const running = load(RUN_KEY);
     const streak = (() => { const set = new Set(s.days); let d = sh.today(); if (!set.has(d)) d = sh.addDays(d, -1); let n = 0; while (set.has(d)) { n++; d = sh.addDays(d, -1); } return n; })();
@@ -137,7 +139,8 @@
             <div><span class="dt-label">Foco</span>
               <select id="dtFocus" class="dt-input">
                 <option value="mix">Mistura inteligente (erradas e novas primeiro)</option>
-                <option value="erros" ${wrong ? "" : "disabled"}>Só as que errei (${wrong})</option>
+                <option value="erros" ${wrong ? "" : "disabled"}>Só as que errei na última vez (${wrong})</option>
+                <option value="jaerrei" ${everWrong ? "" : "disabled"}>Todas que já errei alguma vez (${everWrong})</option>
                 <option value="placas">Placas e sinalização com imagem (${placas})</option>
                 ${Object.entries(TOPICS).map(([k, t]) => `<option value="t:${k}">${esc(t.name)} (${Q.filter((q) => q.t === k).length})</option>`).join("")}
               </select></div>
@@ -195,6 +198,7 @@
       const f = document.getElementById("dtFocus").value;
       let ids, title;
       if (f === "erros") { ids = shuffle(wrongIds()).slice(0, n); title = "Treino: só erradas"; }
+      else if (f === "jaerrei") { ids = shuffle(everWrongIds()).slice(0, n); title = "Treino: já errei alguma vez"; }
       else if (f === "placas") { ids = weightedPick(Q.filter((q) => q.img).map((q) => q.id), n); title = "Treino: placas"; }
       else if (f.startsWith("t:")) { const t = f.slice(2); ids = weightedPick(Q.filter((q) => q.t === t).map((q) => q.id), n); title = `Treino: ${topicName(t)}`; }
       else { ids = weightedPick(Q.map((q) => q.id), n); title = `Treino de ${n}`; }
@@ -337,18 +341,30 @@
     if (retry) retry.addEventListener("click", () => startRun({ ids: shuffle(wrongs.map((x) => x.q.id)), title: "Revisão das erradas", mode: "bite", feedback: true }));
   }
 
-  function erros() {
+  function erros(ever) {
     sh.setNav("dt-erros");
-    const ids = wrongIds().sort((a, b) => (st().q[b].w - st().q[a].w));
+    const now = wrongIds(), all = everWrongIds();
+    const ids = (ever ? all : now).sort((a, b) => (st().q[b].w - st().q[a].w) || (st().q[a].last - st().q[b].last));
     sh.view.innerHTML = `<h1>Questões que você errou</h1>
-      <p class="muted">A última resposta que você deu a estas questões estava errada. Acertando no treino, elas saem desta lista.</p>
-      ${ids.length ? `<div class="row" style="margin-bottom:14px"><button class="btn primary" id="dtTrain">Treinar ${Math.min(ids.length, 20)} delas</button></div>
-        <ol class="dt-review">${ids.map((id) => { const q = byId[id], r = st().q[id]; return `<li class="bad"><small class="muted">${esc(topicName(q.t))} · errou ${r.w}×, acertou ${r.r}×</small>
+      <div class="chips" style="margin:4px 0 10px">
+        <a class="chip ${ever ? "" : "on"}" href="#/detran/erros">Erradas na última vez (${now.length})</a>
+        <a class="chip ${ever ? "on" : ""}" href="#/detran/erros/todas">Já errei alguma vez (${all.length})</a>
+      </div>
+      <p class="muted">${ever
+        ? "Todas as questões que você já errou pelo menos uma vez, mesmo as que acertou depois. As mais erradas aparecem primeiro."
+        : "A última resposta que você deu a estas questões estava errada. Acertando no treino, elas saem desta lista (mas continuam em “Já errei alguma vez”)."}</p>
+      ${ids.length ? `<div class="row" style="margin-bottom:14px"><button class="btn primary" id="dtTrainAll">Refazer todas (${ids.length})</button>
+          ${ids.length > 20 ? `<button class="btn" id="dtTrain">Treinar 20 delas</button>` : ""}</div>
+        <ol class="dt-review">${ids.map((id) => { const q = byId[id], r = st().q[id]; return `<li class="${r.last === 0 ? "bad" : "ok"}"><small class="muted">${esc(topicName(q.t))} · errou ${r.w}×, acertou ${r.r}×${ever ? (r.last === 0 ? " · última: errada" : " · última: certa") : ""}</small>
           <p>${esc(q.q)}</p>${q.img ? `<img class="dt-img sm" src="${imgSrc(q.img)}" alt="">` : ""}<p class="dt-ans good">Certa: ${LETTERS[q.c]}. ${esc(q.a[q.c])}</p></li>`; }).join("")}</ol>`
-        : `<div class="card done-hero"><div class="big">🎯</div><h2>Nenhuma questão errada pendente</h2><p class="muted">Faça um treino para descobrir seus pontos fracos.</p><a class="btn primary" href="#/detran">Treinar</a></div>`}`;
+        : `<div class="card done-hero"><div class="big">🎯</div><h2>${ever ? "Você ainda não errou nenhuma questão" : "Nenhuma questão errada pendente"}</h2><p class="muted">Faça um treino para descobrir seus pontos fracos.</p><a class="btn primary" href="#/detran">Treinar</a></div>`}`;
+    const title = ever ? "Refazer: já errei alguma vez" : "Treino: só erradas";
+    const all1 = document.getElementById("dtTrainAll");
+    if (all1) all1.addEventListener("click", () => startRun({ ids: shuffle(ids), title, mode: "bite", feedback: true }));
     const b = document.getElementById("dtTrain");
-    if (b) b.addEventListener("click", () => startRun({ ids: shuffle(ids).slice(0, 20), title: "Treino: só erradas", mode: "bite", feedback: true }));
+    if (b) b.addEventListener("click", () => startRun({ ids: shuffle(ids).slice(0, 20), title, mode: "bite", feedback: true }));
   }
+
 
   function banco(qs) {
     sh.setNav("dt-banco");
@@ -390,7 +406,7 @@
       const [a, ...rest] = parts;
       if (a === "quiz") quiz();
       else if (a === "resultado") result();
-      else if (a === "erros") erros();
+      else if (a === "erros") erros(rest[0] === "todas");
       else if (a === "banco") banco(rest.length ? decodeURIComponent(rest.join("/")) : "");
       else home();
     },
